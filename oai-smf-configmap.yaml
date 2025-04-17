@@ -22,7 +22,7 @@ data:
       sst: 1
       sd: 000001 # in hex
 
-  ############## SBI Interfaces
+  ############## SBI Interfaces   --- - 
   ### Each NF takes its local SBI interfaces and remote interfaces from here, unless it gets them using NRF discovery mechanisms
   nfs:
     amf:
