@@ -364,7 +364,7 @@ SessionManagementSubscriptionData:
     servingPlmnid: '00101'
     singleNssai:
       sst: 1
-      sd: 'FFFFFF'
+      sd: 'FFFF1F'
     dnnConfigurations:
       org:
         pduSessionTypes:
