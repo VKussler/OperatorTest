@@ -171,7 +171,7 @@ CREATE TABLE IF NOT EXISTS `SmfRegistrations` (
   `deregCallbackUri` varchar(50) DEFAULT NULL,
   `registrationReason` json DEFAULT NULL,
   `registrationTime` varchar(50) DEFAULT NULL,
-  `contextInfo` json DEFAULT NULL
+  `contextInfo` json DEFAULT NULL,
   PRIMARY KEY (`ueid`, `subpduSessionId`) -- "USING BTREE" in original file
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -185,12 +185,6 @@ CREATE TABLE IF NOT EXISTS `SmfSelectionSubscriptionData` (
   `traceData` json DEFAULT NULL,
   PRIMARY KEY (`ueid`, `servingPlmnid`) -- "USING BTREE" in original file
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
-
-
-
 
 COMMIT;
 
