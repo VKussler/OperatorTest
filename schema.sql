@@ -132,7 +132,7 @@ CREATE TABLE IF NOT EXISTS `SdmSubscriptions` (
   `report` json DEFAULT NULL,
   `supportedFeatures` varchar(50) DEFAULT NULL,
   `contextInfo` json DEFAULT NULL,
-  PRIMARY KEY (`subsId`,`ueid`), -- "USING BTREE" in original file
+  PRIMARY KEY (`subsId`,`ueid`) -- "USING BTREE" in original file
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Table structure for table `SessionManagementSubscriptionData`
