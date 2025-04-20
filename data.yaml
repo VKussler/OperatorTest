@@ -1,4 +1,4 @@
-# YAML data file derived from INSERT statements in oai_db_INS.sql    added Id 130 to both of the tables.
+# YAML data file derived from INSERT statements in oai_db_INS.sql
 
 AuthenticationSubscription:
   - ueid: '001010000000100'
@@ -358,23 +358,6 @@ AuthenticationSubscription:
     n5gcAuthMethod: null
     rgAuthenticationInd: null
     supi: '001010000000120'
-  - ueid: '001010000000130'
-    authenticationMethod: '5G_AKA'
-    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
-    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
-    sequenceNumber:
-      sqn: '000000000020'
-      sqnScheme: 'NON_TIME_BASED'
-      lastIndexes:
-        ausf: 0
-    authenticationManagementField: '8000'
-    algorithmId: 'milenage'
-    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
-    encTopcKey: null
-    vectorGenerationInHss: null
-    n5gcAuthMethod: null
-    rgAuthenticationInd: null
-    supi: '001010000000130'
 
 SessionManagementSubscriptionData:
   - ueid: '001010000000100'
@@ -981,27 +964,6 @@ SessionManagementSubscriptionData:
           uplink: '1000Mbps'
           downlink: '1000Mbps'
   - ueid: '001010000000120'
-    servingPlmnid: '00101'
-    singleNssai:
-      sst: 1
-      sd: 'FFFFFF'
-    dnnConfigurations:
-      oai:
-        pduSessionTypes:
-          defaultSessionType: 'IPV4'
-        sscModes:
-          defaultSscMode: 'SSC_MODE_1'
-        '5gQosProfile':
-          '5qi': 6
-          arp:
-            priorityLevel: 1
-            preemptCap: 'NOT_PREEMPT'
-            preemptVuln: 'NOT_PREEMPTABLE'
-          priorityLevel: 1
-        sessionAmbr:
-          uplink: '1000Mbps'
-          downlink: '1000Mbps'
-  - ueid: '001010000000130'
     servingPlmnid: '00101'
     singleNssai:
       sst: 1
