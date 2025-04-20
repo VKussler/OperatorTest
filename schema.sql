@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS `Amf3GppAccessRegistration` (
   `vgmlcAddress` json DEFAULT NULL,
   `contextInfo` json DEFAULT NULL,
   `noEeSubscriptionInd` tinyint(1) DEFAULT NULL,
-  PRIMARY KEY (`ueid`, `amfInstanceId`) -- Assuming composite primary key
+  PRIMARY KEY (`ueid`) 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Table structure for table `AuthenticationStatus`
@@ -93,7 +93,7 @@ CREATE TABLE IF NOT EXISTS `AuthenticationStatus` (
   `authType` varchar(25) NOT NULL,
   `servingNetworkName` varchar(50) NOT NULL,
   `authRemovalInd` tinyint(1) DEFAULT NULL,
-  PRIMARY KEY (`ueid`, `nfInstanceId`, `authType`) -- Assuming composite primary key
+  PRIMARY KEY (`ueid`) 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Table structure for table `AuthenticationSubscription`
@@ -117,7 +117,7 @@ CREATE TABLE IF NOT EXISTS `AuthenticationSubscription` (
 -- Table structure for table `SdmSubscriptions`
 CREATE TABLE IF NOT EXISTS `SdmSubscriptions` (
   `ueid` varchar(15) NOT NULL,
-  `subsId` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, -- Added AUTO_INCREMENT assuming it's a primary/unique key
+  `subsId` int(10) UNSIGNED NOT NULL 
   `nfInstanceId` varchar(50) NOT NULL,
   `implicitUnsubscribe` tinyint(1) DEFAULT NULL,
   `expires` varchar(50) DEFAULT NULL,
@@ -132,8 +132,7 @@ CREATE TABLE IF NOT EXISTS `SdmSubscriptions` (
   `report` json DEFAULT NULL,
   `supportedFeatures` varchar(50) DEFAULT NULL,
   `contextInfo` json DEFAULT NULL,
-  PRIMARY KEY (`subsId`), -- Assuming subsId is the primary key
-  UNIQUE KEY `ueid_nfInstanceId_callback` (`ueid`, `nfInstanceId`, `callbackReference`) -- Added potential unique key based on context
+  PRIMARY KEY (`subsId`,`ueid`), -- "USING BTREE" in original file
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Table structure for table `SessionManagementSubscriptionData`
@@ -151,7 +150,7 @@ CREATE TABLE IF NOT EXISTS `SessionManagementSubscriptionData` (
   `expectedUeBehavioursList` json DEFAULT NULL,
   `suggestedPacketNumDlList` json DEFAULT NULL,
   `3gppChargingCharacteristics` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`ueid`, `servingPlmnid`, `singleNssai`(255)) -- Example composite key, limited JSON key part
+  PRIMARY KEY (`ueid`,`servingPlmnid`) -- "USING BTREE" in original file
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Table structure for table `SmfRegistrations`
@@ -160,7 +159,20 @@ CREATE TABLE IF NOT EXISTS `SmfRegistrations` (
   `subpduSessionId` int(10) NOT NULL,
   `smfInstanceId` varchar(50) NOT NULL,
   `smfSetId` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`ueid`, `subpduSessionId`) -- Assuming composite primary key
+  `supportedFeatures` varchar(50) DEFAULT NULL,
+  `pduSessionId` int(10) NOT NULL,
+  `singleNssai` json NOT NULL,
+  `dnn` varchar(50) DEFAULT NULL,
+  `emergencyServices` tinyint(1) DEFAULT NULL,
+  `pcscfRestorationCallbackUri` varchar(50) DEFAULT NULL,
+  `plmnId` json NOT NULL,
+  `pgwFqdn` varchar(50) DEFAULT NULL,
+  `epdgInd` tinyint(1) DEFAULT NULL,
+  `deregCallbackUri` varchar(50) DEFAULT NULL,
+  `registrationReason` json DEFAULT NULL,
+  `registrationTime` varchar(50) DEFAULT NULL,
+  `contextInfo` json DEFAULT NULL
+  PRIMARY KEY (`ueid`, `subpduSessionId`) -- "USING BTREE" in original file
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Table structure for table `SmfSelectionSubscriptionData`
@@ -171,57 +183,14 @@ CREATE TABLE IF NOT EXISTS `SmfSelectionSubscriptionData` (
   `subscribedSnssaiInfos` json DEFAULT NULL,
   `sharedSnssaiInfosId` varchar(50) DEFAULT NULL,
   `traceData` json DEFAULT NULL,
-  PRIMARY KEY (`ueid`, `servingPlmnid`) -- Assuming composite primary key
+  PRIMARY KEY (`ueid`, `servingPlmnid`) -- "USING BTREE" in original file
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Table structure for table `SmsManagementSubscriptionData`
-CREATE TABLE IF NOT EXISTS `SmsManagementSubscriptionData` (
-  `ueid` varchar(15) NOT NULL,
-  `servingPlmnid` varchar(15) NOT NULL,
-  `supportedFeatures` varchar(50) DEFAULT NULL,
-  `mtSmsSubscribed` tinyint(1) DEFAULT NULL,
-  `mtSmsBarringAll` tinyint(1) DEFAULT NULL,
-  `mtSmsBarringRoaming` tinyint(1) DEFAULT NULL,
-  `moSmsSubscribed` tinyint(1) DEFAULT NULL,
-  `moSmsBarringAll` tinyint(1) DEFAULT NULL,
-  `moSmsBarringRoaming` tinyint(1) DEFAULT NULL,
-  `sharedSmsMngDataIds` json DEFAULT NULL,
-  `traceData` json DEFAULT NULL,
-  PRIMARY KEY (`ueid`, `servingPlmnid`) -- Assuming composite primary key
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Table structure for table `SmsSubscriptionData`
-CREATE TABLE IF NOT EXISTS `SmsSubscriptionData` (
-  `ueid` varchar(15) NOT NULL,
-  `servingPlmnid` varchar(15) NOT NULL,
-  `smsSubscribed` tinyint(1) DEFAULT NULL,
-  `sharedSmsSubsDataId` varchar(50) DEFAULT NULL,
-  `traceData` json DEFAULT NULL,
-  PRIMARY KEY (`ueid`, `servingPlmnid`) -- Assuming composite primary key
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Table structure for table `SubscriptionDataSubscriptions`
-CREATE TABLE IF NOT EXISTS `SubscriptionDataSubscriptions` (
-  `subsId` varchar(50) NOT NULL,
-  `ueid` varchar(15) NOT NULL,
-  `callbackReference` varchar(50) NOT NULL,
-  `originalCallbackReference` varchar(50) DEFAULT NULL,
-  `monitoredResourceUris` json NOT NULL,
-  `expiry` varchar(50) DEFAULT NULL,
-  `supportedFeatures` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`subsId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Table structure for table `V2xSubscriptionData`
-CREATE TABLE IF NOT EXISTS `V2xSubscriptionData` (
-  `ueid` varchar(15) NOT NULL,
-  `servingPlmnid` varchar(15) NOT NULL,
-  `nrV2xServicesAuth` json DEFAULT NULL,
-  `lteV2xServicesAuth` json DEFAULT NULL,
-  `nrUePc5Ambr` varchar(50) DEFAULT NULL,
-  `ltePc5Ambr` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`ueid`, `servingPlmnid`) -- Assuming composite primary key
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
 
 COMMIT;
 
