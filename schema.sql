@@ -117,7 +117,7 @@ CREATE TABLE IF NOT EXISTS `AuthenticationSubscription` (
 -- Table structure for table `SdmSubscriptions`
 CREATE TABLE IF NOT EXISTS `SdmSubscriptions` (
   `ueid` varchar(15) NOT NULL,
-  `subsId` int(10) UNSIGNED NOT NULL 
+  `subsId` int(10) UNSIGNED NOT NULL,
   `nfInstanceId` varchar(50) NOT NULL,
   `implicitUnsubscribe` tinyint(1) DEFAULT NULL,
   `expires` varchar(50) DEFAULT NULL,
