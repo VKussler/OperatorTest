@@ -1,0 +1,14 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: my-5gc-components
+  namespace: flux-system
+spec:
+  interval: 5m
+  path: ./Cluster         # relative to the Git root
+  prune: true                              # garbage-collect removed manifests
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  validation: client
+  targetNamespace: default
