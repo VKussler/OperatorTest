@@ -1,0 +1,29 @@
+apiVersion: mysql.cm-5gc.com/v1alpha1
+kind: Mysqlinfo
+metadata:
+  labels:
+    app.kubernetes.io/name: op-mysql
+    app.kubernetes.io/managed-by: kustomize
+  name: mysqlinfo-sample
+spec:
+  # GitHub configuration (now nested)
+  github:
+    repository: "https://github.com/VKussler/OperatorTest" # Replace with your repo URL
+    branch: "main"
+    token: "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" # Optional: Add if repo is private
+
+  # Optional: Path to the SQL file containing schema definitions (e.g., CREATE TABLE IF NOT EXISTS)
+  schemaFilePath: "schema.sql"
+
+  # Required: Path to the YAML file containing the data to sync
+  dataFilePath: "data.yaml" # Pointing to the example YAML
+
+  # MySQL configuration (now nested)
+  mysql:
+    host: mysql.default.svc.cluster.local # Replace with your MySQL service host
+    port: 3306
+    username: "root"
+    password: "linux" # Consider using secrets
+    database: "oai_db"
+
+  syncInterval: 300 # Sync every 5 minutes (optional)
