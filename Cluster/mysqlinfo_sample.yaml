@@ -13,10 +13,10 @@ spec:
     token: "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" # Optional: Add if repo is private
 
   # Optional: Path to the SQL file containing schema definitions (e.g., CREATE TABLE IF NOT EXISTS)
-  schemaFilePath: "schema.sql"
+  schemaFilePath: "Database/schema.sql"
 
   # Required: Path to the YAML file containing the data to sync
-  dataFilePath: "data.yaml" # Pointing to the example YAML
+  dataFilePath: "Database/data.yaml" # Pointing to the example YAML
 
   # MySQL configuration (now nested)
   mysql:
