@@ -1,4 +1,0 @@
-## Append samples of your project ##
-resources:
-- mysqlinfo_sample.yaml # Corrected filename.
-# +kubebuilder:scaffold:manifestskustomizesamples
