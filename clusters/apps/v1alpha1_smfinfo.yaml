@@ -5,6 +5,7 @@ metadata:
     app.kubernetes.io/name: op-smf
     app.kubernetes.io/managed-by: kustomize
   name: smfinfo-sample
+  namespace: default
 spec:
   DnnInfo:
     - dnn: "oai"

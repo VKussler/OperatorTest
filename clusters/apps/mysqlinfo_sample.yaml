@@ -5,6 +5,7 @@ metadata:
     app.kubernetes.io/name: op-mysql
     app.kubernetes.io/managed-by: kustomize
   name: mysqlinfo-sample
+  namespace: default
 spec:
   # GitHub configuration (now nested)
   github:
