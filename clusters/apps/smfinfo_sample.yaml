@@ -1,44 +1,46 @@
-apiVersion: cm-5gc.com/v1alpha1
-kind: SmfInfo
-metadata:
-  creationTimestamp: "2025-04-26T14:45:36Z"
-  generation: 1
-  labels:
-    app.kubernetes.io/managed-by: kustomize
-    app.kubernetes.io/name: op-smf
-    kustomize.toolkit.fluxcd.io/name: flux-system
-    kustomize.toolkit.fluxcd.io/namespace: flux-system
-  name: smfinfo-sample
-  namespace: default
-  resourceVersion: "1021250"
-  uid: 97b74404-b736-41e5-ade0-afaf7aaf15ea
-spec:
-  DnnInfo:
-  - Ipv4Subnet: 12.1.1.0/24
-    PduSessionType: IPV4
-    dnn: oai
-  - Ipv4Subnet: 14.1.1.0/24
-    PduSessionType: IPV4V6
-    dnn: ims
-  - Ipv4Subnet: 13.1.1.0/24
-    PduSessionType: IPV4
-    dnn: orr
-  SnssaiInfo:
-  - QosProfile:
-      5qi: 5
-      SessionAmbrDl: 400Mbps
-      SessionAmbrUl: 200Mbps
-    Sd: FFFFFF
-    sst: 1
-  - QosProfile:
-      5qi: 2
-      SessionAmbrDl: 200Mbps
-      SessionAmbrUl: 100Mbps
-    Sd: "000001"
-    sst: 1
-  - QosProfile:
-      5qi: 5
-      SessionAmbrDl: 400Mbps
-      SessionAmbrUl: 200Mbps
-    Sd: FFFFFF
-    sst: 1
+Object:
+  apiVersion: cm-5gc.com/v1alpha1
+  kind: SmfInfo
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"cm-5gc.com/v1alpha1","kind":"SmfInfo","metadata":{"annotations":{},"labels":{"app.kubernetes.io/managed-by":"kustomize","app.kubernetes.io/name":"op-smf"},"name":"smfinfo-sample","namespace":"default"},"spec":{"DnnInfo":[{"Ipv4Subnet":"12.1.1.0/24","PduSessionType":"IPV4","dnn":"oai"},{"Ipv4Subnet":"14.1.1.0/24","PduSessionType":"IPV4V6","dnn":"ims"},{"Ipv4Subnet":"13.1.1.0/24","PduSessionType":"IPV4","dnn":"org"}],"SnssaiInfo":[{"QosProfile":{"5qi":5,"SessionAmbrDl":"400Mbps","SessionAmbrUl":"200Mbps"},"Sd":"FFFFFF","sst":1},{"QosProfile":{"5qi":2,"SessionAmbrDl":"200Mbps","SessionAmbrUl":"100Mbps"},"Sd":"000001","sst":1},{"QosProfile":{"5qi":5,"SessionAmbrDl":"400Mbps","SessionAmbrUl":"200Mbps"},"Sd":"FFFFFF","sst":1}]}}
+    creationTimestamp: "2025-04-27T08:06:40Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/managed-by: kustomize
+      app.kubernetes.io/name: op-smf
+    name: smfinfo-sample
+    namespace: default
+    resourceVersion: "1085472"
+    uid: e7422076-5185-4458-8082-06e6c90ff5d9
+  spec:
+    DnnInfo:
+    - Ipv4Subnet: 12.1.1.0/24
+      PduSessionType: IPV4
+      dnn: oai
+    - Ipv4Subnet: 14.1.1.0/24
+      PduSessionType: IPV4V6
+      dnn: ims
+    - Ipv4Subnet: 13.1.1.0/24
+      PduSessionType: IPV4
+      dnn: orr
+    SnssaiInfo:
+    - QosProfile:
+        5qi: 5
+        SessionAmbrDl: 400Mbps
+        SessionAmbrUl: 200Mbps
+      Sd: FFFFFF
+      sst: 1
+    - QosProfile:
+        5qi: 2
+        SessionAmbrDl: 200Mbps
+        SessionAmbrUl: 100Mbps
+      Sd: "000001"
+      sst: 1
+    - QosProfile:
+        5qi: 5
+        SessionAmbrDl: 400Mbps
+        SessionAmbrUl: 200Mbps
+      Sd: FFFFFF
+      sst: 1
