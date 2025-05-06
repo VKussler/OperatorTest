@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - mysqlinfo_sample.yaml
   - smfinfo_sample.yaml
+  - upfinfo_sample.yaml

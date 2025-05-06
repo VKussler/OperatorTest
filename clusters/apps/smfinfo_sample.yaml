@@ -1,41 +1,63 @@
 apiVersion: cm-5gc.com/v1alpha1
 kind: SmfInfo
 metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"cm-5gc.com/v1alpha1","kind":"SmfInfo","metadata":{"annotations":{},"labels":{"app.kubernetes.io/managed-by":"kustomize","app.kubernetes.io/name":"op-smf"},"name":"smfinfo-sample","namespace":"default"},"spec":{"DnnInfo":[{"Ipv4Subnet":"12.1.1.0/24","PduSessionType":"IPV4","dnn":"oai"},{"Ipv4Subnet":"14.1.1.0/24","PduSessionType":"IPV4V6","dnn":"ims"},{"Ipv4Subnet":"13.1.1.0/24","PduSessionType":"IPV4","dnn":"org"}],"SnssaiInfo":[{"QosProfile":{"5qi":5,"SessionAmbrDl":"400Mbps","SessionAmbrUl":"200Mbps"},"Sd":"FFFFFF","sst":1},{"QosProfile":{"5qi":2,"SessionAmbrDl":"200Mbps","SessionAmbrUl":"100Mbps"},"Sd":"000001","sst":1},{"QosProfile":{"5qi":5,"SessionAmbrDl":"400Mbps","SessionAmbrUl":"200Mbps"},"Sd":"FFFFFF","sst":1}]}}
   labels:
-    app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: op-smf
+    app.kubernetes.io/managed-by: kustomize
   name: smfinfo-sample
-  namespace: default
 spec:
-  DnnInfo:
-  - Ipv4Subnet: 12.1.1.0/24
-    PduSessionType: IPV4
-    dnn: oai
-  - Ipv4Subnet: 14.1.1.0/24
-    PduSessionType: IPV4V6
-    dnn: ims
-  - Ipv4Subnet: 13.1.1.0/24
-    PduSessionType: IPV4
-    dnn: orr
-  SnssaiInfo:
-  - QosProfile:
-      5qi: 5
-      SessionAmbrDl: 400Mbps
-      SessionAmbrUl: 200Mbps
-    Sd: FFFFFF
-    sst: 1
-  - QosProfile:
-      5qi: 2
-      SessionAmbrDl: 200Mbps
-      SessionAmbrUl: 100Mbps
-    Sd: "000001"
-    sst: 1
-  - QosProfile:
-      5qi: 5
-      SessionAmbrDl: 400Mbps
-      SessionAmbrUl: 200Mbps
-    Sd: FFFFFF
-    sst: 1
+  # 3GPP PLMN Info List
+  pLMNInfoList:
+    - pLMNId:
+        mcc: "001"
+        mnc: "01"
+  # Single Tracking Area Code (TAC)
+  nRTAClist: "0"
+  # NF Instance FQDN
+  sBIFQDN: "smfinfo-sample.example.com"
+  # Managed NF Profile
+  managedNFProfile:
+    nfType:
+      - "SMF"
+    hostAddr: "127.0.0.1"
+    capacity: 10
+  # Communication Model List
+  commModelList:
+    - commModelType: "DIRECT_COMMUNICATION_WO_NRF"
+  # SMF NRM Info
+  smfInfo:
+    sNssaiSmfInfoList:
+      - sNSSAI: # S-NSSAI 1-FFFFFF associated with oai and org DNNs
+          sd: "FFFFFF"
+          sst: 1
+        dnnSmfInfoList:
+          - dnn: "oai"
+          - dnn: "org"
+      - sNSSAI: # S-NSSAI 1-000001 associated with ims DNN
+          sd: "000001"
+          sst: 1
+        dnnSmfInfoList:
+          - dnn: "ims"
+  # Missing elements config to map old fields
+  missingElements:
+    # Data Network Names (DNN) configs
+    dnnConfigs:
+      oai:
+        pduSessionType: "IPV4"
+        ipv4Subnet: "12.1.1.0/24"
+      ims:
+        pduSessionType: "IPV4V6"
+        ipv4Subnet: "14.1.1.0/24"
+      org:
+        pduSessionType: "IPV4"
+        ipv4Subnet: "13.1.1.0/24"
+    # S-NSSAI QoS profiles
+    snssaiConfigs:
+      "1-FFFFFF": # QoS for S-NSSAI 1-FFFFFF
+        fiveQi: 5
+        sessionAmbrUl: "200Mbps"
+        sessionAmbrDl: "400Mbps"
+      "1-000001": # QoS for S-NSSAI 1-000001
+        fiveQi: 2
+        sessionAmbrUl: "100Mbps"
+        sessionAmbrDl: "200Mbps"
