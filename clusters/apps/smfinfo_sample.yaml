@@ -2,62 +2,54 @@ apiVersion: cm-5gc.com/v1alpha1
 kind: SmfInfo
 metadata:
   labels:
-    app.kubernetes.io/name: op-smf
     app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: op-smf
   name: smfinfo-sample
+  namespace: default
 spec:
-  # 3GPP PLMN Info List
-  pLMNInfoList:
-    - pLMNId:
-        mcc: "001"
-        mnc: "01"
-  # Single Tracking Area Code (TAC)
-  nRTAClist: "0"
-  # NF Instance FQDN
-  sBIFQDN: "smfinfo-sample.example.com"
-  # Managed NF Profile
-  managedNFProfile:
-    nfType:
-      - "SMF"
-    hostAddr: "127.0.0.1"
-    capacity: 10
-  # Communication Model List
   commModelList:
-    - commModelType: "DIRECT_COMMUNICATION_WO_NRF"
-  # SMF NRM Info
+  - commModelType: DIRECT_COMMUNICATION_WO_NRF
+  managedNFProfile:
+    capacity: 10
+    hostAddr: 127.0.0.1
+    nfType:
+    - SMF
+  missingElements:
+    dnnConfigs:
+      ims:
+        ipv4Subnet: 14.1.1.0/24
+        pduSessionType: IPV4V6
+      oai:
+        ipv4Subnet: 12.1.1.0/24
+        pduSessionType: IPV4
+      org:
+        ipv4Subnet: 13.1.1.0/24
+        pduSessionType: IPV4
+    snssaiConfigs:
+      1-000001:
+        fiveQi: 2
+        sessionAmbrDl: 200Mbps
+        sessionAmbrUl: 100Mbps
+      1-FFFFFF:
+        fiveQi: 5
+        sessionAmbrDl: 400Mbps
+        sessionAmbrUl: 200Mbps
+  nRTAClist: "0"
+  pLMNInfoList:
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+  sBIFQDN: smfinfo-sample.example.com
   smfInfo:
     sNssaiSmfInfoList:
-      - sNSSAI: # S-NSSAI 1-FFFFFF associated with oai and org DNNs
-          sd: "FFFFFF"
-          sst: 1
-        dnnSmfInfoList:
-          - dnn: "oai"
-          - dnn: "org"
-      - sNSSAI: # S-NSSAI 1-000001 associated with ims DNN
-          sd: "000001"
-          sst: 1
-        dnnSmfInfoList:
-          - dnn: "ims"
-  # Missing elements config to map old fields
-  missingElements:
-    # Data Network Names (DNN) configs
-    dnnConfigs:
-      oai:
-        pduSessionType: "IPV4"
-        ipv4Subnet: "12.1.1.0/24"
-      ims:
-        pduSessionType: "IPV4V6"
-        ipv4Subnet: "14.1.1.0/24"
-      org:
-        pduSessionType: "IPV4"
-        ipv4Subnet: "13.1.1.0/24"
-    # S-NSSAI QoS profiles
-    snssaiConfigs:
-      "1-FFFFFF": # QoS for S-NSSAI 1-FFFFFF
-        fiveQi: 5
-        sessionAmbrUl: "200Mbps"
-        sessionAmbrDl: "400Mbps"
-      "1-000001": # QoS for S-NSSAI 1-000001
-        fiveQi: 2
-        sessionAmbrUl: "100Mbps"
-        sessionAmbrDl: "200Mbps"
+    - dnnSmfInfoList:
+      - dnn: oai
+      - dnn: ora
+      sNSSAI:
+        sd: FFFFFF
+        sst: 1
+    - dnnSmfInfoList:
+      - dnn: ims
+      sNSSAI:
+        sd: "000001"
+        sst: 1
