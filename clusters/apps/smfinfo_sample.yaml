@@ -44,7 +44,7 @@ spec:
     sNssaiSmfInfoList:
     - dnnSmfInfoList:
       - dnn: oai
-      - dnn: ora
+      - dnn: org
       sNSSAI:
         sd: FFFFFF
         sst: 1
