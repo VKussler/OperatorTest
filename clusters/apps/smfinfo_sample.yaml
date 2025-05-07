@@ -23,7 +23,7 @@ spec:
         ipv4Subnet: 12.1.1.0/24
         pduSessionType: IPV4
       org:
-        ipv4Subnet: 13.1.1.0/24
+        ipv4Subnet: 13.1.2.0/24
         pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
