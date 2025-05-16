@@ -1,3 +1,4 @@
+```yaml
 apiVersion: cm-5gc.com/v1alpha1
 kind: SmfInfo
 metadata:
@@ -22,7 +23,7 @@ spec:
       oai:
         ipv4Subnet: 12.1.1.0/24
         pduSessionType: IPV4
-      ora:
+      org:
         ipv4Subnet: 13.1.1.0/24
         pduSessionType: IPV4
     snssaiConfigs:
@@ -44,7 +45,7 @@ spec:
     sNssaiSmfInfoList:
     - dnnSmfInfoList:
       - dnn: oai
-      - dnn: ora
+      - dnn: org
       sNSSAI:
         sd: FFFFFF
         sst: 1
@@ -53,3 +54,4 @@ spec:
       sNSSAI:
         sd: "000001"
         sst: 1
+```
