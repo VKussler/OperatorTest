@@ -390,7 +390,7 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
                 - ipv4Addr: 13.1.1.100
-        org:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -445,7 +445,7 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
                 - ipv4Addr: 13.1.1.100
-        org:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -500,7 +500,7 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
                 - ipv4Addr: 13.1.1.100
-        org:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -555,7 +555,7 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
                 - ipv4Addr: 13.1.1.100
-        org:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -610,7 +610,7 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
                 - ipv4Addr: 13.1.1.100
-        org:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -665,7 +665,7 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
                 - ipv4Addr: 13.1.1.100
-        org:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
