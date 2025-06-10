@@ -25,9 +25,6 @@ spec:
       org:
         ipv4Subnet: 13.1.1.0/24
         pduSessionType: IPV4
-      oar:
-        ipv4Subnet: 13.1.1.0/24
-        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
