@@ -22,6 +22,9 @@ spec:
       oai:
         ipv4Subnet: 12.1.1.0/24
         pduSessionType: IPV4
+      org:
+        ipv4Subnet: 13.1.1.0/24
+        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -41,6 +44,7 @@ spec:
     sNssaiSmfInfoList:
     - dnnSmfInfoList:
       - dnn: oai
+      - dnn: org
       sNSSAI:
         sd: FFFFFF
         sst: 1
