@@ -47,7 +47,6 @@ spec:
     sNssaiSmfInfoList:
     - dnnSmfInfoList:
       - dnn: oai
-      - dnn: oar
       sNSSAI:
         sd: FFFFFF
         sst: 1
