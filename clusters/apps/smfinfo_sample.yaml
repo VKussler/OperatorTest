@@ -28,6 +28,9 @@ spec:
       oar:
         ipv4Subnet: 13.1.1.0/24
         pduSessionType: IPV4
+      e2e-test-dnn:
+        ipv4Subnet: 10.0.0.0/24
+        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -53,6 +56,7 @@ spec:
         sst: 1
     - dnnSmfInfoList:
       - dnn: ims
+      - dnn: e2e-test-dnn
       sNSSAI:
         sd: "000001"
         sst: 1
