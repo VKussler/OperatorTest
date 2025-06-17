@@ -59,3 +59,12 @@ spec:
       sNssai:
         sd: "000001"
         sst: 1
+      - dnn: tst
+        pduSessionTypes:
+        - IPv4
+        ipv4AddressRanges:
+        - iPv4AddrRangeStart: 13.1.1.0
+          iPv4AddrRangeEnd: 13.1.1.255
+      sNssai:
+        sd: FFFFFF
+        sst: 1
