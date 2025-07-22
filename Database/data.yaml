@@ -358,21 +358,6 @@ AuthenticationSubscription:
       vectorGenerationInHss: null
 SessionManagementSubscriptionData:
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         ims:
             5gQosProfile:
                 5qi: 2
@@ -386,51 +371,6 @@ SessionManagementSubscriptionData:
             sessionAmbr:
                 downlink: 1000Mbps
                 uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
         oai:
@@ -468,24 +408,11 @@ SessionManagementSubscriptionData:
             staticIpAddress:
                 - ipv4Addr: 12.1.1.100
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFF1F
+        sst: 1
       ueid: "001010000000100"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         ims:
             5gQosProfile:
                 5qi: 2
@@ -499,51 +426,6 @@ SessionManagementSubscriptionData:
             sessionAmbr:
                 downlink: 1000Mbps
                 uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
         oai:
@@ -581,24 +463,11 @@ SessionManagementSubscriptionData:
             staticIpAddress:
                 - ipv4Addr: 12.1.1.101
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000101"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         ims:
             5gQosProfile:
                 5qi: 2
@@ -612,51 +481,6 @@ SessionManagementSubscriptionData:
             sessionAmbr:
                 downlink: 1000Mbps
                 uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
         oai:
@@ -694,24 +518,11 @@ SessionManagementSubscriptionData:
             staticIpAddress:
                 - ipv4Addr: 12.1.1.102
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000102"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         ims:
             5gQosProfile:
                 5qi: 2
@@ -725,51 +536,6 @@ SessionManagementSubscriptionData:
             sessionAmbr:
                 downlink: 1000Mbps
                 uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
         oai:
@@ -807,24 +573,11 @@ SessionManagementSubscriptionData:
             staticIpAddress:
                 - ipv4Addr: 12.1.1.103
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000103"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         ims:
             5gQosProfile:
                 5qi: 2
@@ -838,51 +591,6 @@ SessionManagementSubscriptionData:
             sessionAmbr:
                 downlink: 1000Mbps
                 uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
         oai:
@@ -920,24 +628,11 @@ SessionManagementSubscriptionData:
             staticIpAddress:
                 - ipv4Addr: 12.1.1.104
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000104"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         ims:
             5gQosProfile:
                 5qi: 2
@@ -951,51 +646,6 @@ SessionManagementSubscriptionData:
             sessionAmbr:
                 downlink: 1000Mbps
                 uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
         oai:
@@ -1033,69 +683,11 @@ SessionManagementSubscriptionData:
             staticIpAddress:
                 - ipv4Addr: 12.1.1.105
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000105"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         oai:
             5gQosProfile:
                 5qi: 6
@@ -1112,69 +704,11 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000106"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         oai:
             5gQosProfile:
                 5qi: 6
@@ -1191,69 +725,11 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000107"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         oai:
             5gQosProfile:
                 5qi: 6
@@ -1270,69 +746,11 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000109"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         oai:
             5gQosProfile:
                 5qi: 6
@@ -1349,69 +767,11 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000110"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         oai:
             5gQosProfile:
                 5qi: 6
@@ -1428,69 +788,11 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000111"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         oai:
             5gQosProfile:
                 5qi: 6
@@ -1507,69 +809,11 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000112"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         oai:
             5gQosProfile:
                 5qi: 6
@@ -1586,69 +830,11 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000113"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         oai:
             5gQosProfile:
                 5qi: 6
@@ -1665,69 +851,11 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000114"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         oai:
             5gQosProfile:
                 5qi: 6
@@ -1744,69 +872,11 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000115"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         oai:
             5gQosProfile:
                 5qi: 6
@@ -1823,69 +893,11 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000116"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         oai:
             5gQosProfile:
                 5qi: 6
@@ -1902,69 +914,11 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000117"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         oai:
             5gQosProfile:
                 5qi: 6
@@ -1981,69 +935,11 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000118"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         oai:
             5gQosProfile:
                 5qi: 6
@@ -2060,69 +956,11 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000119"
     - dnnConfigurations:
-        data_networks:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        internet:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        iot:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        new_slice:
-            5gQosProfile:
-                5qi: 9
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1 Gbps
-                uplink: 500 Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
         oai:
             5gQosProfile:
                 5qi: 6
@@ -2139,5 +977,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai: '{"sst":1,"sd":"000001"}'
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000120"
