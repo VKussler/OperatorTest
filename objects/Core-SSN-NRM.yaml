@@ -1,6 +1,6 @@
 
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: create slice fgop
+# Intent: Create slice folo
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
