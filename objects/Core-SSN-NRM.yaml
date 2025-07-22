@@ -1,6 +1,6 @@
 
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create slice fogo
+# Intent: create slice tota
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
