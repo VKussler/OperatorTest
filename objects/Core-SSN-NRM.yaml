@@ -1,6 +1,6 @@
 
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create slice jubulu
+# Intent: Create a slice named faga
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -12,7 +12,9 @@ attributes:
   sliceProfileList:
     - sliceProfileId: "eMBB-profile-1"
       pLMNInfoList:
-        - pLMNId: "208-93"
+        - pLMNId:
+            mcc: "208"
+            mnc: "93"
           sNSSAI:
             sst: 1
             sd: "000001"
