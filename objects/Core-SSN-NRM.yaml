@@ -1,6 +1,6 @@
 
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: create slice tota
+# Intent: Create slice jubulu
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
