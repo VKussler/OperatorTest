@@ -25,6 +25,12 @@ spec:
       ora:
         ipv4Subnet: 13.1.1.0/24
         pduSessionType: IPV4
+      internet:
+        ipv4Subnet: 10.0.0.0/8
+        pduSessionType: IPV4
+      iot:
+        ipv4Subnet: 10.0.0.0/8
+        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -50,6 +56,8 @@ spec:
         sst: 1
     - dnnSmfInfoList:
       - dnn: ims
+      - dnn: internet
+      - dnn: iot
       sNSSAI:
         sd: "000001"
         sst: 1
