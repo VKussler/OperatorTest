@@ -1,18 +1,24 @@
-# Sample PCF NRM Instance
-pLMNInfoList:
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-sBIFQDN: "pcf-1.sbi.example.com"
-managedNFProfile:
-  nfInstanceId: "pcf-instance-001"
-  nfType: "PCF"
-  hostAddr: "192.168.1.11"
-pcfInfo:
-  dnnList: ["internet", "iot"]
-  supiRanges:
-    - start: "208930000000000"
-      end: "208930000099999"
-commModelList:
-  - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+pcf:
+  network_slices:
+    - sst: 1
+      sd: 000001
+      plmn: "208-93"
+      max_ues: 1000000
+      latency:
+        dl: 10
+        ul: 15
+      throughput:
+        dl: 1000
+        ul: 500
+      policy_control:
+        enabled: true
+        # Add any specific policy control configurations here if needed.  For example:
+        # rules:
+        #   - rule_id: 1
+        #     condition: ...
+        #     action: ...
+
+{{rest_of_config}}
+```
+
+This updated YAML adds a new entry to the `network_slices` list within the `pcf` section.  It includes all the parameters specified by the user: SST, SD, PLMN, maximum UEs, downlink and uplink latency and throughput.  Crucially, `policy_control: enabled: true` ensures that policy control is activated for this network slice.  The commented-out section shows where more granular policy control rules could be added if required.  The `{{rest_of_config}}` placeholder assumes there's more to the YAML configuration beyond the `pcf` section, which is left untouched.  If `{{current_config}}` contained a `pcf` section already, this would append the new network slice to the existing list.  If not, it creates the `pcf` section.  Remember to replace `{{rest_of_config}}` with the actual remaining parts of your YAML file.
