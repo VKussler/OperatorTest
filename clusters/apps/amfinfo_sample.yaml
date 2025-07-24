@@ -1,1 +1,22 @@
-Please provide the `{{current_config}}` YAML.  I need the existing YAML to understand the context and correctly update it based on the "create" intent.  The "create" intent is too broad without knowing what should be created within the YAML structure.  For example, should a new key-value pair be created? A new list element? A new section?  I need more information.
+# Sample AMF NRM Instance
+pLMNInfoList:
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+aMFIdentifier: "amf-1.example.com"
+sBIFQDN: "amf-1.sbi.example.com"
+cNSIIdList: ["slice-1-cn"]
+managedNFProfile:
+  nfInstanceId: "amf-instance-001"
+  nfType: "AMF"
+  heartBeatTimer: 60
+  hostAddr: "192.168.1.10"
+amfInfo:
+  aMFRegionId: "1"
+  aMFSetId: 100
+  gUAMIdList:
+    - pLMNId:
+        mcc: "208"
+        mnc: "93"
+      aMFIdentifier: "amf-1.example.com"
+aMFSetRef: "/AMFSet/set-1" 
