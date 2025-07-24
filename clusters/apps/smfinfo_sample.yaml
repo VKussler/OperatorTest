@@ -34,6 +34,9 @@ spec:
       newdnn:
         ipv4Subnet: 10.0.0.0/8
         pduSessionType: IPV4
+      createslice:
+        ipv4Subnet: 10.0.0.0/8
+        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -62,6 +65,7 @@ spec:
       - dnn: internet
       - dnn: iot
       - dnn: newdnn
+      - dnn: createslice
       sNSSAI:
         sd: "000001"
         sst: 1
