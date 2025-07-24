@@ -37,6 +37,9 @@ spec:
       create-slice-new-dnn:
         ipv4Subnet: 10.10.10.0/24
         pduSessionType: IPV4
+      create:
+        ipv4Subnet: 10.10.10.0/24
+        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -66,6 +69,7 @@ spec:
       - dnn: create-slice-new
       - dnn: create-slice
       - dnn: create-slice-new-dnn
+      - dnn: create
       sNSSAI:
         sd: "000001"
         sst: 1
