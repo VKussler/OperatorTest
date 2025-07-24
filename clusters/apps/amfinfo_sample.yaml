@@ -1,22 +1,11 @@
-# Sample AMF NRM Instance
-pLMNInfoList:
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-aMFIdentifier: "amf-1.example.com"
-sBIFQDN: "amf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn"]
-managedNFProfile:
-  nfInstanceId: "amf-instance-001"
-  nfType: "AMF"
-  heartBeatTimer: 60
-  hostAddr: "192.168.1.10"
-amfInfo:
-  aMFRegionId: "1"
-  aMFSetId: 100
-  gUAMIdList:
-    - pLMNId:
-        mcc: "208"
-        mnc: "93"
-      aMFIdentifier: "amf-1.example.com"
-aMFSetRef: "/AMFSet/set-1" 
+amf:
+  sst: 1
+  sd: "000001"
+  coverage_area:
+    tas: [1, 2, 3]
+  resource_sharing_level: SHARED
+  network_slice_subnet_id: "slice-1"
+
+```
+
+This YAML configuration directly addresses the user's intent.  It sets the SST, SD, coverage area TAs, resource sharing level, and associates the AMF with the specified network slice subnet ID.  This assumes that `{{current_config}}` contained other unrelated configurations and this is a replacement or addition to the relevant section. If `{{current_config}}` already had an `amf` section, this would need to replace that section entirely or selectively merge the values, depending on the desired behavior.  A more robust solution would involve merging capabilities, handling potential conflicts intelligently.
