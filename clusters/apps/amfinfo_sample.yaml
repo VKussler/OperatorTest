@@ -1,22 +1,25 @@
-# Sample AMF NRM Instance
-pLMNInfoList:
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-aMFIdentifier: "amf-1.example.com"
-sBIFQDN: "amf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn"]
-managedNFProfile:
-  nfInstanceId: "amf-instance-001"
-  nfType: "AMF"
-  heartBeatTimer: 60
-  hostAddr: "192.168.1.10"
-amfInfo:
-  aMFRegionId: "1"
-  aMFSetId: 100
-  gUAMIdList:
-    - pLMNId:
-        mcc: "208"
-        mnc: "93"
-      aMFIdentifier: "amf-1.example.com"
-aMFSetRef: "/AMFSet/set-1" 
+Please provide the `{{current_config}}` YAML.  I need the existing YAML to update it based on the "create-slice" intent.  I need to know what kind of slice the user wants to create (e.g., a database slice, a network slice, a software slice, etc.) and what parameters are relevant.  Without the current configuration, I can only offer a generic example.
+
+For example, if the current config is about network slices and the user wants to create a new one, a possible updated config might look like this:
+
+```yaml
+slices:
+  - name: new_slice
+    type: network
+    vnf:
+      - name: vnf1
+        image: vnf1-image
+        resources:
+          cpu: 2
+          memory: 4GB
+  - name: existing_slice #... existing slices remain unchanged
+    type: network
+    vnf:
+      - name: vnf2
+        image: vnf2-image
+        resources:
+          cpu: 1
+          memory: 2GB
+```
+
+Provide your `{{current_config}}` so I can give you a more accurate and helpful response.
