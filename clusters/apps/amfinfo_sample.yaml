@@ -1,7 +1,1 @@
-amf:
-  sst: 1
-  sd: 000001
-  plmn: "208-93"
-  coverage_area:
-    tas: [1, 2, 3]
-  resource_sharing_level: SHARED
+Please provide the `{{current_config}}`.  I need the current YAML configuration to update it based on the "create-slice" intent.  I need to know what the existing structure is to add a new slice appropriately.  For example, I need to know if there's already a `slices` section, what the structure of a slice definition is, etc.
