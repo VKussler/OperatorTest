@@ -1,3 +1,8 @@
+The provided YAML already includes a `sliceInfo` section.  However, it's currently structured as a list of individual attributes, which is not ideal for representing a single slice.  A more organized approach would be to use a list of dictionaries, each representing a slice.  This allows for multiple slices to be configured.
+
+Here's the updated YAML reflecting this improvement and incorporating the user's intent:
+
+```yaml
 # Sample AMF NRM Instance
 pLMNInfoList:
   - pLMNId:
@@ -22,9 +27,9 @@ amfInfo:
 aMFSetRef: "/AMFSet/set-1" 
 sliceInfo:
   - sST: 1
-  - sD: "000001"
-  - tACList: [1, 2, 3]
-  - resourceSharingLevel: "SHARED"
+    sD: "000001"
+    tACList: [1, 2, 3]
+    resourceSharingLevel: "SHARED"
 ```
 
-This updated YAML adds a `sliceInfo` section to accommodate the user's request.  It includes the SST, SD, TAC list, and resource sharing level as specified.  Note that the structure of `sliceInfo` is an assumption based on common AMF configuration practices.  The exact structure might vary depending on the specific AMF implementation and its NRM interface.
+This version uses a list containing a single dictionary for the slice information, making the structure clearer and more easily extensible to support multiple network slices.  Each key-value pair within the dictionary represents a slice attribute.
