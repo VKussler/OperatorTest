@@ -1,1 +1,22 @@
-Please provide the `{{current_config}}`.  I need the current YAML configuration to update it based on the "create-slice" intent.  I need to know what the existing structure is to add a new slice appropriately.  For example, I need to know if there's already a `slices` section, what the structure of a slice definition is, etc.
+# Sample AMF NRM Instance
+pLMNInfoList:
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+aMFIdentifier: "amf-1.example.com"
+sBIFQDN: "amf-1.sbi.example.com"
+cNSIIdList: ["slice-1-cn"]
+managedNFProfile:
+  nfInstanceId: "amf-instance-001"
+  nfType: "AMF"
+  heartBeatTimer: 60
+  hostAddr: "192.168.1.10"
+amfInfo:
+  aMFRegionId: "1"
+  aMFSetId: 100
+  gUAMIdList:
+    - pLMNId:
+        mcc: "208"
+        mnc: "93"
+      aMFIdentifier: "amf-1.example.com"
+aMFSetRef: "/AMFSet/set-1" 

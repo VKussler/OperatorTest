@@ -1,50 +1,22 @@
-The provided YAML configuration (`{{current_config}}`) is missing.  I need that YAML to update it according to the user's intent.  
-
-However, I can give you an example of how the YAML might look *before* and *after* the update, assuming a reasonable structure.  This assumes the configuration manages NRF registrations for different network slices.
-
-**Before (Example):**
-
-```yaml
-nrf_registrations:
-  - sst: 1
-    sd: 000001
-    plmn: 208-93
-    nfs:
-      - nf_id: nf1
-        nf_instance_id: instance1
-      - nf_id: nf2
-        nf_instance_id: instance2
-  - sst: 2
-    sd: 000002
-    plmn: 208-94
-    nfs:
-      - nf_id: nf3
-        nf_instance_id: instance3
-
-```
-
-**After (Example - assuming two new NFs, nf3 and nf4, were commissioned):**
-
-```yaml
-nrf_registrations:
-  - sst: 1
-    sd: 000001
-    plmn: 208-93
-    nfs:
-      - nf_id: nf1
-        nf_instance_id: instance1
-      - nf_id: nf2
-        nf_instance_id: instance2
-      - nf_id: nf3
-        nf_instance_id: instance3  # New NF
-      - nf_id: nf4
-        nf_instance_id: instance4  # New NF
-  - sst: 2
-    sd: 000002
-    plmn: 208-94
-    nfs:
-      - nf_id: nf3
-        nf_instance_id: instance3
-```
-
-To update your actual YAML, please provide the `{{current_config}}` content.  I will then modify it to include the new NFs for the specified network slice (SST: 1, SD: 000001, PLMN: 208-93).  You will also need to provide the `nf_id` and `nf_instance_id` for the newly commissioned NFs.
+# Sample NRF NRM Instance
+pLMNInfoList:
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+sBIFQDN: "nrf-1.sbi.example.com"
+nFProfileList:
+  - nfInstanceId: "nrf-instance-001"
+    nfType: "NRF"
+    nfStatus: "REGISTERED"
+    fqdn: "nrf-1.example.com"
+    nfServices:
+      - serviceInstanceId: "service-1"
+        serviceName: "nnrf-nfm"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+nrfInfo:
+  servedPcfInfo:
+    pcf-1: {}
+  servedAmfInfo:
+    amf-1: {} 

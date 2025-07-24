@@ -1,38 +1,14 @@
-To accurately update the YAML configuration, we need the `{{current_config}}` content.  However, I can provide you with the YAML structure showing how to add the new network slice selection.  You will need to integrate this into your existing structure.  Assume `{{current_config}}` contains a top-level element like `nssf` or a similar structure.
-
-
-**Example incorporating the new configuration:**
-
-```yaml
-nssf:
-  plmns:
-    - plmn_id: "208-93"
-      sst_sd_slice_profiles:
-        - sst: 1
-          sd: "000001"
-          slice_profile_id: "eMBB-profile-1"
-          # Add any other parameters needed for the slice selection here, e.g., QoS parameters
-    # ... other PLMNs ...
-
-# ... rest of the configuration ...
-```
-
-**Explanation:**
-
-* **`nssf`**:  This assumes your top-level element is named `nssf`. Adjust this if it's different in your `{{current_config}}`.
-* **`plmns`**: This section lists the PLMNs.
-* **`plmn_id`**:  This identifies the PLMN (208-93 in this case).
-* **`sst_sd_slice_profiles`**: This section lists the slice profiles for different SST and SD combinations within a PLMN.
-* **`sst`**:  The SST (Service Selection Type) value (1 in this case).
-* **`sd`**: The SD (Service Data) value ("000001" in this case).
-* **`slice_profile_id`**: The ID of the eMBB slice profile ("eMBB-profile-1" in this case).
-
-
-**How to Integrate:**
-
-1. **Replace `{{current_config}}`**:  Remove `{{current_config}}` from the YAML.
-2. **Identify the correct location**: Find the appropriate section in your existing YAML where you should add the new PLMN or update an existing one.  If "208-93" already exists, add the `sst_sd_slice_profiles` entry under it. If not, add a new entry for "208-93" under `plmns`.
-3. **Insert the new entry**: Paste the provided example, adjusting the `nssf` top-level element if necessary, into the correct location within your YAML file.
-
-
-Remember to replace placeholders like `# Add any other parameters needed for the slice selection here` with actual parameters if required by your NSSF configuration.  The exact structure might need minor adjustments depending on your specific NSSF implementation.  Consult your NSSF documentation for the precise format.
+# Sample NSSF NRM Instance
+pLMNInfoList:
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+sBIFQDN: "nssf-1.sbi.example.com"
+cNSIIdList: ["slice-1-cn"]
+managedNFProfile:
+  nfInstanceId: "nssf-instance-001"
+  nfType: "NSSF"
+  hostAddr: "192.168.1.12"
+commModelList:
+  - commModelType: "DIRECT_COMMUNICATION"
+    targetNFServiceList: ["nnrf-nfm"] 
