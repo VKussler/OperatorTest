@@ -64,6 +64,9 @@ spec:
       newdnn6:
         ipv4Subnet: 10.10.10.0/24
         pduSessionType: IPV4
+      fot:
+        ipv4Subnet: 10.10.10.0/24
+        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -102,6 +105,7 @@ spec:
       - dnn: IoT
       - dnn: userdnn5
       - dnn: newdnn6
+      - dnn: fot
       sNSSAI:
         sd: "000001"
         sst: 1
