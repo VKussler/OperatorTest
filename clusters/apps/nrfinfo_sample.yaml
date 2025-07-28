@@ -25,7 +25,12 @@ nrfInfo:
     sd: "000001"
     plmn: "208-93"
     nfList:
-      - nfInstanceId: "nf-instance-001" #Example, replace with actual NF instance IDs
-        nfType: "NF_TYPE" #Example, replace with actual NF type
-        nfStatus: "REGISTERED" #Example, replace with actual NF status
-        fqdn: "nf-1.example.com" #Example, replace with actual NF FQDN
+      - nfInstanceId: "nf-instance-001" 
+        nfType: "NF_TYPE" 
+        nfStatus: "REGISTERED" 
+        fqdn: "nf-1.example.com" 
+      # Add more NF instances here as needed.  Example below:
+      #- nfInstanceId: "nf-instance-002"
+      #  nfType: "AnotherNFType"
+      #  nfStatus: "REGISTERED"
+      #  fqdn: "nf-2.example.com"
