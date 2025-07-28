@@ -21,7 +21,7 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
-  sliceSupport: true # Added to explicitly show policy control support
+  sliceSupport: true
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
     targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
