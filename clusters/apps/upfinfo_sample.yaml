@@ -36,7 +36,7 @@ spec:
           iPv4AddrRangeStart: 12.1.1.128
         pduSessionTypes:
         - IPv4
-      - dnn: ora
+      - dnn: tor
         ipv4AddressRanges:
         - iPv4AddrRangeEnd: 13.1.1.255
           iPv4AddrRangeStart: 13.1.1.128
