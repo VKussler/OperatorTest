@@ -424,9 +424,7 @@ SessionManagementSubscriptionData:
             staticIpAddress:
                 - ipv4Addr: 12.1.1.100
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFF1F
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000100"
     - dnnConfigurations:
         foi:
@@ -495,9 +493,7 @@ SessionManagementSubscriptionData:
             staticIpAddress:
                 - ipv4Addr: 12.1.1.101
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000101"
     - dnnConfigurations:
         foi:
@@ -566,9 +562,7 @@ SessionManagementSubscriptionData:
             staticIpAddress:
                 - ipv4Addr: 12.1.1.102
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000102"
     - dnnConfigurations:
         foi:
@@ -637,9 +631,7 @@ SessionManagementSubscriptionData:
             staticIpAddress:
                 - ipv4Addr: 12.1.1.103
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000103"
     - dnnConfigurations:
         foi:
@@ -708,9 +700,7 @@ SessionManagementSubscriptionData:
             staticIpAddress:
                 - ipv4Addr: 12.1.1.104
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000104"
     - dnnConfigurations:
         foi:
@@ -779,9 +769,7 @@ SessionManagementSubscriptionData:
             staticIpAddress:
                 - ipv4Addr: 12.1.1.105
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000105"
     - dnnConfigurations:
         foi:
@@ -816,9 +804,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000106"
     - dnnConfigurations:
         foi:
@@ -853,9 +839,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000107"
     - dnnConfigurations:
         foi:
@@ -890,9 +874,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000109"
     - dnnConfigurations:
         foi:
@@ -927,9 +909,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000110"
     - dnnConfigurations:
         foi:
@@ -964,9 +944,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000111"
     - dnnConfigurations:
         foi:
@@ -1001,9 +979,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000112"
     - dnnConfigurations:
         foi:
@@ -1038,9 +1014,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000113"
     - dnnConfigurations:
         foi:
@@ -1075,9 +1049,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000114"
     - dnnConfigurations:
         foi:
@@ -1112,9 +1084,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000115"
     - dnnConfigurations:
         foi:
@@ -1149,9 +1119,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000116"
     - dnnConfigurations:
         foi:
@@ -1186,9 +1154,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000117"
     - dnnConfigurations:
         foi:
@@ -1223,9 +1189,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000118"
     - dnnConfigurations:
         foi:
@@ -1260,9 +1224,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000119"
     - dnnConfigurations:
         foi:
@@ -1297,7 +1259,5 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
+      singleNssai: '{"sst":1,"sd":"000001"}'
       ueid: "001010000000120"
