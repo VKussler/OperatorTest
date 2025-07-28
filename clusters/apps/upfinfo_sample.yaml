@@ -181,3 +181,18 @@ spec:
       sNssai:
         sd: "000001"
         sst: 1
+    - dnnUpfInfoList:
+      - dnn: internet
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 172.19.0.255
+          iPv4AddrRangeStart: 172.19.0.0
+        pduSessionTypes:
+        - IPv4
+      - dnn: iot
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 172.20.0.255
+          iPv4AddrRangeStart: 172.20.0.0
+        pduSessionTypes:
+        - IPv4
+      - dnn: kok
+        ipv4AddressRanges
