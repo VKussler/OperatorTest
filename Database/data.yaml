@@ -911,7 +911,7 @@ SessionManagementSubscriptionData:
           defaultSscMode: 'SSC_MODE_1'
         '5gQosProfile':
           '5qi': 6
-          arp:org
+          arp:
             priorityLevel: 1
             preemptCap: 'NOT_PREEMPT'
             preemptVuln: 'NOT_PREEMPTABLE'
