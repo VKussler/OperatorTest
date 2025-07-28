@@ -42,12 +42,6 @@ spec:
           iPv4AddrRangeStart: 13.1.1.128
         pduSessionTypes:
         - IPv4
-      - dnn: tor
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.2.255
-          iPv4AddrRangeStart: 13.1.2.0
-        pduSessionTypes:
-        - IPv4
       sNssai:
         sd: FFFFFF
         sst: 1
