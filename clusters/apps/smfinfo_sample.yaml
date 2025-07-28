@@ -123,3 +123,8 @@ spec:
       sNSSAI:
         sd: 004001
         sst: 43
+    - dnnSmfInfoList:
+      - dnn: kok
+      sNSSAI:
+        sd: 004001
+        sst: 43
