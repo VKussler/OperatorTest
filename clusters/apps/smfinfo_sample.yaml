@@ -59,6 +59,7 @@ spec:
       - dnn: ims
       - dnn: internet
       - dnn: internet
+      - dnn: internet
       sNSSAI:
         sd: "000001"
         sst: 1
