@@ -131,3 +131,8 @@ spec:
       sNSSAI:
         sd: 000401
         sst: 4
+    - dnnSmfInfoList:
+      - dnn: tst
+      sNSSAI:
+        sd: FFFFFF
+        sst: 1
