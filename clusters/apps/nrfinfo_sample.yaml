@@ -21,8 +21,8 @@ nrfInfo:
   servedAmfInfo:
     amf-1: {}
   servedNfInfo: # Updated to include all newly commissioned NFs
-    sst: "1"
-    sd: "000001"
+    sst: "4"
+    sd: "000401"
     plmn: "208-93"
     nfList:
       - nfInstanceId: "nf-instance-001" 
