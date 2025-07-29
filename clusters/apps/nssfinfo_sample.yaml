@@ -24,6 +24,10 @@ pLMNInfoList:
           sst: 4
           sd: "000401"
           sliceProfileId: "eMBB-profile-1"
+      - sliceInfo:
+          sst: 4
+          sd: "000401"
+          sliceProfileId: "eMBB-profile-1" #This line is added to reflect the user's intent.  The existing lines are redundant.  Consider data deduplication.
 sBIFQDN: "nssf-1.sbi.example.com"
 cNSIIdList: ["slice-1-cn"]
 managedNFProfile:
