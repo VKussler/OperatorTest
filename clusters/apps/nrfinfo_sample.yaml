@@ -19,29 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  servedNfInfo: # Updated to include all newly commissioned NFs
-    sst: "4"
-    sd: "000401"
-    plmn: "208-93"
-    nfList:
-      - nfInstanceId: "nf-instance-001" 
-        nfType: "Example NF Type" 
-        nfStatus: "REGISTERED" 
-        fqdn: "nf-1.example.com" 
-        nfServices:
-          - serviceInstanceId: "service-2" 
-            serviceName: "Example NF Service" 
-            versions: ["1.0.0"] 
-            schema: "oas3" 
-            nfServiceStatus: "REGISTERED" 
-      - nfInstanceId: "nf-instance-002" 
-        nfType: "Example NF Type 2"
-        nfStatus: "REGISTERED"
-        fqdn: "nf-2.example.com"
-        nfServices:
-          - serviceInstanceId: "service-3"
-            serviceName: "Example NF Service 2"
-            versions: ["1.1.0"]
-            schema: "oas3"
-            nfServiceStatus: "REGISTERED"
+    amf-1: {} 
