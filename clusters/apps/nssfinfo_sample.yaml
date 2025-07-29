@@ -20,6 +20,10 @@ pLMNInfoList:
           sst: 4
           sd: "000401"
           sliceProfileId: "eMBB-profile-1"
+      - sliceInfo:
+          sst: 4
+          sd: "000401"
+          sliceProfileId: "eMBB-profile-1"
 sBIFQDN: "nssf-1.sbi.example.com"
 cNSIIdList: ["slice-1-cn"]
 managedNFProfile:
