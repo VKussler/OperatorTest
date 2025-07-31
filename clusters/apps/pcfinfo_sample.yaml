@@ -3,16 +3,29 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
+  - pLMNId: # Added for new slice
+      mcc: "208"
+      mnc: "93"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
   nfType: "PCF"
   hostAddr: "192.168.1.11"
 pcfInfo:
-  dnnList: ["internet", "iot"]
+  dnnList: ["internet", "iot", "slice-000401"] # Added DNN for new slice
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
+    - start: "208930000100000" # Added SUPI range for new slice.  Adjust range as needed.
+      end: "208930001000000" # Added SUPI range for new slice. Adjust range as needed.  This assumes 1M UEs.
+  sliceInfoList: # Added slice info
+    - sst: 4
+      sd: "000401"
+      maxUEs: 1000000
+      dlLatency: 10
+      ulLatency: 15
+      dlThroughput: 1000
+      ulThroughput: 500
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
