@@ -19,21 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  servedNfInfo: # Added to include newly commissioned NFs
-    sst: "4"
-    sd: "000401"
-    plmn: "208-93"
-    nfList: [] # Add newly commissioned NF instances here.  Example below.
-
-    #Example of adding a new NF instance.  Replace with actual NF details.
-    # - nfInstanceId: "nf-instance-002"
-    #   nfType: "PCF"
-    #   nfStatus: "REGISTERED"
-    #   fqdn: "pcf-2.example.com"
-    #   nfServices:
-    #     - serviceInstanceId: "service-2"
-    #       serviceName: "nnrf-pcf"
-    #       versions: ["1.0.0"]
-    #       schema: "oas3"
-    #       nfServiceStatus: "REGISTERED"
+    amf-1: {} 
