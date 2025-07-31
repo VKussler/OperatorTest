@@ -20,3 +20,4 @@ nrfInfo:
     pcf-1: {}
   servedAmfInfo:
     amf-1: {} 
+cNSIIdList: ["4-000401-208-93"]
