@@ -28,6 +28,9 @@ spec:
       internet:
         ipv4Subnet: 10.1.1.0/24
         pduSessionType: IPV4
+      new_internet:
+        ipv4Subnet: 10.2.2.0/24
+        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -62,7 +65,7 @@ spec:
         sd: "000401"
         sst: 4
     - dnnSmfInfoList:
-      []
+      - dnn: internet
       sNSSAI:
         sd: "AC4781"
         sst: 179
