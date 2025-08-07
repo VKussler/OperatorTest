@@ -22,3 +22,4 @@ nrfInfo:
     amf-1: {}
 cNSIIdList:
   - test-slice
+  - unnamed-slice
