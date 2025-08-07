@@ -52,12 +52,6 @@ spec:
           iPv4AddrRangeStart: 14.1.1.0
         pduSessionTypes:
         - IPv4v6
-      - dnn: beta-dnn
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 10.228.120.255
-          iPv4AddrRangeStart: 10.228.120.0
-        pduSessionTypes:
-        - IPV4
       sNssai:
         sd: "000001"
         sst: 1
