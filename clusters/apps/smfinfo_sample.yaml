@@ -25,6 +25,9 @@ spec:
       ora:
         ipv4Subnet: 13.1.1.0/24
         pduSessionType: IPV4
+      zeta-dnn:
+        ipv4Subnet: 192.186.68.0/24
+        pduSessionType: IPV6
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -52,4 +55,9 @@ spec:
       - dnn: ims
       sNSSAI:
         sd: "000001"
+        sst: 1
+    - dnnSmfInfoList:
+      - dnn: zeta-dnn
+      sNSSAI:
+        sd: FFFFFF
         sst: 1
