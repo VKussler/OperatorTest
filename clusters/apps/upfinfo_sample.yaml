@@ -65,3 +65,13 @@ spec:
       sNssai:
         sd: "000401"
         sst: 4
+    - dnnUpfInfoList:
+      - dnn: internet
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 16.1.1.255
+          iPv4AddrRangeStart: 16.1.1.0
+        pduSessionTypes:
+        - IPv4
+      sNssai:
+        sd: AC4781
+        sst: 179
