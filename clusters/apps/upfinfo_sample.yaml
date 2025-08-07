@@ -55,13 +55,3 @@ spec:
       sNssai:
         sd: "000001"
         sst: 1
-    - dnnUpfInfoList:
-      - dnn: newdnn
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 15.1.1.255
-          iPv4AddrRangeStart: 15.1.1.0
-        pduSessionTypes:
-        - IPv4
-      sNssai:
-        sd: "D101A6"
-        sst: 1
