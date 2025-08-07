@@ -9,7 +9,7 @@ managedNFProfile:
   nfType: "PCF"
   hostAddr: "192.168.1.11"
 pcfInfo:
-  dnnList: ["internet", "iot", "internet2"]
+  dnnList: ["internet", "iot"]
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
