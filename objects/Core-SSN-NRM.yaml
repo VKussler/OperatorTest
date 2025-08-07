@@ -5,7 +5,7 @@ attributes:
   administrativeState: "unlocked"
   nsInfo:
     # Supported as this is a virtualized environment
-    nsInstanceId: "slice_test"
+    nsInstanceId: "slice-subnet-1-ns-instance-001"
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
