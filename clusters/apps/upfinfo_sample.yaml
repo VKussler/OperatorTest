@@ -55,3 +55,8 @@ spec:
       sNssai:
         sd: "000001"
         sst: 1
+    - dnnUpfInfoList:
+      []
+      sNssai:
+        sd: "D927FD"
+        sst: 220
