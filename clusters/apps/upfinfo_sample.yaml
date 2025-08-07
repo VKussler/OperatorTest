@@ -52,6 +52,12 @@ spec:
           iPv4AddrRangeStart: 14.1.1.0
         pduSessionTypes:
         - IPv4v6
+      - dnn: prod-dnn
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 172.252.239.255
+          iPv4AddrRangeStart: 172.252.239.0
+        pduSessionTypes:
+        - IPV6
       sNssai:
         sd: "000001"
         sst: 1
