@@ -1,5 +1,5 @@
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create a new slice named prod-slice with sst 207 and sd CB1A1C
+# Intent: SLICE CREATE alpha-slice 102 30D561
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -9,14 +9,14 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "prod-slice"
+    - sliceProfileId: "alpha-slice"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 207
-            sd: "CB1A1C"
+            sst: 102
+            sd: "30D561"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
