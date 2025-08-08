@@ -43,3 +43,8 @@ spec:
       mcc: "001"
       mnc: "01"
   sBIFQDN:
+  sNssaiSmfInfoList:
+  - sNSSAI:
+      sst: 4
+      sd: "000401"
+    dnnSmfInfoList: []
