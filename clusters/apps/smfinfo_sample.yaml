@@ -34,30 +34,3 @@ spec:
         sessionAmbrDl: 200Mbps
         sessionAmbrUl: 100Mbps
       1-FFFFFF:
-        fiveQi: 5
-        sessionAmbrDl: 400Mbps
-        sessionAmbrUl: 200Mbps
-  nRTAClist: "0"
-  pLMNInfoList:
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-  sBIFQDN: smfinfo-sample.example.com
-  smfInfo:
-    sNssaiSmfInfoList:
-    - dnnSmfInfoList:
-      - dnn: oai
-      - dnn: ora
-      sNSSAI:
-        sd: FFFFFF
-        sst: 1
-    - dnnSmfInfoList:
-      - dnn: ims
-      sNSSAI:
-        sd: "000001"
-        sst: 1
-    - dnnSmfInfoList:
-      - dnn: internet
-      sNSSAI:
-        sd: "000401"
-        sst: 4
