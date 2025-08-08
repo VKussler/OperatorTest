@@ -25,6 +25,9 @@ spec:
       ora:
         ipv4Subnet: 13.1.1.0/24
         pduSessionType: IPV4
+      internet:
+        ipv4Subnet: 14.1.1.0/24
+        pduSessionType: IPV4V6
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -39,21 +42,4 @@ spec:
   - pLMNId:
       mcc: "001"
       mnc: "01"
-  sBIFQDN: smfinfo-sample.example.com
-  smfInfo:
-    sNssaiSmfInfoList:
-    - dnnSmfInfoList:
-      - dnn: oai
-      - dnn: ora
-      sNSSAI:
-        sd: FFFFFF
-        sst: 1
-    - dnnSmfInfoList:
-      - dnn: ims
-      sNSSAI:
-        sd: "000001"
-        sst: 1
-    - dnnSmfInfoList: []
-      sNSSAI:
-        sd: "000401"
-        sst: 4
+  sBIFQDN: smfinfo
