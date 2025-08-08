@@ -25,6 +25,9 @@ spec:
       ora:
         ipv4Subnet: 13.1.1.0/24
         pduSessionType: IPV4
+      internet:
+        ipv4Subnet: 192.168.1.0/24 #Example subnet.  Should be configured appropriately.
+        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -54,7 +57,7 @@ spec:
         sd: "000001"
         sst: 1
     - dnnSmfInfoList:
-      []
+      - dnn: internet
       sNSSAI:
         sd: "960D91"
         sst: 249
