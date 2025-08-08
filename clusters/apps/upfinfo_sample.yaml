@@ -55,13 +55,3 @@ spec:
       sNssai:
         sd: "000001"
         sst: 1
-    - dnnUpfInfoList:
-      - dnn: zeta-dnn
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 192.186.68.255
-          iPv4AddrRangeStart: 192.186.68.0
-        pduSessionTypes:
-        - IPv6
-      sNssai:
-        sd: FFFFFF
-        sst: 1
