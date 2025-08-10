@@ -16,23 +16,3 @@ spec:
   - pLMNId:
       mcc: "001"
       mnc: "01"
-    sNSSAI:
-      sd: FFFFFF
-      sst: 1
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-    sNSSAI:
-      sd: "000001"
-      sst: 1
-  supportedBMOList:
-  - BMO1
-  upfInfo:
-    sNssaiUpfInfoList:
-    - sNssai:
-        sd: "616513"
-        sst: 47
-      dnnUpfInfoList:
-      - dnn: internet
-        pduSessionTypes:
-        - IPV4
