@@ -11,6 +11,9 @@ spec:
     - sst: 47
       sd: "616513"
       dnnSmfInfoList: []
+    - sst: 47
+      sd: "616513"
+      dnnSmfInfoList: []
   missingElements:
     dnnConfigs:
       internet:
