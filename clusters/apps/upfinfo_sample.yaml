@@ -55,7 +55,11 @@ spec:
       sNssai:
         sd: "000001"
         sst: 1
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+      - dnn: internet
+        pduSessionTypes:
+        - IPv4
+        ipv4AddressRanges: []
       sNssai:
         sd: "C28BD6"
         sst: 205
