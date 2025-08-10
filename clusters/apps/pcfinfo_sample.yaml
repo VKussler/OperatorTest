@@ -13,6 +13,11 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
+  snssaiInfo:
+    alpha-slice:
+      sNssai:
+        sst: 88
+        sd: "18677E"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
