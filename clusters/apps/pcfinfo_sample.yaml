@@ -1,18 +1,62 @@
-# Sample PCF NRM Instance
-pLMNInfoList:
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-sBIFQDN: "pcf-1.sbi.example.com"
-managedNFProfile:
-  nfInstanceId: "pcf-instance-001"
-  nfType: "PCF"
-  hostAddr: "192.168.1.11"
-pcfInfo:
-  dnnList: ["internet", "iot"]
-  supiRanges:
-    - start: "208930000000000"
-      end: "208930000099999"
-commModelList:
-  - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+# pcf-slice-config.yaml
+apiVersion: pcf.example.com/v1alpha1
+kind: SliceConfig
+metadata:
+  name: my-slice-config
+spec:
+  # Slice Configuration
+  slice:
+    # Slice ID (S-NSSAI)
+    sNssai:
+      sst: 1
+      sd: "000001"
+
+    # Allowed Service(s)
+    allowedServices:
+      - serviceName: "ims"
+        qos:
+          priorityLevel: 1
+          packetDelayBudget: 50
+          packetErrorRate: "10^-6"
+      - serviceName: "video"
+        qos:
+          priorityLevel: 3
+          packetDelayBudget: 100
+          packetErrorRate: "10^-3"
+
+    # Network Slice Instance (NSI) Parameters
+    nsiParameters:
+      maxNumberofUEs: 1000
+      coverageArea: "Urban"
+      latency: 20  # milliseconds
+
+  # Policy Association Configuration
+  policyAssociations:
+    - policyType: "QosPolicy"
+      policyName: "qos-policy-ims"
+      serviceName: "ims"
+    - policyType: "ChargingPolicy"
+      policyName: "charging-policy-video"
+      serviceName: "video"
+
+  # Application Detection Configuration (Optional)
+  applicationDetection:
+    enabled: true
+    applicationFilters:
+      - applicationName: "Zoom"
+        flowDescription: "udp,5000-5010"
+      - applicationName: "YouTube"
+        flowDescription: "tcp,80,443"
+
+  # Network Slice Selection Policy (NSSP) Configuration (Optional)
+  nssp:
+    priority: 10
+    expression: "device.type == 'URLLC'"
+
+  # Data Network Name (DNN) Configuration (Optional)
+  dnn:
+    dnnName: "internet"
+    qosProfile:
+      priorityLevel: 5
+      packetDelayBudget: 150
+      packetErrorRate: "10^-2"
