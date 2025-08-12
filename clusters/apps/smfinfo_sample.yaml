@@ -1,22 +1,8 @@
-string: "This is a string."
-another_string: 'This is also a string.'
-string_with_quotes: "This string contains \"quotes\"."
-string_with_escaped_newline: "This string has an escaped newline: \\n"
-string_with_newline: |
-  This string
-  has a newline.
-string_with_multiline_literal: |
-  This is a multi-line
-  literal string.
-  It preserves newlines.
-string_with_multiline_folded: >
-  This is a multi-line
-  folded string.
-  It folds newlines into spaces
-  unless there are blank lines.
-
-  Blank lines are preserved.
-string_with_unicode: "This string contains Unicode: こんにちは"
-string_with_special_chars: "This string contains special characters: !@#$%^&*()"
+string: This is a string.
+another_string: "This string has quotes."
+multiline_string: |
+  This is a multiline
+  string.  It can span
+  multiple lines.
+string_with_escapes: "This string has a \\ backslash and a \" quote."
 empty_string: ""
-string_with_leading_and_trailing_spaces: "  This string has leading and trailing spaces.  "
