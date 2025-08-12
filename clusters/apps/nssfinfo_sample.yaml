@@ -3,6 +3,6 @@ another_string: "This string has quotes."
 multiline_string: |
   This is a multiline string.
   It can span multiple lines.
-  And retain the formatting.
-string_with_escapes: "This string has \\escapes\\ and \"quotes\"."
+  And preserve the formatting.
+string_with_escapes: "This string has \\escapes and \"quotes\"."
 empty_string: ""
