@@ -1,14 +1,9 @@
-# Sample NSSF NRM Instance
-pLMNInfoList:
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn"]
-managedNFProfile:
-  nfInstanceId: "nssf-instance-001"
-  nfType: "NSSF"
-  hostAddr: "192.168.1.12"
-commModelList:
-  - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"] 
+string: This is a string value.
+another_string: "This string is enclosed in double quotes."
+string_with_newlines: |
+  This string has
+  multiple lines.
+  Each line is preserved.
+string_with_escapes: "This string has a \\ backslash and a \" quote."
+empty_string: ""
+string_with_leading_and_trailing_spaces: "   This string has spaces around it.   "
