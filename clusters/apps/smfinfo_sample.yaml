@@ -1,63 +1,55 @@
-The term "smf-slice-config" refers to the configuration of a network slice within a 5G Service Management Function (SMF). Let's break down what that means and why it's important:
-
-**Understanding the Components**
-
-*   **5G:** The fifth generation of wireless technology, offering significantly faster speeds, lower latency, and greater capacity compared to 4G.
-
-*   **Network Slicing:** A key feature of 5G that allows a single physical network infrastructure to be divided into multiple virtual networks, each tailored to the specific requirements of different applications or services.  Think of it like having multiple dedicated networks running on the same hardware.
-
-*   **SMF (Service Management Function):** A core network function in the 5G architecture responsible for session management and policy enforcement. It handles tasks like:
-    *   Session establishment and modification
-    *   User authentication and authorization
-    *   Policy control (QoS, charging, etc.)
-    *   Traffic routing
-
-*   **Slice:** A logical end-to-end network tailored to a specific use case with defined characteristics (e.g., bandwidth, latency, security). Examples include:
-    *   **eMBB (enhanced Mobile Broadband):** High-speed internet access for smartphones and other devices.
-    *   **URLLC (Ultra-Reliable Low Latency Communications):** Critical applications like autonomous vehicles, industrial automation, and remote surgery.
-    *   **mMTC (massive Machine-Type Communications):** Connecting a large number of IoT devices, such as sensors and smart meters.
-
-**What is `smf-slice-config`?**
-
-`smf-slice-config` represents the configuration parameters and settings that define how the SMF manages and controls a specific network slice.  It's essentially the blueprint that tells the SMF how to handle traffic and resources for that slice.  This configuration includes:
-
-*   **Slice Identifier (S-NSSAI):** A unique identifier that distinguishes one slice from another (Single Network Slice Selection Assistance Information).  This is crucial for routing traffic to the correct slice.
-
-*   **QoS (Quality of Service) Parameters:** Defines the priority, bandwidth, latency, and other performance characteristics for the slice.  This ensures that the slice meets the specific requirements of its intended use case.
-
-*   **Policy Rules:** Specifies how the SMF should enforce policies related to the slice, such as:
-    *   Charging policies (how users are billed for using the slice)
-    *   Access control policies (who is allowed to use the slice)
-    *   Traffic routing policies (how traffic is routed within the slice)
-
-*   **Security Parameters:** Defines the security measures to protect the slice from unauthorized access and attacks.
-
-*   **Network Functions (NF) Association:**  Specifies which other network functions (e.g., UPF - User Plane Function) are associated with the slice and how they interact with the SMF.
-
-*   **DNN (Data Network Name):**  Identifies the specific data network (e.g., internet, private network) that the slice connects to.
-
-**Why is `smf-slice-config` Important?**
-
-*   **Enables Network Slicing:**  Without proper configuration, network slicing wouldn't be possible. The `smf-slice-config` is essential for creating and managing the virtual networks.
-
-*   **Service Differentiation:**  Allows operators to offer different services with varying levels of performance and quality, catering to a wider range of customers and use cases.
-
-*   **Resource Optimization:**  Ensures that network resources are allocated efficiently, based on the specific needs of each slice.
-
-*   **Flexibility and Scalability:**  Makes it easier to adapt the network to changing demands and add new services.
-
-*   **Revenue Generation:**  Enables operators to create new revenue streams by offering customized network slices to different industries and customers.
-
-**Example Scenario**
-
-Imagine a 5G network operator wants to offer two slices:
-
-1.  **eMBB Slice:** For high-speed internet access.  `smf-slice-config` for this slice would prioritize high bandwidth and low latency, but might have less stringent security requirements.
-
-2.  **URLLC Slice:** For autonomous vehicles.  `smf-slice-config` would prioritize ultra-low latency and extremely high reliability, even if it means sacrificing some bandwidth.  Strong security measures would also be critical.
-
-The SMF uses the `smf-slice-config` for each slice to ensure that traffic is handled according to the defined parameters.
-
-**In Summary**
-
-`smf-slice-config` is a critical set of configuration parameters that define how the SMF manages and controls network slices in a 5G network. It's essential for enabling network slicing, service differentiation, resource optimization, and flexibility, allowing operators to offer customized network services to a wide range of customers and applications.  It's a key enabler for the full potential of 5G technology.
+apiVersion: cm-5gc.com/v1alpha1
+kind: SmfInfo
+metadata:
+  labels:
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: op-smf
+  name: smfinfo-sample
+  namespace: default
+spec:
+  commModelList:
+  - commModelType: DIRECT_COMMUNICATION_WO_NRF
+  managedNFProfile:
+    capacity: 10
+    hostAddr: 127.0.0.1
+    nfType:
+    - SMF
+  missingElements:
+    dnnConfigs:
+      ims:
+        ipv4Subnet: 14.1.1.0/24
+        pduSessionType: IPV4V6
+      oai:
+        ipv4Subnet: 12.1.1.0/24
+        pduSessionType: IPV4
+      ora:
+        ipv4Subnet: 13.1.1.0/24
+        pduSessionType: IPV4
+    snssaiConfigs:
+      1-000001:
+        fiveQi: 2
+        sessionAmbrDl: 200Mbps
+        sessionAmbrUl: 100Mbps
+      1-FFFFFF:
+        fiveQi: 5
+        sessionAmbrDl: 400Mbps
+        sessionAmbrUl: 200Mbps
+  nRTAClist: "0"
+  pLMNInfoList:
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+  sBIFQDN: smfinfo-sample.example.com
+  smfInfo:
+    sNssaiSmfInfoList:
+    - dnnSmfInfoList:
+      - dnn: oai
+      - dnn: ora
+      sNSSAI:
+        sd: FFFFFF
+        sst: 1
+    - dnnSmfInfoList:
+      - dnn: ims
+      sNSSAI:
+        sd: "000001"
+        sst: 1

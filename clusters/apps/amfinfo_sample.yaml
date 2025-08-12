@@ -1,73 +1,22 @@
-# AMF Slice Configuration Example
-
-# This file defines the configuration for a network slice served by the AMF.
-# It includes details about the slice's S-NSSAI, allowed PLMNs, and supported services.
-
-slice_configurations:
-  - s_nssai:
-      sst: 1  # Slice/Service Type (e.g., eMBB)
-      sd: "010203"  # Slice Differentiator (optional)
-
-    plmn_list:
-      - mcc: "310"  # Mobile Country Code
-        mnc: "260"  # Mobile Network Code
-
-    allowed_services:
-      - service_name: "voice"
-        priority: 1
-        qos_profile:
-          qci: 5  # QoS Class Identifier
-          arp: 7  # Allocation and Retention Priority
-
-      - service_name: "data"
-        priority: 2
-        qos_profile:
-          qci: 9
-          arp: 8
-
-    supported_features:
-      - feature_name: "location_reporting"
-        enabled: true
-
-      - feature_name: "mobility_management"
-        enabled: true
-
-  - s_nssai:
-      sst: 2  # Slice/Service Type (e.g., URLLC)
-      sd: "112233"  # Slice Differentiator (optional)
-
-    plmn_list:
-      - mcc: "310"  # Mobile Country Code
-        mnc: "260"  # Mobile Network Code
-
-    allowed_services:
-      - service_name: "industrial_control"
-        priority: 1
-        qos_profile:
-          qci: 1  # QoS Class Identifier
-          arp: 2  # Allocation and Retention Priority
-          pdb: 50 # Packet Delay Budget (ms)
-          per: 1e-5 # Packet Error Rate
-
-    supported_features:
-      - feature_name: "time_sensitive_networking"
-        enabled: true
-      - feature_name: "deterministic_communication"
-        enabled: true
-
-# Default Slice Configuration (used if no specific slice is matched)
-default_slice:
-  s_nssai:
-    sst: 0  # Default Slice/Service Type
-    sd: "FFFFFF" # Default Slice Differentiator
-
-  plmn_list:
-    - mcc: "310"
-      mnc: "260"
-
-  allowed_services:
-    - service_name: "default_data"
-      priority: 3
-      qos_profile:
-        qci: 9
-        arp: 9
+# Sample AMF NRM Instance
+pLMNInfoList:
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+aMFIdentifier: "amf-1.example.com"
+sBIFQDN: "amf-1.sbi.example.com"
+cNSIIdList: ["slice-1-cn"]
+managedNFProfile:
+  nfInstanceId: "amf-instance-001"
+  nfType: "AMF"
+  heartBeatTimer: 60
+  hostAddr: "192.168.1.10"
+amfInfo:
+  aMFRegionId: "1"
+  aMFSetId: 100
+  gUAMIdList:
+    - pLMNId:
+        mcc: "208"
+        mnc: "93"
+      aMFIdentifier: "amf-1.example.com"
+aMFSetRef: "/AMFSet/set-1" 

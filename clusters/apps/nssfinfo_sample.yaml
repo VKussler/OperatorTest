@@ -1,133 +1,14 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: nssf-slice-selection-configuration
-  namespace: free5gc
-data:
-  slice-selection-configuration.yaml: |
-    # This configuration file is used to configure the NSSF behavior for slice selection.
-    # It defines the mapping between the UE's SUPI/DNN and the allowed S-NSSAI(s).
-
-    # Default configuration for all UEs.  If a UE doesn't match any specific entry
-    # in the ue_configurations section, this configuration will be used.
-    default_configuration:
-      # List of allowed S-NSSAIs.  The NSSF will select one of these S-NSSAIs
-      # based on the configured selection algorithm.
-      allowed_snssais:
-        - sst: 1 # eMBB
-          sd: "010203"
-        - sst: 2 # URLLC
-          sd: "112233"
-        - sst: 3 # MIoT
-          sd: "445566"
-
-      # Selection algorithm to use for selecting an S-NSSAI from the allowed_snssais list.
-      # Possible values:
-      #   - "priority": Select the S-NSSAI with the highest priority (lowest priority value).
-      #   - "random": Select an S-NSSAI randomly from the list.
-      #   - "ordered": Select the first S-NSSAI in the list.
-      selection_algorithm: "priority"
-
-      # Priority values for each S-NSSAI.  Used when the selection_algorithm is set to "priority".
-      # The lower the value, the higher the priority.  If a priority is not specified for an
-      # S-NSSAI, it will be assigned a default priority of 100.
-      snssai_priorities:
-        - sst: 1 # eMBB
-          sd: "010203"
-          priority: 10
-
-        - sst: 2 # URLLC
-          sd: "112233"
-          priority: 20
-
-        - sst: 3 # MIoT
-          sd: "445566"
-          priority: 30
-
-    # Configuration for specific UEs based on their SUPI and/or DNN.
-    ue_configurations:
-      - supi_ranges:
-          - start: "208930000000001"
-            end: "208930000000010"
-        dnn_list:
-          - internet
-        configuration:
-          allowed_snssais:
-            - sst: 1 # eMBB
-              sd: "010203"
-          selection_algorithm: "ordered"
-
-      - supi_ranges:
-          - start: "208930000000011"
-            end: "208930000000020"
-        dnn_list:
-          - internet
-        configuration:
-          allowed_snssais:
-            - sst: 2 # URLLC
-              sd: "112233"
-          selection_algorithm: "ordered"
-
-      - supi_ranges:
-          - start: "208930000000021"
-            end: "208930000000030"
-        dnn_list:
-          - internet
-        configuration:
-          allowed_snssais:
-            - sst: 3 # MIoT
-              sd: "445566"
-          selection_algorithm: "ordered"
-
-      - supi_ranges:
-          - start: "208930000000031"
-            end: "208930000000040"
-        dnn_list:
-          - internet
-        configuration:
-          allowed_snssais:
-            - sst: 1 # eMBB
-              sd: "010203"
-            - sst: 2 # URLLC
-              sd: "112233"
-          selection_algorithm: "random"
-
-      - supi_ranges:
-          - start: "208930000000041"
-            end: "208930000000050"
-        dnn_list:
-          - internet
-        configuration:
-          allowed_snssais:
-            - sst: 1 # eMBB
-              sd: "010203"
-            - sst: 2 # URLLC
-              sd: "112233"
-            - sst: 3 # MIoT
-              sd: "445566"
-          selection_algorithm: "priority"
-          snssai_priorities:
-            - sst: 1 # eMBB
-              sd: "010203"
-              priority: 1
-            - sst: 2 # URLLC
-              sd: "112233"
-              priority: 2
-            - sst: 3 # MIoT
-              sd: "445566"
-              priority: 3
-
-    # Configuration for network slices.  This section defines the properties of each
-    # S-NSSAI, such as the AMF set to use for the slice.
-    slice_configurations:
-      - sst: 1 # eMBB
-        sd: "010203"
-        amf_set: "amf-set-1"
-
-      - sst: 2 # URLLC
-        sd: "112233"
-        amf_set: "amf-set-2"
-
-      - sst: 3 # MIoT
-        sd: "445566"
-        amf_set: "amf-set-3"
+# Sample NSSF NRM Instance
+pLMNInfoList:
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+sBIFQDN: "nssf-1.sbi.example.com"
+cNSIIdList: ["slice-1-cn"]
+managedNFProfile:
+  nfInstanceId: "nssf-instance-001"
+  nfType: "NSSF"
+  hostAddr: "192.168.1.12"
+commModelList:
+  - commModelType: "DIRECT_COMMUNICATION"
+    targetNFServiceList: ["nnrf-nfm"] 
