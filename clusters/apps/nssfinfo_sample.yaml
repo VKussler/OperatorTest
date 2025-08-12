@@ -1,15 +1,14 @@
-string: "This is a string."
-another_string: 'This is also a string.'
-string_with_quotes: "This string contains \"quotes\"."
-string_with_escapes: "This string has a \\ backslash and a \n newline."
-multiline_string_literal: |
-  This is a
-  multiline string
-  literal.
-multiline_string_folded: >
-  This is a
-  multiline string
-  folded.  It will be on one line with spaces.
-string_with_unicode: "This string contains Unicode: こんにちは"
-empty_string: ""
-string_with_leading_and_trailing_whitespace: "   This string has whitespace.   "
+# Sample NSSF NRM Instance
+pLMNInfoList:
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+sBIFQDN: "nssf-1.sbi.example.com"
+cNSIIdList: ["slice-1-cn"]
+managedNFProfile:
+  nfInstanceId: "nssf-instance-001"
+  nfType: "NSSF"
+  hostAddr: "192.168.1.12"
+commModelList:
+  - commModelType: "DIRECT_COMMUNICATION"
+    targetNFServiceList: ["nnrf-nfm"] 
