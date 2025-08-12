@@ -388,23 +388,6 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.100
         ora:
             5gQosProfile:
                 5qi: 1
@@ -458,23 +441,6 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.100
         ora:
             5gQosProfile:
                 5qi: 1
@@ -528,23 +494,6 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.100
         ora:
             5gQosProfile:
                 5qi: 1
@@ -598,23 +547,6 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.100
         ora:
             5gQosProfile:
                 5qi: 1
@@ -668,23 +600,6 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.100
         ora:
             5gQosProfile:
                 5qi: 1
@@ -738,23 +653,6 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.100
         ora:
             5gQosProfile:
                 5qi: 1
@@ -793,21 +691,6 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
         sd: Fgr3
@@ -821,21 +704,6 @@ SessionManagementSubscriptionData:
                     preemptCap: NOT_PREEMPT
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
                 priorityLevel: 1
             pduSessionTypes:
                 defaultSessionType: IPV4
@@ -865,21 +733,6 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
         sd: Fgr3
@@ -893,21 +746,6 @@ SessionManagementSubscriptionData:
                     preemptCap: NOT_PREEMPT
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
                 priorityLevel: 1
             pduSessionTypes:
                 defaultSessionType: IPV4
@@ -937,21 +775,6 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
         sd: Fgr3
@@ -965,21 +788,6 @@ SessionManagementSubscriptionData:
                     preemptCap: NOT_PREEMPT
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
                 priorityLevel: 1
             pduSessionTypes:
                 defaultSessionType: IPV4
@@ -1009,21 +817,6 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
         sd: Fgr3
@@ -1037,21 +830,6 @@ SessionManagementSubscriptionData:
                     preemptCap: NOT_PREEMPT
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
                 priorityLevel: 1
             pduSessionTypes:
                 defaultSessionType: IPV4
@@ -1081,21 +859,6 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
         sd: Fgr3
@@ -1109,21 +872,6 @@ SessionManagementSubscriptionData:
                     preemptCap: NOT_PREEMPT
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
                 priorityLevel: 1
             pduSessionTypes:
                 defaultSessionType: IPV4
@@ -1153,21 +901,6 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
         sd: Fgr3
@@ -1181,21 +914,6 @@ SessionManagementSubscriptionData:
                     preemptCap: NOT_PREEMPT
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
                 priorityLevel: 1
             pduSessionTypes:
                 defaultSessionType: IPV4
@@ -1225,21 +943,6 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
         sd: Fgr3
@@ -1253,21 +956,6 @@ SessionManagementSubscriptionData:
                     preemptCap: NOT_PREEMPT
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
                 priorityLevel: 1
             pduSessionTypes:
                 defaultSessionType: IPV4
