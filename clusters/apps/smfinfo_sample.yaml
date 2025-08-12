@@ -61,7 +61,8 @@ spec:
       sNSSAI:
         sd: FRDF3
         sst: 5
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+      - dnn: internet
       sNSSAI:
         sd: "Fgr3"
         sst: 34
