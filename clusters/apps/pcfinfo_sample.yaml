@@ -1,10 +1,8 @@
-string: "This is a string."
-another_string: 'This is also a string.'
-string_with_newlines: |
-  This string
-  has multiple
-  lines.
-string_with_quotes: "This string contains \"quotes\"."
-string_with_escapes: "This string contains \\backslashes and \ttabs."
-string_with_unicode: "This string contains Unicode characters: こんにちは"
+string: This is a string.
+another_string: "This string has quotes."
+multiline_string: |
+  This is a
+  multiline string.
+  It can span multiple lines.
+string_with_escapes: "This string has a \\ backslash and a \" quote."
 empty_string: ""
