@@ -3,7 +3,6 @@ another_string: "This string has quotes."
 multiline_string: |
   This is a
   multiline string.
-  It preserves newlines.
+  It can span multiple lines.
 string_with_escapes: "This string has a \\ backslash and a \" quote."
 empty_string: ""
-string_with_leading_and_trailing_spaces: "  This string has spaces.  "
