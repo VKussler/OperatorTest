@@ -1,16 +1,10 @@
-string: "This is a string."
-another_string: 'This is also a string.'
-string_with_quotes: "This string contains \"quotes\"."
-string_with_escapes: "This string contains a newline\nand a tab\t."
-multiline_string: |
-  This is a multiline string.
-  It can span multiple lines.
-  And it preserves newlines.
-folded_string: >
-  This is a folded string.
-  It will be folded into a single line.
-  Newlines will be replaced with spaces.
-literal_string: 'This is a literal string. \n No escapes are interpreted.'
-unicode_string: "This string contains Unicode characters: こんにちは世界"
+string: This is a string value.
+another_string: "This string is enclosed in double quotes."
+string_with_newline: |
+  This string has
+  multiple lines.
+string_with_single_quotes: 'This string uses single quotes.'
+string_with_escaped_quotes: "This string has \"escaped\" quotes."
+string_with_special_characters: "This string has special characters like \t (tab) and \n (newline)."
 empty_string: ""
-string_with_leading_and_trailing_spaces: "   This string has leading and trailing spaces.   "
+unicode_string: "你好世界"
