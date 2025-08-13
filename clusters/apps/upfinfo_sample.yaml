@@ -30,7 +30,7 @@ spec:
   upfInfo:
     sNssaiUpfInfoList:
     - dnnUpfInfoList:
-      - dnn: oai
+      - dnn: got
         ipv4AddressRanges:
         - iPv4AddrRangeEnd: 12.1.1.255
           iPv4AddrRangeStart: 12.1.1.128
