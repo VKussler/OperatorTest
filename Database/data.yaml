@@ -381,6 +381,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -451,6 +452,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -521,6 +523,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -591,6 +594,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -661,6 +665,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -731,6 +736,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -786,6 +792,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -822,6 +829,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -858,6 +866,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -894,6 +903,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -930,6 +940,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -966,6 +977,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -1002,6 +1014,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -1038,6 +1051,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -1074,6 +1088,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -1110,6 +1125,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -1146,6 +1162,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -1182,6 +1199,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -1218,6 +1236,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
@@ -1254,6 +1273,7 @@ SessionManagementSubscriptionData:
                     preemptVuln: PREEMPTABLE
                     priorityLevel: 15
                 priorityLevel: 1
+            ipv4Subnet: 10.0.0.0/24
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
