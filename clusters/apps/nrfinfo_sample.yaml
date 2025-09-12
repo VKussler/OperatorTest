@@ -17,10 +17,6 @@ nFProfileList:
         nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
-    pcfServiceInstanceList:
-      - serviceInstanceId: "pcf-service-1"
-        priority: 1
+    pcf-1: {}
   servedAmfInfo:
-    amfServiceInstanceList:
-      - serviceInstanceId: "amf-service-1"
-        priority: 1
+    amf-1: {} 

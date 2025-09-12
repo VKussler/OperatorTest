@@ -34,18 +34,6 @@ spec:
         fiveQi: 5
         sessionAmbrDl: 400Mbps
         sessionAmbrUl: 200Mbps
-      1-123456:
-        fiveQi: 8
-        sessionAmbrDl: 1000Mbps
-        sessionAmbrUl: 500Mbps
-      1-AABBCC:
-        fiveQi: 9
-        sessionAmbrDl: 50Mbps
-        sessionAmbrUl: 25Mbps
-      1-DDEEFF:
-        fiveQi: 7
-        sessionAmbrDl: 600Mbps
-        sessionAmbrUl: 300Mbps
   nRTAClist: "0"
   pLMNInfoList:
   - pLMNId:
@@ -64,19 +52,4 @@ spec:
       - dnn: ims
       sNSSAI:
         sd: "000001"
-        sst: 1
-    - dnnSmfInfoList:
-      - dnn: oai
-      sNSSAI:
-        sd: "123456"
-        sst: 1
-    - dnnSmfInfoList:
-      - dnn: oai
-      sNSSAI:
-        sd: AABBCC
-        sst: 1
-    - dnnSmfInfoList:
-      - dnn: oai
-      sNSSAI:
-        sd: DDEEFF
         sst: 1
