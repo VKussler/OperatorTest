@@ -16,5 +16,11 @@ nFProfileList:
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
 nrfInfo:
-  servedPcfInfo: {}
-  servedAmfInfo: {}
+  servedPcfInfo:
+    pcfServiceInstanceList:
+      - serviceInstanceId: "pcf-service-1"
+        priority: 1
+  servedAmfInfo:
+    amfServiceInstanceList:
+      - serviceInstanceId: "amf-service-1"
+        priority: 1
