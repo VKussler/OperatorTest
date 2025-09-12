@@ -84,6 +84,9 @@ spec:
           iPv4AddrRangeStart: 16.1.1.0
         pduSessionTypes:
         - IPv4
+      - dnn: test-slice
+        pduSessionTypes:
+        - IPv4
       sNssai:
         sd: "000401"
         sst: 4
