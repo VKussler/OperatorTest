@@ -1,16 +1,3 @@
-Okay, I understand. I will parse the user intent, identify the correct `sNSSAI` block in the provided UPF configuration, add the new DNN information to the `dnnUpfInfoList` within that block, and return the complete, modified YAML configuration.
-
-However, the user intent "Add DNN" is incomplete. I need the following information to proceed:
-
-*   **DNN name**
-*   **SD value**
-*   **SST value**
-*   **ipv4Subnet**
-*   **pduSessionType**
-
-Since the provided user intent is insufficient, I will return the original UPF configuration as is.
-
-```yaml
 apiVersion: cm-5gc.com/v1alpha1
 kind: UpfInfo
 metadata:
@@ -37,12 +24,6 @@ spec:
       mnc: "01"
     sNSSAI:
       sd: "000001"
-      sst: 1
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-    sNSSAI:
-      sd: "123456"
       sst: 1
   supportedBMOList:
   - BMO1
@@ -73,14 +54,4 @@ spec:
         - IPv4v6
       sNssai:
         sd: "000001"
-        sst: 1
-    - dnnUpfInfoList:
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 15.1.1.254
-          iPv4AddrRangeStart: 15.1.1.1
-        pduSessionTypes:
-        - IPv4
-      sNssai:
-        sd: "123456"
         sst: 1

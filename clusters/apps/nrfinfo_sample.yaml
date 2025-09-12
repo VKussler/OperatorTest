@@ -19,10 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  servedSeppInfo:
-    sepp-1: {}
-  servedSmsfInfo:
-    smsf-1: {}
-  servedUpfInfo:
-    upf-1: {}
+    amf-1: {} 
