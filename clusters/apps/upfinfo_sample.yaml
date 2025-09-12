@@ -1,13 +1,3 @@
-Okay, I understand. I will wait for the complete user intent including the DNN name, SD, SST, ipv4Subnet, and pduSessionType before modifying the UPF configuration. Once I have that information, I will:
-
-1.  **Extract** the DNN name, SD, SST, ipv4Subnet, and pduSessionType from the user intent.
-2.  **Find** the `sNSSAI` block with the matching SD and SST.
-3.  **Add** a new entry to the `dnnUpfInfoList` within that `sNSSAI` block, including the DNN name, calculated `ipv4AddressRanges` based on the `ipv4Subnet`, and the `pduSessionType`.
-4.  **Return** the complete, modified YAML configuration.
-
-Since I don't have the full user intent yet, I will return the current configuration as is.
-
-```yaml
 apiVersion: cm-5gc.com/v1alpha1
 kind: UpfInfo
 metadata:
@@ -34,12 +24,6 @@ spec:
       mnc: "01"
     sNSSAI:
       sd: "000001"
-      sst: 1
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-    sNSSAI:
-      sd: "112233"
       sst: 1
   supportedBMOList:
   - BMO1
@@ -70,14 +54,4 @@ spec:
         - IPv4v6
       sNssai:
         sd: "000001"
-        sst: 1
-    - dnnUpfInfoList:
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 15.1.1.255
-          iPv4AddrRangeStart: 15.1.1.0
-        pduSessionTypes:
-        - IPv4
-      sNssai:
-        sd: "112233"
         sst: 1
