@@ -37,6 +37,12 @@ spec:
     sNSSAI:
       sd: "AABBCC"
       sst: 1
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+    sNSSAI:
+      sd: "DDEEFF"
+      sst: 1
   supportedBMOList:
   - BMO1
   upfInfo:
@@ -86,4 +92,14 @@ spec:
         - IPv4
       sNssai:
         sd: "AABBCC"
+        sst: 1
+    - dnnUpfInfoList:
+      - dnn: ar
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 17.1.1.255
+          iPv4AddrRangeStart: 17.1.1.0
+        pduSessionTypes:
+        - IPv4
+      sNssai:
+        sd: "DDEEFF"
         sst: 1
