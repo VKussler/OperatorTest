@@ -1,3 +1,6 @@
+Okay, I understand the instructions. I need to parse the user intent, identify the correct slice based on SD and SST, add the new DNN to the `dnnSmfInfoList` within that slice, and add a new entry to `missingElements.dnnConfigs` with the `ipv4Subnet` and `pduSessionType`. The user intent is simply "Add DNN", which is incomplete. I need more information to fulfill the request. Since I cannot fulfill the request, I will return the current configuration.
+
+```yaml
 apiVersion: cm-5gc.com/v1alpha1
 kind: SmfInfo
 metadata:
