@@ -1,3 +1,6 @@
+The user wants to ensure the `sBIFQDN` field is set to `test-slice`.  The current configuration already has this value. Therefore, no changes are needed.
+
+```yaml
 # Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
