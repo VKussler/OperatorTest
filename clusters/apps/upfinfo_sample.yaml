@@ -1,3 +1,7 @@
+Okay, I understand. I will wait for the full user intent, including the DNN name, SD, SST, ipv4Subnet, and pduSessionType, before modifying the UPF configuration. Once I have that information, I will locate the correct `sNSSAI` block and add the new DNN to the `dnnUpfInfoList` with the calculated `ipv4AddressRanges`.
+
+Current UPF Configuration (as requested):
+```yaml
 apiVersion: cm-5gc.com/v1alpha1
 kind: UpfInfo
 metadata:
