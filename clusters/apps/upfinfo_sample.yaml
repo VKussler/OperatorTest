@@ -1,1 +1,32 @@
-Okay, I understand. I will wait for the complete user intent, including the DNN name, SD, SST, ipv4Subnet, and pduSessionType. Once I have that information, I will update the UPF configuration as requested and return the complete YAML.
+dnnConfigurations:
+  - dnn: internet
+    pduSessionTypes:
+      - IPv4
+    sscModes:
+      - MODE_3
+  - dnn: enterprise.example.com
+    pduSessionTypes:
+      - IPv4
+      - IPv6
+    sscModes:
+      - MODE_1
+      - MODE_2
+slices:
+  - sst: 1
+    sd: "010203"
+    dnnConfigurations:
+      - dnn: internet
+        pduSessionTypes:
+          - IPv4
+        sscModes:
+          - MODE_3
+  - sst: 2
+    sd: "112233"
+    dnnConfigurations:
+      - dnn: enterprise.example.com
+        pduSessionTypes:
+          - IPv4
+          - IPv6
+        sscModes:
+          - MODE_1
+          - MODE_2
