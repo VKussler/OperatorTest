@@ -26,7 +26,7 @@ spec:
         ipv4Subnet: 13.1.1.0/24
         pduSessionType: IPV4
       internet:
-        ipv4Subnet: 10.60.0.0/24
+        ipv4Subnet: 10.0.0.0/24
         pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
@@ -61,6 +61,7 @@ spec:
         sd: "000001"
         sst: 1
     - dnnSmfInfoList:
+      - dnn: internet
       - dnn: internet
       sNSSAI:
         sd: "000401"
