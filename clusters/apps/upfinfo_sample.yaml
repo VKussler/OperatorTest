@@ -1,32 +1,57 @@
-dnnConfigurations:
-  - dnn: internet
-    pduSessionTypes:
-      - IPv4
-    sscModes:
-      - MODE_3
-  - dnn: enterprise.example.com
-    pduSessionTypes:
-      - IPv4
-      - IPv6
-    sscModes:
-      - MODE_1
-      - MODE_2
-slices:
-  - sst: 1
-    sd: "010203"
-    dnnConfigurations:
-      - dnn: internet
+apiVersion: cm-5gc.com/v1alpha1
+kind: UpfInfo
+metadata:
+  labels:
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: op-upf
+  name: upfinfo-sample
+  namespace: default
+spec:
+  managedNFProfile:
+    capacity: 1000
+    hostAddr: oai-upf
+    nfType:
+    - UPF
+  pLMNInfoList:
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+    sNSSAI:
+      sd: FFFFFF
+      sst: 1
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+    sNSSAI:
+      sd: "000001"
+      sst: 1
+  supportedBMOList:
+  - BMO1
+  upfInfo:
+    sNssaiUpfInfoList:
+    - dnnUpfInfoList:
+      - dnn: oai
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 12.1.1.255
+          iPv4AddrRangeStart: 12.1.1.128
         pduSessionTypes:
-          - IPv4
-        sscModes:
-          - MODE_3
-  - sst: 2
-    sd: "112233"
-    dnnConfigurations:
-      - dnn: enterprise.example.com
+        - IPv4
+      - dnn: ora
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 13.1.1.255
+          iPv4AddrRangeStart: 13.1.1.128
         pduSessionTypes:
-          - IPv4
-          - IPv6
-        sscModes:
-          - MODE_1
-          - MODE_2
+        - IPv4
+      sNssai:
+        sd: FFFFFF
+        sst: 1
+    - dnnUpfInfoList:
+      - dnn: ims
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 14.1.1.255
+          iPv4AddrRangeStart: 14.1.1.0
+        pduSessionTypes:
+        - IPv4v6
+      sNssai:
+        sd: "000001"
+        sst: 1

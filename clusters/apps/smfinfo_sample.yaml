@@ -25,12 +25,6 @@ spec:
       ora:
         ipv4Subnet: 13.1.1.0/24
         pduSessionType: IPV4
-      AddDNN:
-        ipv4Subnet: 10.10.10.0/24
-        pduSessionType: IPV4
-      newdnn:
-        ipv4Subnet: 11.11.11.0/24
-        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -40,14 +34,6 @@ spec:
         fiveQi: 5
         sessionAmbrDl: 400Mbps
         sessionAmbrUl: 200Mbps
-      1-123456:
-        fiveQi: 9
-        sessionAmbrDl: 100Mbps
-        sessionAmbrUl: 50Mbps
-      1-AABBCC:
-        fiveQi: 7
-        sessionAmbrDl: 300Mbps
-        sessionAmbrUl: 150Mbps
   nRTAClist: "0"
   pLMNInfoList:
   - pLMNId:
@@ -59,7 +45,6 @@ spec:
     - dnnSmfInfoList:
       - dnn: oai
       - dnn: ora
-      - dnn: AddDNN
       sNSSAI:
         sd: FFFFFF
         sst: 1
@@ -67,14 +52,4 @@ spec:
       - dnn: ims
       sNSSAI:
         sd: "000001"
-        sst: 1
-    - dnnSmfInfoList:
-      - dnn: oai
-      sNSSAI:
-        sd: "123456"
-        sst: 1
-    - dnnSmfInfoList:
-      - dnn: newdnn
-      sNSSAI:
-        sd: AABBCC
         sst: 1

@@ -3,24 +3,20 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-sBIFQDN: "nrf.example.com"
+sBIFQDN: "nrf-1.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
     nfStatus: "REGISTERED"
-    fqdn: "nrf.example.com"
+    fqdn: "nrf-1.example.com"
     nfServices:
-      - serviceInstanceId: "nnrf-nfm-001"
+      - serviceInstanceId: "service-1"
         serviceName: "nnrf-nfm"
-        versions: ["1.0.0", "1.1.0"]
+        versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  servedSeppInfo:
-    sepp-1: {}
-  servedSmsfInfo:
-    smsf-1: {}
+    amf-1: {} 
