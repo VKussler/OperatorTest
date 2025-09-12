@@ -1,3 +1,8 @@
+Okay, I'm ready to process the user intent and update the SMF configuration.
+
+Based on the user intent "Add DNN", I need more information to proceed.  I need the DNN name, SD, SST, ipv4Subnet, and pduSessionType. Since these are missing, I will return the original configuration.
+
+```yaml
 apiVersion: cm-5gc.com/v1alpha1
 kind: SmfInfo
 metadata:
