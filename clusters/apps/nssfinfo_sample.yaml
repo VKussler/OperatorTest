@@ -9,6 +9,9 @@ sliceInfoList:
   - sst: 4
     sd: "000401"
     cNSIIdList: ["test-slice"]
+  - sst: 4
+    sd: "000401"
+    cNSIIdList: ["test-slice"]
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
