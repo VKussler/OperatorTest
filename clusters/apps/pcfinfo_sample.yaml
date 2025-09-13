@@ -13,6 +13,10 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
+  sliceInfoList:
+    - sliceDifferentiator: "000401"
+      sST: 4
+      sliceName: "test-slice"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
