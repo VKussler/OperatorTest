@@ -23,4 +23,7 @@ amfInfo:
     - sNSSAI:
         sst: 4
         sd: "000401"
+    - sNSSAI:
+        sst: 4
+        sd: "000401"
 aMFSetRef: "/AMFSet/set-1"
