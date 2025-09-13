@@ -1,0 +1,120 @@
+name: slice-create
+steps:
+- actionKey: ExecuteOperationActivity
+  activityInputStyle: struct
+  activityInputTypeName: temporalworkflows.ExecuteOperationActivityInput
+  description: Executes the slice preparation phase.
+  inputParameters:
+  - name: operationType
+    source: literal
+    value: slice_preparation
+  - name: intent
+    source: workflow:intent
+  - name: langfuseTraceId
+    source: workflow:langfuse_trace_id
+  name: slice-preparation
+  outputAlias: slice-preparation
+- actionKey: ExecuteAgentActionInternal
+  inputParameters:
+  - name: agentDefinition
+    source: literal
+    value:
+      outputSchema:
+        properties:
+          message:
+            description: A human-readable summary of the commissioning outcome.
+            type: string
+          status:
+            description: The final status of the commissioning task. Should be 'completed'
+              or 'failed'.
+            type: string
+        required:
+        - status
+        - message
+        type: object
+      systemPrompt: "You are a 5G network engineer. Create network slices based on
+        user requests.\n\n**Your first step MUST be to call the `cmdb_read` tool.**\nYou
+        must pass the argument `filePathInRepo` with the exact value `objects/Core-SSN-NRM.yaml`.\n\n**After
+        you receive the NRM data, configure the network functions.**\n\n**CRITICAL:
+        The intent must be a natural language string, NOT JSON patch operations.**\n**CRITICAL:
+        Only pass the intent parameter to each tool.**\n\n## Network Function Configuration:\n\n###
+        AMF Configuration:\n- **Intent should be**: `\"Add slice to AMF\"`\n\n###
+        SMF Configuration:\n- **Intent should be**: `\"Add slice to SMF\"`\n\n###
+        UPF Configuration:\n- **Intent should be**: `\"Add slice to UPF\"`\n\n###
+        NRF Configuration:\n- **Intent should be**: `\"Update NRF\"`\n\n### NSSF Configuration:\n-
+        **Intent should be**: `\"Add slice to NSSF\"`\n\n### PCF Configuration:\n-
+        **Intent should be**: `\"Add slice to PCF\"`\n\n### OAI Database Configuration:\n-
+        **Intent should be**: `\"Update database\"`\n\n### DNN Configuration:\n- **Intent
+        should be**: `\"Add DNN\"`\n\n**IMPORTANT RULES**: \n1. **ONLY pass the `intent`
+        parameter** to each tool call\n2. **The intent must be a descriptive text
+        string**, not JSON operations\n3. **Do NOT use JSON patch syntax** (op, path,
+        value)\n4. **Do NOT add extra parameters** beyond what the tool expects\n5.
+        **Include specific values from the user intent** in your tool calls\n\nThe
+        user's original, high-level intent is: {{intent}}\n\nOnce all tool calls are
+        complete, your final response MUST be a single, valid JSON object that conforms
+        to the provided output schema.\n"
+      tools:
+      - dnn_create
+      - cmdb_read
+      - nssf_update
+      - pcf_update
+      - amf_update
+      - nrf_update
+      - smf_update
+      - upf_update
+      - oai_db_update
+  - name: intent
+    source: workflow:intent
+  - name: langfuseTraceId
+    source: workflow:langfuse_trace_id
+  name: commission-slice
+  outputAlias: commissioning_details
+- actionKey: ExecuteOperationActivity
+  activityInputStyle: struct
+  activityInputTypeName: temporalworkflows.ExecuteOperationActivityInput
+  description: Executes the slice operation phase, using the details from the agent.
+  inputParameters:
+  - name: operationType
+    source: literal
+    value: slice_operation
+  - name: intent
+    source: workflow:intent
+  - name: commissioning_details
+    source: step:commissioning_details
+  - name: langfuseTraceId
+    source: workflow:langfuse_trace_id
+  name: slice-operation
+- actionKey: ValidationLearningActivity
+  activityInputStyle: struct
+  activityInputTypeName: temporalworkflows.ValidationLearningActivityInput
+  description: Processes validation results and triggers learning if validation failed.
+  inputParameters:
+  - name: operationType
+    source: literal
+    value: GENERIC_CONFIG_UPDATE_FROM_INTENT_PROMPT
+  - name: objectType
+    source: literal
+    value: slice
+  - name: intent
+    source: workflow:intent
+  - name: promptUsed
+    source: literal
+    value: You are a 5G network engineer. Create network slices based on user requests.
+  - name: langfuseTraceId
+    source: workflow:langfuse_trace_id
+  - name: validationSuccess
+    source: literal
+    value: false
+  - name: validationErrorType
+    source: literal
+    value: human_validation_rejected
+  - name: validationErrorMessage
+    source: literal
+    value: Human validation was rejected - learning triggered for improved prompts
+  - name: additionalContext
+    source: literal
+    value: {}
+  name: validation-learning
+workflowInputs:
+  intent: string
+  langfuse_trace_id: string
