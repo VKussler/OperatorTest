@@ -22,4 +22,6 @@ amfInfo:
   sliceInfoList:
     - sST: 4
       sD: "000401"
+    - sST: 4
+      sD: "000401"
 aMFSetRef: "/AMFSet/set-1"
