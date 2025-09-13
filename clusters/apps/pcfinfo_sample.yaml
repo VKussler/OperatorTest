@@ -18,6 +18,10 @@ pcfInfo:
         sst: 4
         sd: "000401"
       sliceDifferentiator: "test-slice"
+    - sNssai:
+        sst: 4
+        sd: "000401"
+      sliceDifferentiator: "test-slice"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
     targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
