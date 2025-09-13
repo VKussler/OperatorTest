@@ -19,4 +19,8 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  sliceInfo:
+    - sliceDifferentiator: "000401"
+      sST: 4
+      sliceName: "test-slice"
