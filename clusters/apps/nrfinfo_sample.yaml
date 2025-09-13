@@ -19,11 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  supportedNFServices:
-    - serviceName: "nnrf-disc"
-      versions: ["1.0.0"]
-      apiPrefix: "https://nrf-1.example.com/nnrf-disc/v1"
-      ipEndPoints:
-        - ipv4Address: "10.0.0.1"
-          transport: "TCP"
+    amf-1: {} 
