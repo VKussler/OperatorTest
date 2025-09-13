@@ -66,6 +66,9 @@ spec:
         sNssai:
           sd: "000401"
           sst: 4
+      - dnn: test-slice
+        pduSessionTypes:
+        - IPv4
       sNssai:
         sd: "000401"
         sst: 4
