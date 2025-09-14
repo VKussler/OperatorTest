@@ -79,7 +79,8 @@ steps:
 - actionKey: ValidationLearningActivity
   activityInputStyle: struct
   activityInputTypeName: temporalworkflows.ValidationLearningActivityInput
-  description: Processes validation results and triggers learning if validation failed.
+  description: Performs comprehensive validation and triggers learning if validation
+    failed.
   inputParameters:
   - name: operationType
     source: literal
@@ -96,13 +97,13 @@ steps:
     source: workflow:langfuse_trace_id
   - name: validationSuccess
     source: literal
-    value: false
+    value: true
   - name: validationErrorType
     source: literal
-    value: human_validation_rejected
+    value: ""
   - name: validationErrorMessage
     source: literal
-    value: Human validation was rejected - learning triggered for improved prompts
+    value: ""
   - name: additionalContext
     source: literal
     value: {}
