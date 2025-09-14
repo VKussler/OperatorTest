@@ -1,14 +1,141 @@
-# Sample NSSF NRM Instance
-pLMNInfoList:
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn"]
-managedNFProfile:
-  nfInstanceId: "nssf-instance-001"
-  nfType: "NSSF"
-  hostAddr: "192.168.1.12"
-commModelList:
-  - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"] 
+network_slice_creation:
+  steps:
+    - step: "Read Existing Network Configuration"
+      action: "cmdb_read"
+      description: "Reading existing network configuration to ensure no conflicts and validate parameters."
+      output_variable: "existing_config"
+
+    - step: "Update AMF Configuration"
+      action: "update-amf"
+      description: "Updating AMF configuration for the new slice."
+      parameters:
+        amf_name: "amf-test-slice"
+        slice_name: "test-slice"
+        support_sst: [4]
+        support_sd: ["000401"]
+      validation:
+        - check: "slice_name not in existing_config['amf']"
+          error_message: "Slice name already exists in AMF configuration."
+        - check: "all(sst in [1, 2, 3, 4] for sst in [4])" #Example SST values
+          error_message: "Invalid SST value. Allowed values are 1, 2, 3, and 4."
+        - check: "all(len(sd) == 6 and sd.isdigit() for sd in ['000401'])"
+          error_message: "Invalid SD value. Must be a 6-digit number."
+
+    - step: "Update SMF Configuration"
+      action: "update-smf"
+      description: "Updating SMF configuration for the new slice."
+      parameters:
+        smf_name: "smf-test-slice"
+        slice_name: "test-slice"
+        support_sst: [4]
+        support_sd: ["000401"]
+        dnn_list: ["internet"]
+      validation:
+        - check: "slice_name not in existing_config['smf']"
+          error_message: "Slice name already exists in SMF configuration."
+        - check: "all(sst in [1, 2, 3, 4] for sst in [4])" #Example SST values
+          error_message: "Invalid SST value. Allowed values are 1, 2, 3, and 4."
+        - check: "all(len(sd) == 6 and sd.isdigit() for sd in ['000401'])"
+          error_message: "Invalid SD value. Must be a 6-digit number."
+        - check: "'internet' in existing_config['dnn']"
+          error_message: "DNN 'internet' does not exist. Create it first."
+
+    - step: "Update UPF Configuration"
+      action: "update-upf"
+      description: "Updating UPF configuration for the new slice."
+      parameters:
+        upf_name: "upf-test-slice"
+        slice_name: "test-slice"
+        support_sst: [4]
+        support_sd: ["000401"]
+        dnn_list: ["internet"]
+      validation:
+        - check: "slice_name not in existing_config['upf']"
+          error_message: "Slice name already exists in UPF configuration."
+        - check: "all(sst in [1, 2, 3, 4] for sst in [4])" #Example SST values
+          error_message: "Invalid SST value. Allowed values are 1, 2, 3, and 4."
+        - check: "all(len(sd) == 6 and sd.isdigit() for sd in ['000401'])"
+          error_message: "Invalid SD value. Must be a 6-digit number."
+        - check: "'internet' in existing_config['dnn']"
+          error_message: "DNN 'internet' does not exist. Create it first."
+
+    - step: "Update NRF Configuration"
+      action: "update-nrf"
+      description: "Updating NRF configuration for the new slice."
+      parameters:
+        slice_name: "test-slice"
+        nrf_profile:
+          sst: 4
+          sd: "000401"
+          amf_set: ["amf-test-slice"]
+          smf_set: ["smf-test-slice"]
+          upf_set: ["upf-test-slice"]
+      validation:
+        - check: "'test-slice' not in existing_config['nrf']"
+          error_message: "Slice name already exists in NRF configuration."
+        - check: "4 in [1, 2, 3, 4]" #Example SST values
+          error_message: "Invalid SST value. Allowed values are 1, 2, 3, and 4."
+        - check: "len('000401') == 6 and '000401'.isdigit()"
+          error_message: "Invalid SD value. Must be a 6-digit number."
+        - check: "'amf-test-slice' in ['amf-test-slice']"
+          error_message: "AMF name does not exist."
+        - check: "'smf-test-slice' in ['smf-test-slice']"
+          error_message: "SMF name does not exist."
+        - check: "'upf-test-slice' in ['upf-test-slice']"
+          error_message: "UPF name does not exist."
+
+    - step: "Update NSSF Configuration"
+      action: "update-nssf"
+      description: "Updating NSSF configuration for the new slice."
+      parameters:
+        slice_name: "test-slice"
+        nssf_profile:
+          sst: 4
+          sd: "000401"
+          amf_set: ["amf-test-slice"]
+      validation:
+        - check: "'test-slice' not in existing_config['nssf']"
+          error_message: "Slice name already exists in NSSF configuration."
+        - check: "4 in [1, 2, 3, 4]" #Example SST values
+          error_message: "Invalid SST value. Allowed values are 1, 2, 3, and 4."
+        - check: "len('000401') == 6 and '000401'.isdigit()"
+          error_message: "Invalid SD value. Must be a 6-digit number."
+        - check: "'amf-test-slice' in ['amf-test-slice']"
+          error_message: "AMF name does not exist."
+
+    - step: "Update PCF Configuration"
+      action: "update-pcf"
+      description: "Updating PCF configuration for the new slice."
+      parameters:
+        slice_name: "test-slice"
+        pcf_profile:
+          sst: 4
+          sd: "000401"
+          qos_profile: "QoS-test-slice"
+      validation:
+        - check: "'test-slice' not in existing_config['pcf']"
+          error_message: "Slice name already exists in PCF configuration."
+        - check: "4 in [1, 2, 3, 4]" #Example SST values
+          error_message: "Invalid SST value. Allowed values are 1, 2, 3, and 4."
+        - check: "len('000401') == 6 and '000401'.isdigit()"
+          error_message: "Invalid SD value. Must be a 6-digit number."
+        - check: "'QoS-test-slice' in existing_config['qos']"
+          error_message: "QoS profile does not exist. Create it first."
+
+    - step: "Update OAI DB"
+      action: "update-oai-db"
+      description: "Updating OAI DB with slice information."
+      parameters:
+        slice_name: "test-slice"
+        sst: 4
+        sd: "000401"
+        plmn_id: "20893"
+      validation:
+        - check: "'test-slice' not in existing_config['oai_db']"
+          error_message: "Slice name already exists in OAI DB."
+        - check: "4 in [1, 2, 3, 4]" #Example SST values
+          error_message: "Invalid SST value. Allowed values are 1, 2, 3, and 4."
+        - check: "len('000401') == 6 and '000401'.isdigit()"
+          error_message: "Invalid SD value. Must be a 6-digit number."
+        - check: "len('20893') == 5 and '20893'.isdigit()"
+          error_message: "Invalid PLMN ID. Must be a 5-digit number
