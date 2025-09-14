@@ -28,6 +28,9 @@ spec:
       slice1:
         ipv4Subnet: 15.1.1.0/24
         pduSessionType: IPV4
+      newdnn:
+        ipv4Subnet: 10.0.0.0/24
+        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -52,6 +55,7 @@ spec:
     - dnnSmfInfoList:
       - dnn: oai
       - dnn: ora
+      - dnn: newdnn
       sNSSAI:
         sd: FFFFFF
         sst: 1
