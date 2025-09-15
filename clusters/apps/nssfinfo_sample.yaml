@@ -1,14 +1,39 @@
-# Sample NSSF NRM Instance
-pLMNInfoList:
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn"]
-managedNFProfile:
-  nfInstanceId: "nssf-instance-001"
-  nfType: "NSSF"
-  hostAddr: "192.168.1.12"
-commModelList:
-  - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"] 
+{
+  "slice_configuration": {
+    "nrm_data": {
+      "tool_code": "cmdb_read",
+      "arguments": {
+        "filePathInRepo": "objects/Core-SSN-NRM.yaml"
+      },
+      "output": "```yaml\nobjects:\n  - class: CoreNetworkSlice\n    id: core-slice-1\n    properties:\n      slice_profile_id: slice-profile-1\n      amf_set: amf-set-1\n      smf_set: smf-set-1\n      upf_set: upf-set-1\n  - class: SliceProfile\n    id: slice-profile-1\n    properties:\n      sst: 1\n      sd: '000001'\n      service_type: eMBB\n  - class: AMFSet\n    id: amf-set-1\n    properties:\n      amfs: [amf-1, amf-2]\n  - class: SMFSet\n    id: smf-set-1\n    properties:\n      smfs: [smf-1, smf-2]\n  - class: UPFSet\n    id: upf-set-1\n    properties:\n      upfs: [upf-1, upf-2]\n  - class: AMF\n    id: amf-1\n    properties:\n      capacity: 1000000\n      location: zone-1\n  - class: AMF\n    id: amf-2\n    properties:\n      capacity: 1000000\n      location: zone-2\n  - class: SMF\n    id: smf-1\n    properties:\n      capacity: 500000\n      location: zone-1\n  - class: SMF\n    id: smf-2\n    properties:\n      capacity: 500000\n      location: zone-2\n  - class: UPF\n    id: upf-1\n    properties:\n      capacity: 2000000\n      location: zone-1\n  - class: UPF\n    id: upf-2\n    properties:\n      capacity: 2000000\n      location: zone-2\n  - class: NRF\n    id: nrf-1\n    properties:\n      location: zone-1\n  - class: NSSF\n    id: nssf-1\n    properties:\n      location: zone-1\n  - class: PCF\n    id: pcf-1\n    properties:\n      location: zone-1\n  - class: OaiDb\n    id: oaidb-1\n    properties:\n      location: zone-1\n```"
+    },
+    "amf_configuration": {
+      "tool_code": "configure_amf",
+      "intent": "Configure the AMF for a new network slice named test-slice with SST 4 and SD 000401"
+    },
+    "smf_configuration": {
+      "tool_code": "configure_smf",
+      "intent": "Configure the SMF for a network slice with SST 4 and SD 000401"
+    },
+    "upf_configuration": {
+      "tool_code": "configure_upf",
+      "intent": "Configure the UPF for a new network slice named test-slice with SST 4 and SD 000401"
+    },
+    "nrf_configuration": {
+      "tool_code": "configure_nrf",
+      "intent": "Configure the NRF for a new network slice named test-slice with SST 4 and SD 000401"
+    },
+    "nssf_configuration": {
+      "tool_code": "configure_nssf",
+      "intent": "Configure the NSSF for a new network slice named test-slice with SST 4 and SD 000401"
+    },
+    "pcf_configuration": {
+      "tool_code": "configure_pcf",
+      "intent": "Configure the PCF for a network slice with SST 4 and SD 000401"
+    },
+    "oai_db_configuration": {
+      "tool_code": "configure_oai_db",
+      "intent": "Configure the OAI DB for a new network slice named test-slice with SST 4 and SD 000401"
+    }
+  }
+}
