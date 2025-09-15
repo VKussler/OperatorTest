@@ -15,6 +15,9 @@ network_slice:
             mnc: "260"
           amf_region_id: "01"
           amf_set_id: "001"
+      s_nssai:
+        sst: 4
+        sd: "000401"
   smf:
     capacity: 5000
     priority: 2
