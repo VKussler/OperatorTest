@@ -1,22 +1,22 @@
-# Sample NRF NRM Instance
-pLMNInfoList:
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-sBIFQDN: "nrf-1.sbi.example.com"
-nFProfileList:
-  - nfInstanceId: "nrf-instance-001"
-    nfType: "NRF"
-    nfStatus: "REGISTERED"
-    fqdn: "nrf-1.example.com"
-    nfServices:
-      - serviceInstanceId: "service-1"
-        serviceName: "nnrf-nfm"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-nrfInfo:
-  servedPcfInfo:
-    pcf-1: {}
-  servedAmfInfo:
-    amf-1: {} 
+{
+  "slice_name": "{{slice_name}}",
+  "slice_description": "{{slice_description}}",
+  "network_functions_configuration": [
+    {
+      "network_function": "NRF",
+      "configuration_intent": "Configure NRF for slice {{slice_name}} with SST {{sst}} and SD {{sd}}"
+    },
+    {
+      "network_function": "NSSF",
+      "configuration_intent": "Configure NSSF for slice {{slice_name}} with SST {{sst}} and SD {{sd}}"
+    },
+    {
+      "network_function": "PCF",
+      "configuration_intent": "Configure PCF for slice with SST {{sst}} and SD {{sd}}"
+    },
+    {
+      "network_function": "OAI DB",
+      "configuration_intent": "Configure OAI DB for slice {{slice_name}} with SST {{sst}} and SD {{sd}}"
+    }
+  ]
+}
