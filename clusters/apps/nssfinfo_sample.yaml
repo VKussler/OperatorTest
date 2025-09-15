@@ -1,14 +1,126 @@
-# Sample NSSF NRM Instance
-pLMNInfoList:
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn"]
-managedNFProfile:
-  nfInstanceId: "nssf-instance-001"
-  nfType: "NSSF"
-  hostAddr: "192.168.1.12"
-commModelList:
-  - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"] 
+{
+  "slice_configuration": {
+    "steps": [
+      {
+        "step": 1,
+        "tool_name": "cmdb_read",
+        "parameters": {
+          "filePathInRepo": "objects/Core-SSN-NRM.yaml"
+        },
+        "response": "Successfully read Core-SSN-NRM.yaml"
+      },
+      {
+        "step": 2,
+        "tool_name": "nssf_config",
+        "parameters": {
+          "intent": "Configure the NSSF for the network slice named test-slice with SST 4 and SD 000401."
+        },
+        "response": "NSSF configuration updated for slice test-slice."
+      },
+      {
+        "step": 3,
+        "tool_name": "amf_config",
+        "parameters": {
+          "intent": "Configure the AMF for the network slice named test-slice with SST 4 and SD 000401."
+        },
+        "response": "AMF configuration updated for slice test-slice."
+      },
+      {
+        "step": 4,
+        "tool_name": "smf_config",
+        "parameters": {
+          "intent": "Configure the SMF for the network slice with SST 4 and SD 000401."
+        },
+        "response": "SMF configuration updated for slice with SST 4 and SD 000401."
+      },
+      {
+        "step": 5,
+        "tool_name": "upf_config",
+        "parameters": {
+          "intent": "Configure the UPF for the new network slice with SST 4 and SD 000401."
+        },
+        "response": "UPF configuration updated for the new slice."
+      },
+      {
+        "step": 6,
+        "tool_name": "nrf_config",
+        "parameters": {
+          "intent": "Configure the NRF for the network slice named test-slice with SST 4 and SD 000401."
+        },
+        "response": "NRF configuration updated for slice test-slice."
+      },
+      {
+        "step": 7,
+        "tool_name": "pcf_config",
+        "parameters": {
+          "intent": "Configure the PCF for the network slice with SST 4 and SD 000401."
+        },
+        "response": "PCF configuration updated for slice with SST 4 and SD 000401."
+      },
+      {
+        "step": 8,
+        "tool_name": "oai_db_config",
+        "parameters": {
+          "intent": "Configure the OAI DB for the new network slice with SST 4 and SD 000401."
+        },
+        "response": "OAI DB configuration updated for the new slice."
+      },
+            {
+        "step": 9,
+        "tool_name": "smf_validation",
+        "parameters": {
+          "intent": "Validate the SMF configuration for the slice with SST 4 and SD 000401."
+        },
+        "response": "SMF configuration validated successfully."
+      },
+      {
+        "step": 10,
+        "tool_name": "amf_validation",
+        "parameters": {
+          "intent": "Validate the AMF configuration for the slice named test-slice."
+        },
+        "response": "AMF configuration validated successfully."
+      },
+      {
+        "step": 11,
+        "tool_name": "upf_validation",
+        "parameters": {
+          "intent": "Validate the UPF configuration for the new slice."
+        },
+        "response": "UPF configuration validated successfully."
+      },
+      {
+        "step": 12,
+        "tool_name": "nrf_validation",
+        "parameters": {
+          "intent": "Validate the NRF configuration for the slice named test-slice."
+        },
+        "response": "NRF configuration validated successfully."
+      },
+      {
+        "step": 13,
+        "tool_name": "nssf_validation",
+        "parameters": {
+          "intent": "Validate the NSSF configuration for the slice named test-slice."
+        },
+        "response": "NSSF configuration validated successfully."
+      },
+      {
+        "step": 14,
+        "tool_name": "pcf_validation",
+        "parameters": {
+          "intent": "Validate the PCF configuration for the slice with SST 4 and SD 000401."
+        },
+        "response": "PCF configuration validated successfully."
+      },
+      {
+        "step": 15,
+        "tool_name": "oai_db_validation",
+        "parameters": {
+          "intent": "Validate the OAI DB configuration for the new slice."
+        },
+        "response": "OAI DB configuration validated successfully."
+      }
+    ]
+  }
+}
