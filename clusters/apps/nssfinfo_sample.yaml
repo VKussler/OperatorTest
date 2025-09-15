@@ -89,10 +89,10 @@ network_slice_creation:
       description: "Updating NSSF configuration for the new slice."
       parameters:
         slice_name: "test-slice"
-        nssf_profile:
+        snssai:
           sst: 4
           sd: "000401"
-          amf_set: ["amf-test-slice"]
+        amf_set: ["amf-test-slice"]
       validation:
         - check: "'test-slice' not in existing_config['nssf']"
           error_message: "Slice name already exists in NSSF configuration."
