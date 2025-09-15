@@ -1,22 +1,126 @@
-# Sample NRF NRM Instance
-pLMNInfoList:
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-sBIFQDN: "nrf-1.sbi.example.com"
-nFProfileList:
-  - nfInstanceId: "nrf-instance-001"
-    nfType: "NRF"
-    nfStatus: "REGISTERED"
-    fqdn: "nrf-1.example.com"
-    nfServices:
-      - serviceInstanceId: "service-1"
-        serviceName: "nnrf-nfm"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-nrfInfo:
-  servedPcfInfo:
-    pcf-1: {}
-  servedAmfInfo:
-    amf-1: {} 
+{
+  "slice_configuration": {
+    "steps": [
+      {
+        "step": 1,
+        "tool_name": "cmdb_read",
+        "parameters": {
+          "filePathInRepo": "objects/Core-SSN-NRM.yaml"
+        },
+        "output": "Read Core-SSN-NRM.yaml to get the network resource model."
+      },
+      {
+        "step": 2,
+        "tool_name": "nssf_config",
+        "parameters": {
+          "intent": "Configure NSSF for the new slice named test-slice."
+        },
+        "output": "NSSF configuration completed."
+      },
+      {
+        "step": 3,
+        "tool_name": "amf_config",
+        "parameters": {
+          "intent": "Configure AMF for the new slice named test-slice."
+        },
+        "output": "AMF configuration completed."
+      },
+      {
+        "step": 4,
+        "tool_name": "smf_config",
+        "parameters": {
+          "intent": "Configure SMF for the new slice with SST 4 and SD 000401."
+        },
+        "output": "SMF configuration completed."
+      },
+      {
+        "step": 5,
+        "tool_name": "upf_config",
+        "parameters": {
+          "intent": "Configure UPF for the new slice."
+        },
+        "output": "UPF configuration completed."
+      },
+      {
+        "step": 6,
+        "tool_name": "nrf_config",
+        "parameters": {
+          "intent": "Configure NRF for the new slice named test-slice."
+        },
+        "output": "NRF configuration completed."
+      },
+      {
+        "step": 7,
+        "tool_name": "pcf_config",
+        "parameters": {
+          "intent": "Configure PCF for the new slice with SST 4 and SD 000401."
+        },
+        "output": "PCF configuration completed."
+      },
+      {
+        "step": 8,
+        "tool_name": "oai_db_config",
+        "parameters": {
+          "intent": "Configure OAI DB for the new slice."
+        },
+        "output": "OAI DB configuration completed."
+      },
+      {
+        "step": 9,
+        "tool_name": "smf_validation",
+        "parameters": {
+          "intent": "Validate SMF configuration for slice with SST 4 and SD 000401."
+        },
+        "output": "SMF configuration validated."
+      },
+      {
+        "step": 10,
+        "tool_name": "amf_validation",
+        "parameters": {
+          "intent": "Validate AMF configuration for slice named test-slice."
+        },
+        "output": "AMF configuration validated."
+      },
+      {
+        "step": 11,
+        "tool_name": "upf_validation",
+        "parameters": {
+          "intent": "Validate UPF configuration for the new slice."
+        },
+        "output": "UPF configuration validated."
+      },
+      {
+        "step": 12,
+        "tool_name": "nrf_validation",
+        "parameters": {
+          "intent": "Validate NRF configuration for slice named test-slice."
+        },
+        "output": "NRF configuration validated."
+      },
+      {
+        "step": 13,
+        "tool_name": "nssf_validation",
+        "parameters": {
+          "intent": "Validate NSSF configuration for slice named test-slice."
+        },
+        "output": "NSSF configuration validated."
+      },
+      {
+        "step": 14,
+        "tool_name": "pcf_validation",
+        "parameters": {
+          "intent": "Validate PCF configuration for slice with SST 4 and SD 000401."
+        },
+        "output": "PCF configuration validated."
+      },
+      {
+        "step": 15,
+        "tool_name": "oai_db_validation",
+        "parameters": {
+          "intent": "Validate OAI DB configuration for the new slice."
+        },
+        "output": "OAI DB configuration validated."
+      }
+    ]
+  }
+}
