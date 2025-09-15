@@ -1,113 +1,22 @@
-steps:
-  - name: Read existing network configuration
-    action: cmdb_read
-    output:
-      - existing_config
-
-  - name: Update AMF
-    action: update-amf
-    parameters:
-      amf_name: "amf-test-slice"
-      slice_name: "test-slice"
-      support_sst:
-        - 4
-      support_sd:
-        - "000401"
-    validation:
-      - check_amf_name_format
-      - check_slice_name_exists
-      - check_sst_sd_valid
-
-  - name: Update SMF
-    action: update-smf
-    parameters:
-      smf_name: "smf-test-slice"
-      slice_name: "test-slice"
-      support_sst:
-        - 4
-      support_sd:
-        - "000401"
-      dnn_list:
-        - "internet-slice"
-    validation:
-      - check_smf_name_format
-      - check_slice_name_exists
-      - check_sst_sd_valid
-      - check_dnn_exists
-
-  - name: Update UPF
-    action: update-upf
-    parameters:
-      upf_name: "upf-test-slice"
-      slice_name: "test-slice"
-      support_sst:
-        - 4
-      support_sd:
-        - "000401"
-      dnn_list:
-        - "internet-slice"
-    validation:
-      - check_upf_name_format
-      - check_slice_name_exists
-      - check_sst_sd_valid
-      - check_dnn_exists
-
-  - name: Update NRF
-    action: update-nrf
-    parameters:
-      slice_name: "test-slice"
-      nrf_profile:
-        - amf: "amf-test-slice"
-        - smf: "smf-test-slice"
-        - upf: "upf-test-slice"
-    validation:
-      - check_slice_name_format
-      - check_slice_name_unique
-      - check_amf_smf_upf_exists
-
-  - name: Update NSSF
-    action: update-nssf
-    parameters:
-      slice_name: "test-slice"
-      sst: 4
-      sd: "000401"
-      allowed_nssai:
-        - sst: 4
-          sd: "000401"
-    validation:
-      - check_slice_name_format
-      - check_sst_sd_valid
-
-  - name: Update PCF
-    action: update-pcf
-    parameters:
-      pcf_name: "pcf-test-slice"
-      slice_name: "test-slice"
-      sst: 4
-      sd: "000401"
-    validation:
-      - check_pcf_name_format
-      - check_slice_name_exists
-      - check_sst_sd_valid
-      - check_sst_sd_unique
-
-  - name: Update OAI DB
-    action: update-oai-db
-    parameters:
-      slice_name: "test-slice"
-      plmn_id: "20893"
-      sst: 4
-      sd: "000401"
-    validation:
-      - check_slice_name_format
-      - check_plmn_id_valid
-      - check_sst_sd_valid
-
-  - name: Create DNN
-    action: dnn_create
-    parameters:
-      dnn_name: "internet-slice"
-      slice_name: "test-slice"
-    validation:
-      - check_dnn_name_format
-      - check_slice_name_exists
+# Sample NRF NRM Instance
+pLMNInfoList:
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+sBIFQDN: "nrf-1.sbi.example.com"
+nFProfileList:
+  - nfInstanceId: "nrf-instance-001"
+    nfType: "NRF"
+    nfStatus: "REGISTERED"
+    fqdn: "nrf-1.example.com"
+    nfServices:
+      - serviceInstanceId: "service-1"
+        serviceName: "nnrf-nfm"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+nrfInfo:
+  servedPcfInfo:
+    pcf-1: {}
+  servedAmfInfo:
+    amf-1: {} 

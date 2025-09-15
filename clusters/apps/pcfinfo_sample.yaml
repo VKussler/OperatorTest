@@ -1,125 +1,18 @@
-network_slice_creation:
-  steps:
-    - step: "Read existing network configuration"
-      action: "cmdb_read"
-      description: "Reading existing configuration to avoid conflicts."
-      command: "cmdb_read"
-      output:
-        existing_config: "Placeholder for existing configuration data."
-
-    - step: "Update AMF"
-      action: "update_amf"
-      description: "Updating AMF with slice-specific information."
-      command: "update-amf"
-      parameters:
-        amf_name: "AMF-test-slice"
-        slice_id: "test-slice"
-        support_sst: [4]
-        support_sd: ["000401"]
-
-    - step: "Update SMF"
-      action: "update_smf"
-      description: "Updating SMF with slice-specific information."
-      command: "update-smf"
-      parameters:
-        smf_name: "SMF-test-slice"
-        slice_id: "test-slice"
-        support_sst: [4]
-        support_sd: ["000401"]
-
-    - step: "Update UPF"
-      action: "update_upf"
-      description: "Updating UPF with slice-specific information."
-      command: "update-upf"
-      parameters:
-        upf_name: "UPF-test-slice"
-        slice_id: "test-slice"
-        support_sst: [4]
-        support_sd: ["000401"]
-
-    - step: "Update NRF"
-      action: "update_nrf"
-      description: "Updating NRF with slice information. Validating slice name."
-      command: "update-nrf"
-      parameters:
-        nrf_name: "NRF-test-slice"
-        slice_id: "test-slice"
-        slice_name: "test-slice"  # Ensure this is a valid and unique slice name
-        support_sst: [4]
-        support_sd: ["000401"]
-      validation:
-        - type: "slice_name_uniqueness"
-          check: "cmdb_read"
-          parameter: "slice_name"
-          expected: "unique"
-
-    - step: "Update NSSF"
-      action: "update_nssf"
-      description: "Updating NSSF with slice selection rules."
-      command: "update-nssf"
-      parameters:
-        nssf_name: "NSSF-test-slice"
-        slice_id: "test-slice"
-        selection_criteria:
-          - sst: 4
-            sd: "000401"
-            amf_set_id: "AMF-test-slice"
-
-    - step: "Update PCF"
-      action: "update_pcf"
-      description: "Updating PCF with policy control rules. Validating SST and SD."
-      command: "update-pcf"
-      parameters:
-        pcf_name: "PCF-test-slice"
-        slice_id: "test-slice"
-        sst: 4  # Slice/Service Type
-        sd: "000401"  # Slice Differentiator
-        policy_rules:
-          - rule_name: "QoS-test-slice"
-            qos_profile: "QoS_Profile_test-slice"
-      validation:
-        - type: "sst_sd_range"
-          check: "cmdb_read"
-          parameter: "sst"
-          expected: "within_range"
-        - type: "sst_sd_range"
-          check: "cmdb_read"
-          parameter: "sd"
-          expected: "within_range"
-        - type: "sst_sd_uniqueness"
-          check: "cmdb_read"
-          parameter: "sst, sd"
-          expected: "unique"
-
-    - step: "Update OAI DB"
-      action: "update_oai-db"
-      description: "Updating OAI DB with UE-slice association. Validating data format."
-      command: "update-oai-db"
-      parameters:
-        slice_id: "test-slice"
-        ue_list:
-          - imsi: "208930000000001"
-            sst: 4
-            sd: "000401"
-      validation:
-        - type: "data_format"
-          check: "cmdb_read"
-          parameter: "imsi"
-          expected: "valid_imsi"
-        - type: "data_format"
-          check: "cmdb_read"
-          parameter: "sst"
-          expected: "valid_integer"
-        - type: "data_format"
-          check: "cmdb_read"
-          parameter: "sd"
-          expected: "valid_hex"
-
-    - step: "Create DNN"
-      action: "dnn_create"
-      description: "Creating a DNN associated with the slice."
-      command: "dnn_create"
-      parameters:
-        dnn_name: "internet.test-slice.com"
-        slice_id: "test-slice"
-        default_qos: "QoS_Profile_test-slice"
+# Sample PCF NRM Instance
+pLMNInfoList:
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+sBIFQDN: "pcf-1.sbi.example.com"
+managedNFProfile:
+  nfInstanceId: "pcf-instance-001"
+  nfType: "PCF"
+  hostAddr: "192.168.1.11"
+pcfInfo:
+  dnnList: ["internet", "iot"]
+  supiRanges:
+    - start: "208930000000000"
+      end: "208930000099999"
+commModelList:
+  - commModelType: "DIRECT_COMMUNICATION"
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
