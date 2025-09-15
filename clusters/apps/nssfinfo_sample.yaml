@@ -1,3 +1,14 @@
-tool_code
-# Step 1: Read the NRM data
-print(tool_code.cmdb_read(filePathInRepo='objects/Core-SSN-NRM.yaml'))
+# Sample NSSF NRM Instance
+pLMNInfoList:
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+sBIFQDN: "nssf-1.sbi.example.com"
+cNSIIdList: ["slice-1-cn"]
+managedNFProfile:
+  nfInstanceId: "nssf-instance-001"
+  nfType: "NSSF"
+  hostAddr: "192.168.1.12"
+commModelList:
+  - commModelType: "DIRECT_COMMUNICATION"
+    targetNFServiceList: ["nnrf-nfm"] 
