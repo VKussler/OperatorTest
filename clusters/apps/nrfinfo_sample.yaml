@@ -19,16 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  servedSmfInfo:
-    smf-1: {}
-  servedUdmInfo:
-    udm-1: {}
-  sliceInfoList:
-    - sNssai:
-        sst: 4
-        sd: "000401"
-      sbiApiVersions:
-        - apiIdentifier: "nnrf-nfm"
-          versions: ["v1"]
-      sliceName: "test-slice"
+    amf-1: {} 
