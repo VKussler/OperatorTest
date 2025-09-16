@@ -13,15 +13,6 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
-  sliceInfoList:
-    - sNssai:
-        sst: 4
-        sd: "000401"
-      qosPolicy:
-        guaranteedBitrateDl: 10000  # kbps
-        guaranteedBitrateUl: 5000   # kbps
-      chargingPolicy:
-        chargingType: "USAGE"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
