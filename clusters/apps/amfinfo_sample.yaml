@@ -1,22 +1,61 @@
-# Sample AMF NRM Instance
-pLMNInfoList:
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-aMFIdentifier: "amf-1.example.com"
-sBIFQDN: "amf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn"]
-managedNFProfile:
-  nfInstanceId: "amf-instance-001"
-  nfType: "AMF"
-  heartBeatTimer: 60
-  hostAddr: "192.168.1.10"
-amfInfo:
-  aMFRegionId: "1"
-  aMFSetId: 100
-  gUAMIdList:
-    - pLMNId:
-        mcc: "208"
-        mnc: "93"
-      aMFIdentifier: "amf-1.example.com"
-aMFSetRef: "/AMFSet/set-1" 
+{
+  "response": "{\n  \"network_slices\": [\n    {\n      \"slice_name\": \"test-slice\",\n      \"sst\": 4,\n      \"sd\": \"000401\"\n    }\n  ]\n}",
+  "commands": [
+    {
+      "tool_name": "cmdb_read",
+      "parameters": {
+        "filePathInRepo": "objects/Core-SSN-NRM.yaml"
+      },
+      "response": "Successfully read objects/Core-SSN-NRM.yaml"
+    },
+    {
+      "tool_name": "nrf_config",
+      "parameters": {
+        "intent": "Configure the NRF to register a new network slice named 'test-slice' with SST 4 and SD 000401."
+      },
+      "response": "Successfully configured NRF for slice: test-slice"
+    },
+    {
+      "tool_name": "pcf_config",
+      "parameters": {
+        "intent": "Configure the PCF for network slice 'test-slice' with SST 4 and SD 000401."
+      },
+      "response": "Successfully configured PCF for slice: test-slice"
+    },
+    {
+      "tool_name": "oai_db_config",
+      "parameters": {
+        "intent": "Configure OAI database for network slice 'test-slice' with SST 4 and SD 000401."
+      },
+      "response": "Successfully configured OAI DB for slice: test-slice"
+    },
+    {
+      "tool_name": "smf_config",
+      "parameters": {
+        "intent": "Configure SMF for network slice 'test-slice' with SST 4 and SD 000401."
+      },
+      "response": "Successfully configured SMF for slice: test-slice"
+    },
+    {
+      "tool_name": "amf_config",
+      "parameters": {
+        "intent": "Configure AMF for network slice 'test-slice' with SST 4 and SD 000401."
+      },
+      "response": "Successfully configured AMF for slice: test-slice"
+    },
+    {
+      "tool_name": "upf_config",
+      "parameters": {
+        "intent": "Configure UPF for network slice 'test-slice' with SST 4 and SD 000401."
+      },
+      "response": "Successfully configured UPF for slice: test-slice"
+    },
+    {
+      "tool_name": "nssf_config",
+      "parameters": {
+        "intent": "Configure NSSF for network slice 'test-slice' with SST 4 and SD 000401."
+      },
+      "response": "Successfully configured NSSF for slice: test-slice"
+    }
+  ]
+}
