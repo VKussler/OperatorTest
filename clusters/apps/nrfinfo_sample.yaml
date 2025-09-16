@@ -1,47 +1,22 @@
-{
-  "network_slice_configuration": {
-    "steps": [
-      {
-        "step": 1,
-        "tool_call": {
-          "tool_name": "cmdb_read",
-          "parameters": {
-            "filePathInRepo": "objects/Core-SSN-NRM.yaml"
-          }
-        },
-        "step_description": "Read the Core-SSN-NRM.yaml file to get the network resource model data."
-      },
-      {
-        "step": 2,
-        "tool_call": {
-          "tool_name": "nrf_configuration",
-          "parameters": {
-            "intent": "Configure NRF to register network slice 'enhanced_video' with SST '4' and SD '123' to support enhanced video streaming with high bandwidth and low latency."
-          }
-        },
-        "step_description": "Configure the NRF to register the 'enhanced_video' network slice with SST 4 and SD 123."
-      },
-      {
-        "step": 3,
-        "tool_call": {
-          "tool_name": "pcf_configuration",
-          "parameters": {
-            "intent": "Configure PCF for network slice 'enhanced_video' with SST '4' and SD '123' to guarantee high bandwidth and low latency QoS policies for enhanced video streaming."
-          }
-        },
-        "step_description": "Configure the PCF to enforce QoS policies for the 'enhanced_video' network slice with SST 4 and SD 123."
-      },
-      {
-        "step": 4,
-        "tool_call": {
-          "tool_name": "oai_db_configuration",
-          "parameters": {
-            "intent": "Configure OAI DB to store network slice information for 'enhanced_video' with SST '4' and SD '123', associating it with the relevant network functions."
-          }
-        },
-        "step_description": "Configure the OAI DB to store information about the 'enhanced_video' network slice with SST 4 and SD 123."
-      }
-    ],
-    "summary": "Successfully configured the NRF, PCF, and OAI DB for the 'enhanced_video' network slice with SST 4 and SD 123 to support enhanced video streaming."
-  }
-}
+# Sample NRF NRM Instance
+pLMNInfoList:
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+sBIFQDN: "nrf-1.sbi.example.com"
+nFProfileList:
+  - nfInstanceId: "nrf-instance-001"
+    nfType: "NRF"
+    nfStatus: "REGISTERED"
+    fqdn: "nrf-1.example.com"
+    nfServices:
+      - serviceInstanceId: "service-1"
+        serviceName: "nnrf-nfm"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+nrfInfo:
+  servedPcfInfo:
+    pcf-1: {}
+  servedAmfInfo:
+    amf-1: {} 
