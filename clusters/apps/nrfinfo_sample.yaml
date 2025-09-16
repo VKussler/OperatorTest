@@ -1,22 +1,33 @@
-# Sample NRF NRM Instance
-pLMNInfoList:
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-sBIFQDN: "nrf-1.sbi.example.com"
-nFProfileList:
-  - nfInstanceId: "nrf-instance-001"
-    nfType: "NRF"
-    nfStatus: "REGISTERED"
-    fqdn: "nrf-1.example.com"
-    nfServices:
-      - serviceInstanceId: "service-1"
-        serviceName: "nnrf-nfm"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-nrfInfo:
-  servedPcfInfo:
-    pcf-1: {}
-  servedAmfInfo:
-    amf-1: {} 
+{
+  "network_slices": [
+    {
+      "slice_name": "test-slice",
+      "slice_type": "eMBB",
+      "user_groups": [
+        "premium_users"
+      ],
+      "network_functions": [
+        {
+          "nf_type": "AMF",
+          "nf_profile": "amf_high_performance",
+          "capacity": "high"
+        },
+        {
+          "nf_type": "SMF",
+          "nf_profile": "smf_standard",
+          "capacity": "medium"
+        },
+        {
+          "nf_type": "UPF",
+          "nf_profile": "upf_basic",
+          "capacity": "low"
+        },
+        {
+          "nf_type": "NRF",
+          "nf_profile": "nrf_slice_discovery",
+          "capacity": "medium"
+        }
+      ]
+    }
+  ]
+}
