@@ -19,4 +19,13 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  sliceInfo:
+    test-slice:
+      sst: 4
+      sd: "000401"
+      nrf_profile: "nrf-default"
+      allowed_nf_types:
+        - "AMF"
+        - "SMF"
+        - "UPF"
