@@ -19,13 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  sliceInfoList:
-    - sNssai:
-        sst: 4
-        sd: "000401"
-      plmnIdList:
-        - mcc: "208"
-          mnc: "93"
-      serviceAreas:
-        - tac: "000001" #Example TAC, replace with actual value
+    amf-1: {} 
