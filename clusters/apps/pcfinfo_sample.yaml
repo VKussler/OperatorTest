@@ -1,18 +1,41 @@
-# Sample PCF NRM Instance
-pLMNInfoList:
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-sBIFQDN: "pcf-1.sbi.example.com"
-managedNFProfile:
-  nfInstanceId: "pcf-instance-001"
-  nfType: "PCF"
-  hostAddr: "192.168.1.11"
-pcfInfo:
-  dnnList: ["internet", "iot"]
-  supiRanges:
-    - start: "208930000000000"
-      end: "208930000099999"
-commModelList:
-  - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+{
+  "network_slice_configuration": {
+    "steps": [
+      {
+        "step": 1,
+        "tool_calls": [
+          {
+            "tool_name": "cmdb_read",
+            "parameters": {
+              "filePathInRepo": "objects/Core-SSN-NRM.yaml"
+            }
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "tool_calls": [
+          {
+            "tool_name": "nrf_config",
+            "parameters": {
+              "intent": "Configure NRF to register network slice 'EnhancedVideoSlice' with SST '87' and SD '0x123456'. Ensure proper slice profile association and capacity allocation."
+            }
+          },
+          {
+            "tool_name": "pcf_config",
+            "parameters": {
+              "intent": "Configure PCF for network slice 'EnhancedVideoSlice' with SST '87' and SD '0x123456'. Set QoS parameters according to enhanced video requirements, including guaranteed bitrate and latency. Ensure PCF policies align with the slice requirements."
+            }
+          },
+          {
+            "tool_name": "oai_db_config",
+            "parameters": {
+              "intent": "Configure OAI DB to store network slice information for 'EnhancedVideoSlice' with SST '87' and SD '0x123456'. Associate the slice with the appropriate network functions and verify schema compatibility."
+            }
+          }
+        ]
+      }
+    ],
+    "summary": "Successfully configured network slice 'EnhancedVideoSlice' with SST '87' and SD '0x123456' across NRF, PCF, and OAI DB."
+  }
+}
