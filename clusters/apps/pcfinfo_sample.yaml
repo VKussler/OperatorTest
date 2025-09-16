@@ -1,18 +1,19 @@
-# Sample PCF NRM Instance
-pLMNInfoList:
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-sBIFQDN: "pcf-1.sbi.example.com"
-managedNFProfile:
-  nfInstanceId: "pcf-instance-001"
-  nfType: "PCF"
-  hostAddr: "192.168.1.11"
-pcfInfo:
-  dnnList: ["internet", "iot"]
-  supiRanges:
-    - start: "208930000000000"
-      end: "208930000099999"
-commModelList:
-  - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+{
+  "sliceConfiguration": {
+    "nrfConfiguration": {
+      "intent": "Configure NRF with slice name {{slice_name}} in sBIFQDN field for slice {{slice_name}} with SST {{sst}} and SD {{sd}}."
+    },
+    "nssfConfiguration": {
+      "intent": "Configure NSSF with cNSIIdList containing slice name {{slice_name}} for slice {{slice_name}} with SST {{sst}} and SD {{sd}}."
+    },
+    "pcfConfiguration": {
+      "intent": "Configure PCF with PLMNInfoList containing slice with SST {{sst}} and SD {{sd}} for slice {{slice_name}}."
+    },
+    "oaiDbConfiguration": {
+      "intent": "Configure OAI DB SessionManagementSubscriptionData containing slice {{slice_name}} with SST {{sst}} and SD {{sd}}."
+    }
+  },
+  "cmdbData": {
+    "intent": "Read the Core-SSN-NRM.yaml file from the objects directory."
+  }
+}
