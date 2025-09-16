@@ -34,11 +34,18 @@ spec:
         fiveQi: 5
         sessionAmbrDl: 400Mbps
         sessionAmbrUl: 200Mbps
+      4-000401:
+        fiveQi: 5
+        sessionAmbrDl: 400Mbps
+        sessionAmbrUl: 200Mbps
   nRTAClist: "0"
   pLMNInfoList:
   - pLMNId:
       mcc: "001"
       mnc: "01"
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
   sBIFQDN: smfinfo-sample.example.com
   smfInfo:
     sNssaiSmfInfoList:
@@ -53,3 +60,9 @@ spec:
       sNSSAI:
         sd: "000001"
         sst: 1
+    - dnnSmfInfoList:
+      - dnn: oai
+        priority: 10
+      sNSSAI:
+        sd: "000401"
+        sst: 4
