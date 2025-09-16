@@ -1,87 +1,14 @@
-{
-  "response": {
-    "instructions": "Okay, I will create network slices based on your requests. I will start by reading the NRM data from the `objects/Core-SSN-NRM.yaml` file. After that, I will configure the network functions based on the user intent, ensuring that the configurations are consistent and valid.",
-    "steps": [
-      {
-        "step": 1,
-        "tool_call": {
-          "tool_name": "cmdb_read",
-          "parameters": {
-            "filePathInRepo": "objects/Core-SSN-NRM.yaml"
-          }
-        },
-        "response": "Successfully read the NRM data from objects/Core-SSN-NRM.yaml. The data contains information about network slice profiles, network functions, and their configurations. It includes details about SST, SD, slice names, and other relevant parameters."
-      },
-      {
-        "step": 2,
-        "tool_call": {
-          "tool_name": "nrf_configuration",
-          "parameters": {
-            "intent": "Configure the NRF with slice name 'test-slice', SST '4', and SD '000401' to enable network slice selection."
-          }
-        },
-        "response": "Successfully configured the NRF with slice name 'test-slice', SST '4', and SD '000401'."
-      },
-      {
-        "step": 3,
-        "tool_call": {
-          "tool_name": "pcf_configuration",
-          "parameters": {
-            "intent": "Configure the PCF for slice with SST '4' and SD '000401' to apply specific charging and policy rules for the 'test-slice'."
-          }
-        },
-        "response": "Successfully configured the PCF for slice with SST '4' and SD '000401'."
-      },
-      {
-        "step": 4,
-        "tool_call": {
-          "tool_name": "oai_db_configuration",
-          "parameters": {
-            "intent": "Configure the OAI database for slice 'test-slice' with SST '4' and SD '000401' to enable subscriber and device authorization."
-          }
-        },
-        "response": "Successfully configured the OAI database for slice 'test-slice' with SST '4' and SD '000401'."
-      },
-      {
-        "step": 5,
-        "tool_call": {
-          "tool_name": "amf_configuration",
-          "parameters": {
-            "intent": "Configure the AMF for slice 'test-slice' with SST '4' and SD '000401' to manage access and mobility."
-          }
-        },
-        "response": "Successfully configured the AMF for slice 'test-slice' with SST '4' and SD '000401'."
-      },
-      {
-        "step": 6,
-        "tool_call": {
-          "tool_name": "smf_configuration",
-          "parameters": {
-            "intent": "Configure the SMF for slice 'test-slice' with SST '4' and SD '000401' to handle session management."
-          }
-        },
-        "response": "Successfully configured the SMF for slice 'test-slice' with SST '4' and SD '000401'."
-      },
-      {
-        "step": 7,
-        "tool_call": {
-          "tool_name": "upf_configuration",
-          "parameters": {
-            "intent": "Configure the UPF for slice 'test-slice' with SST '4' and SD '000401' to handle user plane traffic."
-          }
-        },
-        "response": "Successfully configured the UPF for slice 'test-slice' with SST '4' and SD '000401'."
-      },
-      {
-        "step": 8,
-        "tool_call": {
-          "tool_name": "nssf_configuration",
-          "parameters": {
-            "intent": "Configure the NSSF for slice 'test-slice' with SST '4' and SD '000401' to enable network slice selection."
-          }
-        },
-        "response": "Successfully configured the NSSF for slice 'test-slice' with SST '4' and SD '000401'."
-      }
-    ]
-  }
-}
+# Sample NSSF NRM Instance
+pLMNInfoList:
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+sBIFQDN: "nssf-1.sbi.example.com"
+cNSIIdList: ["slice-1-cn"]
+managedNFProfile:
+  nfInstanceId: "nssf-instance-001"
+  nfType: "NSSF"
+  hostAddr: "192.168.1.12"
+commModelList:
+  - commModelType: "DIRECT_COMMUNICATION"
+    targetNFServiceList: ["nnrf-nfm"] 
