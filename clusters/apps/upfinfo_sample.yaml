@@ -62,6 +62,7 @@ spec:
         sd: "000001"
         sst: 1
     - dnnUpfInfoList:
-      sNssai:
-        sd: "000401"
-        sst: 4
+      - dnn: test-slice
+        sNssai:
+          sd: "000401"
+          sst: 4
