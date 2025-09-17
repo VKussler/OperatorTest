@@ -11,21 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
-
-sliceSelectionPolicies:
-  - sNSSAI:
-      sst: 4
-      sd: "000401"
-    plmnIdList:
-      - mcc: "208"
-        mnc: "93"
-    nSIId: "test-slice-instance-1" # Example NSI ID
-
-routingRules:
-  - sNSSAI:
-      sst: 4
-      sd: "000401"
-    target:
-      - nFType: "AMF" # Example NF Type
-        nFInstanceId: "amf-instance-001" # Example AMF Instance ID
+    targetNFServiceList: ["nnrf-nfm"] 
