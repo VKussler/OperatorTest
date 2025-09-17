@@ -16,3 +16,4 @@ sliceInfoList:
   - sst: 4
     sd: "000401"
     cNSIIdList: ["test-slice"]
+    sliceName: "test-slice"
