@@ -19,20 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  sliceInfoList:
-    - sliceName: "test-slice"
-      snssaiList:
-        - sst: 4
-          sd: "000401"
-      serviceProfiles: # Example Service Profiles - Adjust as needed
-        - serviceName: "nnrf-nfm"
-          versions: ["1.0.0"]
-          priority: 1
-      accessControlPolicies: # Example Access Control Policies - Adjust as needed
-        - policyName: "slice-access-policy"
-          rules:
-            - allowedNfTypes: ["AMF", "SMF", "PCF"]
-      supportedFeatures: # Example Supported Features - Adjust as needed
-        feature1: true
-        feature2: false
+    amf-1: {} 
