@@ -19,4 +19,21 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  sliceInfoList:
+    - sliceName: "test-slice"
+      snssaiList:
+        - sst: 4
+          sd: "000401"
+      serviceProfiles: # Example Service Profiles, adjust based on actual profiles
+        - profileId: "profile-1"
+          profileName: "test-slice-profile-1"
+      accessControlPolicies: # Example Access Control Policies, adjust based on actual policies
+        - policyId: "policy-1"
+          policyName: "test-slice-policy-1"
+      supportedFeatures: # Example Supported Features, adjust based on actual features
+        - featureName: "feature-1"
+          version: "1.0"
+      capabilities: # Example Capabilities, adjust based on actual capabilities
+        - capabilityName: "capability-1"
+          version: "1.0"
