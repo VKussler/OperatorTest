@@ -59,7 +59,6 @@ spec:
         sst: 1
     - dnnSmfInfoList:
       - dnn: oai
-        
       sNSSAI:
         sd: "000401"
         sst: 4
