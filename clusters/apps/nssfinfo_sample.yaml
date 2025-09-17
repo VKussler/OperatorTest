@@ -4,28 +4,11 @@ pLMNInfoList:
       mcc: "208"
       mnc: "93"
 sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn", "test-slice-cn"] # Added test slice CNSI ID
+cNSIIdList: ["slice-1-cn"]
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
-
-sliceSelectionPolicies:
-  - sNSSAI:
-      sst: 4
-      sd: "000401"
-    plmnIdList:
-      - mcc: "208"
-        mnc: "93"
-    networkSliceInstance: "test-slice-cn" # Maps SNSSAI to the test slice CNSI
-
-routingRules:
-  - sNSSAI:
-      sst: 4
-      sd: "000401"
-    target:
-      nrfService: "nnrf-nfm" # Example: Route to NRF for slice-aware NF discovery
-      priority: 1
+    targetNFServiceList: ["nnrf-nfm"] 

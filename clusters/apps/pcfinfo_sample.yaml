@@ -13,19 +13,6 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
-  sliceInfoList:
-    - sNssai:
-        sst: 4
-        sd: "000401"
-      qosReference: "QOS_REF_1" # Example QoS reference
-      chargingCharacteristicsReference: "CHARGING_REF_1" # Example Charging Characteristics Reference
-      policyControlRuleList: # Example Policy Control Rules
-        - ruleId: "PCR_1"
-          precedence: 10
-          flowStatus: "ENABLED"
-        - ruleId: "PCR_2"
-          precedence: 20
-          flowStatus: "DISABLED"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
