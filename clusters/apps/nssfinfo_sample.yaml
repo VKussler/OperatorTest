@@ -11,4 +11,18 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"] 
+    targetNFServiceList: ["nnrf-nfm"]
+
+sliceSelectionPolicies:
+  - sst: 4
+    sd: "000401"
+    pLMNIdList:
+      - mcc: "208"
+        mnc: "93"
+    cNSIIdList: ["slice-test-slice-cn"] # Assuming a CNSI ID for the test slice
+
+routingRules:
+  - sst: 4
+    sd: "000401"
+    targetCNSIId: "slice-test-slice-cn"
+    priority: 1
