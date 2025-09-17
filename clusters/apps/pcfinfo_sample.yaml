@@ -13,6 +13,24 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
+  snssaiList:
+    - sst: 4
+      sd: "000401"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+policyAuthorization:
+  qosPolicies:
+    - qosId: "qos-1"
+      qosReference: "QCI-5" # Example QCI value.  Adjust as needed.
+      priorityLevel: 1
+  chargingCharacteristics:
+    - chId: "ch-1"
+      chargingInformation: "Charging data for test-slice"
+policyControl:
+  rules:
+    - ruleId: "rule-1"
+      precedence: 10
+      flowInformation: "Flow information for test-slice"
+      qosReference: "qos-1"
+      chargingId: "ch-1"
