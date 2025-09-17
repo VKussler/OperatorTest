@@ -19,4 +19,19 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  sliceInfoList:
+    - sNssai:
+        sst: 4
+        sd: "000401"
+      sliceName: "test-slice"
+      supportedFeatures: # Example - Add supported features as needed
+        - feature1
+        - feature2
+      serviceProfiles: # Example - Define service profiles
+        - profileName: "profile-1"
+          priority: 1
+      accessControlPolicies: # Example - Define access control policies
+        - policyName: "policy-1"
+          rules:
+            - rule1
