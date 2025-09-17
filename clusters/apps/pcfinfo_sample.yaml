@@ -13,6 +13,30 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
+  snssaiList:
+    - sst: 4
+      sd: "000401"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+policyAuthorization:
+  qosPolicies:
+    - qosReference: "qos-ref-1"
+      qosCharacteristics:
+        5qi: 9
+        priorityLevel: 10
+        averagingWindow: 1000
+        maximumDataBurstVolume: 1500
+  chargingCharacteristics:
+    - chChRef: "ch-ch-ref-1"
+      chargingInformation:
+        offline: true
+        online: false
+  policyControlRules:
+    - pccRuleId: "pcc-rule-1"
+      precedence: 10
+      qosReference: "qos-ref-1"
+      chargingCharacteristicsReference: "ch-ch-ref-1"
+      flowInformation:
+        - flowDescription: "permit out ip from any to assigned"
+          flowDirection: "DOWNLINK"
