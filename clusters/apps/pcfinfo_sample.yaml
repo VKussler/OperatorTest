@@ -13,14 +13,6 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
-  sliceInfoList:
-    - sliceId:
-        sst: 4
-        sd: "000401"
-      serviceAreaInfo:
-        taiList: []
-        ecgiList: []
-        ncgiList: []
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
