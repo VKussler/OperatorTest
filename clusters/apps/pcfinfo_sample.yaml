@@ -13,17 +13,6 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
-  snssaiList:
-    - sst: 4
-      sd: "000401"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
-policyAuthorizationService:
-  serviceName: "npcf-policyauthorization"
-  versions: ["1.2.0"]
-  supportedFeatures: "QoS,Charging"
-chargingService:
-  serviceName: "npcf-charging"
-  versions: ["1.1.0"]
-  supportedFeatures: "Offline,Online"
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
