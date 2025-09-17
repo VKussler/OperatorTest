@@ -19,4 +19,18 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  sliceInfoList:
+    - sNssai:
+        sst: 4
+        sd: "000401"
+      plmnIdList:
+        - mcc: "208"
+          mnc: "93"
+      serviceProfiles: # Example service profiles, adjust as needed
+        - profileId: "slice-profile-1"
+          priority: 1
+          description: "Profile for test-slice"
+      accessControlPolicies: # Example access control policies, adjust as needed
+        - policyId: "slice-policy-1"
+          description: "Policy for test-slice access"
