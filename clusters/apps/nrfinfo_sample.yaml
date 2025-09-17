@@ -24,6 +24,7 @@ nrfInfo:
     - sNssai:
         sst: "1"
         sd: "test-slice"
+      sBIFQDN: "nrf-1.sbi.example.com"
       availabilityInfo:
         - tai:
             plmnId:
