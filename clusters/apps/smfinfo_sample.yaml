@@ -53,3 +53,10 @@ spec:
       sNSSAI:
         sd: "000001"
         sst: 1
+    - dnnSmfInfoList:
+      - dnn: ims
+        dnn: oai
+        dnn: ora
+      sNSSAI:
+        sd: "000401"
+        sst: 4
