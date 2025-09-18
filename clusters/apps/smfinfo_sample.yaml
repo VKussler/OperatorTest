@@ -53,3 +53,8 @@ spec:
       sNSSAI:
         sd: "000001"
         sst: 1
+    cNSIIdList:
+    - nSIId: test-slice
+      sNSSAI:
+        sst: 4
+        sd: "000401"
