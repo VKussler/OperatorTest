@@ -13,14 +13,6 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
-  snssaiInfo:
-    - snssai:
-        sst: 4
-        sd: "000401"
-      dnnList: ["internet", "iot"] # Or specific DNNs for this slice
-      pLMNIdList:
-        - mcc: "208"
-          mnc: "93"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
