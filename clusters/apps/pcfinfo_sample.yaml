@@ -3,16 +3,48 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
+    sNSSAIList:
+      - sST: 4
+        sD: "000401"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
   nfType: "PCF"
   hostAddr: "192.168.1.11"
+  nfServices:
+    - serviceInstanceId: "pcf-am-1"
+      serviceName: "Npcf_AMPolicyControl"
+      versions: ["1.0.0"]
+      scheme: "https"
+      fqdn: "pcf-1.sbi.example.com"
+      apiPrefix: "/npcf-am/v1"
+    - serviceInstanceId: "pcf-bdt-1"
+      serviceName: "Npcf_BDTPolicyControl"
+      versions: ["1.0.0"]
+      scheme: "https"
+      fqdn: "pcf-1.sbi.example.com"
+      apiPrefix: "/npcf-bdt/v1"
+    - serviceInstanceId: "pcf-ue-1"
+      serviceName: "Npcf_UEPolicyControl"
+      versions: ["1.0.0"]
+      scheme: "https"
+      fqdn: "pcf-1.sbi.example.com"
+      apiPrefix: "/npcf-ue/v1"
+    - serviceInstanceId: "pcf-sm-1"
+      serviceName: "Npcf_SMPolicyControl"
+      versions: ["1.0.0"]
+      scheme: "https"
+      fqdn: "pcf-1.sbi.example.com"
+      apiPrefix: "/npcf-sm/v1"
 pcfInfo:
   dnnList: ["internet", "iot"]
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
+  sliceInfoList:
+    - sNSSAI:
+        sST: 4
+        sD: "000401"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["Npcf_AMPolicyControl", "Npcf_SMPolicyControl", "Npcf_UEPolicyControl", "Npcf_BDTPolicyControl"]
