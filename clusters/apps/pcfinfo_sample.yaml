@@ -45,6 +45,7 @@ pcfInfo:
     - sNSSAI:
         sST: 4
         sD: "000401"
+      sliceDifferentiator: "test-slice"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
     targetNFServiceList: ["Npcf_AMPolicyControl", "Npcf_SMPolicyControl", "Npcf_UEPolicyControl", "Npcf_BDTPolicyControl"]
