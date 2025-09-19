@@ -19,7 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  sliceInfo:
-    test-slice:
-      sBIFQDN: "test-slice.sbi.example.com"
+    amf-1: {} 
