@@ -25,7 +25,7 @@ pLMNInfoList:
       sst: 4
 supportedBMOList:
   - BMO1
-cNSIIdList: ["slice-1-cn"]
+cNSIIdList: ["slice-1-cn", "test-slice"]
 upfInfo:
   sNssaiUpfInfoList:
     - dnnUpfInfoList:
@@ -59,6 +59,16 @@ upfInfo:
           ipv4AddressRanges:
             - iPv4AddrRangeEnd: 15.1.1.255
               iPv4AddrRangeStart: 15.1.1.0
+          pduSessionTypes:
+            - IPv4
+      sNssai:
+        sd: "000401"
+        sst: 4
+    - dnnUpfInfoList:
+        - dnn: test
+          ipv4AddressRanges:
+            - iPv4AddrRangeEnd: 16.1.1.255
+              iPv4AddrRangeStart: 16.1.1.0
           pduSessionTypes:
             - IPv4
       sNssai:
