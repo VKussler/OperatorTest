@@ -3,7 +3,7 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-  - sliceInfoList:
+    sliceInfoList:
       - sNssai:
           sst: 4
           sd: "000401"
