@@ -16,6 +16,15 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
+  supportedSlices:
+    - sNSSAI:
+        sst: 1
+        sd: "000001"
+      cNSIIdList: ["slice-1"]
+    - sNSSAI:
+        sst: 4
+        sd: "000401"
+      cNSIIdList: ["test-slice"]
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
