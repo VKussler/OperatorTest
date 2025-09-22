@@ -19,4 +19,21 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  supportedNssaiAvailabilityData:
+    - snssai:
+        sst: 4
+        sd: "000401"
+      availabilityInfo:
+        pLMNInfoList:
+          - pLMNId:
+              mcc: "208"
+              mnc: "93"
+        taiList:
+          - tac: "000001"
+            ecgiList:
+              - ecgi: "00000001"
+          - tac: "000002"
+            ecgiList:
+              - ecgi: "00000002"
+        taiRangeList: []
