@@ -3,6 +3,9 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
+  sNSSAI:
+      sst: 1
+      sd: "000001"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
@@ -13,25 +16,6 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
-  gpsiRanges:
-    - start: "gpsirange1"
-      end: "gpsirange2"
-  groupId: "group1"
-  rxDiamHost: "pcf.example.com"
-  rxDiamRealm: "example.com"
-  v2xSupportInd: true
-  proseSupportInd: false
-  proseCapability: "NONE"
-  v2xCapability: "PC5"
-  a2xCapability: "5GC"
-  rangingSlPosSupportInd: true
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
-  - commModelType: "INDIRECT_COMMUNICATION"
-    targetNFServiceList: ["nudm-sdm"]
-  - snssai:
-      sst: 4
-      sd: "000401"
-    commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
