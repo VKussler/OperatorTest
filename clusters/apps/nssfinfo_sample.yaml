@@ -1,22 +1,14 @@
+# Sample NSSF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
 sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["test-slice"]
+cNSIIdList: ["slice-1-cn"]
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
-  nfServices:
-    - serviceName: "nnssf-slice-selection"
-      versions: ["1.0.0"]
-      scheme: "https"
-      fqdn: "nssf-1.sbi.example.com"
-      apiPrefix: "/nnssf-slice-selection/v1"
   hostAddr: "192.168.1.12"
-  sNssaiList:
-    - sst: 4
-      sd: "000401"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
+    targetNFServiceList: ["nnrf-nfm"] 
