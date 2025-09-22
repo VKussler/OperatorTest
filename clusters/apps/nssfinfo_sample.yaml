@@ -5,27 +5,10 @@ pLMNInfoList:
       mnc: "93"
 sBIFQDN: "nssf-1.sbi.example.com"
 cNSIIdList: ["slice-1-cn"]
-supportedSnssaiList:
-  - sst: 1
-    sd: "000101"
-  - sst: 4
-    sd: "000401"
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
-nssaiBasedInformation:
-  - snssai:
-      sst: 4
-      sd: "000401"
-    nrfAccessUri: "https://nrf.example.com/nrf-disc/v1" # Replace with actual NRF URI
-networkSliceSelectionAssistanceInformation:
-  - servingPlmnId:
-      mcc: "208"
-      mnc: "93"
-    snssaiList:
-      - sst: 4
-        sd: "000401"
+    targetNFServiceList: ["nnrf-nfm"] 
