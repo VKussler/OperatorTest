@@ -1,3 +1,4 @@
+# Sample UPF NRM Instance
 managedNFProfile:
   capacity: 1000
   hostAddr: oai-upf
@@ -8,11 +9,17 @@ pLMNInfoList:
       mcc: "001"
       mnc: "01"
     sNSSAI:
-      sd: "000401"
-      sst: 4
+      sd: FFFFFF
+      sst: 1
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+    sNSSAI:
+      sd: "000001"
+      sst: 1
 supportedBMOList:
   - BMO1
-cNSIIdList: ["test-slice"]
+cNSIIdList: ["slice-1-cn"]
 upfInfo:
   sNssaiUpfInfoList:
     - dnnUpfInfoList:
@@ -29,13 +36,15 @@ upfInfo:
           pduSessionTypes:
             - IPv4
       sNssai:
-        sd: "000401"
-        sst: 4
-commModelList:
-  - accessType: "3GPP_ACCESS"
-    confidence: 0.95
-    trafficCharacteristics:
-      - appIdentifier: "video_streaming"
-        averagePacketDelay: 50
-        packetLossRate: 0.01
-sBIFQDN: upf.example.com
+        sd: FFFFFF
+        sst: 1
+    - dnnUpfInfoList:
+        - dnn: ims
+          ipv4AddressRanges:
+            - iPv4AddrRangeEnd: 14.1.1.255
+              iPv4AddrRangeStart: 14.1.1.0
+          pduSessionTypes:
+            - IPv4v6
+      sNssai:
+        sd: "000001"
+        sst: 1

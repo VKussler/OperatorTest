@@ -3,7 +3,7 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-sBIFQDN: "test-slice.sbi.example.com"
+sBIFQDN: "nrf-1.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
@@ -17,17 +17,6 @@ nFProfileList:
         nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
-    pcf-1:
-      sNssaiPcfInfoList:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          dnnList: ["internet"]
+    pcf-1: {}
   servedAmfInfo:
-    amf-1:
-      sNssaiAmfInfoList:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          amfRegionId: "Region1"
-          amfSetId: "Set1"
+    amf-1: {} 
