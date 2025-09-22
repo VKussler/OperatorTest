@@ -3,7 +3,7 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-sBIFQDN: "test-slice.sbi.example.com"
+sBIFQDN: "nrf-1.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
@@ -19,9 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  supportedNssaiList:
-    - sNssai:
-        sst: "1"
-        sd: "000001" # Example SD for the slice
-      isSnssaiValid: true
+    amf-1: {} 
