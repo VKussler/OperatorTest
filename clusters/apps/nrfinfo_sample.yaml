@@ -3,7 +3,7 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-sBIFQDN: "nrf-1.sbi.example.com"
+sBIFQDN: "test-slice.sbi.example.com" # Updated sBIFQDN to include the slice name
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
@@ -17,6 +17,24 @@ nFProfileList:
         nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
-    pcf-1: {}
+    pcf-1:
+      sNssaiPcfInfoList:
+        - sNssai:
+            sst: 1
+            sd: "000001"
+        - sNssai:
+            sst: 4 # SST for the new slice
+            sd: "000401" # SD for the new slice
   servedAmfInfo:
-    amf-1: {} 
+    amf-1:
+      sNssaiAmfInfoList:
+        - sNssai:
+            sst: 1
+            sd: "000001"
+          amfSetList:
+            - "amf-set-1"
+        - sNssai:
+            sst: 4 # SST for the new slice
+            sd: "000401" # SD for the new slice
+          amfSetList:
+            - "amf-set-1"
