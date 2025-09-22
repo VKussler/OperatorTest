@@ -1,4 +1,3 @@
-# Sample NSSF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
@@ -9,6 +8,10 @@ managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
   hostAddr: "192.168.1.12"
+  nssaiList:
+    - snssai:
+        sst: 4
+        sd: "000401"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"] 
+    targetNFServiceList: ["nnrf-nfm"]
