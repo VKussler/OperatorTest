@@ -5,7 +5,7 @@ pLMNInfoList:
       mnc: "93"
 aMFIdentifier: "amf-1.example.com"
 sBIFQDN: "amf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn", "test-slice"]
+cNSIIdList: ["slice-1-cn"]
 managedNFProfile:
   nfInstanceId: "amf-instance-001"
   nfType: "AMF"
@@ -14,39 +14,9 @@ managedNFProfile:
 amfInfo:
   aMFRegionId: "1"
   aMFSetId: 100
-  taiList:
-    - pLMNId:
-        mcc: "208"
-        mnc: "93"
-      tac: "000001"
-  taiRangeList:
-    - pLMNId:
-        mcc: "208"
-        mnc: "93"
-      start: "000001"
-      end: "000002"
   gUAMIdList:
     - pLMNId:
         mcc: "208"
         mnc: "93"
       aMFIdentifier: "amf-1.example.com"
-  backupInfoAmfFailure:
-    - aMFIdentifier: "amf-2.example.com"
-      priority: 1
-  backupInfoAmfRemoval:
-    - aMFIdentifier: "amf-3.example.com"
-      priority: 2
-  n2InterfaceAmfInfo:
-    - pLMNId:
-        mcc: "208"
-        mnc: "93"
-      amfN2IpAddress:
-        - ipAddr: "192.168.2.10"
-          transport: "TCP"
-  amfOnboardingCapability: true
-  highLatencyCom: false
-  sliceInfoList:
-    - sNSSAI:
-        sst: 4
-        sd: "000401"
-aMFSetRef: "/AMFSet/set-1"
+aMFSetRef: "/AMFSet/set-1" 
