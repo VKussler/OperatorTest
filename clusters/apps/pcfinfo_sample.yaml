@@ -16,6 +16,16 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
+  supportedSnssaiList:
+    - sst: 4
+      sd: "000401"
+  cNSIIdList:
+    - cNSIId: "test-slice"
+      sNSSAI:
+        sst: 4
+        sd: "000401"
+      isSliceEnabled: true
+      trafficHandlingPolicy: "QOS_BASED" # Example policy, adjust as needed
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
