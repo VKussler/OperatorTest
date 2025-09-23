@@ -83,6 +83,9 @@ upfInfo:
         - dnn: internet
           pduSessionTypes:
             - IPv4
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "0403"
         sst: 4
