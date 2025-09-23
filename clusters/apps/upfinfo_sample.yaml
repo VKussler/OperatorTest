@@ -59,10 +59,6 @@ upfInfo:
           ipv4AddressRanges:
             - iPv4AddrRangeStart: 192.168.1.0
               iPv4AddrRangeEnd: 192.168.1.255
-      sNssai:
-        sd: "8c9b7b"
-        sst: 51
-    - dnnUpfInfoList:
         - dnn: internet
           pduSessionTypes:
             - IPv4
@@ -70,5 +66,5 @@ upfInfo:
             - iPv4AddrRangeStart: 192.168.1.0
               iPv4AddrRangeEnd: 192.168.1.255
       sNssai:
-        sd: "699fdf"
-        sst: 36
+        sd: "8c9b7b"
+        sst: 51
