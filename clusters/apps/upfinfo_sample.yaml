@@ -79,3 +79,7 @@ upfInfo:
       sNssai:
         sd: "0403"
         sst: 4
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "0403"
+        sst: 4
