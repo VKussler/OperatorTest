@@ -48,17 +48,3 @@ upfInfo:
       sNssai:
         sd: "000001"
         sst: 1
-    - dnnUpfInfoList:
-        - dnn: internet
-          pduSessionTypes:
-            - IPv4
-      sNssai:
-        sd: "b1e65c"
-        sst: 174
-    - dnnUpfInfoList:
-        - dnn: internet
-          pduSessionTypes:
-            - IPv4
-      sNssai:
-        sd: "b1e65c"
-        sst: 174
