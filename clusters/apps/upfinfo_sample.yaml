@@ -55,7 +55,10 @@ upfInfo:
       sNssai:
         sd: "eb6960"
         sst: 46
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "eb6960"
         sst: 46
