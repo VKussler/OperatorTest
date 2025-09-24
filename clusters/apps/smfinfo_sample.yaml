@@ -54,7 +54,8 @@ smfInfo:
       sNSSAI:
         sd: "4859cb"
         sst: 198
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+        - dnn: internet
       sNSSAI:
         sd: "4859cb"
         sst: 198
