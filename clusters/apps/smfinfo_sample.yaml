@@ -54,8 +54,7 @@ smfInfo:
       sNSSAI:
         sd: "b1e65c"
         sst: 174
-    - dnnSmfInfoList:
-        - dnn: internet
+    - dnnSmfInfoList: []
       sNSSAI:
-        sd: "b1e65c"
-        sst: 174
+        sd: "8d7682"
+        sst: 142
