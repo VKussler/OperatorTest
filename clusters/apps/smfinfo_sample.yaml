@@ -54,3 +54,7 @@ smfInfo:
       sNSSAI:
         sd: "e0a628"
         sst: 56
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "e0a628"
+        sst: 56
