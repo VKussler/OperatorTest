@@ -64,7 +64,13 @@ upfInfo:
       sNssai:
         sd: "e0a628"
         sst: 56
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          ipv4AddressRanges:
+            - iPv4AddrRangeEnd: 192.0.2.255
+              iPv4AddrRangeStart: 192.0.2.0
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "1cef30"
         sst: 181
