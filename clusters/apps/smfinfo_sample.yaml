@@ -59,7 +59,8 @@ smfInfo:
       sNSSAI:
         sd: "e0a628"
         sst: 56
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+        - dnn: internet
       sNSSAI:
         sd: "1cef30"
         sst: 181
