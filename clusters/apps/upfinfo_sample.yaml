@@ -64,3 +64,10 @@ upfInfo:
       sNssai:
         sd: "b1e65c"
         sst: 174
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
+      sNssai:
+        sd: "8d7682"
+        sst: 142
