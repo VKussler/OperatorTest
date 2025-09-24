@@ -64,3 +64,7 @@ upfInfo:
       sNssai:
         sd: "e0a628"
         sst: 56
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "1cef30"
+        sst: 181
