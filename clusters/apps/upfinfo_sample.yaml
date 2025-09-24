@@ -55,7 +55,10 @@ upfInfo:
       sNssai:
         sd: "b1e65c"
         sst: 174
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "b1e65c"
         sst: 174
