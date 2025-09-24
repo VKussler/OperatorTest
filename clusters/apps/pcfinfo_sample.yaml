@@ -9,6 +9,7 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
+    sliceName: "resilience-slice"
     sNSSAI:
       sst: 40
       sd: "376291"
