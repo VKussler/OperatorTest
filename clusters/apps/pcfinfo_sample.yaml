@@ -3,13 +3,7 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-    sNSSAI:
-      sst: 4
-      sd: "000401"
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-    sNSSAI:
+  sNSSAI:
       sst: 1
       sd: "000001"
 sBIFQDN: "pcf-1.sbi.example.com"
@@ -22,20 +16,6 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
-  policies:
-    - type: QOS
-      dnn: "internet"
-      sNSSAI:
-        sst: 4
-        sd: "000401"
-      dlLatency: 10
-      ulLatency: 15
-      dlThroughput: 1000
-      ulThroughput: 500
-    - type: AVAILABILITY
-      target: 99.99
-    - type: RELIABILITY
-      target: 99.999
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
