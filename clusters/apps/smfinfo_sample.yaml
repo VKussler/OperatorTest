@@ -2,7 +2,7 @@
 commModelList:
   - commModelType: DIRECT_COMMUNICATION_WO_NRF
 managedNFProfile:
-  capacity: 10
+  capacity: 20000
   hostAddr: 127.0.0.1
   nfType:
     - SMF
