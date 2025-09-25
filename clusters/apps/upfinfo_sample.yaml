@@ -63,6 +63,9 @@ upfInfo:
               iPv4AddrRangeStart: 15.1.1.0
           pduSessionTypes:
             - IPv4
+          throughput:
+            dl: 1000000000
+            ul: 500000000
       sNssai:
         sd: "000401"
         sst: 4
@@ -70,3 +73,7 @@ upfInfo:
     dl: 10
     ul: 15
   tAList: [1, 2, 3]
+  packetFilteringRules:
+    - sNssai:
+        sst: 4
+        sd: 000401
