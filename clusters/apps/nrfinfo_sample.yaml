@@ -1,4 +1,3 @@
-# Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
@@ -19,4 +18,23 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  servedSmfInfo:
+    smf-1: {}
+  servedUpfInfo:
+    upf-1: {}
+  servedNetworkSliceInfo:
+    test-slice:
+      sliceId:
+        sst: 4
+        sd: "000401"
+      sliceAvailabilityInfo:
+        dnnList:
+          - "internet"
+      sliceNfInfoItem:
+        - nfType: "AMF"
+          nfInstanceId: "amf-1"
+        - nfType: "SMF"
+          nfInstanceId: "smf-1"
+        - nfType: "UPF"
+          nfInstanceId: "upf-1"
