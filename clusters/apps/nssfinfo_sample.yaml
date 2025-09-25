@@ -4,7 +4,11 @@ pLMNInfoList:
       mcc: "208"
       mnc: "93"
 sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn", "failover-slice"]
+cNSIIdList:
+  - sNSSAI:
+      sst: 4
+      sd: "000401"
+    cNSIId: "test-slice"
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
