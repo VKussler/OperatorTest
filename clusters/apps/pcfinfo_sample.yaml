@@ -26,6 +26,8 @@ pcfInfo:
         priorityLevel: 8
         packetDelayBudget: 100
         packetErrorRate: "10^-5"
+        availability: "99.99%"
+        reliability: "99.999%"
       resourceAllocation:
         maxBitRateUL: "100Mbps"
         maxBitRateDL: "100Mbps"
