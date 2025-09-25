@@ -30,3 +30,7 @@ sliceSelectionPolicy:
       allowedNSSAI:
         - sst: 4
           sd: "000401"
+  sliceSelectionAssistanceInfo:
+    priority: 10
+    supportedDNNs:
+      - "internet"
