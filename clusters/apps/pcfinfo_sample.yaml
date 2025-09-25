@@ -20,12 +20,13 @@ pcfInfo:
     - sNSSAI:
         sst: 4
         sd: "000401"
-      ueCapacity: 1000
+      ueCapacity: 1000000
+      pduSessionCapacity: 20000
       qosRules:
         reliability:
           downlink: 0.99999
           uplink: 0.99999
-        availability: 0.9999
+        availability: 0.99999
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
     targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
