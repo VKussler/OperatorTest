@@ -10,6 +10,23 @@ sliceInfoList:
       sD: "000401"
     cNSIIdList: ["test-slice-cn-1"]
     priority: 15
+    sliceSelectionPolicy:
+      selectionMode: "BASED_ON_SUBSCRIPTION_AND_NETWORK"
+    allowedNFProfileList:
+      - nfInstanceId: "amf-test-slice-001"
+        nfType: "AMF"
+        priority: 1
+        capacity: 100
+        allowedPlmns:
+          - mcc: "208"
+            mnc: "93"
+      - nfInstanceId: "smf-test-slice-001"
+        nfType: "SMF"
+        priority: 2
+        capacity: 80
+        allowedPlmns:
+          - mcc: "208"
+            mnc: "93"
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
