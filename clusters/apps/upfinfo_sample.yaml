@@ -25,7 +25,7 @@ pLMNInfoList:
       sst: 4
 supportedBMOList:
   - BMO1
-cNSIIdList: ["slice-1-cn"]
+cNSIIdList: ["test-slice-cn-1"]
 upfInfo:
   sNssaiUpfInfoList:
     - dnnUpfInfoList:
@@ -60,7 +60,16 @@ upfInfo:
             - iPv4AddrRangeEnd: 15.1.1.255
               iPv4AddrRangeStart: 15.1.1.0
           pduSessionTypes:
-            - IPv4
+            - IPv4v6
+          qosPolicyId: "qos-internet"
       sNssai:
         sd: "000401"
         sst: 4
+  trafficSteeringPolicyList:
+    - policyId: "steer-test-slice"
+      description: "Traffic steering for test-slice (SST=4, SD=000401)"
+      steeringMethod: "LOAD_BALANCE"
+      targetUpfInfo:
+        sNssai:
+          sd: "000401"
+          sst: 4
