@@ -33,6 +33,7 @@ pcfInfo:
         maxBitRateDL: "100Mbps"
         guaranteedBitRateUL: "10Mbps"
         guaranteedBitRateDL: "10Mbps"
+        resourceSharing: SHARED
       subscriptionPolicy:
         subscriptionId: "sub-004"
         resourcePriority: "high"
