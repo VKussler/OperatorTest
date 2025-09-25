@@ -17,9 +17,15 @@ pLMNInfoList:
     sNSSAI:
       sd: "000001"
       sst: 1
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+    sNSSAI:
+      sd: "000401"
+      sst: 4
 supportedBMOList:
   - BMO1
-cNSIIdList: ["slice-1-cn"]
+cNSIIdList: ["slice-1-cn", "test-slice"]
 upfInfo:
   sNssaiUpfInfoList:
     - dnnUpfInfoList:
@@ -62,3 +68,10 @@ upfInfo:
       sNssai:
         sd: "eb6960"
         sst: 46
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
+      sNssai:
+        sd: "000401"
+        sst: 4
