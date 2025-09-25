@@ -32,5 +32,9 @@ sliceSelectionPolicy:
           sd: "000401"
   sliceSelectionAssistanceInfo:
     priority: 10
+    coverageAreaTAList:
+      - 1
+      - 2
+      - 3
     supportedDNNs:
       - "internet"
