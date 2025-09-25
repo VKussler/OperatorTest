@@ -67,6 +67,7 @@ upfInfo:
         ulThroughput: 500
         latency: 10
         uplinkLatency: 15
+        reliability: "99.999"
       sNssai:
         sd: "000401"
         sst: 4
