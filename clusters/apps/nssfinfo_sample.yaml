@@ -24,6 +24,7 @@ sliceSelectionPolicy:
       allowedNSSAI:
         - sst: 4
           sd: "000401"
+          dnn: "internet"
     - nfInstanceId: "upf-test-slice-001"
       nfType: "UPF"
       allowedNSSAI:
