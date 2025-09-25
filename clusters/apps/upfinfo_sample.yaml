@@ -1,6 +1,6 @@
 # Sample UPF NRM Instance
 managedNFProfile:
-  capacity: 1000000
+  capacity: 20000
   hostAddr: oai-upf
   nfType:
     - UPF
