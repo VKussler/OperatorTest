@@ -25,6 +25,10 @@ nrfInfo:
       sliceId:
         sst: 4
         sd: 000401
+      supportedDataNetworks: ["internet"]
+      serviceDiscoveryInfo:
+        maxPduSessions: 20000
+        slaAvailability: "99.99%"
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
