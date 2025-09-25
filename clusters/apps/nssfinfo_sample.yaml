@@ -28,3 +28,18 @@ sliceInfoList:
             - tac: 2
             - tac: 3
     priority: 10
+  - sNSSAI:
+      sst: 4
+      sd: "000401"
+    allowedNSSAIList:
+      - sNSSAI:
+          sst: 4
+          sd: "000401"
+    dnnInfoList:
+      - dnn: "internet"
+        areaInfo:
+          trackingAreaList:
+            - tac: 1
+            - tac: 2
+            - tac: 3
+    priority: 10
