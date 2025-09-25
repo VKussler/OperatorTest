@@ -55,9 +55,16 @@ upfInfo:
               iPv4AddrRangeStart: 15.1.1.0
           pduSessionTypes:
             - IPv4
+          trafficSteeringPolicy:
+            - "steering-rule-1"
       sNssai:
         sd: "000401"
         sst: 4
+      latency:
+        downlink: 10ms
+        uplink: 15ms
+      reliability:
+        downlink: 99.999%
   maxBitRate:
     downlink: 1000
     uplink: 500
