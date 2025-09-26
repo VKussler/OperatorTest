@@ -2,7 +2,7 @@
 commModelList:
   - commModelType: DIRECT_COMMUNICATION_WO_NRF
 managedNFProfile:
-  capacity: 10
+  capacity: 20000
   hostAddr: 127.0.0.1
   nfType:
     - SMF
@@ -26,6 +26,10 @@ missingElements:
       fiveQi: 5
       sessionAmbrDl: 400Mbps
       sessionAmbrUl: 200Mbps
+    4-000401:
+      fiveQi: 5
+      sessionAmbrDl: 1000Mbps
+      sessionAmbrUl: 500Mbps
 nRTAClist: "0"
 pLMNInfoList:
   - pLMNId:
@@ -46,3 +50,9 @@ smfInfo:
       sNSSAI:
         sd: "000001"
         sst: 1
+    - dnnSmfInfoList:
+        - dnn: oai
+          epTransportRef: /EP_Transport/ep-1
+      sNSSAI:
+        sd: "000401"
+        sst: 4
