@@ -19,4 +19,14 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  sliceInfoList:
+    - sNssai:
+        sst: 4
+        sd: "000401"
+      networkSliceSubnetType: "core"
+      isolationProfile: "profile-1"
+      supportedServices:
+        - "AMF-1"
+        - "UPF-1"
+      availability: 99.99
