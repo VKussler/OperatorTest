@@ -17,51 +17,6 @@ nFProfileList:
         nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
-    pcf-1:
-      sNssaiInfo:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          nSIId: "core"
+    pcf-1: {}
   servedAmfInfo:
-    amf-1:
-      sNssaiInfo:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          nSIId: "core"
-  servedSmfInfo:
-    smf-1:
-      sNssaiInfo:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          nSIId: "core"
-  servedUdmInfo:
-    udm-1:
-      sNssaiInfo:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          nSIId: "core"
-  servedUdrInfo:
-    udr-1:
-      sNssaiInfo:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          nSIId: "core"
-  servedAusfInfo:
-    ausf-1:
-      sNssaiInfo:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          nSIId: "core"
-  servedNssfInfo:
-    nssf-1:
-      sNssaiInfo:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          nSIId: "core"
+    amf-1: {} 
