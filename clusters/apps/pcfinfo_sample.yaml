@@ -6,6 +6,12 @@ pLMNInfoList:
   sNSSAI:
       sst: 1
       sd: "000001"
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+    sNSSAI:
+      sst: 4
+      sd: "000401"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
@@ -16,6 +22,14 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
+  sliceQosPolicies:
+    - sNSSAI:
+        sst: 4
+        sd: "000401"
+      dnn: "internet"
+      qosReference: "qos-test-slice-internet" # Reference to a defined QoS profile (e.g., in a separate QoS configuration).  Replace with actual reference.
+      priorityLevel: 10 # Priority Level for the slice-specific policy
+
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
