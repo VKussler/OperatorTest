@@ -17,6 +17,12 @@ pLMNInfoList:
     sNSSAI:
       sd: "000001"
       sst: 1
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+    sNSSAI:
+      sd: "000401"
+      sst: 4
 supportedBMOList:
   - BMO1
 cNSIIdList: ["slice-1-cn"]
@@ -58,3 +64,9 @@ upfInfo:
           ipv6AddressRanges:
             - iPv6AddrRangeStart: 2001:db8::
               iPv6AddrRangeEnd: 2001:db8::ffff:ffff:ffff:ffff:ffff:ffff
+          trafficProfile:
+            dlThroughput: 1000
+            ulThroughput: 500
+          epTransportRefs:
+            - ep-1
+          networkSliceSubnet: networkSliceSubnetController-1
