@@ -4,8 +4,8 @@ pLMNInfoList:
       mcc: "208"
       mnc: "93"
   sNSSAI:
-      sst: 4
-      sd: "000401"
+      sst: 1
+      sd: "000001"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
@@ -16,14 +16,6 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
-  policyRules:
-    - ruleId: "slice-policy-rule"
-      precedence: 10
-      sliceInfo:
-        sNssai:
-          sst: 4
-          sd: "000401"
-      dnnList: ["internet"]
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
