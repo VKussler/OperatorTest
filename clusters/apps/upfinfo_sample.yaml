@@ -17,12 +17,6 @@ pLMNInfoList:
     sNSSAI:
       sd: "000001"
       sst: 1
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-    sNSSAI:
-      sd: "000401"
-      sst: 4
 supportedBMOList:
   - BMO1
 cNSIIdList: ["slice-1-cn"]
@@ -54,18 +48,3 @@ upfInfo:
       sNssai:
         sd: "000001"
         sst: 1
-    - dnnUpfInfoList:
-        - dnn: internet
-          ipv4AddressRanges:
-            - iPv4AddrRangeEnd: 15.1.1.255
-              iPv4AddrRangeStart: 15.1.1.0
-          pduSessionTypes:
-            - IPv4
-          qosParameters:
-            guaranteedBitrateDL: 1000
-            guaranteedBitrateUL: 500
-            maximumLatencyDL: 10
-            maximumLatencyUL: 15
-      sNssai:
-        sd: "000401"
-        sst: 4
