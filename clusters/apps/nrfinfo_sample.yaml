@@ -19,4 +19,23 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  sliceInfoList:
+    - sNssai:
+        sst: 4
+        sd: "000401"
+      dnnList:
+        - internet
+  servedNfTypes:
+    - nfType: "AMF"
+      sNssais:
+        - sst: 4
+          sd: "000401"
+    - nfType: "SMF"
+      sNssais:
+        - sst: 4
+          sd: "000401"
+    - nfType: "UPF"
+      sNssais:
+        - sst: 4
+          sd: "000401"
