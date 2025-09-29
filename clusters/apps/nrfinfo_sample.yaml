@@ -19,4 +19,32 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  supportedNssaiList:
+    - sst: 4
+      sd: "000401"
+  defaultNssai:
+    - sst: 1
+      sd: "000101"
+serviceDiscovery:
+  sliceSpecificNFs:
+    - nfType: "AMF"
+      nssaiList:
+        - sst: 4
+          sd: "000401"
+      priority: 1
+    - nfType: "SMF"
+      nssaiList:
+        - sst: 4
+          sd: "000401"
+      priority: 2
+subscriptionConfiguration:
+  sliceRelatedEvents:
+    - eventType: "NF_PROFILE_REGISTERED"
+      nssaiList:
+        - sst: 4
+          sd: "000401"
+    - eventType: "NF_PROFILE_DEREGISTERED"
+      nssaiList:
+        - sst: 4
+          sd: "000401"
