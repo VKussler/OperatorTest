@@ -19,4 +19,21 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  sNssaiInfo:
+    "20893-0401": #SST 4, SD 000401
+      nssai:
+        sST: 4
+        sD: "000401"
+      sliceSubnetType: "CORE"
+      snssaiUpfInfoList:
+        - upfProfileId: "upf-1" #Example UPF Profile ID
+          dnnUpfInfoList:
+            - dnn: "internet" #Example DNN
+      supportedFeatures: "F1"
+      associatedNwdafInfo:
+        - nwdafProfileId: "nwdaf-1" #Example NWDAF Profile ID
+      sliceQosParamsList:
+        - profileId: "profile-1"
+      epTransportRefs:
+        - "ep-1"
