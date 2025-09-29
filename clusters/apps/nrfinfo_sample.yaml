@@ -16,6 +16,7 @@ nFProfileList:
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
 nrfInfo:
-  cNSIIdList: ["test-slice"]
-  servedPcfInfo: {}
-  servedAmfInfo: {}
+  servedPcfInfo:
+    pcf-1: {}
+  servedAmfInfo:
+    amf-1: {} 
