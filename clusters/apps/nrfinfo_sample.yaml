@@ -16,43 +16,7 @@ nFProfileList:
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
 nrfInfo:
-  supportedNSSAIList:
-    - sst: 4
-      sd: "000401"
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1:
-      sNssaiAmfInfoList:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          amfSetList: ["amf-set-1"]
-          taiList:
-            - tac: "000001"
-              plmnId:
-                mcc: "208"
-                mnc: "93"
-  servedSmfInfo:
-    smf-1:
-      sNssaiSmfInfoList:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          dnnSmfInfoList:
-            - dnn: "internet"
-              pLMNIdList:
-                - mcc: "208"
-                  mnc: "93"
-  servedUpfInfo:
-    upf-1:
-      sNssaiUpfInfoList:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          dnnUpfInfoList:
-            - dnn: "internet"
-              pLMNIdList:
-                - mcc: "208"
-                  mnc: "93"
-  supportedFeatures: "eMBB,SHARED"
+    amf-1: {} 
