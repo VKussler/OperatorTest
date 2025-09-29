@@ -4,8 +4,8 @@ pLMNInfoList:
       mcc: "208"
       mnc: "93"
   sNSSAI:
-      sst: 1
-      sd: "000001"
+      sst: 4
+      sd: "000401"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
@@ -16,6 +16,18 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
+  sliceInfoList:
+    - sNSSAI:
+        sst: 4
+        sd: "000401"
+      availability: 99.99
+      reliability: 99.999
+      qosRules:
+        embb: #Example QoS rules, adjust as needed
+          priorityLabel: 10
+          maxDataRateUL: 1000000 # 1 Mbps
+          maxDataRateDL: 10000000 # 10 Mbps
+      tAList: [1, 2, 3]
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
