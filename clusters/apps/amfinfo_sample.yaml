@@ -16,6 +16,8 @@ managedNFProfile:
       sD: "01"
     - sST: 4
       sD: "000401"
+    - sST: 4
+      sD: "000401" # Added for test-slice explicitly
 amfInfo:
   aMFRegionId: "1"
   aMFSetId: 100
@@ -24,8 +26,22 @@ amfInfo:
         mcc: "208"
         mnc: "93"
       aMFIdentifier: "amf-1.example.com"
+  servedGUAMIList: # Added servedGUAMIList for PLMN 208-93
+    - pLMNId:
+        mcc: "208"
+        mnc: "93"
+      aMFRegionId: "1"
+      aMFSetId: 100
 aMFSetRef: "/AMFSet/set-1"
 nrfInfo:
   preferredSearch:
     - sST: 4
       sD: "000401"
+  dnnList: # Added DNN for NRF registration
+    - "internet"
+maxUEs: 1000000 # Added maxUEs
+latency: # Added latency profiles
+  downlink: 10
+  uplink: 15
+amfStatus: "unlocked" # Added amfStatus
+enabled: true # Added enabled
