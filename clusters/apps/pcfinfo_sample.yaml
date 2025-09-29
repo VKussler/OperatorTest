@@ -12,10 +12,18 @@ managedNFProfile:
   nfType: "PCF"
   hostAddr: "192.168.1.11"
 pcfInfo:
-  dnnList: ["internet", "iot"]
+  dnnList: ["internet"]
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
+  sliceInfoList:
+    - pLMNInfoList:
+        - pLMNId:
+            mcc: "208"
+            mnc: "93"
+      sNSSAI:
+        sst: 4
+        sd: "000401"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
