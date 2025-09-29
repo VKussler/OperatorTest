@@ -32,7 +32,7 @@ pLMNInfoList:
       mcc: "001"
       mnc: "01"
 sBIFQDN: smf-1.sbi.example.com
-cNSIIdList: ["test-slice"]
+cNSIIdList: ["slice-1-cn"]
 smfInfo:
   sNssaiSmfInfoList:
     - dnnSmfInfoList:
@@ -46,8 +46,3 @@ smfInfo:
       sNSSAI:
         sd: "000001"
         sst: 1
-    - dnnSmfInfoList:
-        - dnn: oai
-      sNSSAI:
-        sd: "000401"
-        sst: 4
