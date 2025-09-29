@@ -9,8 +9,8 @@ pLMNInfoList:
       mcc: "001"
       mnc: "01"
     sNSSAI:
-      sd: "000401"
-      sst: 4
+      sd: FFFFFF
+      sst: 1
   - pLMNId:
       mcc: "001"
       mnc: "01"
@@ -19,7 +19,7 @@ pLMNInfoList:
       sst: 1
 supportedBMOList:
   - BMO1
-cNSIIdList: ["test-slice"]
+cNSIIdList: ["slice-1-cn"]
 upfInfo:
   sNssaiUpfInfoList:
     - dnnUpfInfoList:
@@ -36,8 +36,8 @@ upfInfo:
           pduSessionTypes:
             - IPv4
       sNssai:
-        sd: "000401"
-        sst: 4
+        sd: FFFFFF
+        sst: 1
     - dnnUpfInfoList:
         - dnn: ims
           ipv4AddressRanges:
