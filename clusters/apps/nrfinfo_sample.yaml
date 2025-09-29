@@ -16,6 +16,9 @@ nFProfileList:
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
 nrfInfo:
+  supportedNSSAIList:
+    - sst: 4
+      sd: "000401"
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
