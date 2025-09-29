@@ -17,18 +17,9 @@ pLMNInfoList:
     sNSSAI:
       sd: "000001"
       sst: 1
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-    sNSSAI:
-      sd: "000401"
-      sst: 4
 supportedBMOList:
   - BMO1
 cNSIIdList: ["slice-1-cn"]
-nsInfo:
-  nsInstanceId: slice-subnet-1-ns-instance-001
-  nSIId: test-slice
 upfInfo:
   sNssaiUpfInfoList:
     - dnnUpfInfoList:
@@ -57,20 +48,3 @@ upfInfo:
       sNssai:
         sd: "000001"
         sst: 1
-    - dnnUpfInfoList:
-        - dnn: internet
-          ipv4AddressRanges:
-            - iPv4AddrRangeEnd: 15.1.1.255
-              iPv4AddrRangeStart: 15.1.1.0
-          pduSessionTypes:
-            - IPv4
-      sNssai:
-        sd: "000401"
-        sst: 4
-  cNSliceSubnetProfile:
-    latency:
-      downlink: 10
-      uplink: 15
-    throughput:
-      downlink: 1000
-      uplink: 500

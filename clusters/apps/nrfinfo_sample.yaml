@@ -19,13 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  networkSliceInfoList:
-    test-slice:
-      sNSSAIList:
-        - sST: 4
-          sD: "000401"
-      cNSIIdList:
-        - nsInstanceId: "slice-subnet-1-ns-instance-001"
-      operationalState: "enabled"
-      administrativeState: "unlocked"
+    amf-1: {} 
