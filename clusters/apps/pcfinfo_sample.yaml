@@ -3,7 +3,7 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-    sNSSAI:
+  sNSSAI:
       sst: 1
       sd: "000001"
 sBIFQDN: "pcf-1.sbi.example.com"
@@ -12,11 +12,10 @@ managedNFProfile:
   nfType: "PCF"
   hostAddr: "192.168.1.11"
 pcfInfo:
-  dnnList: ["internet"]
+  dnnList: ["internet", "iot"]
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
-cNSIIdList: ["test-slice"]
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
