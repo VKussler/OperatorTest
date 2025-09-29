@@ -19,4 +19,48 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  supportedNssaiList:
+    - sst: 4
+      sd: "000401"
+      defaultDnnList:
+        - internet
+  defaultDnnList:
+    - internet
+  serviceDiscovery:
+    nrfDiscAmfSet:
+      dnnList:
+        - internet
+      sliceInfo:
+        sst: 4
+        sd: "000401"
+    nrfDiscUdmSet:
+      dnnList:
+        - internet
+      sliceInfo:
+        sst: 4
+        sd: "000401"
+    nrfDiscPcfSet:
+      dnnList:
+        - internet
+      sliceInfo:
+        sst: 4
+        sd: "000401"
+    nrfDiscSmfSet:
+      dnnList:
+        - internet
+      sliceInfo:
+        sst: 4
+        sd: "000401"
+    nrfDiscAusfSet:
+      dnnList:
+        - internet
+      sliceInfo:
+        sst: 4
+        sd: "000401"
+    nrfDiscUdrSet:
+      dnnList:
+        - internet
+      sliceInfo:
+        sst: 4
+        sd: "000401"
