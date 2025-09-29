@@ -16,11 +16,7 @@ nFProfileList:
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
 nrfInfo:
-  servedAmfInfo:
-    amf-1:
-      - amfSetId: 1
-        amfRegionId: "region1"
   servedPcfInfo:
-    pcf-1:
-      - pcfSetId: 1
-        pcfGroupId: "group1"
+    pcf-1: {}
+  servedAmfInfo:
+    amf-1: {} 
