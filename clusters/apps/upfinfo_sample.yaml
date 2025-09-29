@@ -19,7 +19,7 @@ pLMNInfoList:
       sst: 1
 supportedBMOList:
   - BMO1
-cNSIIdList: ["slice-1-cn"]
+cNSIIdList: ["test-slice"]
 upfInfo:
   sNssaiUpfInfoList:
     - dnnUpfInfoList:
@@ -48,3 +48,10 @@ upfInfo:
       sNssai:
         sd: "000001"
         sst: 1
+    - dnnUpfInfoList:
+        - dnn: internet
+          ipv4AddressRanges: []
+          pduSessionTypes: []
+      sNssai:
+        sd: "000401"
+        sst: 4
