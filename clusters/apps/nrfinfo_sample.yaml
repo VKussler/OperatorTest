@@ -1,4 +1,4 @@
-cNSIIdList: ['test-slice']
+cNSIIdList: ["test-slice"]
 sBIFQDN: "test-slice.sbi.example.com"
 # Sample NRF NRM Instance
 pLMNInfoList:
