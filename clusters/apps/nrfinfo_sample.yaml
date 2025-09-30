@@ -4,7 +4,7 @@ pLMNInfoList:
       mcc: "208"
       mnc: "93"
 sBIFQDN: "test-slice.sbi.example.com"
-cNSIIdList: ['test-slice']
+cNSIIdList: ["test-slice"]
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
