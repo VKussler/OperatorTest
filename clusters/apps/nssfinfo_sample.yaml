@@ -11,17 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
-sliceInfoList:
-  - sNSSAI:
-      sst: 4
-      sd: "000401"
-    sliceName: "test-slice"
-sliceSelectionPolicies:
-  - sNSSAI:
-      sst: 4
-      sd: "000401"
-    dnn: "internet"
-    priority: 10
-    taList: [1, 2, 3]
-    resourceSharingLevel: "SHARED"
+    targetNFServiceList: ["nnrf-nfm"] 
