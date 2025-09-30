@@ -19,10 +19,7 @@ amfInfo:
   aMFRegionId: "1"
   aMFSetId: 100
   gUAMIdList:
-    - pLMNId:
-        mcc: "208"
-        mnc: "93"
-      sNSSAI:
+    - sNSSAI:
         sst: 4
         sd: "000401"
 aMFSetRef: "/AMFSet/set-1"
