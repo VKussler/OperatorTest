@@ -3,7 +3,8 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-sBIFQDN: "nrf-1.sbi.example.com"
+sBIFQDN: "test-slice.sbi.example.com"
+cNSIIdList: ['test-slice']
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
