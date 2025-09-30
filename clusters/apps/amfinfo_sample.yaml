@@ -1,4 +1,3 @@
-# Sample AMF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "001"
