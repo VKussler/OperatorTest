@@ -19,4 +19,30 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  sliceInfoList:
+    - sNssai:
+        sst: 4
+        sd: "000401"
+      dnnList: ["internet"]
+      serviceAvailabilityInfo:
+        - priority: 10
+          taiList:
+            - tai:
+                plmnId:
+                  mcc: "208"
+                  mnc: "93"
+                tac: 1
+            - tai:
+                plmnId:
+                  mcc: "208"
+                  mnc: "93"
+                tac: 2
+            - tai:
+                plmnId:
+                  mcc: "208"
+                  mnc: "93"
+                tac: 3
+      sharedResource: true
+      maxNumberofUes: 1000000
+      maxNumberofSessions: 20000
