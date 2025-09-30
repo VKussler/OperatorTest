@@ -46,3 +46,6 @@ smfInfo:
       sNSSAI:
         sd: "000001"
         sst: 1
+    - sNSSAI:
+        sd: "000401"
+        sst: 4
