@@ -15,7 +15,7 @@ commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
     targetNFServiceList: ["nnrf-nfm"]
 servedAmfInfo:
-  - amfIdentifier: "AMF-1"
+  - amfIdentifier: "amf-1.example.com"
     gUAMIList:
       - plmnId:
           mcc: "208"
