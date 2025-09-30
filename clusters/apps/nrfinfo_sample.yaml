@@ -19,4 +19,11 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  supportedSnssaiList:
+    - sst: 4
+      sd: "000401"
+      serviceAvailability: 99.99
+      dnnList:
+        - internet
+      resourceSharingLevel: SHARED
