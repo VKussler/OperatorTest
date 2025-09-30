@@ -57,10 +57,6 @@ smfInfo:
       sNSSAI:
         sd: "000401"
         sst: 4
-    - dnnSmfInfoList:
-        - dnn: oai
-          dnn: ora
-          dnn: ims
-      sNSSAI:
+    - sNSSAI:
         sd: "000401"
         sst: 4
