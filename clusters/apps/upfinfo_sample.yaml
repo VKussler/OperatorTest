@@ -1,6 +1,6 @@
 # Sample UPF NRM Instance
 managedNFProfile:
-  capacity: 1000
+  capacity: 1000000
   hostAddr: oai-upf
   nfType:
     - UPF
@@ -17,10 +17,17 @@ pLMNInfoList:
     sNSSAI:
       sd: "000001"
       sst: 1
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+    sNSSAI:
+      sd: "000401"
+      sst: 4
 supportedBMOList:
   - BMO1
 cNSIIdList: ["slice-1-cn"]
 upfInfo:
+  maxNumOfSessions: 20000
   sNssaiUpfInfoList:
     - dnnUpfInfoList:
         - dnn: oai
@@ -48,3 +55,16 @@ upfInfo:
       sNssai:
         sd: "000001"
         sst: 1
+    - dnnUpfInfoList:
+        - dnn: internet
+          ipv4AddressRanges:
+            - iPv4AddrRangeEnd: 15.1.1.255
+              iPv4AddrRangeStart: 15.1.1.0
+          pduSessionTypes:
+            - IPv4
+          trafficDescriptorList:
+            - trafficDescriptorName: internet-traffic
+              trafficDescriptorValue: "DL_latency=10ms,UL_latency=15ms"
+      sNssai:
+        sd: "000401"
+        sst: 4
