@@ -9,17 +9,17 @@ pLMNInfoList:
       mcc: "001"
       mnc: "01"
     sNSSAI:
-      sd: FFFFFF
+      sd: "000001"
       sst: 1
   - pLMNId:
       mcc: "001"
       mnc: "01"
     sNSSAI:
-      sd: "000001"
+      sd: "000002"
       sst: 1
 supportedBMOList:
   - BMO1
-cNSIIdList: ["slice-1-cn"]
+cNSIIdList: ["slice-2-cn"]
 upfInfo:
   sNssaiUpfInfoList:
     - dnnUpfInfoList:
@@ -36,7 +36,7 @@ upfInfo:
           pduSessionTypes:
             - IPv4
       sNssai:
-        sd: FFFFFF
+        sd: "000001"
         sst: 1
     - dnnUpfInfoList:
         - dnn: ims
@@ -46,5 +46,5 @@ upfInfo:
           pduSessionTypes:
             - IPv4v6
       sNssai:
-        sd: "000001"
+        sd: "000002"
         sst: 1
