@@ -1,5 +1,3 @@
-cNSIIdList:
-  - "test-slice"
 # Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
@@ -21,4 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
