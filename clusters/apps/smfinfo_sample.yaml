@@ -17,6 +17,9 @@ missingElements:
     ora:
       ipv4Subnet: 13.1.1.0/24
       pduSessionType: IPV4
+    internet:
+      ipv4Subnet: 10.1.1.0/24
+      pduSessionType: IPV4V6
   snssaiConfigs:
     1-000001:
       fiveQi: 2
@@ -26,6 +29,13 @@ missingElements:
       fiveQi: 5
       sessionAmbrDl: 400Mbps
       sessionAmbrUl: 200Mbps
+    4-000401:
+      fiveQi: 5
+      sessionAmbrDl: 1000Mbps
+      sessionAmbrUl: 500Mbps
+  maxNumberofPDUSessions: 20000
+  availability: "99.99%"
+  reliability: "99.999%"
 nRTAClist: "0"
 pLMNInfoList:
   - pLMNId:
@@ -46,3 +56,8 @@ smfInfo:
       sNSSAI:
         sd: "000001"
         sst: 1
+    - dnnSmfInfoList:
+        - dnn: internet
+      sNSSAI:
+        sd: "000401"
+        sst: 4
