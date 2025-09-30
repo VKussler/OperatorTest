@@ -4,7 +4,9 @@ pLMNInfoList:
       mcc: "208"
       mnc: "93"
 sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn", "test-slice"]
+cNSIIdList:
+  - slice-1-cn
+  - test-slice
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
@@ -20,6 +22,5 @@ servedAmfInfo:
           mnc: "93"
         aMFSetID: "1"
         aMFRegionID: "1"
-        sNSSAI:
-          sst: 4
-          sd: "000401"
+        sst: 4
+        sd: "000401"
