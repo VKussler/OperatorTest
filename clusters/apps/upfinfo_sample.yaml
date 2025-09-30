@@ -17,9 +17,15 @@ pLMNInfoList:
     sNSSAI:
       sd: "000001"
       sst: 1
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+    sNSSAI:
+      sd: "000401"
+      sst: 4
 supportedBMOList:
   - BMO1
-cNSIIdList: ["slice-1-cn"]
+cNSIIdList: ["slice-1-cn", "test-slice"]
 upfInfo:
   sNssaiUpfInfoList:
     - dnnUpfInfoList:
@@ -35,6 +41,12 @@ upfInfo:
               iPv4AddrRangeStart: 13.1.1.128
           pduSessionTypes:
             - IPv4
+        - dnn: internet
+          ipv4AddressRanges:
+            - iPv4AddrRangeEnd: 192.168.2.254
+              iPv4AddrRangeStart: 192.168.2.1
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: FFFFFF
         sst: 1
@@ -48,3 +60,13 @@ upfInfo:
       sNssai:
         sd: "000001"
         sst: 1
+    - dnnUpfInfoList:
+        - dnn: internet
+          ipv4AddressRanges:
+            - iPv4AddrRangeEnd: 192.168.3.254
+              iPv4AddrRangeStart: 192.168.3.1
+          pduSessionTypes:
+            - IPv4
+      sNssai:
+        sd: "000401"
+        sst: 4
