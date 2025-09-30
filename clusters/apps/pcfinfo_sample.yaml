@@ -12,7 +12,7 @@ managedNFProfile:
   nfType: "PCF"
   hostAddr: "192.168.1.11"
 pcfInfo:
-  dnnList: ["internet"]
+  dnnList: ["internet", "oai"]
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
@@ -20,7 +20,7 @@ pcfInfo:
     - sNSSAI:
         sst: 4
         sd: "000401"
-      dnnList: ["internet"]
+      dnnList: ["internet", "oai"]
       pLMNIdList:
         - mcc: "001"
           mnc: "01"
