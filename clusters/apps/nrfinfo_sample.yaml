@@ -1,11 +1,11 @@
-# Sample NRF NRM Instance
+cNSIIdList: ["test-slice"]
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-    sNSSAIList:
-      - sst: 4
-        sd: "000401"
+    sNSSAI:
+      sst: 4
+      sd: "000401"
 sBIFQDN: "test-slice.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
@@ -23,4 +23,3 @@ nrfInfo:
     pcf-1: {}
   servedAmfInfo:
     amf-1: {}
-cNSIIdList: ["test-slice"]
