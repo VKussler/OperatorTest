@@ -1,11 +1,11 @@
 pLMNInfoList:
   - pLMNId:
-      mcc: "001"
-      mnc: "01"
+      mcc: "208"
+      mnc: "93"
     sNSSAIList:
       - sst: 4
         sd: "000401"
-sBIFQDN: "test-slice.sbi.example.com"
+sBIFQDN: "{{slice_name}}.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
