@@ -6,9 +6,9 @@ pLMNInfoList:
     sNSSAI:
       sst: 4
       sd: "000401"
-sBIFQDN: "nssf-1.sbi.example.com"
+sBIFQDN: "test-slice.sbi.example.com"
 cNSIIdList: ["test-slice"]
-sliceInfoList: ["test-slice"]
+sliceInfoList: []
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
