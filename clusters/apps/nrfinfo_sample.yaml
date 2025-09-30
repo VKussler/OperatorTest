@@ -19,16 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  sliceInfoList:
-    test-slice:
-      sNssai:
-        sst: 4
-        sd: "000401"
-      dnnList: ["internet"]
-      maxNumberofUEs: 1000000
-      latency:
-        downlink: 10
-        uplink: 15
-      sliceStatus: "ENABLED"
-      operationalState: "OPERATIONAL"
+    amf-1: {} 
