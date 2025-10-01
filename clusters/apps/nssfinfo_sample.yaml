@@ -33,3 +33,11 @@ sliceProfileList:
     sliceServices:
       - serviceType: "eMBB"
         priority: 1
+  - sNSSAI:
+      sst: "1"
+      sd: "112233"
+    sliceServices:
+      - serviceType: "eMBB"
+        priority: 1
+      - serviceType: "URLLC"
+        priority: 2
