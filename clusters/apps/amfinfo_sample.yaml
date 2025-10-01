@@ -5,7 +5,7 @@ pLMNInfoList:
       mnc: "93"
 aMFIdentifier: "amf-new.example.com"
 sBIFQDN: "amf-new.sbi.example.com"
-cNSIIdList: ["slice-2-cn", "slice-3-cn", "test-slice"]
+cNSIIdList: ["slice-2-cn", "slice-3-cn", "test-slice", "new-slice"]
 managedNFProfile:
   nfInstanceId: "amf-instance-002"
   nfType: "AMF"
@@ -21,4 +21,4 @@ amfInfo:
         mnc: "93"
       aMFIdentifier: "amf-new.example.com"
 aMFSetRef: "/AMFSet/set-2"
-sstList: [4]
+sstList: [4, 5]
