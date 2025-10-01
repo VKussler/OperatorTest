@@ -25,7 +25,7 @@ nrfInfo:
       sd: "000001"
     - sst: 1
       sd: "000002"
-    - sst: 2 # Added new slice with sst 2 and sd 000003
+    - sst: 2
       sd: "000003"
     - sst: 4
       sd: "000401"
