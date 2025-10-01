@@ -14,6 +14,13 @@ pLMNInfoList:
       sst: 4
       sd: "000401"
     sliceDifferentiator: "test-slice"
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+    sNSSAI:
+      sst: 2
+      sd: "112233"
+    sliceDifferentiator: "new-slice"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
