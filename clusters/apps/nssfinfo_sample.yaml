@@ -17,3 +17,7 @@ sliceProfileList:
       sst: 4
       sd: "000401"
     sliceName: "test-slice"
+  - sNSSAI:
+      sst: 1
+      sd: "112233"
+    sliceName: "new-slice"
