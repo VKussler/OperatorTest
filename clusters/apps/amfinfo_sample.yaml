@@ -11,6 +11,7 @@ managedNFProfile:
   nfType: "AMF"
   heartBeatTimer: 30
   hostAddr: "192.168.1.11"
+  sdList: ["sd1", "sd2"]
 amfInfo:
   aMFRegionId: "2"
   aMFSetId: 200
