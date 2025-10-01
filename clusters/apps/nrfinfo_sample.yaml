@@ -24,3 +24,6 @@ nrfInfo:
     test-slice:
       sst: 4
       sd: "000401"
+    new-slice:
+      sst: 1
+      sd: "000101"
