@@ -424,8 +424,8 @@ SessionManagementSubscriptionData:
                 - ipv4Addr: 12.1.1.100
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000100"
     - dnnConfigurations:
         ims:
@@ -494,8 +494,8 @@ SessionManagementSubscriptionData:
                 - ipv4Addr: 12.1.1.101
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000101"
     - dnnConfigurations:
         ims:
@@ -564,8 +564,8 @@ SessionManagementSubscriptionData:
                 - ipv4Addr: 12.1.1.102
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000102"
     - dnnConfigurations:
         ims:
@@ -634,8 +634,8 @@ SessionManagementSubscriptionData:
                 - ipv4Addr: 12.1.1.103
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000103"
     - dnnConfigurations:
         ims:
@@ -704,8 +704,8 @@ SessionManagementSubscriptionData:
                 - ipv4Addr: 12.1.1.104
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000104"
     - dnnConfigurations:
         ims:
@@ -774,8 +774,8 @@ SessionManagementSubscriptionData:
                 - ipv4Addr: 12.1.1.105
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000105"
     - dnnConfigurations:
         internet:
@@ -810,8 +810,8 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000106"
     - dnnConfigurations:
         internet:
@@ -846,8 +846,8 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000107"
     - dnnConfigurations:
         internet:
@@ -882,8 +882,8 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000109"
     - dnnConfigurations:
         internet:
@@ -918,8 +918,8 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000110"
     - dnnConfigurations:
         internet:
@@ -954,8 +954,8 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000111"
     - dnnConfigurations:
         internet:
@@ -990,8 +990,8 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000112"
     - dnnConfigurations:
         internet:
@@ -1026,8 +1026,8 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000113"
     - dnnConfigurations:
         internet:
@@ -1062,8 +1062,8 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000114"
     - dnnConfigurations:
         internet:
@@ -1098,8 +1098,8 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000115"
     - dnnConfigurations:
         internet:
@@ -1134,8 +1134,8 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000116"
     - dnnConfigurations:
         internet:
@@ -1170,8 +1170,8 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000117"
     - dnnConfigurations:
         internet:
@@ -1206,8 +1206,8 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000118"
     - dnnConfigurations:
         internet:
@@ -1242,8 +1242,8 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000119"
     - dnnConfigurations:
         internet:
@@ -1278,6 +1278,6 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
-        sd: D3EC7C
-        sst: 43
+        sd: 45F5E8
+        sst: 168
       ueid: "001010000000120"
