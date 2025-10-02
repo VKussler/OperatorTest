@@ -139,7 +139,8 @@ smfInfo:
       sNSSAI:
         sst: 99
         sd: "075330"
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+        - dnn: internet
       sNSSAI:
         sst: 229
         sd: "5F4E10"
