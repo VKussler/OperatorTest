@@ -114,6 +114,10 @@ smfInfo:
       sNSSAI:
         sst: 61
         sd: "6CE118"
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sst: 32
+        sd: "E5A887"
 missingElements:
   dnnConfigs:
     ims:
