@@ -232,7 +232,10 @@ upfInfo:
       sNssai:
         sd: "DEC865"
         sst: 32
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "39FFF3"
         sst: 108
