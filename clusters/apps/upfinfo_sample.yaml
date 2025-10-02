@@ -239,3 +239,4 @@ upfInfo:
       sNssai:
         sd: "39FFF3"
         sst: 108
+    - dnnUpfInfoList:
