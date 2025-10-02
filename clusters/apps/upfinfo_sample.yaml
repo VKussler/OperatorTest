@@ -153,7 +153,13 @@ upfInfo:
       sNssai:
         sd: "E5A887"
         sst: 32
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
+          ipv4AddressRanges:
+            - iPv4AddrRangeStart: 10.10.10.0
+              iPv4AddrRangeEnd: 10.10.10.255
       sNssai:
         sd: "C09385"
         sst: 211
