@@ -109,6 +109,10 @@ smfInfo:
       sNSSAI:
         sst: 237
         sd: "CCD977"
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sst: 61
+        sd: "6CE118"
 missingElements:
   dnnConfigs:
     ims:
