@@ -99,7 +99,8 @@ smfInfo:
       sNSSAI:
         sd: "C37FB3"
         sst: 176
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+        - dnn: internet
       sNSSAI:
         sd: "5226A9"
         sst: 8
