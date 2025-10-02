@@ -119,7 +119,8 @@ smfInfo:
       sNSSAI:
         sst: 32
         sd: "E5A887"
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+        - dnn: internet
       sNSSAI:
         sst: 211
         sd: "C09385"
