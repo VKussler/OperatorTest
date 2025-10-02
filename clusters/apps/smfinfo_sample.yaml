@@ -158,7 +158,8 @@ smfInfo:
       sNSSAI:
         sst: 168
         sd: "45F5E8"
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+        - dnn: internet
       sNSSAI:
         sst: 208
         sd: "571C06"
