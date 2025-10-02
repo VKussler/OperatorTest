@@ -184,7 +184,8 @@ smfInfo:
       sNSSAI:
         sst: 139
         sd: "B4ED38"
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+        - dnn: internet
       sNSSAI:
         sst: 152
         sd: "3893F3"
