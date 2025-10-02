@@ -139,3 +139,7 @@ upfInfo:
       sNssai:
         sd: "CCD977"
         sst: 237
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "6CE118"
+        sst: 61
