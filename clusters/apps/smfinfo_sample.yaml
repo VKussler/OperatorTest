@@ -88,7 +88,8 @@ smfInfo:
       sNSSAI:
         sd: "2AA054"
         sst: 209
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+        - dnn: internet
       sNSSAI:
         sd: "1C7B7E"
         sst: 18
