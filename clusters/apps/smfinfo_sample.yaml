@@ -184,6 +184,10 @@ smfInfo:
       sNSSAI:
         sst: 139
         sd: "B4ED38"
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sst: 152
+        sd: "3893F3"
 missingElements:
   dnnConfigs:
     ims:
