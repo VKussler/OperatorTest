@@ -1,5 +1,5 @@
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create and deploy a slice with name alpha-slice, sst 155, and sd 3A843F in the system
+# Intent: Add a new slice named eta-slice with sst 141 and sd 11DA27 to the network configuration
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -9,14 +9,14 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "alpha-slice"
+    - sliceProfileId: "eta-slice"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 155
-            sd: "3A843F"
+            sst: 141
+            sd: "11DA27"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
