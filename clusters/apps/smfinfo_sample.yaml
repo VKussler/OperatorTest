@@ -54,3 +54,7 @@ smfInfo:
       sNSSAI:
         sd: "674ECA"
         sst: 173
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "674ECA"
+        sst: 173
