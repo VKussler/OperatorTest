@@ -48,10 +48,3 @@ upfInfo:
       sNssai:
         sd: "000001"
         sst: 1
-    - dnnUpfInfoList:
-        - dnn: internet
-          pduSessionTypes:
-            - IPv4
-      sNssai:
-        sd: "752C2A"
-        sst: 44
