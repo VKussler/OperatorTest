@@ -54,3 +54,8 @@ smfInfo:
       sNSSAI:
         sd: "5C76FF"
         sst: 48
+    - dnnSmfInfoList:
+        - dnn: internet
+      sNSSAI:
+        sd: "5B61F0"
+        sst: 37
