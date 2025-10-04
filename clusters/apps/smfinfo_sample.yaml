@@ -17,9 +17,6 @@ missingElements:
     ora:
       ipv4Subnet: 13.1.1.0/24
       pduSessionType: IPV4
-    kappa-dnn:
-      ipv4Subnet: 10.94.9.0/24
-      pduSessionType: ETHERNET
   snssaiConfigs:
     1-000001:
       fiveQi: 2
@@ -41,7 +38,6 @@ smfInfo:
     - dnnSmfInfoList:
         - dnn: oai
         - dnn: ora
-        - dnn: kappa-dnn
       sNSSAI:
         sd: FFFFFF
         sst: 1
