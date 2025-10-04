@@ -17,9 +17,6 @@ missingElements:
     ora:
       ipv4Subnet: 13.1.1.0/24
       pduSessionType: IPV4
-    zeta-dnn:
-      ipv4Subnet: 192.244.145.0/24
-      pduSessionType: UNSTRUCTURED
   snssaiConfigs:
     1-000001:
       fiveQi: 2
@@ -41,7 +38,6 @@ smfInfo:
     - dnnSmfInfoList:
         - dnn: oai
         - dnn: ora
-        - dnn: zeta-dnn
       sNSSAI:
         sd: FFFFFF
         sst: 1
