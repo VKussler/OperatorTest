@@ -11,6 +11,9 @@ missingElements:
     ims:
       ipv4Subnet: 14.1.1.0/24
       pduSessionType: IPV4V6
+    iota-dnn:
+      ipv4Subnet: 172.173.85.0/24
+      pduSessionType: UNSTRUCTURED
     oai:
       ipv4Subnet: 12.1.1.0/24
       pduSessionType: IPV4
@@ -43,6 +46,7 @@ smfInfo:
         sst: 1
     - dnnSmfInfoList:
         - dnn: ims
+        - dnn: iota-dnn
       sNSSAI:
         sd: "000001"
         sst: 1
