@@ -17,6 +17,9 @@ missingElements:
     ora:
       ipv4Subnet: 13.1.1.0/24
       pduSessionType: IPV4
+    main-dnn:
+      ipv4Subnet: 192.243.183.0/24
+      pduSessionType: IPV4V6
   snssaiConfigs:
     1-000001:
       fiveQi: 2
@@ -38,6 +41,7 @@ smfInfo:
     - dnnSmfInfoList:
         - dnn: oai
         - dnn: ora
+        - dnn: main-dnn
       sNSSAI:
         sd: FFFFFF
         sst: 1
