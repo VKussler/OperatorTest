@@ -26,6 +26,9 @@ missingElements:
     internet:
       ipv4Subnet: 10.1.1.0/24
       pduSessionType: IPV4
+    internet:
+      ipv4Subnet: 10.1.1.0/24
+      pduSessionType: IPV4
   snssaiConfigs:
     1-000001:
       fiveQi: 2
@@ -71,3 +74,8 @@ smfInfo:
       sNSSAI:
         sd: "346BAB"
         sst: 176
+    - dnnSmfInfoList:
+        - dnn: internet
+      sNSSAI:
+        sd: "2475FE"
+        sst: 102
