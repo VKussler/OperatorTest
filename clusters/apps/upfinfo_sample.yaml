@@ -56,12 +56,5 @@ upfInfo:
           pduSessionTypes:
             - IPv4
       sNssai:
-        sd: "879553"
-        sst: 19
-    - dnnUpfInfoList:
-        - dnn: internet
-          pduSessionTypes:
-            - IPv4
-      sNssai:
         sd: "040815"
         sst: 193
