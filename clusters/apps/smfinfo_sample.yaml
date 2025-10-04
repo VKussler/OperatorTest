@@ -58,3 +58,25 @@ smfInfo:
       sNSSAI:
         sd: "346BAB"
         sst: 176
+    - dnnSmfInfoList:
+        - dnn: internet
+      sNSSAI:
+        sd: "040815"
+        sst: 193
+missingElements:
+  dnnConfigs:
+    ims:
+      ipv4Subnet: 14.1.1.0/24
+      pduSessionType: IPV4V6
+    oai:
+      ipv4Subnet: 12.1.1.0/24
+      pduSessionType: IPV4
+    ora:
+      ipv4Subnet: 13.1.1.0/24
+      pduSessionType: IPV4
+    internet:
+      ipv4Subnet: 10.10.10.0/24
+      pduSessionType: IPV4
+    internet:
+      ipv4Subnet: 10.10.10.10/24
+      pduSessionType: IPV4
