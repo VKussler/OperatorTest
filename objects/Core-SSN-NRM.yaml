@@ -7,7 +7,7 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "staging-dnn"
+    - sliceProfileId: "zeta-dnn"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
@@ -27,7 +27,7 @@ attributes:
         dLReliability: "99.999"
         resourceSharingLevel: "SHARED"
         availability: "99.99"
-        supportedDataNetworks: ["staging-dnn"]
+        supportedDataNetworks: ["zeta-dnn"]
       RANSliceSubnetProfile: {}
       TopSliceSubnetProfile: {}
   priorityLabel: 10
