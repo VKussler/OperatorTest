@@ -11,6 +11,9 @@ missingElements:
     ims:
       ipv4Subnet: 14.1.1.0/24
       pduSessionType: IPV4V6
+    kappa-dnn:
+      ipv4Subnet: 10.138.141.0/24
+      pduSessionType: ETHERNET
     oai:
       ipv4Subnet: 12.1.1.0/24
       pduSessionType: IPV4
@@ -38,6 +41,7 @@ smfInfo:
     - dnnSmfInfoList:
         - dnn: oai
         - dnn: ora
+        - dnn: kappa-dnn
       sNSSAI:
         sd: FFFFFF
         sst: 1
