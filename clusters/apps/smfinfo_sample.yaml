@@ -17,6 +17,9 @@ missingElements:
     ora:
       ipv4Subnet: 13.1.1.0/24
       pduSessionType: IPV4
+    theta-dnn:
+      ipv4Subnet: 192.81.94.0/24
+      pduSessionType: UNSTRUCTURED
   snssaiConfigs:
     1-000001:
       fiveQi: 2
@@ -38,6 +41,7 @@ smfInfo:
     - dnnSmfInfoList:
         - dnn: oai
         - dnn: ora
+        - dnn: theta-dnn
       sNSSAI:
         sd: FFFFFF
         sst: 1
