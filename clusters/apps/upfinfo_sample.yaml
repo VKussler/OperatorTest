@@ -48,7 +48,11 @@ upfInfo:
       sNssai:
         sd: "000001"
         sst: 1
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          ipv4AddressRanges: []
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "2FD524"
         sst: 25
