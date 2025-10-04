@@ -50,5 +50,5 @@ upfInfo:
         sst: 1
     - dnnUpfInfoList: []
       sNssai:
-        sd: "040815"
-        sst: 193
+        sd: "242605"
+        sst: 182
