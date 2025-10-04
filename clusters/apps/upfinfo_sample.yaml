@@ -35,12 +35,6 @@ upfInfo:
               iPv4AddrRangeStart: 13.1.1.128
           pduSessionTypes:
             - IPv4
-        - dnn: main-dnn
-          ipv4AddressRanges:
-            - iPv4AddrRangeEnd: 192.63.9.255
-              iPv4AddrRangeStart: 192.63.9.0
-          pduSessionTypes:
-            - ETHERNET
       sNssai:
         sd: FFFFFF
         sst: 1
