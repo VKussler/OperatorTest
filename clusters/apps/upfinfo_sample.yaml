@@ -45,12 +45,6 @@ upfInfo:
               iPv4AddrRangeStart: 14.1.1.0
           pduSessionTypes:
             - IPv4v6
-        - dnn: theta-dnn
-          ipv4AddressRanges:
-            - iPv4AddrRangeEnd: 192.246.146.255
-              iPv4AddrRangeStart: 192.246.146.0
-          pduSessionTypes:
-            - UNSTRUCTURED
       sNssai:
         sd: "000001"
         sst: 1
