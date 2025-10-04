@@ -17,9 +17,6 @@ missingElements:
     ora:
       ipv4Subnet: 13.1.1.0/24
       pduSessionType: IPV4
-    test-dnn:
-      ipv4Subnet: 192.185.97.0/24
-      pduSessionType: ETHERNET
   snssaiConfigs:
     1-000001:
       fiveQi: 2
@@ -46,7 +43,6 @@ smfInfo:
         sst: 1
     - dnnSmfInfoList:
         - dnn: ims
-        - dnn: test-dnn
       sNSSAI:
         sd: "000001"
         sst: 1
