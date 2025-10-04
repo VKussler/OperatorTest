@@ -45,12 +45,6 @@ upfInfo:
               iPv4AddrRangeStart: 14.1.1.0
           pduSessionTypes:
             - IPv4v6
-        - dnn: staging-dnn
-          ipv4AddressRanges:
-            - iPv4AddrRangeEnd: 172.182.59.255
-              iPv4AddrRangeStart: 172.182.59.0
-          pduSessionTypes:
-            - UNSTRUCTURED
       sNssai:
         sd: "000001"
         sst: 1
