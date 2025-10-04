@@ -45,12 +45,6 @@ upfInfo:
               iPv4AddrRangeStart: 14.1.1.0
           pduSessionTypes:
             - IPv4v6
-        - dnn: dev-dnn
-          ipv4AddressRanges:
-            - iPv4AddrRangeEnd: 192.69.98.255
-              iPv4AddrRangeStart: 192.69.98.0
-          pduSessionTypes:
-            - UNSTRUCTURED
       sNssai:
         sd: "000001"
         sst: 1
