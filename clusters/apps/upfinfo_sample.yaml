@@ -25,8 +25,14 @@ upfInfo:
     - dnnUpfInfoList:
         - dnn: oai
           ipv4AddressRanges:
-            - iPv4AddrRangeEnd: 192.99.252.255
-              iPv4AddrRangeStart: 192.99.252.0
+            - iPv4AddrRangeEnd: 12.1.1.255
+              iPv4AddrRangeStart: 12.1.1.128
+          pduSessionTypes:
+            - IPv4
+        - dnn: ora
+          ipv4AddressRanges:
+            - iPv4AddrRangeEnd: 13.1.1.255
+              iPv4AddrRangeStart: 13.1.1.128
           pduSessionTypes:
             - IPv4
       sNssai:
@@ -41,14 +47,4 @@ upfInfo:
             - IPv4v6
       sNssai:
         sd: "000001"
-        sst: 1
-    - dnnUpfInfoList:
-        - dnn: ora
-          ipv4AddressRanges:
-            - iPv4AddrRangeEnd: 13.1.1.255
-              iPv4AddrRangeStart: 13.1.1.128
-          pduSessionTypes:
-            - IPv4
-      sNssai:
-        sd: FFFFFF
         sst: 1
