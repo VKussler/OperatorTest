@@ -44,7 +44,8 @@ upfInfo:
             - iPv4AddrRangeEnd: 14.1.1.255
               iPv4AddrRangeStart: 14.1.1.0
           pduSessionTypes:
-            - IPv4v6
+            - IPv6
+    # The user requested a subnet, 5QI and priority level, but these fields are not part of the DNN configuration.
       sNssai:
         sd: "000001"
         sst: 1
