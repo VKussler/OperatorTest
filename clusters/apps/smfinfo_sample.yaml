@@ -8,7 +8,7 @@ managedNFProfile:
     - SMF
 missingElements:
   dnnConfigs:
-    ims:
+    public723:
       ipv4Subnet: 14.1.1.0/24
       pduSessionType: IPV4V6
     oai:
@@ -42,7 +42,7 @@ smfInfo:
         sd: FFFFFF
         sst: 1
     - dnnSmfInfoList:
-        - dnn: ims
+        - dnn: public723
       sNSSAI:
         sd: "000001"
         sst: 1
