@@ -28,7 +28,10 @@ upfInfo:
             - iPv4AddrRangeEnd: 12.1.1.255
               iPv4AddrRangeStart: 12.1.1.128
           pduSessionTypes:
-            - IPv4
+            - IPv6
+          _5qi: 9
+          priorityLevel: 4
+          ipv4Subnet: 192.117.120.160/24
         - dnn: ora
           ipv4AddressRanges:
             - iPv4AddrRangeEnd: 13.1.1.255
