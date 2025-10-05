@@ -35,6 +35,9 @@ upfInfo:
               iPv4AddrRangeStart: 13.1.1.128
           pduSessionTypes:
             - IPv4
+          _5qi: 3
+          priorityLevel: 13
+          ipv4Subnet: 192.66.162.131/24
       sNssai:
         sd: FFFFFF
         sst: 1
