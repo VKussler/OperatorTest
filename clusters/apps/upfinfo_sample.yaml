@@ -33,8 +33,12 @@ upfInfo:
           ipv4AddressRanges:
             - iPv4AddrRangeEnd: 13.1.1.255
               iPv4AddrRangeStart: 13.1.1.128
+          ipv4Subnet: 192.228.128.223/24
           pduSessionTypes:
             - IPv4
+          qosReference:
+            "5QI": 8
+            priorityLevel: 5
       sNssai:
         sd: FFFFFF
         sst: 1
