@@ -29,10 +29,6 @@ upfInfo:
               iPv4AddrRangeStart: 12.1.1.128
           pduSessionTypes:
             - IPv4
-          _5qi: 1
-          priority: 5
-          subnet: 192.70.132.246/24
-          sessionType: ETHERNET_UNSTRUCTURED
         - dnn: ora
           ipv4AddressRanges:
             - iPv4AddrRangeEnd: 13.1.1.255
