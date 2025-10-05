@@ -9,8 +9,8 @@ managedNFProfile:
 missingElements:
   dnnConfigs:
     ims:
-      ipv4Subnet: 192.130.127.12/24
-      pduSessionType: IPV4
+      ipv4Subnet: 14.1.1.0/24
+      pduSessionType: IPV4V6
     oai:
       ipv4Subnet: 12.1.1.0/24
       pduSessionType: IPV4
@@ -19,7 +19,7 @@ missingElements:
       pduSessionType: IPV4
   snssaiConfigs:
     1-000001:
-      fiveQi: 7
+      fiveQi: 2
       sessionAmbrDl: 200Mbps
       sessionAmbrUl: 100Mbps
     1-FFFFFF:
