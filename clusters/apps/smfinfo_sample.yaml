@@ -9,8 +9,8 @@ managedNFProfile:
 missingElements:
   dnnConfigs:
     ims:
-      ipv4Subnet: 14.1.1.0/24
-      pduSessionType: IPV4V6
+      ipv4Subnet: 192.140.137.160/24
+      pduSessionType: IPV6
     oai:
       ipv4Subnet: 12.1.1.0/24
       pduSessionType: IPV4
