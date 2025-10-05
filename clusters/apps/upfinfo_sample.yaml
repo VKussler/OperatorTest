@@ -44,10 +44,7 @@ upfInfo:
             - iPv4AddrRangeEnd: 14.1.1.255
               iPv4AddrRangeStart: 14.1.1.0
           pduSessionTypes:
-            - UNSTRUCTURED
-          _5qi: 7
-          priorityLevel: 6
-          ipv4Subnet: 192.228.246.227/24
+            - IPv4v6
       sNssai:
         sd: "000001"
         sst: 1
