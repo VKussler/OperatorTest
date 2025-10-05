@@ -23,7 +23,7 @@ cNSIIdList: ["slice-1-cn"]
 upfInfo:
   sNssaiUpfInfoList:
     - dnnUpfInfoList:
-        - dnn: public238
+        - dnn: oai
           ipv4AddressRanges:
             - iPv4AddrRangeEnd: 12.1.1.255
               iPv4AddrRangeStart: 12.1.1.128
