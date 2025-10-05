@@ -41,8 +41,8 @@ upfInfo:
     - dnnUpfInfoList:
         - dnn: ims
           ipv4AddressRanges:
-            - iPv4AddrRangeEnd: 14.1.1.255
-              iPv4AddrRangeStart: 14.1.1.0
+            - iPv4AddrRangeEnd: 192.52.113.255
+              iPv4AddrRangeStart: 192.52.113.0
           pduSessionTypes:
             - IPv4v6
       sNssai:
