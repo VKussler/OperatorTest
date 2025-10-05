@@ -25,8 +25,8 @@ upfInfo:
     - dnnUpfInfoList:
         - dnn: oai
           ipv4AddressRanges:
-            - iPv4AddrRangeEnd: 192.28.168.255
-              iPv4AddrRangeStart: 192.28.168.0
+            - iPv4AddrRangeEnd: 12.1.1.255
+              iPv4AddrRangeStart: 12.1.1.128
           pduSessionTypes:
             - IPv4
         - dnn: ora
