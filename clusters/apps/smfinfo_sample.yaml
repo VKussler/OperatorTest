@@ -8,8 +8,8 @@ managedNFProfile:
     - SMF
 missingElements:
   dnnConfigs:
-    voice711:
-      ipv4Subnet: 192.37.246.16/24
+    ims:
+      ipv4Subnet: 14.1.1.0/24
       pduSessionType: IPV4V6
     oai:
       ipv4Subnet: 12.1.1.0/24
@@ -42,7 +42,7 @@ smfInfo:
         sd: FFFFFF
         sst: 1
     - dnnSmfInfoList:
-        - dnn: voice711
+        - dnn: ims
       sNSSAI:
         sd: "000001"
         sst: 1
