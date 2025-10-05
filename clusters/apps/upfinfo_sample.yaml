@@ -39,7 +39,7 @@ upfInfo:
         sd: FFFFFF
         sst: 1
     - dnnUpfInfoList:
-        - dnn: ims
+        - dnn: internet666
           ipv4AddressRanges:
             - iPv4AddrRangeEnd: 14.1.1.255
               iPv4AddrRangeStart: 14.1.1.0
