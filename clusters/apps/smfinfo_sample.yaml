@@ -12,8 +12,8 @@ missingElements:
       ipv4Subnet: 14.1.1.0/24
       pduSessionType: IPV4V6
     oai:
-      ipv4Subnet: 12.1.1.0/24
-      pduSessionType: IPV4
+      ipv4Subnet: 192.246.84.216/24
+      pduSessionType: IPV6
     ora:
       ipv4Subnet: 13.1.1.0/24
       pduSessionType: IPV4
