@@ -8,9 +8,6 @@ managedNFProfile:
     - SMF
 missingElements:
   dnnConfigs:
-    ims:
-      ipv4Subnet: 14.1.1.0/24
-      pduSessionType: IPV4V6
     oai:
       ipv4Subnet: 12.1.1.0/24
       pduSessionType: IPV4
@@ -41,8 +38,7 @@ smfInfo:
       sNSSAI:
         sd: FFFFFF
         sst: 1
-    - dnnSmfInfoList:
-        - dnn: ims
+    - dnnSmfInfoList: []
       sNSSAI:
         sd: "000001"
         sst: 1
