@@ -11,6 +11,9 @@ missingElements:
     ims:
       ipv4Subnet: 14.1.1.0/24
       pduSessionType: IPV4V6
+    oai:
+      ipv4Subnet: 12.1.1.0/24
+      pduSessionType: IPV4
     ora:
       ipv4Subnet: 13.1.1.0/24
       pduSessionType: IPV4
@@ -33,6 +36,7 @@ cNSIIdList: ["slice-1-cn"]
 smfInfo:
   sNssaiSmfInfoList:
     - dnnSmfInfoList:
+        - dnn: oai
         - dnn: ora
       sNSSAI:
         sd: FFFFFF
