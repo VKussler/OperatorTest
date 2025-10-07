@@ -54,3 +54,7 @@ smfInfo:
       sNSSAI:
         sd: "80A259"
         sst: 115
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "80A259"
+        sst: 115
