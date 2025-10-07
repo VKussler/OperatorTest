@@ -58,7 +58,10 @@ upfInfo:
       sNssai:
         sd: "80A259"
         sst: 115
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "80A259"
         sst: 115
