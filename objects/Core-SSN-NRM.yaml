@@ -7,14 +7,14 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "staging-slice"
+    - sliceProfileId: "iota-slice"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 195
-            sd: "960ED5"
+            sst: 180
+            sd: "2F8562"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
@@ -27,6 +27,7 @@ attributes:
         dLReliability: "99.999"
         resourceSharingLevel: "SHARED"
         availability: "99.99"
+        supportedDataNetworks: ["internet"]
       RANSliceSubnetProfile: {}
       TopSliceSubnetProfile: {}
   priorityLabel: 10
