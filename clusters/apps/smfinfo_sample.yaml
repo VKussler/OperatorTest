@@ -58,8 +58,11 @@ smfInfo:
       sNSSAI:
         sd: "F9B3E8"
         sst: 149
-    - dnnSmfInfoList:
-        - dnn: internet
+    - dnnSmfInfoList: []
       sNSSAI:
         sd: "836789"
         sst: 12
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "3A7600"
+        sst: 21
