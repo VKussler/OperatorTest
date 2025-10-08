@@ -17,6 +17,9 @@ missingElements:
     ora:
       ipv4Subnet: 13.1.1.0/24
       pduSessionType: IPV4
+    epsilon-slice:
+      ipv4Subnet: 10.10.10.0/24
+      pduSessionType: IPV4
   snssaiConfigs:
     1-000001:
       fiveQi: 2
@@ -26,6 +29,10 @@ missingElements:
       fiveQi: 5
       sessionAmbrDl: 400Mbps
       sessionAmbrUl: 200Mbps
+    170-595D45:
+      fiveQi: 5
+      sessionAmbrDl: 200Mbps
+      sessionAmbrUl: 100Mbps
 nRTAClist: "0"
 pLMNInfoList:
   - pLMNId:
@@ -46,3 +53,8 @@ smfInfo:
       sNSSAI:
         sd: "000001"
         sst: 1
+    - dnnSmfInfoList:
+        - dnn: epsilon-slice
+      sNSSAI:
+        sd: "595D45"
+        sst: 170
