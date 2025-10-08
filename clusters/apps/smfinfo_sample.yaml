@@ -54,7 +54,8 @@ smfInfo:
       sNSSAI:
         sd: "BC4F40"
         sst: 165
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+        - dnn: internet
       sNSSAI:
         sd: "0E2AD9"
         sst: 152
