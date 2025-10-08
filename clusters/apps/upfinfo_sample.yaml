@@ -58,3 +58,7 @@ upfInfo:
       sNssai:
         sd: "BC4F40"
         sst: 165
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "0E2AD9"
+        sst: 152
