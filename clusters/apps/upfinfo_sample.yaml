@@ -58,7 +58,13 @@ upfInfo:
       sNssai:
         sd: "F9B3E8"
         sst: 149
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
+          ipv4AddressRanges:
+            - iPv4AddrRangeStart: 192.168.1.0
+              iPv4AddrRangeEnd: 192.168.1.255
       sNssai:
         sd: "836789"
         sst: 12
