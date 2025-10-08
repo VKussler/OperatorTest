@@ -17,9 +17,6 @@ missingElements:
     ora:
       ipv4Subnet: 13.1.1.0/24
       pduSessionType: IPV4
-    gamma-slice:
-      ipv4Subnet: 10.10.10.0/24
-      pduSessionType: IPV4
   snssaiConfigs:
     1-000001:
       fiveQi: 2
@@ -38,13 +35,6 @@ sBIFQDN: smf-1.sbi.example.com
 cNSIIdList: ["slice-1-cn"]
 smfInfo:
   sNssaiSmfInfoList:
-    - dnnSmfInfoList:
-        - dnn: oai
-        - dnn: ora
-        - dnn: gamma-slice
-      sNSSAI:
-        sd: "6C0B9D"
-        sst: 191
     - dnnSmfInfoList:
         - dnn: oai
         - dnn: ora
