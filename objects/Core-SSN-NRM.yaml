@@ -1,3 +1,5 @@
+# 3GPP NRM-based Core Network Slice Subnet
+# Intent: Create a new slice with name backup-slice, sst 221, and sd 669904
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -7,14 +9,14 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "delta-slice"
+    - sliceProfileId: "backup-slice"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 3
-            sd: "FAF59F"
+            sst: 221
+            sd: "669904"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
