@@ -63,3 +63,8 @@ smfInfo:
       sNSSAI:
         sd: 80dbbc
         sst: 185
+    - dnnSmfInfoList:
+        - dnn: internet
+      sNSSAI:
+        sd: 38ebf8
+        sst: 156
