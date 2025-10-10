@@ -1,11 +1,12 @@
 apiVersion: cm-5gc.com/v1alpha1
 kind: SmfInfo
 metadata:
+  labels:
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: op-smf
   name: smfinfo-sample
   namespace: default
 spec:
-  cNSIIdList:
-  - slice-1-cn
   commModelList:
   - commModelType: DIRECT_COMMUNICATION_WO_NRF
   managedNFProfile:
@@ -21,10 +22,7 @@ spec:
       oai:
         ipv4Subnet: 12.1.1.0/24
         pduSessionType: IPV4
-      ora:
-        ipv4Subnet: 13.1.1.0/24
-        pduSessionType: IPV4
-      rollback-test-dnn:
+      org:
         ipv4Subnet: 13.1.1.0/24
         pduSessionType: IPV4
     snssaiConfigs:
@@ -41,13 +39,12 @@ spec:
   - pLMNId:
       mcc: "001"
       mnc: "01"
-  sBIFQDN: smf-1.sbi.example.com
+  sBIFQDN: smfinfo-sample.example.com
   smfInfo:
     sNssaiSmfInfoList:
     - dnnSmfInfoList:
       - dnn: oai
-      - dnn: ora
-      - dnn: rollback-test-dnn
+      - dnn: org
       sNSSAI:
         sd: FFFFFF
         sst: 1
