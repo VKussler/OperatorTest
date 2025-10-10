@@ -1,3 +1,5 @@
+# 3GPP NRM-based Core Network Slice Subnet
+# Intent: Create a new slice with name test-slice, sst 4, and sd 000401
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -32,8 +34,10 @@ attributes:
       TopSliceSubnetProfile: {}
   priorityLabel: 10
   networkSliceSubnetType: "core"
+
+# --- Attribute related to role ---
 managedFunctionRef: "/ManagedFunction/AMF-1"
 networkSliceSubnetRef: "/NetworkSliceSubnet/slice-1"
 epTransportRef: "/EP_Transport/ep-1"
 networkSliceSubnetControllerRef: "/NetworkSliceSubnetController/controller-1"
-isolationProfileRef: "/IsolationProfile/profile-1"
+isolationProfileRef: "/IsolationProfile/profile-1" # Supported as network slicing isolation is featured
