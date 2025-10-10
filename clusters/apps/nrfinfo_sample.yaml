@@ -24,4 +24,8 @@ nrfInfo:
     sst: "1"
     sd: "000001"
     plmn: "208-93"
-    nfList: [] # To be populated with newly commissioned NFs
+    nfList:
+      - nfInstanceId: "nf-instance-001" #Example, replace with actual NF instance IDs
+        nfType: "NF_TYPE" #Example, replace with actual NF type
+        nfStatus: "REGISTERED" #Example, replace with actual NF status
+        fqdn: "nf-1.example.com" #Example, replace with actual NF FQDN
