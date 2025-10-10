@@ -31,6 +31,12 @@ spec:
       kok:
         ipv4Subnet: 192.168.1.0/24
         pduSessionType: IPV4
+      internet:
+        ipv4Subnet: 10.10.10.0/24
+        pduSessionType: IPV4
+      iot:
+        ipv4Subnet: 10.20.20.0/24
+        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -67,6 +73,20 @@ spec:
         sst: 1
     - dnnSmfInfoList:
       - dnn: kok
+      - dnn: internet
+      - dnn: iot
+      sNSSAI:
+        sd: "000001"
+        sst: 1
+    - dnnSmfInfoList:
+      - dnn: kok
       sNSSAI:
         sd: 004001
         sst: 43
+    - dnnSmfInfoList:
+      - dnn: internet
+      - dnn: iot
+      - dnn: kok
+      sNSSAI:
+        sd: "000001"
+        sst: 1
