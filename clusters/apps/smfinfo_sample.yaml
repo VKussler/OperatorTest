@@ -1,4 +1,16 @@
 apiVersion: cm-5gc.com/v1alpha1
 kind: SmfInfo
 metadata:
-  labels:
+  labels: {}
+spec:
+  sNSSAI:
+    - sd: "616513"
+      sst: 47
+      dnnSmfInfoList:
+        - internet
+  missingElements:
+    dnnConfigs:
+      internet:
+        ipv4Subnet: "10.0.0.0/24"
+        pduSessionType:
+          - IPV4
