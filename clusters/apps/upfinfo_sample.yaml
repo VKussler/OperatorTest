@@ -153,3 +153,7 @@ upfInfo:
       sNssai:
         sd: "E5A887"
         sst: 32
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "C09385"
+        sst: 211
