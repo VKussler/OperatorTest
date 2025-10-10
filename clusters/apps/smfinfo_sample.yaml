@@ -104,3 +104,10 @@ spec:
       sNSSAI:
         sd: "000001"
         sst: 1
+    - dnnSmfInfoList:
+      - dnn: internet
+      - dnn: iot
+      - dnn: kok
+      sNSSAI:
+        sd: "000001"
+        sst: 1
