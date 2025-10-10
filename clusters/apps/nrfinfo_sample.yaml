@@ -3,7 +3,7 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-sBIFQDN: "iota-slice"
+sBIFQDN: "gamma-slice"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
