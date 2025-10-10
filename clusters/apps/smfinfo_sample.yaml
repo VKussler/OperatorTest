@@ -34,6 +34,9 @@ spec:
       test-slice:
         ipv4Subnet: 10.10.10.0/24
         pduSessionType: IPV4
+      test-slice:
+        ipv4Subnet: 10.10.10.0/24
+        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -68,6 +71,7 @@ spec:
         sst: 1
     - dnnSmfInfoList:
       - dnn: oai
+      - dnn: test-slice
       - dnn: test-slice
       - dnn: test-slice
       - dnn: test-slice
