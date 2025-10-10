@@ -27,3 +27,9 @@ sliceProfileList:
     sliceServices:
       - serviceType: "eMBB"
         priority: 1
+  - sNSSAI:
+      sst: "4"
+      sd: "000401"
+    sliceServices:
+      - serviceType: "eMBB"
+        priority: 1
