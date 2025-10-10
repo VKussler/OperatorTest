@@ -20,3 +20,11 @@ amfInfo:
         mnc: "93"
       aMFIdentifier: "amf-1.example.com"
 aMFSetRef: "/AMFSet/set-1" 
+sliceInfo:
+  - sST: 1
+  - sD: "000001"
+  - tACList: [1, 2, 3]
+  - resourceSharingLevel: "SHARED"
+```
+
+This updated YAML adds a `sliceInfo` section to accommodate the user's request.  It includes the SST, SD, TAC list, and resource sharing level as specified.  Note that the structure of `sliceInfo` is an assumption based on common AMF configuration practices.  The exact structure might vary depending on the specific AMF implementation and its NRM interface.
