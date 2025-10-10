@@ -48,17 +48,3 @@ upfInfo:
       sNssai:
         sd: "000001"
         sst: 1
-  - dnnUpfInfoList:
-        - dnn: internet
-          pduSessionTypes:
-            - IPv4
-          ipv4AddressRanges:
-            - iPv4AddrRangeStart: 192.168.1.0
-              iPv4AddrRangeEnd: 192.168.1.255
-      sNssai:
-        sd: B5BDE5
-        sst: 29
-  - dnnUpfInfoList: []
-      sNssai:
-        sd: "331A08"
-        sst: 33
