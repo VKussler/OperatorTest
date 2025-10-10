@@ -62,3 +62,7 @@ upfInfo:
       sNssai:
         sd: "1e292e"
         sst: 129
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "1e292e"
+        sst: 129
