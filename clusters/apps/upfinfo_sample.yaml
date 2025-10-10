@@ -52,3 +52,7 @@ upfInfo:
       sNssai:
         sd: "38ebf8"
         sst: 156
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "80dbbc"
+        sst: 185
