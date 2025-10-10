@@ -168,10 +168,15 @@ smfInfo:
       sNSSAI:
         sst: 88
         sd: "11D312"
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+        - dnn: internet
       sNSSAI:
         sst: 32
         sd: "DEC865"
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sst: 108
+        sd: "39FFF3"
 missingElements:
   dnnConfigs:
     ims:
