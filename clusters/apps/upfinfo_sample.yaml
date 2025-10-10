@@ -170,3 +170,7 @@ upfInfo:
       sNssai:
         sd: "6A38C5"
         sst: 142
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "8EDB80"
+        sst: 157
