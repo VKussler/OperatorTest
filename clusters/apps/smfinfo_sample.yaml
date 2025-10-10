@@ -26,6 +26,10 @@ missingElements:
       fiveQi: 5
       sessionAmbrDl: 400Mbps
       sessionAmbrUl: 200Mbps
+    4-000401:
+      fiveQi: 5
+      sessionAmbrDl: 100Mbps
+      sessionAmbrUl: 100Mbps
 nRTAClist: "0"
 pLMNInfoList:
   - pLMNId:
@@ -46,3 +50,8 @@ smfInfo:
       sNSSAI:
         sd: "000001"
         sst: 1
+    - dnnSmfInfoList:
+        - dnn: oai
+      sNSSAI:
+        sd: "000401"
+        sst: 4
