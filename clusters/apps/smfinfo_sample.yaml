@@ -57,3 +57,7 @@ spec:
       sNSSAI:
         sd: "F40A24"
         sst: 101
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "F40A24"
+        sst: 101
