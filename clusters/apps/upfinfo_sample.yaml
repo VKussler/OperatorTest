@@ -180,7 +180,10 @@ upfInfo:
       sNssai:
         sd: "8EDB80"
         sst: 157
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "075330"
         sst: 99
