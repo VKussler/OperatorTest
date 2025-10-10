@@ -62,3 +62,7 @@ smfInfo:
       sNSSAI:
         sd: "040815"
         sst: 193
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "879553"
+        sst: 19
