@@ -55,6 +55,19 @@ upfInfo:
               iPv4AddrRangeStart: 127.0.0.0
           pduSessionTypes:
             - IPv4
+        - dnn: internet
+          ipv4AddressRanges:
+            - iPv4AddrRangeEnd: 127.0.0.255
+              iPv4AddrRangeStart: 127.0.0.0
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "b1e65c"
         sst: 174
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
+      sNssai:
+        sd: "8d7682"
+        sst: 142
