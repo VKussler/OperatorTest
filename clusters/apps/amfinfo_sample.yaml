@@ -1,72 +1,22 @@
-network_slice:
-  name: "test-slice"
-  description: "A test network slice for demonstration purposes."
-  sst: 4
-  sd: "000401"
-  amf:
-    capacity: 10000
-    priority: 1
-    weight: 50
-    config:
-      amf_name: "TestAMF"
-      served_guami_list:
-        - plmn_id:
-            mcc: "310"
-            mnc: "260"
-          amf_region_id: "01"
-          amf_set_id: "001"
-  smf:
-    capacity: 5000
-    priority: 2
-    weight: 30
-    config:
-      smf_name: "TestSMF"
-      s_nssai:
-        sst: 4
-        sd: "000401"
-  upf:
-    capacity: 20000
-    priority: 3
-    weight: 20
-    config:
-      upf_name: "TestUPF"
-      dnn_list:
-        - dnn: "internet"
-          cidr: "10.10.0.0/16"
-  nrf:
-    config:
-      nrf_name: "TestNRF"
-      slice_info:
-        slice_name: "test-slice"
-        s_nssai:
-          sst: 4
-          sd: "000401"
-  nssf:
-    config:
-      nssf_name: "TestNSSF"
-      snssai_route_selection_descriptor:
-        s_nssai:
-          sst: 4
-          sd: "000401"
-        amf_set_id_list: ["001"]
-  pcf:
-    config:
-      pcf_name: "TestPCF"
-      snssai_info:
-        s_nssai:
-          sst: 4
-          sd: "000401"
-        dnn_list: ["internet"]
-  oai_db:
-    config:
-      slice_id: "test-slice-id"
-      snssai:
-        sst: 4
-        sd: "000401"
-      allowed_plmns:
-        - mcc: "310"
-          mnc: "260"
-  dnn:
-    dnn_name: "internet"
-    cidr: "10.10.0.0/16"
-    description: "Internet access DNN for the test slice."
+# Sample AMF NRM Instance
+pLMNInfoList:
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+aMFIdentifier: "amf-1.example.com"
+sBIFQDN: "amf-1.sbi.example.com"
+cNSIIdList: ["slice-1-cn"]
+managedNFProfile:
+  nfInstanceId: "amf-instance-001"
+  nfType: "AMF"
+  heartBeatTimer: 60
+  hostAddr: "192.168.1.10"
+amfInfo:
+  aMFRegionId: "1"
+  aMFSetId: 100
+  gUAMIdList:
+    - pLMNId:
+        mcc: "208"
+        mnc: "93"
+      aMFIdentifier: "amf-1.example.com"
+aMFSetRef: "/AMFSet/set-1" 
