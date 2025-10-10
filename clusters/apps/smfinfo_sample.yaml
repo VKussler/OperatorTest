@@ -50,3 +50,7 @@ smfInfo:
       sNSSAI:
         sd: "8A6BAA"
         sst: 92
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "8A6BAA"
+        sst: 92
