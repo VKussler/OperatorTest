@@ -7,14 +7,14 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "qa-slice"
+    - sliceProfileId: "prod-slice"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 158
-            sd: "632B4D"
+            sst: 5
+            sd: "7F489C"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
