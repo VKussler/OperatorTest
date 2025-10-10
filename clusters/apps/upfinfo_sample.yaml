@@ -222,3 +222,7 @@ upfInfo:
       sNssai:
         sd: "11D312"
         sst: 88
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "DEC865"
+        sst: 32
