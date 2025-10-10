@@ -50,3 +50,7 @@ smfInfo:
       sNSSAI:
         sd: "eb6960"
         sst: 46
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "eb6960"
+        sst: 46
