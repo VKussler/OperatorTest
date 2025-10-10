@@ -1,10 +1,17 @@
-# Sample UPF NRM Instance
-managedNFProfile:
-  capacity: 1000
-  hostAddr: oai-upf
-  nfType:
+apiVersion: cm-5gc.com/v1alpha1
+kind: UpfInfo
+metadata:
+  name: upfinfo-sample
+  namespace: default
+spec:
+  cNSIIdList:
+  - slice-1-cn
+  managedNFProfile:
+    capacity: 1000
+    hostAddr: oai-upf
+    nfType:
     - UPF
-pLMNInfoList:
+  pLMNInfoList:
   - pLMNId:
       mcc: "001"
       mnc: "01"
@@ -17,34 +24,39 @@ pLMNInfoList:
     sNSSAI:
       sd: "000001"
       sst: 1
-supportedBMOList:
+  supportedBMOList:
   - BMO1
-cNSIIdList: ["slice-1-cn"]
-upfInfo:
-  sNssaiUpfInfoList:
+  upfInfo:
+    sNssaiUpfInfoList:
     - dnnUpfInfoList:
-        - dnn: oai
-          ipv4AddressRanges:
-            - iPv4AddrRangeEnd: 12.1.1.255
-              iPv4AddrRangeStart: 12.1.1.128
-          pduSessionTypes:
-            - IPv4
-        - dnn: ora
-          ipv4AddressRanges:
-            - iPv4AddrRangeEnd: 13.1.1.255
-              iPv4AddrRangeStart: 13.1.1.128
-          pduSessionTypes:
-            - IPv4
+      - dnn: oai
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 12.1.1.255
+          iPv4AddrRangeStart: 12.1.1.128
+        pduSessionTypes:
+        - IPv4
+      - dnn: ora
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 13.1.1.255
+          iPv4AddrRangeStart: 13.1.1.128
+        pduSessionTypes:
+        - IPv4
+      - dnn: rollback-test-dnn
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 13.1.1.255
+          iPv4AddrRangeStart: 13.1.1.0
+        pduSessionTypes:
+        - IPv4
       sNssai:
         sd: FFFFFF
         sst: 1
     - dnnUpfInfoList:
-        - dnn: ims
-          ipv4AddressRanges:
-            - iPv4AddrRangeEnd: 14.1.1.255
-              iPv4AddrRangeStart: 14.1.1.0
-          pduSessionTypes:
-            - IPv4v6
+      - dnn: ims
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 14.1.1.255
+          iPv4AddrRangeStart: 14.1.1.0
+        pduSessionTypes:
+        - IPv4v6
       sNssai:
         sd: "000001"
         sst: 1
