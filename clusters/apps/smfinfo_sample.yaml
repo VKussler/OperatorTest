@@ -2,7 +2,7 @@
 commModelList:
   - commModelType: DIRECT_COMMUNICATION_WO_NRF
 managedNFProfile:
-  capacity: 20000
+  capacity: 10
   hostAddr: 127.0.0.1
   nfType:
     - SMF
@@ -17,9 +17,6 @@ missingElements:
     ora:
       ipv4Subnet: 13.1.1.0/24
       pduSessionType: IPV4
-    internet:
-      ipv4Subnet: 15.1.1.0/24
-      pduSessionType: IPV4V6
   snssaiConfigs:
     1-000001:
       fiveQi: 2
@@ -29,20 +26,13 @@ missingElements:
       fiveQi: 5
       sessionAmbrDl: 400Mbps
       sessionAmbrUl: 200Mbps
-    4-000401:
-      fiveQi: 2
-      sessionAmbrDl: 200Mbps
-      sessionAmbrUl: 500Mbps
-      dlLatency: 10ms
-      ulLatency: 15ms
-      reliability: 99.999%
 nRTAClist: "0"
 pLMNInfoList:
   - pLMNId:
       mcc: "001"
       mnc: "01"
 sBIFQDN: smf-1.sbi.example.com
-cNSIIdList: ["slice-1-cn", "test-slice-cn-1"]
+cNSIIdList: ["slice-1-cn"]
 smfInfo:
   sNssaiSmfInfoList:
     - dnnSmfInfoList:
@@ -56,8 +46,3 @@ smfInfo:
       sNSSAI:
         sd: "000001"
         sst: 1
-    - dnnSmfInfoList:
-        - dnn: internet
-      sNSSAI:
-        sd: "000401"
-        sst: 4
