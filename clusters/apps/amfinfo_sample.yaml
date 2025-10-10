@@ -5,13 +5,13 @@ pLMNInfoList:
       mnc: "93"
 aMFIdentifier: "amf-new.example.com"
 sBIFQDN: "amf-new.sbi.example.com"
-cNSIIdList: ["slice-2-cn", "slice-3-cn"]
+cNSIIdList: ["slice-2-cn", "slice-3-cn", "test-slice"]
 managedNFProfile:
   nfInstanceId: "amf-instance-002"
   nfType: "AMF"
   heartBeatTimer: 30
   hostAddr: "192.168.1.11"
-  sdList: ["sd1", "sd2"]
+  sdList: ["sd1", "sd2", "000401"]
 amfInfo:
   aMFRegionId: "2"
   aMFSetId: 200
@@ -21,3 +21,4 @@ amfInfo:
         mnc: "93"
       aMFIdentifier: "amf-new.example.com"
 aMFSetRef: "/AMFSet/set-2"
+sstList: [4]
