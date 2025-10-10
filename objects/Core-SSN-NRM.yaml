@@ -1,5 +1,3 @@
-# 3GPP NRM-based Core Network Slice Subnet
-# Intent: Execute slice instantiation procedure for NSI epsilon-slice with SST 247 and SD 403D03 in the network function virtualization environment
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -15,8 +13,8 @@ attributes:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 247
-            sd: "403D03"
+            sst: 79
+            sd: "71D8DA"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
