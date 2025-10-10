@@ -1,5 +1,3 @@
-# 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create a new slice with parameters: {name: test-slice, sst: 4, sd: 000401}
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -9,14 +7,14 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "test-slice"
+    - sliceProfileId: "alpha-slice"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
             mnc: "93"
           sNSSAI:
             sst: 4
-            sd: "000401"
+            sd: "6109F5"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
@@ -29,7 +27,7 @@ attributes:
         dLReliability: "99.999"
         resourceSharingLevel: "SHARED"
         availability: "99.99"
-        supportedDataNetworks: ["internet"]
+        supportedDataNetworks: []
       RANSliceSubnetProfile: {}
       TopSliceSubnetProfile: {}
   priorityLabel: 10
