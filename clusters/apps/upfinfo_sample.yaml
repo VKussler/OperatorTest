@@ -36,7 +36,7 @@ spec:
           iPv4AddrRangeStart: 12.1.1.128
         pduSessionTypes:
         - IPv4
-      - dnn: ora
+      - dnn: tor
         ipv4AddressRanges:
         - iPv4AddrRangeEnd: 13.1.1.255
           iPv4AddrRangeStart: 13.1.1.128
@@ -52,84 +52,6 @@ spec:
           iPv4AddrRangeStart: 14.1.1.0
         pduSessionTypes:
         - IPv4v6
-      - dnn: newDNN
-        pduSessionTypes:
-        - IPv4
-        ipv4AddressRanges:
-        - iPv4AddrRangeStart: 13.1.1.0
-          iPv4AddrRangeEnd: 13.1.1.255
-      - dnn: newDNN2
-        pduSessionTypes:
-          - IPv4
-        ipv4AddressRanges:
-          - iPv4AddrRangeStart: 13.1.1.0
-            iPv4AddrRangeEnd: 13.1.1.255
-      - dnn: eMBB Core Slice Subnet Instance
-        pduSessionTypes:
-        - IPv4
-        ipv4AddressRanges:
-        - iPv4AddrRangeStart: 13.1.1.0
-          iPv4AddrRangeEnd: 13.1.1.255
-      - dnn: newDNN3
-        pduSessionTypes:
-        - IPv4
-        ipv4AddressRanges:
-        - iPv4AddrRangeStart: 13.1.1.0
-          iPv4AddrRangeEnd: 13.1.1.255
-      - dnn: newDNN4
-        pduSessionTypes:
-        - IPv4
-        ipv4AddressRanges:
-          - iPv4AddrRangeStart: 13.1.1.0
-            iPv4AddrRangeEnd: 13.1.1.255
-      - dnn: newDNN5
-        pduSessionTypes:
-        - IPv4
-        ipv4AddressRanges:
-          - iPv4AddrRangeStart: 13.1.1.0
-            iPv4AddrRangeEnd: 13.1.1.255
-      - dnn: newDNN6
-        pduSessionTypes:
-        - IPv4
-        ipv4AddressRanges:
-          - iPv4AddrRangeStart: 13.1.1.0
-            iPv4AddrRangeEnd: 13.1.1.255
-      - dnn: newDNN7
-        pduSessionTypes:
-        - IPv4
-        ipv4AddressRanges:
-          - iPv4AddrRangeStart: 13.1.1.0
-            iPv4AddrRangeEnd: 13.1.1.255
-      - dnn: newDNN8
-        pduSessionTypes:
-        - IPv4
-        ipv4AddressRanges:
-          - iPv4AddrRangeStart: 13.1.1.0
-            iPv4AddrRangeEnd: 13.1.1.255
-      - dnn: newDNN9
-        pduSessionTypes:
-        - IPv4
-        ipv4AddressRanges:
-          - iPv4AddrRangeStart: 13.1.1.0
-            iPv4AddrRangeEnd: 13.1.1.255
-      - dnn: newDNN10
-        pduSessionTypes:
-        - IPv4
-        ipv4AddressRanges:
-          - iPv4AddrRangeStart: 13.1.1.0
-            iPv4AddrRangeEnd: 13.1.1.255
-      - dnn: newDNN11
-        pduSessionTypes:
-        - IPv4
-        ipv4AddressRanges:
-          - iPv4AddrRangeStart: 192.168.1.0
-            iPv4AddrRangeEnd: 192.168.1.255
-      - dnn: newDNN12
-        pduSessionTypes:
-        - IPv4
-        ipv4AddressRanges:
-          - iPv4AddrRangeStart: 192.168.2.0
-            iPv4AddrRangeEnd: 192.168.2.255
       sNssai:
         sd: "000001"
         sst: 1
