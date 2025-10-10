@@ -3,11 +3,13 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-sBIFQDN: "test-slice.sbi.example.com"
+sBIFQDN: "{{slice_name}}.sbi.example.com"
 sliceInfoList:
   - sNSSAI:
       sst: 4
       sd: "000401"
+    cNSIIdList:
+      - "test-slice"
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
