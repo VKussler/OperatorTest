@@ -4,3 +4,6 @@ pLMNInfoList:
       mcc: "208"
       mnc: "93"
   - pLMNId:
+  - pLMNId:
+      mcc: "310"
+      mnc: "260"
