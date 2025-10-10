@@ -59,3 +59,7 @@ smfInfo:
       sNSSAI:
         sd: "80A259"
         sst: 115
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "331A08"
+        sst: 33
