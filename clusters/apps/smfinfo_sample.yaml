@@ -1,48 +1,58 @@
-# Sample SMF NRM Instance
-commModelList:
+apiVersion: cm-5gc.com/v1alpha1
+kind: SmfInfo
+metadata:
+  name: smfinfo-sample
+  namespace: default
+spec:
+  cNSIIdList:
+  - slice-1-cn
+  commModelList:
   - commModelType: DIRECT_COMMUNICATION_WO_NRF
-managedNFProfile:
-  capacity: 10
-  hostAddr: 127.0.0.1
-  nfType:
+  managedNFProfile:
+    capacity: 10
+    hostAddr: 127.0.0.1
+    nfType:
     - SMF
-missingElements:
-  dnnConfigs:
-    ims:
-      ipv4Subnet: 14.1.1.0/24
-      pduSessionType: IPV4V6
-    oai:
-      ipv4Subnet: 12.1.1.0/24
-      pduSessionType: IPV4
-    ora:
-      ipv4Subnet: 13.1.1.0/24
-      pduSessionType: IPV4
-  snssaiConfigs:
-    1-000001:
-      fiveQi: 2
-      sessionAmbrDl: 200Mbps
-      sessionAmbrUl: 100Mbps
-    1-FFFFFF:
-      fiveQi: 5
-      sessionAmbrDl: 400Mbps
-      sessionAmbrUl: 200Mbps
-nRTAClist: "0"
-pLMNInfoList:
+  missingElements:
+    dnnConfigs:
+      ims:
+        ipv4Subnet: 14.1.1.0/24
+        pduSessionType: IPV4V6
+      oai:
+        ipv4Subnet: 12.1.1.0/24
+        pduSessionType: IPV4
+      ora:
+        ipv4Subnet: 13.1.1.0/24
+        pduSessionType: IPV4
+      rollback-test-dnn:
+        ipv4Subnet: 13.1.1.0/24
+        pduSessionType: IPV4
+    snssaiConfigs:
+      1-000001:
+        fiveQi: 2
+        sessionAmbrDl: 200Mbps
+        sessionAmbrUl: 100Mbps
+      1-FFFFFF:
+        fiveQi: 5
+        sessionAmbrDl: 400Mbps
+        sessionAmbrUl: 200Mbps
+  nRTAClist: "0"
+  pLMNInfoList:
   - pLMNId:
       mcc: "001"
       mnc: "01"
-sBIFQDN: smf-1.sbi.example.com
-cNSIIdList: ["slice-1-cn"]
-smfInfo:
-  sNssaiSmfInfoList:
+  sBIFQDN: smf-1.sbi.example.com
+  smfInfo:
+    sNssaiSmfInfoList:
     - dnnSmfInfoList:
-        - dnn: oai
-        - dnn: ora
+      - dnn: oai
+      - dnn: ora
+      - dnn: rollback-test-dnn
       sNSSAI:
         sd: FFFFFF
         sst: 1
     - dnnSmfInfoList:
-        - dnn: ims
+      - dnn: ims
       sNSSAI:
         sd: "000001"
         sst: 1
