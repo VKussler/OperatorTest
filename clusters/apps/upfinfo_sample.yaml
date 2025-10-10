@@ -62,3 +62,7 @@ upfInfo:
       sNssai:
         sd: "F86001"
         sst: 8
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "4A16F5"
+        sst: 208
