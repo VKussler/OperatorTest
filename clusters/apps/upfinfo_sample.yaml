@@ -65,3 +65,7 @@ spec:
       sNssai:
         sd: "FRDF3"
         sst: 5
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "Fgr3"
+        sst: 34
