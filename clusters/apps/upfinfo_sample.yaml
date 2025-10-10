@@ -52,3 +52,7 @@ upfInfo:
       sNssai:
         sd: "5D2DC6"
         sst: 150
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "5D2DC6"
+        sst: 150
