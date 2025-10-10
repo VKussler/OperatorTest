@@ -358,6 +358,23 @@ AuthenticationSubscription:
       vectorGenerationInHss: null
 SessionManagementSubscriptionData:
     - dnnConfigurations:
+        data324:
+            5gQosProfile:
+                5qi: 1
+                arp:
+                    preemptCap: NOT_PREEMPT
+                    preemptVuln: PREEMPTABLE
+                    priorityLevel: 15
+                priorityLevel: 1
+            pduSessionTypes:
+                defaultSessionType: IPV4
+            sessionAmbr:
+                downlink: 1000Mbps
+                uplink: 1000Mbps
+            sscModes:
+                defaultSscMode: SSC_MODE_1
+            staticIpAddress:
+                - ipv4Addr: 12.1.1.100
         ims:
             5gQosProfile:
                 5qi: 2
@@ -390,60 +407,13 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
                 - ipv4Addr: 13.1.1.100
-        ora:
-            5gQosProfile:
-                5qi: 3
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 11
-                priorityLevel: 11
-            pduSessionTypes:
-                defaultSessionType: ETHERNET_UNSTRUCTURED
-            singleNssai:
-                sd: FFFFFF
-                sst: 1
-            staticIpAddress:
-                - ipv4Addr: 192.137.238.70/24
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
         sst: 1
       ueid: "001010000000100"
     - dnnConfigurations:
-        ims:
-            5gQosProfile:
-                5qi: 2
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4V6
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.100
-        ora:
+        data324:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -460,12 +430,6 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
                 - ipv4Addr: 12.1.1.101
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
-      ueid: "001010000000101"
-    - dnnConfigurations:
         ims:
             5gQosProfile:
                 5qi: 2
@@ -498,7 +462,13 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
                 - ipv4Addr: 13.1.1.100
-        ora:
+      servingPlmnid: "00101"
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
+      ueid: "001010000000101"
+    - dnnConfigurations:
+        data324:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -515,12 +485,6 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
                 - ipv4Addr: 12.1.1.102
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
-      ueid: "001010000000102"
-    - dnnConfigurations:
         ims:
             5gQosProfile:
                 5qi: 2
@@ -553,7 +517,13 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
                 - ipv4Addr: 13.1.1.100
-        ora:
+      servingPlmnid: "00101"
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
+      ueid: "001010000000102"
+    - dnnConfigurations:
+        data324:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -570,12 +540,6 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
                 - ipv4Addr: 12.1.1.103
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
-      ueid: "001010000000103"
-    - dnnConfigurations:
         ims:
             5gQosProfile:
                 5qi: 2
@@ -608,7 +572,13 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
                 - ipv4Addr: 13.1.1.100
-        ora:
+      servingPlmnid: "00101"
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
+      ueid: "001010000000103"
+    - dnnConfigurations:
+        data324:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -625,12 +595,6 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
                 - ipv4Addr: 12.1.1.104
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: FFFFFF
-        sst: 1
-      ueid: "001010000000104"
-    - dnnConfigurations:
         ims:
             5gQosProfile:
                 5qi: 2
@@ -663,7 +627,13 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
                 - ipv4Addr: 13.1.1.100
-        ora:
+      servingPlmnid: "00101"
+      singleNssai:
+        sd: FFFFFF
+        sst: 1
+      ueid: "001010000000104"
+    - dnnConfigurations:
+        data324:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -680,6 +650,38 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
                 - ipv4Addr: 12.1.1.105
+        ims:
+            5gQosProfile:
+                5qi: 2
+                arp:
+                    preemptCap: NOT_PREEMPT
+                    preemptVuln: PREEMPTABLE
+                    priorityLevel: 15
+                priorityLevel: 1
+            pduSessionTypes:
+                defaultSessionType: IPV4V6
+            sessionAmbr:
+                downlink: 1000Mbps
+                uplink: 1000Mbps
+            sscModes:
+                defaultSscMode: SSC_MODE_1
+        oai:
+            5gQosProfile:
+                5qi: 1
+                arp:
+                    preemptCap: NOT_PREEMPT
+                    preemptVuln: PREEMPTABLE
+                    priorityLevel: 15
+                priorityLevel: 1
+            pduSessionTypes:
+                defaultSessionType: IPV4
+            sessionAmbr:
+                downlink: 1000Mbps
+                uplink: 1000Mbps
+            sscModes:
+                defaultSscMode: SSC_MODE_1
+            staticIpAddress:
+                - ipv4Addr: 13.1.1.100
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
