@@ -46,11 +46,3 @@ smfInfo:
       sNSSAI:
         sd: "000001"
         sst: 1
-    - dnnSmfInfoList: []
-      sNSSAI:
-        sd: "71022B"
-        sst: 209
-    - dnnSmfInfoList: []
-      sNSSAI:
-        sd: "AA3F7D"
-        sst: 49
