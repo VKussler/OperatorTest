@@ -15,6 +15,8 @@ pLMNInfoList:
     sNSSAI:
       - sst: 4
         sd: "000401"
+      - sst: 4
+        sd: "000401"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
