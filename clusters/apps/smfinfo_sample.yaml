@@ -1,22 +1,55 @@
-string: "This is a string."
-another_string: 'This is also a string.'
-string_with_quotes: "This string contains \"quotes\"."
-string_with_escaped_newline: "This string has an escaped newline: \\n"
-string_with_newline: |
-  This string
-  has a newline.
-string_with_multiline_literal: |
-  This is a multi-line
-  literal string.
-  It preserves newlines.
-string_with_multiline_folded: >
-  This is a multi-line
-  folded string.
-  It folds newlines into spaces
-  unless there are blank lines.
-
-  Blank lines are preserved.
-string_with_unicode: "This string contains Unicode: こんにちは"
-string_with_special_chars: "This string contains special characters: !@#$%^&*()"
-empty_string: ""
-string_with_leading_and_trailing_spaces: "  This string has leading and trailing spaces.  "
+apiVersion: cm-5gc.com/v1alpha1
+kind: SmfInfo
+metadata:
+  labels:
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: op-smf
+  name: smfinfo-sample
+  namespace: default
+spec:
+  commModelList:
+  - commModelType: DIRECT_COMMUNICATION_WO_NRF
+  managedNFProfile:
+    capacity: 10
+    hostAddr: 127.0.0.1
+    nfType:
+    - SMF
+  missingElements:
+    dnnConfigs:
+      ims:
+        ipv4Subnet: 14.1.1.0/24
+        pduSessionType: IPV4V6
+      oai:
+        ipv4Subnet: 12.1.1.0/24
+        pduSessionType: IPV4
+      ora:
+        ipv4Subnet: 13.1.1.0/24
+        pduSessionType: IPV4
+    snssaiConfigs:
+      1-000001:
+        fiveQi: 2
+        sessionAmbrDl: 200Mbps
+        sessionAmbrUl: 100Mbps
+      1-FFFFFF:
+        fiveQi: 5
+        sessionAmbrDl: 400Mbps
+        sessionAmbrUl: 200Mbps
+  nRTAClist: "0"
+  pLMNInfoList:
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+  sBIFQDN: smfinfo-sample.example.com
+  smfInfo:
+    sNssaiSmfInfoList:
+    - dnnSmfInfoList:
+      - dnn: oai
+      - dnn: ora
+      sNSSAI:
+        sd: FFFFFF
+        sst: 1
+    - dnnSmfInfoList:
+      - dnn: ims
+      sNSSAI:
+        sd: "000001"
+        sst: 1
