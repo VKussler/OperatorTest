@@ -1,6 +1,6 @@
 
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: create slice org
+# Intent: Create a new slice named fot with QoS 54
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
