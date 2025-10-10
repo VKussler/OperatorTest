@@ -72,3 +72,7 @@ upfInfo:
       sNssai:
         sd: "e1c7c3"
         sst: 179
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "0403"
+        sst: 4
