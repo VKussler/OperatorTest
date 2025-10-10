@@ -4,8 +4,11 @@ pLMNInfoList:
       mcc: "208"
       mnc: "93"
 sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn", "test-slice"]
+cNSIIdList: ["slice-1-cn", "test-slice", "test-slice"]
 sliceInfoList:
+  - sst: 4
+    sd: "000401"
+    cNSIIdList: ["test-slice"]
   - sst: 4
     sd: "000401"
     cNSIIdList: ["test-slice"]
