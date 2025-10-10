@@ -1,13 +1,13 @@
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create a new slice named temp-slice with 179 AC4781
+# Intent: create slice prod-slice with sst 115 and sd C0187C
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
   nsInfo:
     # Supported as this is a virtualized environment
     nsInstanceId: "slice-subnet-1-ns-instance-001"
-    nsName: "temp-slice"
-    description: "NS Instance for the temp-slice"
+    nsName: "eMBB Core Slice Subnet Instance"
+    description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
     - sliceProfileId: "eMBB-profile-1"
       pLMNInfoList:
@@ -15,8 +15,8 @@ attributes:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 179
-            sd: "AC4781"
+            sst: 115
+            sd: "C0187C"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
