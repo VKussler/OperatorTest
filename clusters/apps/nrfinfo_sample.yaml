@@ -16,7 +16,5 @@ nFProfileList:
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
 nrfInfo:
-  servedPcfInfo:
-    pcf-1: {}
-  servedAmfInfo:
-    amf-1: {}
+  servedPcfInfo: {}
+  servedAmfInfo: {}
