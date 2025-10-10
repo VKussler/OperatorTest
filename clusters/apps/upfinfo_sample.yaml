@@ -48,13 +48,3 @@ upfInfo:
       sNssai:
         sd: "000001"
         sst: 1
-    - sNssai:
-        sd: "000401"
-        sst: 4
-      dnnUpfInfoList:
-        - dnn: internet
-          pduSessionTypes:
-            - IPv6
-          ipv6AddressRanges:
-            - iPv6AddrRangeStart: 2001:db8::
-              iPv6AddrRangeEnd: 2001:db8::ffff:ffff:ffff:ffff:ffff:ffff
