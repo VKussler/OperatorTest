@@ -13,10 +13,6 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
-  nssaiList: # Added to include supported Network Slice information
-    - sst: 4
-      sd: "000401"
-      name: "test-slice" # Descriptive name for the slice
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
