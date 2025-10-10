@@ -6,7 +6,7 @@ attributes:
   nsInfo:
     # Supported as this is a virtualized environment
     nsInstanceId: "slice-subnet-1-ns-instance-001"
-    nsName: "kok"
+    nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
     - sliceProfileId: "eMBB-profile-1"
@@ -15,8 +15,8 @@ attributes:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 1
-            sd: "000001"
+            sst: 43
+            sd: "004001"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
@@ -29,29 +29,7 @@ attributes:
         dLReliability: "99.999"
         resourceSharingLevel: "SHARED"
         availability: "99.99"
-        supportedDataNetworks: ["internet", "iot", "kok"]
-      RANSliceSubnetProfile: {}
-      TopSliceSubnetProfile: {}
-    - sliceProfileId: "new-slice"
-      pLMNInfoList:
-        - pLMNId:
-            mcc: "208"
-            mnc: "93"
-          sNSSAI:
-            sst: 43
-            sd: "004001"
-      CNSliceSubnetProfile:
-        maxNumberofUEs: 1000000
-        dLLatency: 10
-        uLLatency: 15
-        dLThptPerSliceSubnet: 1000
-        uLThptPerSliceSubnet: 500
-        maxNumberofPDUSessions: 20000
-        coverageAreaTAList: [1, 2, 3]
-        dLReliability: "99.999"
-        resourceSharingLevel: "SHARED"
-        availability: "99.99"
-        supportedDataNetworks: ["internet", "iot"]
+        supportedDataNetworks: ["kok"]
       RANSliceSubnetProfile: {}
       TopSliceSubnetProfile: {}
   priorityLabel: 10
