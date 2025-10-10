@@ -20,8 +20,8 @@ nrfInfo:
     pcf-1: {}
   servedAmfInfo:
     amf-1: {}
-  servedNfInfo: # Added to include all newly commissioned NFs
+  servedNfInfo: # Updated to include all newly commissioned NFs
     sst: "1"
     sd: "000001"
     plmn: "208-93"
-    nfList: [] # Initially empty, populated with newly commissioned NFs
+    nfList: [] #  Ready to be populated with newly commissioned NFs
