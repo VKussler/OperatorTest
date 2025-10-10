@@ -1,6 +1,6 @@
 
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create a new slice named tre
+# Intent: Create a new slice called foy
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
