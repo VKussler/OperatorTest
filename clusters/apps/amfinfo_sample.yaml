@@ -1,11 +1,14 @@
 # Sample AMF NRM Instance
 pLMNInfoList:
   - pLMNId:
-      mcc: "208"
-      mnc: "93"
+      mcc: "001"
+      mnc: "01"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
 aMFIdentifier: "amf-1.example.com"
 sBIFQDN: "amf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn"]
+cNSIIdList: ["test-slice"]
 managedNFProfile:
   nfInstanceId: "amf-instance-001"
   nfType: "AMF"
@@ -14,15 +17,9 @@ managedNFProfile:
 amfInfo:
   aMFRegionId: "1"
   aMFSetId: 100
-  sliceSupportList:
-    - sNSSAI:
-        sst: 4
-        sd: "000401"
-      dnnList:
-        - oai
   gUAMIdList:
     - pLMNId:
-        mcc: "208"
-        mnc: "93"
+        mcc: "001"
+        mnc: "01"
       aMFIdentifier: "amf-1.example.com"
-aMFSetRef: "/AMFSet/set-1" 
+aMFSetRef: "/AMFSet/set-1"
