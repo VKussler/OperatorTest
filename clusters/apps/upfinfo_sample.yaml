@@ -60,3 +60,8 @@ spec:
       sNssai:
         sd: "000401"
         sst: 4
+    - dnnUpfInfoList:
+      []
+      sNssai:
+        sd: "AC4781"
+        sst: 179
