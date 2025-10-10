@@ -187,7 +187,10 @@ upfInfo:
       sNssai:
         sd: "075330"
         sst: 99
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "5F4E10"
         sst: 229
