@@ -19,9 +19,6 @@ spec:
       ims:
         ipv4Subnet: 14.1.1.0/24
         pduSessionType: IPV4V6
-      internet:
-        ipv4Subnet: 10.0.0.0/24
-        pduSessionType: IPV4
       oai:
         ipv4Subnet: 12.1.1.0/24
         pduSessionType: IPV4
@@ -42,4 +39,17 @@ spec:
   - pLMNId:
       mcc: "001"
       mnc: "01"
-  sBIFQDN:
+  sBIFQDN: smfinfo-sample.example.com
+  smfInfo:
+    sNssaiSmfInfoList:
+    - dnnSmfInfoList:
+      - dnn: oai
+      - dnn: ora
+      sNSSAI:
+        sd: FFFFFF
+        sst: 1
+    - dnnSmfInfoList:
+      - dnn: ims
+      sNSSAI:
+        sd: "000001"
+        sst: 1
