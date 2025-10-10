@@ -59,3 +59,7 @@ smfInfo:
       sNSSAI:
         sd: "1e292e"
         sst: 129
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sst: 129
+        sd: "1e292e"
