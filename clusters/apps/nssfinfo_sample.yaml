@@ -6,16 +6,16 @@ pLMNInfoList:
 sBIFQDN: "nssf-1.sbi.example.com"
 cNSIIdList: ["slice-1-cn"]
 managedNFProfile:
-  nfInstanceId: "nssf-instance-001"
+  nfInstanceId: "nssf-instance-002"
   nfType: "NSSF"
-  hostAddr: "192.168.1.12"
+  hostAddr: "192.168.1.13"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
     targetNFServiceList: ["nnrf-nfm"]
 sliceProfileList:
   - sNSSAI:
       sst: "1"
-      sd: "000001"
+      sd: "000003"
     sliceServices:
       - serviceType: "CM"
         priority: 1
@@ -23,7 +23,7 @@ sliceProfileList:
         priority: 2
   - sNSSAI:
       sst: "1"
-      sd: "000002"
+      sd: "000004"
     sliceServices:
       - serviceType: "eMBB"
         priority: 1
