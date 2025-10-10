@@ -58,3 +58,7 @@ upfInfo:
       sNssai:
         sd: "80A259"
         sst: 115
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "80A259"
+        sst: 115
