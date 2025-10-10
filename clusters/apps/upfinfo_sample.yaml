@@ -65,7 +65,10 @@ upfInfo:
       sNssai:
         sd: "d980f0"
         sst: 158
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "d980f0"
         sst: 158
