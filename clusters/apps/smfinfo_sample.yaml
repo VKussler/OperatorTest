@@ -73,7 +73,8 @@ smfInfo:
       sNSSAI:
         sd: "e1c7c3"
         sst: 179
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+        - dnn: internet
       sNSSAI:
         sd: "0403"
         sst: 4
