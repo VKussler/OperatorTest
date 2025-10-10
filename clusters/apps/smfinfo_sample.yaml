@@ -19,7 +19,7 @@ spec:
       ims:
         ipv4Subnet: 14.1.1.0/24
         pduSessionType: IPV4V6
-      oai:
+      got:
         ipv4Subnet: 12.1.1.0/24
         pduSessionType: IPV4
       ora:
@@ -43,7 +43,7 @@ spec:
   smfInfo:
     sNssaiSmfInfoList:
     - dnnSmfInfoList:
-      - dnn: oai
+      - dnn: got
       - dnn: ora
       sNSSAI:
         sd: FFFFFF
@@ -53,3 +53,8 @@ spec:
       sNSSAI:
         sd: "000001"
         sst: 1
+    - dnnSmfInfoList:
+      - dnn: internet
+      sNSSAI:
+        sd: "000401"
+        sst: 4
