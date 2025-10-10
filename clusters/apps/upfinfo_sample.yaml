@@ -215,4 +215,4 @@ spec:
         sd: FFFFFF
         sst: 1
     - dnnUpfInfoList:
-      - dnn: tst
+      - dnn: internet
