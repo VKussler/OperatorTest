@@ -22,10 +22,7 @@ spec:
       oai:
         ipv4Subnet: 12.1.1.0/24
         pduSessionType: IPV4
-      org:
-        ipv4Subnet: 13.1.1.0/24
-        pduSessionType: IPV4
-      oar:
+      ora:
         ipv4Subnet: 13.1.1.0/24
         pduSessionType: IPV4
     snssaiConfigs:
@@ -47,7 +44,7 @@ spec:
     sNssaiSmfInfoList:
     - dnnSmfInfoList:
       - dnn: oai
-      - dnn: oar
+      - dnn: ora
       sNSSAI:
         sd: FFFFFF
         sst: 1
