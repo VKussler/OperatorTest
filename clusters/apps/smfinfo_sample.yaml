@@ -69,12 +69,26 @@ smfInfo:
       sNSSAI:
         sd: "7B2925"
         sst: 136
-    - dnnSmfInfoList:
-        - dnn: internet
+    - dnnSmfInfoList: []
       sNSSAI:
         sd: "82F2C1"
         sst: 199
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+        - dnn: internet
       sNSSAI:
         sd: "901143"
         sst: 170
+missingElements:
+  dnnConfigs:
+    ims:
+      ipv4Subnet: 14.1.1.0/24
+      pduSessionType: IPV4V6
+    oai:
+      ipv4Subnet: 12.1.1.0/24
+      pduSessionType: IPV4
+    ora:
+      ipv4Subnet: 13.1.1.0/24
+      pduSessionType: IPV4
+    internet:
+      ipv4Subnet: 10.10.10.0/24
+      pduSessionType: IPV4
