@@ -22,20 +22,8 @@ spec:
       oai:
         ipv4Subnet: 12.1.1.0/24
         pduSessionType: IPV4
-      tor:
+      ora:
         ipv4Subnet: 13.1.1.0/24
-        pduSessionType: IPV4
-      foi:
-        ipv4Subnet: 32.1.1.0/24
-        pduSessionType: IPV4V6
-      kok:
-        ipv4Subnet: 192.168.1.0/24
-        pduSessionType: IPV4
-      internet:
-        ipv4Subnet: 10.10.10.0/24
-        pduSessionType: IPV4
-      iot:
-        ipv4Subnet: 10.20.20.0/24
         pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
@@ -46,11 +34,6 @@ spec:
         fiveQi: 5
         sessionAmbrDl: 400Mbps
         sessionAmbrUl: 200Mbps
-      43-004001:
-        fiveQi: 5
-        sessionAmbrDl: 400Mbps
-        sessionAmbrUl: 200Mbps
-
   nRTAClist: "0"
   pLMNInfoList:
   - pLMNId:
@@ -61,65 +44,12 @@ spec:
     sNssaiSmfInfoList:
     - dnnSmfInfoList:
       - dnn: oai
-      - dnn: tor
+      - dnn: ora
       sNSSAI:
         sd: FFFFFF
         sst: 1
     - dnnSmfInfoList:
       - dnn: ims
-      - dnn: foi
       sNSSAI:
         sd: "000001"
         sst: 1
-    - dnnSmfInfoList:
-      - dnn: kok
-      - dnn: internet
-      - dnn: iot
-      sNSSAI:
-        sd: "000001"
-        sst: 1
-    - dnnSmfInfoList:
-      - dnn: kok
-      sNSSAI:
-        sd: 004001
-        sst: 43
-    - dnnSmfInfoList:
-      - dnn: internet
-      - dnn: iot
-      - dnn: kok
-      sNSSAI:
-        sd: "000001"
-        sst: 1
-    - dnnSmfInfoList:
-      - dnn: internet
-      - dnn: iot
-      - dnn: kok
-      sNSSAI:
-        sd: "000001"
-        sst: 1
-    - dnnSmfInfoList:
-      - dnn: internet
-      - dnn: iot
-      - dnn: kok
-      sNSSAI:
-        sd: "000001"
-        sst: 1
-    - dnnSmfInfoList:
-      - dnn: internet
-      - dnn: iot
-      - dnn: kok
-      sNSSAI:
-        sd: "000001"
-        sst: 1
-    - dnnSmfInfoList:
-      - dnn: internet
-      - dnn: iot
-      - dnn: kok
-      sNSSAI:
-        sd: "000001"
-        sst: 1
-    - dnnSmfInfoList:
-      - dnn: kok
-      sNSSAI:
-        sd: 004001
-        sst: 43
