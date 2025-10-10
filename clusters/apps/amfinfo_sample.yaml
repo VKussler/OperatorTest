@@ -1,9 +1,22 @@
-string: This is a string.
-another_string: "This string has quotes."
-multiline_string: |
-  This is a
-  multiline string.
-  It preserves newlines.
-string_with_escapes: "This string has a \\ backslash and a \" quote."
-empty_string: ""
-string_with_leading_and_trailing_spaces: "  This string has spaces.  "
+# Sample AMF NRM Instance
+pLMNInfoList:
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+aMFIdentifier: "amf-1.example.com"
+sBIFQDN: "amf-1.sbi.example.com"
+cNSIIdList: ["slice-1-cn"]
+managedNFProfile:
+  nfInstanceId: "amf-instance-001"
+  nfType: "AMF"
+  heartBeatTimer: 60
+  hostAddr: "192.168.1.10"
+amfInfo:
+  aMFRegionId: "1"
+  aMFSetId: 100
+  gUAMIdList:
+    - pLMNId:
+        mcc: "208"
+        mnc: "93"
+      aMFIdentifier: "amf-1.example.com"
+aMFSetRef: "/AMFSet/set-1" 
