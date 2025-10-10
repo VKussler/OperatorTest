@@ -1,15 +1,8 @@
+# Sample NSSF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-    sliceSelectionInfo:
-      allowedSliceTypeList:
-        - sst: 4
-      defaultSliceProfile:
-        sst: 4
-        sd: "000401"
-        coverageAreaTAList: [1, 2, 3]
-        priorityLabel: 10
 sBIFQDN: "nssf-1.sbi.example.com"
 cNSIIdList: ["slice-1-cn"]
 managedNFProfile:
@@ -18,4 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
+    targetNFServiceList: ["nnrf-nfm"] 
