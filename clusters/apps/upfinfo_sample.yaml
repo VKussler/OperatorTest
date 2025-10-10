@@ -17,12 +17,6 @@ pLMNInfoList:
     sNSSAI:
       sd: "000001"
       sst: 1
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-    sNSSAI:
-      sd: "000401"
-      sst: 4
 supportedBMOList:
   - BMO1
 cNSIIdList: ["slice-1-cn"]
