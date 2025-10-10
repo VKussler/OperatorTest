@@ -1,6 +1,6 @@
 
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create a slice named llm
+# Intent: Create a new slice
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
