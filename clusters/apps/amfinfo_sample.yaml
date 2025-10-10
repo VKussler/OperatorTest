@@ -5,7 +5,7 @@ pLMNInfoList:
       mnc: "93"
 aMFIdentifier: "amf-1.example.com"
 sBIFQDN: "amf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn", "demo-slice", "delta-slice", "gamma-slice", "eta-slice", "zeta-slice", "iota-slice", "theta-slice", "dev-slice", "staging-slice", "kappa-slice", "alpha-slice", "aux-slice"]
+cNSIIdList: ["slice-1-cn", "demo-slice", "delta-slice", "gamma-slice", "eta-slice", "zeta-slice", "iota-slice", "theta-slice", "dev-slice", "staging-slice", "kappa-slice", "alpha-slice", "aux-slice", "qa-slice"]
 managedNFProfile:
   nfInstanceId: "amf-instance-001"
   nfType: "AMF"
