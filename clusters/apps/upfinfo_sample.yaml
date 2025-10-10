@@ -55,17 +55,3 @@ spec:
       sNssai:
         sd: "000001"
         sst: 1
-    - dnnUpfInfoList:
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 192.168.1.255
-          iPv4AddrRangeStart: 192.168.1.0
-        pduSessionTypes:
-        - IPv4
-      sNssai:
-        sd: "FRDF3"
-        sst: 5
-    - dnnUpfInfoList: []
-      sNssai:
-        sd: "Fgr3"
-        sst: 34
