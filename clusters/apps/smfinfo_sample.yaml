@@ -70,3 +70,7 @@ smfInfo:
       sNSSAI:
         sd: "346BAB"
         sst: 176
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "2475FE"
+        sst: 102
