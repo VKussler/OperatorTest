@@ -1,5 +1,5 @@
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: slice creation with parameters name=temp-slice sst=78 sd=9B68AE
+# Intent: slice creation with parameters name=zeta-slice sst=34 sd=A7FCDA
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -9,14 +9,14 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "temp-slice"
+    - sliceProfileId: "zeta-slice"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 78
-            sd: "9B68AE"
+            sst: 34
+            sd: "A7FCDA"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
