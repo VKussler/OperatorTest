@@ -32,4 +32,7 @@ spec:
     - sNssai:
         sd: "616513"
         sst: 47
-      dnnUpfInfoList: []
+      dnnUpfInfoList:
+      - dnn: internet
+        pduSessionTypes:
+        - IPV4
