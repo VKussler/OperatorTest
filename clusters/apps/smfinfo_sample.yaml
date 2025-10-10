@@ -28,6 +28,9 @@ spec:
       tst:
         ipv4Subnet: 13.1.1.0/24
         pduSessionType: IPV4
+      internet:
+        ipv4Subnet: 10.10.10.0/24
+        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -54,6 +57,7 @@ spec:
         sst: 1
     - dnnSmfInfoList:
       - dnn: ims
+      - dnn: internet
       sNSSAI:
         sd: "000001"
         sst: 1
