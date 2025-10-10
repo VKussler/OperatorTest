@@ -1,5 +1,5 @@
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create a new slice with the name eta-slice, an SST value of 206, and an SD value of 862D33
+# Intent: Create a new slice with the name demo-slice, an SST value of 130, and an SD value of 9B5433
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -9,14 +9,14 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "eta-slice"
+    - sliceProfileId: "demo-slice"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 206
-            sd: "862D33"
+            sst: 130
+            sd: "9B5433"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
