@@ -1,983 +1,991 @@
 AuthenticationSubscription:
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000100"
-      ueid: "001010000000100"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000101"
-      ueid: "001010000000101"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000102"
-      ueid: "001010000000102"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000103"
-      ueid: "001010000000103"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000104"
-      ueid: "001010000000104"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000105"
-      ueid: "001010000000105"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000106"
-      ueid: "001010000000106"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000107"
-      ueid: "001010000000107"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000108"
-      ueid: "001010000000108"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000109"
-      ueid: "001010000000109"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000110"
-      ueid: "001010000000110"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000111"
-      ueid: "001010000000111"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000112"
-      ueid: "001010000000112"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000113"
-      ueid: "001010000000113"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000114"
-      ueid: "001010000000114"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000115"
-      ueid: "001010000000115"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000116"
-      ueid: "001010000000116"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000117"
-      ueid: "001010000000117"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000118"
-      ueid: "001010000000118"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000119"
-      ueid: "001010000000119"
-      vectorGenerationInHss: null
-    - algorithmId: milenage
-      authenticationManagementField: "8000"
-      authenticationMethod: 5G_AKA
-      encOpcKey: C42449363BBAD02B66D16BC975D77CC1
-      encPermanentKey: fec86ba6eb707ed08905757b1bb44b8f
-      encTopcKey: null
-      n5gcAuthMethod: null
-      protectionParameterId: fec86ba6eb707ed08905757b1bb44b8f
-      rgAuthenticationInd: null
-      sequenceNumber:
-        lastIndexes:
-            ausf: 0
-        sqn: "000000000020"
-        sqnScheme: NON_TIME_BASED
-      supi: "001010000000120"
-      ueid: "001010000000120"
-      vectorGenerationInHss: null
+  - ueid: '001010000000100'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000100'
+  - ueid: '001010000000101'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000101'
+  - ueid: '001010000000102'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000102'
+  - ueid: '001010000000103'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000103'
+  - ueid: '001010000000104'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000104'
+  - ueid: '001010000000105'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000105'
+  - ueid: '001010000000106'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000106'
+  - ueid: '001010000000107'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000107'
+  - ueid: '001010000000108'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000108'
+  - ueid: '001010000000109'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000109'
+  - ueid: '001010000000110'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000110'
+  - ueid: '001010000000111'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000111'
+  - ueid: '001010000000112'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000112'
+  - ueid: '001010000000113'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000113'
+  - ueid: '001010000000114'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000114'
+  - ueid: '001010000000115'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000115'
+  - ueid: '001010000000116'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000116'
+  - ueid: '001010000000117'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000117'
+  - ueid: '001010000000118'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000118'
+  - ueid: '001010000000119'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000119'
+  - ueid: '001010000000120'
+    authenticationMethod: '5G_AKA'
+    encPermanentKey: 'fec86ba6eb707ed08905757b1bb44b8f'
+    protectionParameterId: 'fec86ba6eb707ed08905757b1bb44b8f'
+    sequenceNumber:
+      sqn: '000000000020'
+      sqnScheme: 'NON_TIME_BASED'
+      lastIndexes:
+        ausf: 0
+    authenticationManagementField: '8000'
+    algorithmId: 'milenage'
+    encOpcKey: 'C42449363BBAD02B66D16BC975D77CC1'
+    encTopcKey: null
+    vectorGenerationInHss: null
+    n5gcAuthMethod: null
+    rgAuthenticationInd: null
+    supi: '001010000000120'
+
 SessionManagementSubscriptionData:
-    - dnnConfigurations:
-        ims:
-            5gQosProfile:
-                5qi: 2
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4V6
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.100
-        ora:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 12.1.1.100
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000100"
-    - dnnConfigurations:
-        ims:
-            5gQosProfile:
-                5qi: 2
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4V6
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.100
-        ora:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 12.1.1.101
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000101"
-    - dnnConfigurations:
-        ims:
-            5gQosProfile:
-                5qi: 2
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4V6
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.100
-        ora:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 12.1.1.102
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000102"
-    - dnnConfigurations:
-        ims:
-            5gQosProfile:
-                5qi: 2
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4V6
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.100
-        ora:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 12.1.1.103
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000103"
-    - dnnConfigurations:
-        ims:
-            5gQosProfile:
-                5qi: 2
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4V6
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.100
-        ora:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 12.1.1.104
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000104"
-    - dnnConfigurations:
-        ims:
-            5gQosProfile:
-                5qi: 2
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4V6
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-        oai:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.100
-        ora:
-            5gQosProfile:
-                5qi: 1
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: PREEMPTABLE
-                    priorityLevel: 15
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 12.1.1.105
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000105"
-    - dnnConfigurations:
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000106"
-    - dnnConfigurations:
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000107"
-    - dnnConfigurations:
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000109"
-    - dnnConfigurations:
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000110"
-    - dnnConfigurations:
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000111"
-    - dnnConfigurations:
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000112"
-    - dnnConfigurations:
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000113"
-    - dnnConfigurations:
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000114"
-    - dnnConfigurations:
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000115"
-    - dnnConfigurations:
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000116"
-    - dnnConfigurations:
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000117"
-    - dnnConfigurations:
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000118"
-    - dnnConfigurations:
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000119"
-    - dnnConfigurations:
-        oai:
-            5gQosProfile:
-                5qi: 6
-                arp:
-                    preemptCap: NOT_PREEMPT
-                    preemptVuln: NOT_PREEMPTABLE
-                    priorityLevel: 1
-                priorityLevel: 1
-            pduSessionTypes:
-                defaultSessionType: IPV4
-            sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
-            sscModes:
-                defaultSscMode: SSC_MODE_1
-      servingPlmnid: "00101"
-      singleNssai:
-        sd: 03BC54
-        sst: 139
-      ueid: "001010000000120"
+  - ueid: '001010000000100'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      ora:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 1
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+        staticIpAddress:
+          - ipv4Addr: '12.1.1.100'
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 1
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+        staticIpAddress:
+          - ipv4Addr: '13.1.1.100'
+      ims:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4V6'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 2
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000101'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      ora:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 1
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+        staticIpAddress:
+          - ipv4Addr: '12.1.1.101'
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 1
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+        staticIpAddress:
+          - ipv4Addr: '13.1.1.100'
+      ims:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4V6'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 2
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000102'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      ora:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 1
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+        staticIpAddress:
+          - ipv4Addr: '12.1.1.102'
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 1
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+        staticIpAddress:
+          - ipv4Addr: '13.1.1.100'
+      ims:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4V6'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 2
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000103'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      ora:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 1
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+        staticIpAddress:
+          - ipv4Addr: '12.1.1.103'
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 1
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+        staticIpAddress:
+          - ipv4Addr: '13.1.1.100'
+      ims:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4V6'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 2
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000104'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      ora:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 1
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+        staticIpAddress:
+          - ipv4Addr: '12.1.1.104'
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 1
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+        staticIpAddress:
+          - ipv4Addr: '13.1.1.100'
+      ims:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4V6'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 2
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000105'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      ora:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 1
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+        staticIpAddress:
+          - ipv4Addr: '12.1.1.105'
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 1
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+        staticIpAddress:
+          - ipv4Addr: '13.1.1.100'
+      ims:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4V6'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 2
+          arp:
+            priorityLevel: 15
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000106'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 6
+          arp:
+            priorityLevel: 1
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'NOT_PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000107'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 6
+          arp:
+            priorityLevel: 1
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'NOT_PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000109'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 6
+          arp:
+            priorityLevel: 1
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'NOT_PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000110'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 6
+          arp:
+            priorityLevel: 1
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'NOT_PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000111'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 6
+          arp:
+            priorityLevel: 1
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'NOT_PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000112'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 6
+          arp:
+            priorityLevel: 1
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'NOT_PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000113'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 6
+          arp:
+            priorityLevel: 1
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'NOT_PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000114'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 6
+          arp:
+            priorityLevel: 1
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'NOT_PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000115'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 6
+          arp:
+            priorityLevel: 1
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'NOT_PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000116'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 6
+          arp:
+            priorityLevel: 1
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'NOT_PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000117'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 6
+          arp:
+            priorityLevel: 1
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'NOT_PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000118'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 6
+          arp:
+            priorityLevel: 1
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'NOT_PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000119'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 6
+          arp:
+            priorityLevel: 1
+            preemptCap: 'NOT_PREEMPT'
+            preemptVuln: 'NOT_PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+  - ueid: '001010000000120'
+    servingPlmnid: '00101'
+    singleNssai:
+      sst: 1
+      sd: 'FFFFFF'
+    dnnConfigurations:
+      oai:
+        pduSessionTypes:
+          defaultSessionType: 'IPV4'
+        sscModes:
+          defaultSscMode: 'SSC_MODE_1'
+        '5gQosProfile':
+          '5qi': 6
+          arp:
+            priorityLevel: 1
+            preemptCap: 'NOT_PREEMPT'
+
+            preemptVuln: 'NOT_PREEMPTABLE'
+          priorityLevel: 1
+        sessionAmbr:
+          uplink: '1000Mbps'
+          downlink: '1000Mbps'
+
+# Add other tables and their corresponding data here if the full oai_db_INS.sql contains them.
+# e.g.,
+# AnotherTable:
+#   - columnA: value1
+#     columnB: 123 
