@@ -25,6 +25,9 @@ spec:
       ora:
         ipv4Subnet: 13.1.1.0/24
         pduSessionType: IPV4
+      create-slice:
+        ipv4Subnet: 10.10.10.0/24
+        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -50,6 +53,7 @@ spec:
         sst: 1
     - dnnSmfInfoList:
       - dnn: ims
+      - dnn: create-slice
       sNSSAI:
         sd: "000001"
         sst: 1
