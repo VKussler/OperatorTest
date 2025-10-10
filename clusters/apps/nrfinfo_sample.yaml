@@ -19,5 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-cNSIIdList: ["test-slice"]
+    amf-1: {} 
