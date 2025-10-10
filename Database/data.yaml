@@ -401,13 +401,11 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 12.1.1.100
-        rollback-test-dnn:
+        org:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -423,10 +421,10 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
+                - ipv4Addr: 12.1.1.100
       servingPlmnid: "00101"
       singleNssai:
-        sd: FFFFFF
+        sd: FFFF1F
         sst: 1
       ueid: "001010000000100"
     - dnnConfigurations:
@@ -473,13 +471,11 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 12.1.1.101
-        rollback-test-dnn:
+        org:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -495,7 +491,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
+                - ipv4Addr: 12.1.1.101
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -545,13 +541,11 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 12.1.1.102
-        rollback-test-dnn:
+        org:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -567,7 +561,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
+                - ipv4Addr: 12.1.1.102
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -617,13 +611,11 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 12.1.1.103
-        rollback-test-dnn:
+        org:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -639,7 +631,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
+                - ipv4Addr: 12.1.1.103
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -689,13 +681,11 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 12.1.1.104
-        rollback-test-dnn:
+        org:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -711,7 +701,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
+                - ipv4Addr: 12.1.1.104
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -761,13 +751,11 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 12.1.1.105
-        rollback-test-dnn:
+        org:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -783,7 +771,7 @@ SessionManagementSubscriptionData:
             sscModes:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
+                - ipv4Addr: 12.1.1.105
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -805,7 +793,7 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        rollback-test-dnn:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -816,12 +804,10 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -843,7 +829,7 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        rollback-test-dnn:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -854,12 +840,10 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -881,7 +865,7 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        rollback-test-dnn:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -892,12 +876,10 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -919,7 +901,7 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        rollback-test-dnn:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -930,12 +912,10 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -957,7 +937,7 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        rollback-test-dnn:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -968,12 +948,10 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -995,7 +973,7 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        rollback-test-dnn:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -1006,12 +984,10 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -1033,7 +1009,7 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        rollback-test-dnn:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -1044,12 +1020,10 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -1071,7 +1045,7 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        rollback-test-dnn:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -1082,12 +1056,10 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -1109,7 +1081,7 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        rollback-test-dnn:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -1120,12 +1092,10 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -1147,7 +1117,7 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        rollback-test-dnn:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -1158,12 +1128,10 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -1185,7 +1153,7 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        rollback-test-dnn:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -1196,12 +1164,10 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -1223,7 +1189,7 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        rollback-test-dnn:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -1234,12 +1200,10 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -1261,7 +1225,7 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        rollback-test-dnn:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -1272,12 +1236,10 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
@@ -1299,7 +1261,7 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-        rollback-test-dnn:
+        ora:
             5gQosProfile:
                 5qi: 1
                 arp:
@@ -1310,12 +1272,10 @@ SessionManagementSubscriptionData:
             pduSessionTypes:
                 defaultSessionType: IPV4
             sessionAmbr:
-                downlink: 1000Mbps
-                uplink: 1000Mbps
+                downlink: 1 Gbps
+                uplink: 500 Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
-            staticIpAddress:
-                - ipv4Addr: 13.1.1.0/24
       servingPlmnid: "00101"
       singleNssai:
         sd: FFFFFF
