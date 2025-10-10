@@ -36,6 +36,12 @@ spec:
           iPv4AddrRangeStart: 12.1.1.128
         pduSessionTypes:
         - IPv4
+      - dnn: ora
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 13.1.1.255
+          iPv4AddrRangeStart: 13.1.1.128
+        pduSessionTypes:
+        - IPv4
       sNssai:
         sd: FFFFFF
         sst: 1
@@ -48,23 +54,4 @@ spec:
         - IPv4v6
       sNssai:
         sd: "000001"
-        sst: 1
-    - dnnUpfInfoList:
-      - dnn: e2e-test-dnn
-        pduSessionTypes:
-        - IPv4
-        ipv4AddressRanges:
-        - iPv4AddrRangeStart: 13.1.1.0
-          iPv4AddrRangeEnd: 13.1.1.255
-      sNssai:
-        sd: "000001"
-        sst: 1
-      - dnn: tst
-        pduSessionTypes:
-        - IPv4
-        ipv4AddressRanges:
-        - iPv4AddrRangeStart: 13.1.1.0
-          iPv4AddrRangeEnd: 13.1.1.255
-      sNssai:
-        sd: FFFFFF
         sst: 1
