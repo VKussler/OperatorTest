@@ -3,11 +3,9 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-sNSSAI:
-  - sst: 1
-    sd: "000001"
-  - sst: 4
-    sd: "000401"
+  sNSSAI:
+      sst: 1
+      sd: "000001"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
@@ -18,22 +16,6 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
-  sliceSpecificPolicies:
-    - sst: 4
-      sd: "000401"
-      qosPolicy:
-        5qi: 5
-        priorityLevel: 8
-        packetDelayBudget: 100
-        packetErrorRate: "10^-5"
-      resourceAllocation:
-        maxBitRateUL: "100Mbps"
-        maxBitRateDL: "100Mbps"
-        guaranteedBitRateUL: "10Mbps"
-        guaranteedBitRateDL: "10Mbps"
-      subscriptionPolicy:
-        subscriptionId: "sub-004"
-        resourcePriority: "high"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
