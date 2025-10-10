@@ -125,7 +125,10 @@ upfInfo:
       sNssai:
         sd: "C37FB3"
         sst: 176
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "5226A9"
         sst: 8
