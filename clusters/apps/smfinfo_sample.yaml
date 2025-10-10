@@ -51,11 +51,11 @@ smfInfo:
         sst: 1
     - dnnSmfInfoList:
         - dnn: internet
+        - dnn: internet
       sNSSAI:
         sd: "b1e65c"
         sst: 174
-    - dnnSmfInfoList:
-        - dnn: internet
+    - dnnSmfInfoList: []
       sNSSAI:
         sd: "b1e65c"
         sst: 174
