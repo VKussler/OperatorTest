@@ -1,3 +1,10 @@
+Okay, I understand the instructions. I need more information from the user intent to complete this task. The user intent "Add DNN" is not sufficient. I need the DNN name, SD, SST, ipv4Subnet, and pduSessionType.
+
+For example, a valid user intent would be: "Add DNN internet with SD 000001, SST 1, ipv4Subnet 10.0.0.0/24, and pduSessionType IPV4"
+
+Since I cannot proceed without the required information, I will return the original SMF configuration as is.
+
+```yaml
 apiVersion: cm-5gc.com/v1alpha1
 kind: SmfInfo
 metadata:
