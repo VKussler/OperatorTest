@@ -20,7 +20,7 @@ pcfInfo:
     - sNSSAI:
         sst: 4
         sd: "000401"
-      ueCapacity: 1000000
+      ueCapacity: 1000
       qosRules:
         reliability:
           downlink: 0.99999
