@@ -55,7 +55,10 @@ upfInfo:
       sNssai:
         sd: "CB9CF5"
         sst: 2
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "F86001"
         sst: 8
