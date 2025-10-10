@@ -8,6 +8,9 @@ spec:
       sst: 47
       dnnSmfInfoList:
         - internet
+    - sst: 47
+      sd: "616513"
+      dnnSmfInfoList: []
   missingElements:
     dnnConfigs:
       internet:
