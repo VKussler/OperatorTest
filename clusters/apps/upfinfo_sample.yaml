@@ -25,12 +25,6 @@ spec:
     sNSSAI:
       sd: "000001"
       sst: 1
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-    sNSSAI:
-      sd: "000401"
-      sst: 4
   supportedBMOList:
   - BMO1
   upfInfo:
@@ -61,19 +55,3 @@ spec:
       sNssai:
         sd: "000001"
         sst: 1
-    - dnnUpfInfoList:
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 15.1.1.255
-          iPv4AddrRangeStart: 15.1.1.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 16.1.1.255
-          iPv4AddrRangeStart: 16.1.1.0
-        pduSessionTypes:
-        - IPv4
-      sNssai:
-        sd: "000401"
-        sst: 4
