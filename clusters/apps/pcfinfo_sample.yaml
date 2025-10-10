@@ -3,17 +3,9 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-    sNSSAI:
+  sNSSAI:
       sst: 1
       sd: "000001"
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-    sNSSAI:
-      sst: 4
-      sd: "000401"
-    cNSIIdList:
-      - "test-slice-cnsi-001"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
@@ -24,21 +16,6 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
-    - start: "208930000100000"
-      end: "208930000199999"
-  qosPolicyList:
-    - policyId: "test-slice-qos-1"
-      sNSSAI:
-        sst: 4
-        sd: "000401"
-      dnn: "internet"
-      qosCharacteristics:
-        5qi: 8
-        arp:
-          priorityLevel: 15
-          preemptionCapability: true
-          preemptionVulnerability: false
-        maxDataRateDL: "1000 Mbps"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
