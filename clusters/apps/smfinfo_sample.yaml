@@ -34,6 +34,9 @@ spec:
       newSlice:
         ipv4Subnet: 192.168.1.0/24
         pduSessionType: IPV4
+      newDNN:
+        ipv4Subnet: 172.16.0.0/24
+        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -95,20 +98,41 @@ spec:
     - dnnSmfInfoList:
       - dnn: internet
       sNSSAI:
-        sd: 000001
+        sd: 000401
+        sst: 4
+    - dnnSmfInfoList:
+      - dnn: internet
+      - dnn: newDNN
+      sNSSAI:
+        sd: 000401
+        sst: 4
+    - dnnSmfInfoList:
+      - dnn: internet
+      sNSSAI:
+        sd: 000401
+        sst: 4
+    - dnnSmfInfoList:
+      - dnn: internet
+      sNSSAI:
+        sd: 000401
+        sst: 4
+    - dnnSmfInfoList:
+      - dnn: internet
+      sNSSAI:
+        sd: 000401
+        sst: 4
+    - dnnSmfInfoList:
+      - dnn: internet
+      sNSSAI:
+        sd: 000401
+        sst: 4
+    - dnnSmfInfoList:
+      - dnn: internet
+      sNSSAI:
+        sd: 000401
+        sst: 4
+    - dnnSmfInfoList:
+      - dnn: tst
+      sNSSAI:
+        sd: FFFFFF
         sst: 1
-    - dnnSmfInfoList:
-      - dnn: internet
-      sNSSAI:
-        sd: 000401
-        sst: 4
-    - dnnSmfInfoList:
-      - dnn: internet
-      sNSSAI:
-        sd: 000401
-        sst: 4
-    - dnnSmfInfoList:
-      - dnn: internet
-      sNSSAI:
-        sd: 000401
-        sst: 4
