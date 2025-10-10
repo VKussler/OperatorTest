@@ -48,11 +48,3 @@ upfInfo:
       sNssai:
         sd: "000001"
         sst: 1
-    - dnnUpfInfoList: []
-      sNssai:
-        sd: "5C76FF"
-        sst: 48
-    - dnnUpfInfoList: []
-      sNssai:
-        sd: "5B61F0"
-        sst: 37
