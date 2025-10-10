@@ -25,45 +25,6 @@ spec:
       ora:
         ipv4Subnet: 13.1.1.0/24
         pduSessionType: IPV4
-      testdnn:
-        ipv4Subnet: 10.10.10.0/24
-        pduSessionType: IPV4
-      newdnn:
-        ipv4Subnet: 10.10.10.0/24
-        pduSessionType: IPV4
-      slice-subnet-1-ns-instance-001:
-        ipv4Subnet: 10.10.10.0/24
-        pduSessionType: IPV4
-      newdnn2:
-        ipv4Subnet: 10.10.10.0/24
-        pduSessionType: IPV4
-      internet:
-        ipv4Subnet: 10.10.10.0/24
-        pduSessionType: IPV4
-      newdnn3:
-        ipv4Subnet: 10.10.10.0/24
-        pduSessionType: IPV4
-      userdnn:
-        ipv4Subnet: 10.10.10.0/24
-        pduSessionType: IPV4
-      newdnn4:
-        ipv4Subnet: 10.10.10.0/24
-        pduSessionType: IPV4
-      userdnn2:
-        ipv4Subnet: 10.10.10.0/24
-        pduSessionType: IPV4
-      userdnn3:
-        ipv4Subnet: 10.10.10.0/24
-        pduSessionType: IPV4
-      IoT:
-        ipv4Subnet: 10.10.10.0/24
-        pduSessionType: IPV4
-      userdnn5:
-        ipv4Subnet: 10.10.10.0/24
-        pduSessionType: IPV4
-      newdnn6:
-        ipv4Subnet: 10.10.10.0/24
-        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -89,19 +50,6 @@ spec:
         sst: 1
     - dnnSmfInfoList:
       - dnn: ims
-      - dnn: testdnn
-      - dnn: newdnn
-      - dnn: slice-subnet-1-ns-instance-001
-      - dnn: newdnn2
-      - dnn: internet
-      - dnn: newdnn3
-      - dnn: userdnn
-      - dnn: newdnn4
-      - dnn: userdnn2
-      - dnn: userdnn3
-      - dnn: IoT
-      - dnn: userdnn5
-      - dnn: newdnn6
       sNSSAI:
         sd: "000001"
         sst: 1
