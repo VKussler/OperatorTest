@@ -1,6 +1,6 @@
 
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: make a new slice called hjk
+# Intent: make a new slice llm
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
