@@ -58,3 +58,7 @@ upfInfo:
       sNssai:
         sd: B5BDE5
         sst: 29
+  - dnnUpfInfoList: []
+      sNssai:
+        sd: "331A08"
+        sst: 33
