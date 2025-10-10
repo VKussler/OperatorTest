@@ -362,7 +362,7 @@ SessionManagementSubscriptionData:
     servingPlmnid: '00101'
     singleNssai:
       sst: 1
-      sd: 'FFFF1F'
+      sd: 'FFFFFF'
     dnnConfigurations:
       ora:
         pduSessionTypes:
