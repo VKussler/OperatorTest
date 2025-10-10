@@ -58,6 +58,12 @@ spec:
         ipv4AddressRanges:
         - iPv4AddrRangeStart: 13.1.1.0
           iPv4AddrRangeEnd: 13.1.1.255
+      - dnn: newDNN2
+        pduSessionTypes:
+          - IPv4
+        ipv4AddressRanges:
+          - iPv4AddrRangeStart: 13.1.1.0
+            iPv4AddrRangeEnd: 13.1.1.255
       sNssai:
         sd: "000001"
         sst: 1
