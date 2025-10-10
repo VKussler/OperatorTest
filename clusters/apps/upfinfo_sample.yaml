@@ -48,25 +48,3 @@ upfInfo:
       sNssai:
         sd: "000001"
         sst: 1
-    - dnnUpfInfoList:
-        - dnn: ims
-          ipv4AddressRanges:
-            - iPv4AddrRangeEnd: 15.1.1.255
-              iPv4AddrRangeStart: 15.1.1.0
-          pduSessionTypes:
-            - IPv4v6
-        - dnn: oai
-          ipv4AddressRanges:
-            - iPv4AddrRangeEnd: 16.1.1.255
-              iPv4AddrRangeStart: 16.1.1.0
-          pduSessionTypes:
-            - IPv4
-        - dnn: ora
-          ipv4AddressRanges:
-            - iPv4AddrRangeEnd: 17.1.1.255
-              iPv4AddrRangeStart: 17.1.1.0
-          pduSessionTypes:
-            - IPv4
-      sNssai:
-        sd: "000401"
-        sst: 4
