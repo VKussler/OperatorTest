@@ -1,3 +1,5 @@
+# 3GPP NRM-based Core Network Slice Subnet
+# Intent: Create a new slice with name test-slice, sst 4, and sd 000401
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
