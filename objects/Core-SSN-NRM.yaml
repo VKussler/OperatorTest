@@ -1,5 +1,5 @@
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create SLICE staging-slice SST 220 SD D927FD
+# Intent: Create a new slice named alpha-slice with 190 and AB0301
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -9,14 +9,14 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "eMBB-profile-1"
+    - sliceProfileId: "alpha-slice"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 220
-            sd: "D927FD"
+            sst: 190
+            sd: "AB0301"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
