@@ -50,3 +50,7 @@ smfInfo:
       sNSSAI:
         sd: "d980f0"
         sst: 158
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "d980f0"
+        sst: 158
