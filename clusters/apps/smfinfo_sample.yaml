@@ -29,8 +29,8 @@ missingElements:
 nRTAClist: "0"
 pLMNInfoList:
   - pLMNId:
-      mcc: "001"
-      mnc: "01"
+      mcc: "208"
+      mnc: "93"
 sBIFQDN: smf-1.sbi.example.com
 cNSIIdList: ["slice-1-cn"]
 smfInfo:
@@ -46,3 +46,8 @@ smfInfo:
       sNSSAI:
         sd: "000001"
         sst: 1
+    - dnnSmfInfoList:
+        - dnn: oai
+      sNSSAI:
+        sd: "000401"
+        sst: 4
