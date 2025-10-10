@@ -1,5 +1,5 @@
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create a new SLICE named backup-slice with parameters 226 and 28A7AE
+# Intent: EXECUTE: slice creation with parameters name=backup-slice sst=199 sd=8F21A1
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -15,8 +15,8 @@ attributes:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 226
-            sd: "28A7AE"
+            sst: 199
+            sd: "8F21A1"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
