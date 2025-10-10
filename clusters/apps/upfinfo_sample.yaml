@@ -219,3 +219,7 @@ upfInfo:
       sNssai:
         sd: "571C06"
         sst: 208
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "11D312"
+        sst: 88
