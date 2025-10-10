@@ -1,10 +1,3 @@
-Okay, I understand the instructions. I will parse the user intent, identify the correct `sNSSAI` block, add the new DNN information to the `dnnUpfInfoList`, and return the complete UPF configuration in YAML format.
-
-Based on the user intent "Create a DNN for the network slice", I need more information to complete the request. I need the DNN name, SD value, SST value, ipv4Subnet and pduSessionType.
-
-Since the user intent is insufficient, I will return the original configuration as is.
-
-```yaml
 apiVersion: cm-5gc.com/v1alpha1
 kind: UpfInfo
 metadata:
@@ -31,12 +24,6 @@ spec:
       mnc: "01"
     sNSSAI:
       sd: "000001"
-      sst: 1
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-    sNSSAI:
-      sd: "112233"
       sst: 1
   supportedBMOList:
   - BMO1
@@ -67,14 +54,4 @@ spec:
         - IPv4v6
       sNssai:
         sd: "000001"
-        sst: 1
-    - dnnUpfInfoList:
-      - dnn: video
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 15.1.1.255
-          iPv4AddrRangeStart: 15.1.1.0
-        pduSessionTypes:
-        - IPv4
-      sNssai:
-        sd: "112233"
         sst: 1
