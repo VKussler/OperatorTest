@@ -54,3 +54,7 @@ smfInfo:
       sNSSAI:
         sd: "CB9CF5"
         sst: 2
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "F86001"
+        sst: 8
