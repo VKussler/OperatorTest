@@ -158,6 +158,10 @@ smfInfo:
       sNSSAI:
         sst: 168
         sd: "45F5E8"
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sst: 208
+        sd: "571C06"
 missingElements:
   dnnConfigs:
     ims:
