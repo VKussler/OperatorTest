@@ -118,3 +118,7 @@ upfInfo:
       sNssai:
         sd: "DDD28A"
         sst: 30
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "C37FB3"
+        sst: 176
