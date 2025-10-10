@@ -46,3 +46,9 @@ smfInfo:
       sNSSAI:
         sd: "000001"
         sst: 1
+    - dnnSmfInfoList:
+        - dnn: oai
+        - dnn: internet
+      sNSSAI:
+        sd: "000401"
+        sst: 4
