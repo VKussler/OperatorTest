@@ -1,20 +1,22 @@
+# 3GPP NRM-based Core Network Slice Subnet
+# Intent: Create a new slice named alpha-slice with 85 and 47240E
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
   nsInfo:
     # Supported as this is a virtualized environment
     nsInstanceId: "slice-subnet-1-ns-instance-001"
-    nsName: "zeta-slice"
-    description: "NS Instance for the zeta-slice"
+    nsName: "eMBB Core Slice Subnet Instance"
+    description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "zeta-slice"
+    - sliceProfileId: "eMBB-profile-1"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 1
-            sd: "D101A6"
+            sst: 85
+            sd: "47240E"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
@@ -27,7 +29,7 @@ attributes:
         dLReliability: "99.999"
         resourceSharingLevel: "SHARED"
         availability: "99.99"
-        supportedDataNetworks: ["D101A6"]
+        supportedDataNetworks: ["internet"]
       RANSliceSubnetProfile: {}
       TopSliceSubnetProfile: {}
   priorityLabel: 10
