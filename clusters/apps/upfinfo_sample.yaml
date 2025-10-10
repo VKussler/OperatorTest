@@ -62,6 +62,12 @@ spec:
           iPv4AddrRangeStart: 15.1.1.0
         pduSessionTypes:
         - IPv4
+      - dnn: internet
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 10.0.0.255
+          iPv4AddrRangeStart: 10.0.0.0
+        pduSessionTypes:
+        - IPv4
       sNssai:
         sd: "000401"
         sst: 4
