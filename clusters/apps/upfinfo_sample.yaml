@@ -25,12 +25,6 @@ spec:
     sNSSAI:
       sd: "000001"
       sst: 1
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-    sNSSAI:
-      sd: "000401"
-      sst: 4
   supportedBMOList:
   - BMO1
   upfInfo:
@@ -61,7 +55,3 @@ spec:
       sNssai:
         sd: "000001"
         sst: 1
-    - dnnUpfInfoList:
-      sNssai:
-        sd: "000401"
-        sst: 4
