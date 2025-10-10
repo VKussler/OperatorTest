@@ -4,11 +4,23 @@ pLMNInfoList:
       mcc: "208"
       mnc: "93"
 sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn"]
+cNSIIdList: ["slice-1-cn", "test-slice"]
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
   hostAddr: "192.168.1.12"
+  servedAmfInfo:
+    - amfIdentifier: "amf-1.example.com"
+      gUAMIList:
+        - plmnId:
+            mcc: "208"
+            mnc: "93"
+          aMFSetID: "1"
+          aMFRegionID: "1"
+          aMFPointer: "1"
+          sNSSAI:
+            sst: 4
+            sd: "000401"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"] 
+    targetNFServiceList: ["nnrf-nfm"]
