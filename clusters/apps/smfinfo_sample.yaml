@@ -78,6 +78,10 @@ smfInfo:
       sNSSAI:
         sd: "901143"
         sst: 170
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "AC0942"
+        sst: 159
 missingElements:
   dnnConfigs:
     ims:
