@@ -1,3 +1,5 @@
+The provided YAML is already configured according to the user's intent.  No changes are needed.  The user's request is fully reflected in the `sliceInfo` section.
+```yaml
 # Sample AMF NRM Instance
 pLMNInfoList:
   - pLMNId:
