@@ -9,10 +9,6 @@ nFProfileList:
     nfType: "NRF"
     nfStatus: "REGISTERED"
     fqdn: "nrf-1.example.com"
-    networkSliceSubscriptions:
-      - sliceId:
-          sst: 4
-          sd: 000401
     nfServices:
       - serviceInstanceId: "service-1"
         serviceName: "nnrf-nfm"
@@ -20,12 +16,7 @@ nFProfileList:
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
 nrfInfo:
-  networkSliceInfo:
-    test-slice:
-      sliceId:
-        sst: 4
-        sd: 000401
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
