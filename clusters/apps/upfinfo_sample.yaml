@@ -29,3 +29,7 @@ spec:
   - BMO1
   upfInfo:
     sNssaiUpfInfoList:
+    - sNssai:
+        sd: "616513"
+        sst: 47
+      dnnUpfInfoList: []
