@@ -1,6 +1,6 @@
 
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create a new slice called foy
+# Intent: make a new slice called gaf
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
