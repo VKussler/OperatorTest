@@ -50,3 +50,7 @@ smfInfo:
       sNSSAI:
         sd: "E219E9"
         sst: 252
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "E219E9"
+        sst: 252
