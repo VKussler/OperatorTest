@@ -38,6 +38,10 @@ spec:
         fiveQi: 8
         sessionAmbrDl: 1000Mbps
         sessionAmbrUl: 500Mbps
+      1-AABBCC:
+        fiveQi: 9
+        sessionAmbrDl: 50Mbps
+        sessionAmbrUl: 25Mbps
   nRTAClist: "0"
   pLMNInfoList:
   - pLMNId:
@@ -61,4 +65,9 @@ spec:
       - dnn: oai
       sNSSAI:
         sd: "123456"
+        sst: 1
+    - dnnSmfInfoList:
+      - dnn: oai
+      sNSSAI:
+        sd: AABBCC
         sst: 1
