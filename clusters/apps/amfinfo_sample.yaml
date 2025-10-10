@@ -1,13 +1,22 @@
-string: This is a string.
-another_string: "This string has quotes."
-multi_line_string: |
-  This is a multi-line
-  string.  It preserves
-  line breaks.
-folded_string: >
-  This is a folded string.
-  It folds multiple lines into
-  a single line, replacing line breaks with spaces.
-  Unless the line is blank, then it becomes a line break.
-
-string_with_escapes: "This string has \\escapes\\ and \"quotes\"."
+# Sample AMF NRM Instance
+pLMNInfoList:
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+aMFIdentifier: "amf-1.example.com"
+sBIFQDN: "amf-1.sbi.example.com"
+cNSIIdList: ["slice-1-cn"]
+managedNFProfile:
+  nfInstanceId: "amf-instance-001"
+  nfType: "AMF"
+  heartBeatTimer: 60
+  hostAddr: "192.168.1.10"
+amfInfo:
+  aMFRegionId: "1"
+  aMFSetId: 100
+  gUAMIdList:
+    - pLMNId:
+        mcc: "208"
+        mnc: "93"
+      aMFIdentifier: "amf-1.example.com"
+aMFSetRef: "/AMFSet/set-1" 
