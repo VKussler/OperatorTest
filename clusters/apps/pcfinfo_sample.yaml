@@ -9,6 +9,12 @@ pLMNInfoList:
     sNSSAI:
       sst: 174
       sd: "b1e65c"
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+    sNSSAI:
+      sst: 174
+      sd: "b1e65c"
   sNSSAI:
       sst: 1
       sd: "000001"
