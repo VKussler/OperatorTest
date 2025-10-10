@@ -124,10 +124,15 @@ smfInfo:
       sNSSAI:
         sst: 211
         sd: "C09385"
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+        - dnn: internet
       sNSSAI:
         sst: 142
         sd: "6A38C5"
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sst: 157
+        sd: "8EDB80"
 missingElements:
   dnnConfigs:
     ims:
