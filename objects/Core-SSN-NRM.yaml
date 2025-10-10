@@ -1,5 +1,5 @@
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create a new slice named alpha-slice with 85 and 47240E
+# Intent: Create SLICE zeta-slice SST 204 SD B5A448
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -15,8 +15,8 @@ attributes:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 85
-            sd: "47240E"
+            sst: 204
+            sd: "B5A448"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
