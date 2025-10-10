@@ -1,5 +1,5 @@
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create a new slice with name test-slice, sst 1, and sd 000001
+# Intent: Create a new slice with name test-slice, sst 4, and sd 000401
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -15,8 +15,8 @@ attributes:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 1
-            sd: "000001"
+            sst: 4
+            sd: "000401"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
