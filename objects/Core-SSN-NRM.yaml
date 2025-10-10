@@ -29,7 +29,7 @@ attributes:
         dLReliability: "99.999"
         resourceSharingLevel: "SHARED"
         availability: "99.99"
-        supportedDataNetworks: ["internet"]
+        supportedDataNetworks: ["oai"]
       RANSliceSubnetProfile: {}
       TopSliceSubnetProfile: {}
   priorityLabel: 10
