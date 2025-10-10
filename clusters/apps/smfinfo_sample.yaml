@@ -46,11 +46,3 @@ smfInfo:
       sNSSAI:
         sd: "000001"
         sst: 1
-    - dnnSmfInfoList: []
-      sNSSAI:
-        sd: "eb6960"
-        sst: 46
-    - dnnSmfInfoList: []
-      sNSSAI:
-        sd: "eb6960"
-        sst: 46
