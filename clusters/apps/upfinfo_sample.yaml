@@ -214,3 +214,5 @@ spec:
       sNssai:
         sd: FFFFFF
         sst: 1
+    - dnnUpfInfoList:
+      - dnn: tst
