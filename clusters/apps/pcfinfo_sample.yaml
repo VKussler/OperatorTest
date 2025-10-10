@@ -6,6 +6,12 @@ pLMNInfoList:
     sNSSAI:
       sst: 1
       sd: "000001"
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+    sNSSAI:
+      sst: 12
+      sd: "836789"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
@@ -18,4 +24,4 @@ pcfInfo:
       end: "208930000099999"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
