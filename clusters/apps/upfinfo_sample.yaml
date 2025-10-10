@@ -201,7 +201,10 @@ upfInfo:
       sNssai:
         sd: "0B6465"
         sst: 113
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "D3EC7C"
         sst: 43
