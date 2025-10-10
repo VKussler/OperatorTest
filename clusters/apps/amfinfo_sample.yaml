@@ -19,4 +19,7 @@ amfInfo:
         mcc: "208"
         mnc: "93"
       aMFIdentifier: "amf-1.example.com"
-aMFSetRef: "/AMFSet/set-1" 
+      sST: "43"
+      sD: "004001"
+      dNN: "kok"
+aMFSetRef: "/AMFSet/set-1"
