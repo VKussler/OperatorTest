@@ -19,13 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  servedNfInfo: # Updated to include all newly commissioned NFs
-    sst: "1"
-    sd: "000001"
-    plmn: "208-93"
-    nfList:
-      - nfInstanceId: "nf-instance-001" #Example, replace with actual NF instance IDs
-        nfType: "NF_TYPE" #Example, replace with actual NF type
-        nfStatus: "REGISTERED" #Example, replace with actual NF status
-        fqdn: "nf-1.example.com" #Example, replace with actual NF FQDN
+    amf-1: {} 
