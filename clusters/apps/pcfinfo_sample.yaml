@@ -96,6 +96,12 @@ pLMNInfoList:
     sNSSAI:
       sst: 32
       sd: "E5A887"
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+    sNSSAI:
+      sst: 211
+      sd: "C09385"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
