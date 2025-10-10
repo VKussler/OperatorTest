@@ -4,12 +4,6 @@ pLMNInfoList:
       mcc: "208"
       mnc: "93"
   sNSSAI:
-      sst: 1
-      sd: "000001"
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-    sNSSAI:
       sst: 129
       sd: "1e292e"
 sBIFQDN: "pcf-1.sbi.example.com"
