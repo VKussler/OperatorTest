@@ -142,3 +142,8 @@ spec:
       sNSSAI:
         sd: 000401
         sst: 4
+    - dnnSmfInfoList:
+      - dnn: internet
+      sNSSAI:
+        sd: 000401
+        sst: 4
