@@ -58,3 +58,7 @@ upfInfo:
       sNssai:
         sd: "71022B"
         sst: 209
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "AA3F7D"
+        sst: 49
