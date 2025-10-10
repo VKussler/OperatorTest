@@ -118,7 +118,10 @@ upfInfo:
       sNssai:
         sd: "DDD28A"
         sst: 30
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "C37FB3"
         sst: 176
