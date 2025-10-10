@@ -48,3 +48,7 @@ upfInfo:
       sNssai:
         sd: "000001"
         sst: 1
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "F3C3C8"
+        sst: 102
