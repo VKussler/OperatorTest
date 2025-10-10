@@ -29,6 +29,12 @@
           iPv4AddrRangeStart: 13.1.4.0
         pduSessionTypes:
         - IPv4
+      - dnn: internet
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 13.1.5.255
+          iPv4AddrRangeStart: 13.1.5.0
+        pduSessionTypes:
+        - IPv4
       sNssai:
         sd: FFFFFF
         sst: 1
