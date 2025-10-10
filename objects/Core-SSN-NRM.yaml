@@ -1,5 +1,3 @@
-# 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create a new slice named theta-slice with SST value 76 and SD value 0DFE82.
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -9,14 +7,14 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "theta-slice"
+    - sliceProfileId: "main-slice"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 76
-            sd: "0DFE82"
+            sst: 183
+            sd: "064F71"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
