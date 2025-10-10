@@ -7,7 +7,7 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "eta-dnn"
+    - sliceProfileId: "qa-dnn"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
@@ -27,7 +27,7 @@ attributes:
         dLReliability: "99.999"
         resourceSharingLevel: "SHARED"
         availability: "99.99"
-        supportedDataNetworks: ["eta-dnn"]
+        supportedDataNetworks: ["qa-dnn"]
       RANSliceSubnetProfile: {}
       TopSliceSubnetProfile: {}
   priorityLabel: 10
