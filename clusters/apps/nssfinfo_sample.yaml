@@ -12,3 +12,18 @@ managedNFProfile:
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
     targetNFServiceList: ["nnrf-nfm"]
+sliceProfileList:
+  - sNSSAI:
+      sst: "1"
+      sd: "000001"
+    sliceServices:
+      - serviceType: "CM"
+        priority: 1
+      - serviceType: "URLLC"
+        priority: 2
+  - sNSSAI:
+      sst: "1"
+      sd: "000002"
+    sliceServices:
+      - serviceType: "eMBB"
+        priority: 1
