@@ -72,7 +72,10 @@ upfInfo:
       sNssai:
         sd: "e1c7c3"
         sst: 179
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "0403"
         sst: 4
