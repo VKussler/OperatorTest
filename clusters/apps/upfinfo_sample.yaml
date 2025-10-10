@@ -79,7 +79,10 @@ upfInfo:
       sNssai:
         sd: "0403"
         sst: 4
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "0403"
         sst: 4
