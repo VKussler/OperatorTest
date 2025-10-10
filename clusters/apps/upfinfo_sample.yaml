@@ -62,7 +62,10 @@ upfInfo:
       sNssai:
         sd: "F86001"
         sst: 8
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "4A16F5"
         sst: 208
