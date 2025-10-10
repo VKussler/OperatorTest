@@ -51,14 +51,12 @@ smfInfo:
         sst: 1
     - dnnSmfInfoList:
         - dnn: internet
+          
       sNSSAI:
         sd: "07ddad"
         sst: 37
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+        - dnn: internet
       sNSSAI:
         sd: "07ddad"
         sst: 37
-    - dnnSmfInfoList: []
-      sNSSAI:
-        sd: "937643"
-        sst: 188
