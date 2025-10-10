@@ -364,7 +364,7 @@ SessionManagementSubscriptionData:
       sst: 1
       sd: 'FFFF1F'
     dnnConfigurations:
-      org:
+      ora:
         pduSessionTypes:
           defaultSessionType: 'IPV4'
         sscModes:
@@ -419,7 +419,7 @@ SessionManagementSubscriptionData:
       sst: 1
       sd: 'FFFFFF'
     dnnConfigurations:
-      org:
+      ora:
         pduSessionTypes:
           defaultSessionType: 'IPV4'
         sscModes:
@@ -474,7 +474,7 @@ SessionManagementSubscriptionData:
       sst: 1
       sd: 'FFFFFF'
     dnnConfigurations:
-      org:
+      ora:
         pduSessionTypes:
           defaultSessionType: 'IPV4'
         sscModes:
@@ -529,7 +529,7 @@ SessionManagementSubscriptionData:
       sst: 1
       sd: 'FFFFFF'
     dnnConfigurations:
-      org:
+      ora:
         pduSessionTypes:
           defaultSessionType: 'IPV4'
         sscModes:
@@ -584,7 +584,7 @@ SessionManagementSubscriptionData:
       sst: 1
       sd: 'FFFFFF'
     dnnConfigurations:
-      org:
+      ora:
         pduSessionTypes:
           defaultSessionType: 'IPV4'
         sscModes:
@@ -639,7 +639,7 @@ SessionManagementSubscriptionData:
       sst: 1
       sd: 'FFFFFF'
     dnnConfigurations:
-      org:
+      ora:
         pduSessionTypes:
           defaultSessionType: 'IPV4'
         sscModes:
