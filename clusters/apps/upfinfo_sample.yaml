@@ -97,7 +97,10 @@ upfInfo:
       sNssai:
         sd: "AC0942"
         sst: 159
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "2AA054"
         sst: 209
