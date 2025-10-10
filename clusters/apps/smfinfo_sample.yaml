@@ -50,3 +50,7 @@ smfInfo:
       sNSSAI:
         sd: "4859cb"
         sst: 198
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "4859cb"
+        sst: 198
