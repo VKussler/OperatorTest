@@ -208,10 +208,6 @@ upfInfo:
       sNssai:
         sd: "D3EC7C"
         sst: 43
-    - dnnUpfInfoList: []
-      sNssai:
-        sd: "45F5E8"
-        sst: 168
     - dnnUpfInfoList:
         - dnn: internet
           pduSessionTypes:
@@ -219,7 +215,10 @@ upfInfo:
       sNssai:
         sd: "571C06"
         sst: 208
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "11D312"
         sst: 88
