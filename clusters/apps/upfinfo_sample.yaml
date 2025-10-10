@@ -71,3 +71,25 @@ spec:
       sNssai:
         sd: "004001"
         sst: 43
+    - dnnUpfInfoList:
+      - dnn: internet
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 172.16.0.255
+          iPv4AddrRangeStart: 172.16.0.0
+        pduSessionTypes:
+        - IPv4
+      - dnn: iot
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 172.17.0.255
+          iPv4AddrRangeStart: 172.17.0.0
+        pduSessionTypes:
+        - IPv4
+      - dnn: kok
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 172.18.0.255
+          iPv4AddrRangeStart: 172.18.0.0
+        pduSessionTypes:
+        - IPv4
+      sNssai:
+        sd: "000001"
+        sst: 1
