@@ -34,6 +34,10 @@ spec:
         fiveQi: 5
         sessionAmbrDl: 400Mbps
         sessionAmbrUl: 200Mbps
+      1-123456:
+        fiveQi: 8
+        sessionAmbrDl: 100Mbps
+        sessionAmbrUl: 50Mbps
   nRTAClist: "0"
   pLMNInfoList:
   - pLMNId:
@@ -52,4 +56,9 @@ spec:
       - dnn: ims
       sNSSAI:
         sd: "000001"
+        sst: 1
+    - dnnSmfInfoList:
+      - dnn: oai
+      sNSSAI:
+        sd: "123456"
         sst: 1
