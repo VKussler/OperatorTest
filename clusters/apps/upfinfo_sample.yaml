@@ -58,3 +58,7 @@ upfInfo:
       sNssai:
         sd: "346BAB"
         sst: 176
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "879553"
+        sst: 19
