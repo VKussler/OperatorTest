@@ -180,3 +180,7 @@ upfInfo:
       sNssai:
         sd: "8EDB80"
         sst: 157
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "075330"
+        sst: 99
