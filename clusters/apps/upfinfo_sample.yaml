@@ -76,3 +76,7 @@ upfInfo:
       sNssai:
         sd: "7B2925"
         sst: 136
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "82F2C1"
+        sst: 199
