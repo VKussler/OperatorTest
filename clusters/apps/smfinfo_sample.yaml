@@ -52,6 +52,9 @@ spec:
       userdnn2:
         ipv4Subnet: 10.10.10.0/24
         pduSessionType: IPV4
+      userdnn3:
+        ipv4Subnet: 10.10.10.0/24
+        pduSessionType: IPV4
     snssaiConfigs:
       1-000001:
         fiveQi: 2
@@ -86,6 +89,7 @@ spec:
       - dnn: userdnn
       - dnn: newdnn4
       - dnn: userdnn2
+      - dnn: userdnn3
       sNSSAI:
         sd: "000001"
         sst: 1
