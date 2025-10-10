@@ -100,8 +100,18 @@ spec:
     - dnnSmfInfoList:
       - dnn: internet
       sNSSAI:
-        sd: 000001
-        sst: 1
+        sd: 000401
+        sst: 4
+    - dnnSmfInfoList:
+      - dnn: internet
+      sNSSAI:
+        sd: 000401
+        sst: 4
+    - dnnSmfInfoList:
+      - dnn: internet
+      sNSSAI:
+        sd: 000401
+        sst: 4
     - dnnSmfInfoList:
       - dnn: internet
       sNSSAI:
