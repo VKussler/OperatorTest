@@ -19,15 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  sliceInfo:
-    - sNssai:
-        sst: "1"
-        sd: "test-slice"
-      availabilityInfo:
-        - tai:
-            plmnId:
-              mcc: "208"
-              mnc: "93"
-            tac: "000001"
-          availability: "AVAILABLE"
+    amf-1: {} 
