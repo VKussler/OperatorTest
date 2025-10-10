@@ -22,4 +22,6 @@ amfInfo:
       sST: "43"
       sD: "004001"
       dNN: "kok"
+      tACList: [1, 2, 3]
+      resourceSharingLevel: "SHARED"
 aMFSetRef: "/AMFSet/set-1"
