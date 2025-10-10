@@ -31,6 +31,12 @@ spec:
     sNSSAI:
       sd: "112233"
       sst: 1
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+    sNSSAI:
+      sd: "AABBCC"
+      sst: 1
   supportedBMOList:
   - BMO1
   upfInfo:
@@ -70,4 +76,14 @@ spec:
         - IPv4
       sNssai:
         sd: "112233"
+        sst: 1
+    - dnnUpfInfoList:
+      - dnn: video
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 16.1.1.255
+          iPv4AddrRangeStart: 16.1.1.0
+        pduSessionTypes:
+        - IPv4
+      sNssai:
+        sd: "AABBCC"
         sst: 1
