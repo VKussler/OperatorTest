@@ -1,8 +1,14 @@
-string: This is a string.
-another_string: "This string has quotes."
-multiline_string: |
-  This is a multiline string.
-  It can span multiple lines.
-  And retain the formatting.
-string_with_escapes: "This string has \\escapes\\ and \"quotes\"."
-empty_string: ""
+# Sample NSSF NRM Instance
+pLMNInfoList:
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+sBIFQDN: "nssf-1.sbi.example.com"
+cNSIIdList: ["slice-1-cn"]
+managedNFProfile:
+  nfInstanceId: "nssf-instance-001"
+  nfType: "NSSF"
+  hostAddr: "192.168.1.12"
+commModelList:
+  - commModelType: "DIRECT_COMMUNICATION"
+    targetNFServiceList: ["nnrf-nfm"] 
