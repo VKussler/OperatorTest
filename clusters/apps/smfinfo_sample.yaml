@@ -53,3 +53,7 @@ spec:
       sNSSAI:
         sd: "000001"
         sst: 1
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "BA0BD2"
+        sst: 17
