@@ -16,6 +16,8 @@ pcfInfo:
   snssaiList:
     - sst: 1
       sd: "010203"
+    - sst: 2
+      sd: "112233"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
     targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
