@@ -55,3 +55,7 @@ spec:
       sNssai:
         sd: "000001"
         sst: 1
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: "1DFFE2"
+        sst: 149
