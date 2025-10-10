@@ -3,7 +3,7 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-sBIFQDN: "recovery-slice"
+sBIFQDN: "controller-slice"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
