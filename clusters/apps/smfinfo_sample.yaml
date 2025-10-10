@@ -69,10 +69,6 @@ smfInfo:
       sNSSAI:
         sd: "7B2925"
         sst: 136
-    - dnnSmfInfoList: []
-      sNSSAI:
-        sd: "82F2C1"
-        sst: 199
     - dnnSmfInfoList:
         - dnn: internet
       sNSSAI:
@@ -93,10 +89,15 @@ smfInfo:
       sNSSAI:
         sd: "1C7B7E"
         sst: 18
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+        - dnn: internet
       sNSSAI:
         sd: "DDD28A"
         sst: 30
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "C37FB3"
+        sst: 176
 missingElements:
   dnnConfigs:
     ims:
