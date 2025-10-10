@@ -1,3 +1,5 @@
+# 3GPP NRM-based Core Network Slice Subnet
+# Intent: Configure a slice with name staging-slice, sst 159, and sd 2F4232 for our network infrastructure
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -13,8 +15,8 @@ attributes:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 221
-            sd: "FFF231"
+            sst: 159
+            sd: "2F4232"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
