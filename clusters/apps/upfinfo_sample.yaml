@@ -55,15 +55,3 @@ spec:
       sNssai:
         sd: "000001"
         sst: 1
-    - dnnUpfInfoList: []
-      sNssai:
-        sd: "F40A24"
-        sst: 101
-    - dnnUpfInfoList: []
-      sNssai:
-        sd: "F40A24"
-        sst: 101
-    - dnnUpfInfoList: []
-      sNssai:
-        sd: "F40A24"
-        sst: 101
