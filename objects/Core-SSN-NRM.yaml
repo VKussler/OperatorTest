@@ -1,5 +1,5 @@
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create a slice with sst: 43 sd: "004001" and DNN named kok
+# Intent: Create a new slice with name test-slice, sst 1, and sd 000001
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -15,8 +15,8 @@ attributes:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 43
-            sd: "004001"
+            sst: 1
+            sd: "000001"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
@@ -29,7 +29,7 @@ attributes:
         dLReliability: "99.999"
         resourceSharingLevel: "SHARED"
         availability: "99.99"
-        supportedDataNetworks: ["kok"]
+        supportedDataNetworks: ["internet"]
       RANSliceSubnetProfile: {}
       TopSliceSubnetProfile: {}
   priorityLabel: 10
