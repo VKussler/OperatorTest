@@ -139,7 +139,10 @@ upfInfo:
       sNssai:
         sd: "CCD977"
         sst: 237
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+        - dnn: internet
+          pduSessionTypes:
+            - IPv4
       sNssai:
         sd: "6CE118"
         sst: 61
