@@ -52,6 +52,22 @@ spec:
           iPv4AddrRangeStart: 14.1.1.0
         pduSessionTypes:
         - IPv4v6
+      - dnn: foi
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 32.1.1.255
+          iPv4AddrRangeStart: 32.1.1.0
+        pduSessionTypes:
+        - IPv4v6
       sNssai:
         sd: "000001"
         sst: 1
+    - dnnUpfInfoList:
+      - dnn: kok
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 192.168.1.255
+          iPv4AddrRangeStart: 192.168.1.0
+        pduSessionTypes:
+        - IPv4
+      sNssai:
+        sd: "004001"
+        sst: 43
