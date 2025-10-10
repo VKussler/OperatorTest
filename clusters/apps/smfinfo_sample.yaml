@@ -69,3 +69,7 @@ smfInfo:
       sNSSAI:
         sd: "7B2925"
         sst: 136
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "82F2C1"
+        sst: 199
