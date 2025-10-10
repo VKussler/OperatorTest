@@ -50,3 +50,7 @@ smfInfo:
       sNSSAI:
         sd: "07ddad"
         sst: 37
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sd: "07ddad"
+        sst: 37
