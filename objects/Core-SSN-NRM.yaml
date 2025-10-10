@@ -1,5 +1,5 @@
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Set up a new slice called demo-slice with sst 21 and sd 86E98F
+# Intent: Create a slice named gamma-slice with sst 158 and sd 54DFD7
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -9,14 +9,14 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "demo-slice"
+    - sliceProfileId: "gamma-slice"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 21
-            sd: "86E98F"
+            sst: 158
+            sd: "54DFD7"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
