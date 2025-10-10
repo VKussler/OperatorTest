@@ -56,6 +56,7 @@ smfInfo:
         sst: 1
     - dnnSmfInfoList:
         - dnn: internet
+        - dnn: internet
       sNSSAI:
         sd: "000401"
         sst: 4
