@@ -1,130 +1,57 @@
-- dnnUpfInfoList:
-      - dnn: tst
+apiVersion: cm-5gc.com/v1alpha1
+kind: UpfInfo
+metadata:
+  labels:
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: op-upf
+  name: upfinfo-sample
+  namespace: default
+spec:
+  managedNFProfile:
+    capacity: 1000
+    hostAddr: oai-upf
+    nfType:
+    - UPF
+  pLMNInfoList:
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+    sNSSAI:
+      sd: FFFFFF
+      sst: 1
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+    sNSSAI:
+      sd: "000001"
+      sst: 1
+  supportedBMOList:
+  - BMO1
+  upfInfo:
+    sNssaiUpfInfoList:
+    - dnnUpfInfoList:
+      - dnn: oai
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 12.1.1.255
+          iPv4AddrRangeStart: 12.1.1.128
+        pduSessionTypes:
+        - IPv4
+      - dnn: ora
         ipv4AddressRanges:
         - iPv4AddrRangeEnd: 13.1.1.255
-          iPv4AddrRangeStart: 13.1.1.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.2.255
-          iPv4AddrRangeStart: 13.1.2.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.3.255
-          iPv4AddrRangeStart: 13.1.3.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: tst
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.1.255
-          iPv4AddrRangeStart: 13.1.1.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.4.255
-          iPv4AddrRangeStart: 13.1.4.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.5.255
-          iPv4AddrRangeStart: 13.1.5.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.6.255
-          iPv4AddrRangeStart: 13.1.6.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.7.255
-          iPv4AddrRangeStart: 13.1.7.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.8.255
-          iPv4AddrRangeStart: 13.1.8.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: tst
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.1.255
-          iPv4AddrRangeStart: 13.1.1.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.9.255
-          iPv4AddrRangeStart: 13.1.9.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: tst
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.1.255
-          iPv4AddrRangeStart: 13.1.1.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.10.255
-          iPv4AddrRangeStart: 13.1.10.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.11.255
-          iPv4AddrRangeStart: 13.1.11.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: tst
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.1.255
-          iPv4AddrRangeStart: 13.1.1.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.12.255
-          iPv4AddrRangeStart: 13.1.12.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.13.255
-          iPv4AddrRangeStart: 13.1.13.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: tst
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.1.255
-          iPv4AddrRangeStart: 13.1.1.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.14.255
-          iPv4AddrRangeStart: 13.1.14.0
-        pduSessionTypes:
-        - IPv4
-      - dnn: internet
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 13.1.15.255
-          iPv4AddrRangeStart: 13.1.15.0
+          iPv4AddrRangeStart: 13.1.1.128
         pduSessionTypes:
         - IPv4
       sNssai:
         sd: FFFFFF
         sst: 1
-- sNssai:
-        sd: 000001
+    - dnnUpfInfoList:
+      - dnn: ims
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 14.1.1.255
+          iPv4AddrRangeStart: 14.1.1.0
+        pduSessionTypes:
+        - IPv4v6
+      sNssai:
+        sd: "000001"
         sst: 1
-- sNssai:
-        sd: 000401
-        sst: 4
