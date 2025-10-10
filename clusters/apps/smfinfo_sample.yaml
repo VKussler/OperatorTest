@@ -173,10 +173,15 @@ smfInfo:
       sNSSAI:
         sst: 32
         sd: "DEC865"
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+        - dnn: internet
       sNSSAI:
         sst: 108
         sd: "39FFF3"
+    - dnnSmfInfoList: []
+      sNSSAI:
+        sst: 139
+        sd: "B4ED38"
 missingElements:
   dnnConfigs:
     ims:
