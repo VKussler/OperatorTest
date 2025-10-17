@@ -1,5 +1,5 @@
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Add a new slice with name qa-slice, sst 19, and sd 84E439
+# Intent: Make a new slice with name qa-slice, sst 255, and sd 529B43
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -15,8 +15,8 @@ attributes:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 19
-            sd: "84E439"
+            sst: 255
+            sd: "529B43"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
