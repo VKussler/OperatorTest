@@ -1,3 +1,5 @@
+# 3GPP NRM-based Core Network Slice Subnet
+# Intent: creating a slice with name iota-slice, sst 91, and sd 1F0B50
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -14,7 +16,7 @@ attributes:
             mnc: "93"
           sNSSAI:
             sst: 91
-            sd: "121EC5"
+            sd: "1F0B50"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
