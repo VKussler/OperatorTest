@@ -48,3 +48,14 @@ upfInfo:
       sNssai:
         sd: "000001"
         sst: 1
+  - sNssaiUpfInfoList:
+      - dnnUpfInfoList:
+          - dnn: delta-dnn
+            ipv4AddressRanges:
+              - iPv4AddrRangeEnd: 10.221.54.255
+                iPv4AddrRangeStart: 10.221.54.0
+            pduSessionTypes:
+              - IPv4
+        sNssai:
+          sd: "9"
+          sst: 8
