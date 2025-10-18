@@ -60,5 +60,5 @@ spec:
         sst: 44
     - dnnUpfInfoList: []
       sNssai:
-        sd: 30F556
-        sst: 8
+        sd: 4684AE
+        sst: 44
