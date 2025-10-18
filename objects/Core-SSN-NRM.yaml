@@ -13,8 +13,8 @@ attributes:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 126
-            sd: "F133A0"
+            sst: 88
+            sd: "321492"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
