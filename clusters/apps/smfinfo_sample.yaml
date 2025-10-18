@@ -60,7 +60,8 @@ spec:
       sNSSAI:
         sd: 40822F
         sst: 175
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+      - dnn: internet
       sNSSAI:
         sd: 40822F
         sst: 175
