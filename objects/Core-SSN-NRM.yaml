@@ -1,3 +1,5 @@
+# 3GPP NRM-based Core Network Slice Subnet
+# Intent: Create a network slice named alpha-slice with SST 49 and SD 9DDEC7 to implement additional network segmentation as approved by the security team for compliance requirements.
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -7,14 +9,14 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "delta-slice"
+    - sliceProfileId: "alpha-slice"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 28
-            sd: "E5F373"
+            sst: 49
+            sd: "9DDEC7"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
