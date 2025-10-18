@@ -60,7 +60,10 @@ spec:
       sNssai:
         sd: 40822F
         sst: 175
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+      - dnn: internet
+        pduSessionTypes:
+        - IPv4
       sNssai:
         sd: 40822F
         sst: 175
