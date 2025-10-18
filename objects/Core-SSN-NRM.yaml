@@ -1,3 +1,5 @@
+# 3GPP NRM-based Core Network Slice Subnet
+# Intent: create a new network slice with identifier gamma-slice, service type 154, and differentiator 96B34E. This request has been approved by our Network Operations Review Board and is subject to our Enterprise Service Level Management Policy
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -13,8 +15,8 @@ attributes:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 235
-            sd: "748BAA"
+            sst: 154
+            sd: "96B34E"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
