@@ -1,5 +1,3 @@
-# 3GPP NRM-based Core Network Slice Subnet
-# Intent: instantiation of a new network slice with identifier eta-slice, service type 164, and differentiator 3A4C43. This request has been approved by the Network Operations Committee and is subject to our Service Level Agreement provisions.
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -9,14 +7,14 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "eta-slice"
+    - sliceProfileId: "delta-slice"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 164
-            sd: "3A4C43"
+            sst: 32
+            sd: "B06F9F"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
