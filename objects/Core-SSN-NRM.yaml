@@ -1,5 +1,3 @@
-# 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create a new slice with slice identifier dev-slice, service type parameter 226, and slice differentiator BB4849
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -15,8 +13,8 @@ attributes:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 226
-            sd: "BB4849"
+            sst: 12
+            sd: "59B365"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
