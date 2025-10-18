@@ -1,3 +1,5 @@
+# 3GPP NRM-based Core Network Slice Subnet
+# Intent: create a network slice with name kappa-slice, SST 249, and SD C1E34E. This request is submitted under our Enterprise Network Operations Policy and requires priority processing per our Business Continuity Management Protocol
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -7,14 +9,14 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "test-slice"
+    - sliceProfileId: "kappa-slice"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 175
-            sd: "AA3059"
+            sst: 249
+            sd: "C1E34E"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
