@@ -58,3 +58,7 @@ spec:
       sNssai:
         sd: 4684AE
         sst: 44
+    - dnnUpfInfoList: []
+      sNssai:
+        sd: 30F556
+        sst: 8
