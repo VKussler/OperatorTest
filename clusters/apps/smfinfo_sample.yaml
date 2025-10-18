@@ -65,3 +65,8 @@ spec:
       sNSSAI:
         sd: 4684AE
         sst: 44
+    - dnnSmfInfoList:
+      - dnn: internet
+      sNSSAI:
+        sd: 30F556
+        sst: 8
