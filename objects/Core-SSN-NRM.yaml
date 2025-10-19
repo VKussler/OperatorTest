@@ -1,5 +1,3 @@
-# 3GPP NRM-based Core Network Slice Subnet
-# Intent: Establish new network capabilities in preparation for infrastructure upgrade and digital transformation initiatives; create a slice with name qa-slice, sst 209, and sd 63290D to support strategic objectives.
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -9,14 +7,14 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "qa-slice"
+    - sliceProfileId: "delta-slice"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 209
-            sd: "63290D"
+            sst: 207
+            sd: "53FF2F"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
