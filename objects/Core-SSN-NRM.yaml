@@ -14,7 +14,7 @@ attributes:
             mnc: "93"
           sNSSAI:
             sst: 201
-            sd: "EBB7D4"
+            sd: "013646"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
