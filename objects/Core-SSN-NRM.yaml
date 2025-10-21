@@ -1,5 +1,3 @@
-# 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create a new slice with name delta-slice, sst 78, and sd 5B5A9F to handle projected traffic growth for the upcoming service launch
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -9,14 +7,14 @@ attributes:
     nsName: "eMBB Core Slice Subnet Instance"
     description: "NS Instance for the eMBB Core Slice Subnet"
   sliceProfileList:
-    - sliceProfileId: "delta-slice"
+    - sliceProfileId: "prod-slice"
       pLMNInfoList:
         - pLMNId:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 78
-            sd: "5B5A9F"
+            sst: 85
+            sd: "EC924C"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
