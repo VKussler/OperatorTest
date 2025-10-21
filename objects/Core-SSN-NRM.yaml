@@ -1,3 +1,5 @@
+# 3GPP NRM-based Core Network Slice Subnet
+# Intent: Create a new slice with name delta-slice, sst 78, and sd 5B5A9F to handle projected traffic growth for the upcoming service launch
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -13,8 +15,8 @@ attributes:
             mcc: "208"
             mnc: "93"
           sNSSAI:
-            sst: 239
-            sd: "1FF512"
+            sst: 78
+            sd: "5B5A9F"
       CNSliceSubnetProfile:
         # Core Network Slice Subnet specific attributes
         maxNumberofUEs: 1000000
