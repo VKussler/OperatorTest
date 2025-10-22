@@ -18,6 +18,9 @@ spec:
       ims:
         ipv4Subnet: 14.1.1.0/24
         pduSessionType: IPV4V6
+      internet:
+        ipv4Subnet: null
+        pduSessionType: null
       oai:
         ipv4Subnet: 12.1.1.0/24
         pduSessionType: IPV4
@@ -52,7 +55,8 @@ spec:
       sNSSAI:
         sd: "000001"
         sst: 1
-    - dnnSmfInfoList: []
+    - dnnSmfInfoList:
+      - dnn: internet
       sNSSAI:
         sd: 6CAA16
         sst: 211
