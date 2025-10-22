@@ -54,7 +54,13 @@ spec:
       sNssai:
         sd: "000001"
         sst: 1
-    - dnnUpfInfoList: []
+    - dnnUpfInfoList:
+      - dnn: internet
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 10.0.0.255
+          iPv4AddrRangeStart: 10.0.0.0
+        pduSessionTypes:
+        - IPv4
       sNssai:
         sd: D598D9
         sst: 67
