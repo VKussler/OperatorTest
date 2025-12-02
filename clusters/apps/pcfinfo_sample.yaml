@@ -1,11 +1,4 @@
-# Sample PCF NRM Instance
 pLMNInfoList:
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-    sNSSAI:
-      sst: 1
-      sd: "000001"
   - pLMNId:
       mcc: "208"
       mnc: "93"
@@ -22,6 +15,15 @@ pcfInfo:
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
+  cNSIIdList:
+    - nSIId: "test-slice"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
     targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+  - commModelType: "POLICY_CONTROL"
+    targetNFServiceList: ["nsmf-pdusession"]
+    sliceInfo:
+      sNSSAI:
+        sst: 4
+        sd: "000401"
+      dnnList: ["internet", "iot"]
