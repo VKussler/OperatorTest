@@ -1,4 +1,3 @@
-# Sample NSSF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
@@ -12,8 +11,8 @@ managedNFProfile:
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
     targetNFServiceList: ["nnrf-nfm"]
-sliceInfoList:
-  - sNSSAI:
+allowedNssaiList:
+  - configuredSnssai:
       sst: 4
       sd: "000401"
-    sliceName: "test-slice"
+    nsiIdList: ["slice-1-cn"]
