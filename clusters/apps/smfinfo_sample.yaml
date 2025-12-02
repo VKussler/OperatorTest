@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   cNSIIdList:
-  - slice-1-cn
+  - test-slice
   commModelList:
   - commModelType: DIRECT_COMMUNICATION_WO_NRF
   managedNFProfile:
@@ -18,6 +18,9 @@ spec:
       ims:
         ipv4Subnet: 14.1.1.0/24
         pduSessionType: IPV4V6
+      internet:
+        ipv4Subnet: 15.1.1.0/24
+        pduSessionType: IPV4
       oai:
         ipv4Subnet: 12.1.1.0/24
         pduSessionType: IPV4
@@ -58,6 +61,11 @@ spec:
         sst: 1
     - dnnSmfInfoList:
       - dnn: oai
+      sNSSAI:
+        sd: "000401"
+        sst: 4
+    - dnnSmfInfoList:
+      - dnn: internet
       sNSSAI:
         sd: "000401"
         sst: 4
