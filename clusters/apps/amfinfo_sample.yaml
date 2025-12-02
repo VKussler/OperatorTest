@@ -1,4 +1,3 @@
-# Sample AMF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
@@ -20,8 +19,6 @@ amfInfo:
         mnc: "93"
       aMFIdentifier: "amf-1.example.com"
 aMFSetRef: "/AMFSet/set-1"
-sliceInfoList:
-  - cNSIId: "test-slice"
-    snssai:
-      sst: 4
-      sd: "000401"
+snssaiList:
+  - sst: 4
+    sd: "000401"
