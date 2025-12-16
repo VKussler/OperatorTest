@@ -19,4 +19,77 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  sliceInfo:
+    - sNssai:
+        sst: "1"
+        sd: "aabbcc"
+      serviceAreas:
+        - taList:
+            - tac: "123456"
+              plmnId:
+                mcc: "208"
+                mnc: "93"
+      availabilityInfo:
+        - accessType: "3GPP_ACCESS"
+          maxNumberofSessions: 1000
+    - sNssai:
+        sst: "1"
+        sd: "ddeeff"
+      serviceAreas:
+        - taList:
+            - tac: "123457"
+              plmnId:
+                mcc: "208"
+                mnc: "93"
+      availabilityInfo:
+        - accessType: "3GPP_ACCESS"
+          maxNumberofSessions: 500
+    - sNssai:
+        sst: "1"
+        sd: "112233"
+      serviceAreas:
+        - taList:
+            - tac: "123458"
+              plmnId:
+                mcc: "208"
+                mnc: "93"
+      availabilityInfo:
+        - accessType: "3GPP_ACCESS"
+          maxNumberofSessions: 200
+    - sNssai:
+        sst: "1"
+        sd: "445566"
+      serviceAreas:
+        - taList:
+            - tac: "123459"
+              plmnId:
+                mcc: "208"
+                mnc: "93"
+      availabilityInfo:
+        - accessType: "3GPP_ACCESS"
+          maxNumberofSessions: 300
+    - sNssai:
+        sst: "1"
+        sd: "778899"
+      serviceAreas:
+        - taList:
+            - tac: "123460"
+              plmnId:
+                mcc: "208"
+                mnc: "93"
+      availabilityInfo:
+        - accessType: "3GPP_ACCESS"
+          maxNumberofSessions: 400
+    - sNssai:
+        sst: "1"
+        sd: "test-slice"
+      serviceAreas:
+        - taList:
+            - tac: "123461"
+              plmnId:
+                mcc: "208"
+                mnc: "93"
+      availabilityInfo:
+        - accessType: "3GPP_ACCESS"
+          maxNumberofSessions: 600
