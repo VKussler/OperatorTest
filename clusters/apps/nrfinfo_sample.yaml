@@ -19,4 +19,15 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  sliceInfo:
+    slice-1:
+      sNssai:
+        sst: "1"
+        sd: "000001"
+      serviceAreas: ["area1", "area2"]
+    slice-2:
+      sNssai:
+        sst: "2"
+        sd: "000002"
+      serviceAreas: ["area3"]
