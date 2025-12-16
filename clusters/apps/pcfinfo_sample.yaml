@@ -6,19 +6,6 @@ pLMNInfoList:
     sNSSAI:
       sst: 1
       sd: "000001"
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-    sNSSAI:
-      sst: 4
-      sd: "000401"
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-    sNSSAI:
-      sst: 1 # Assuming sst '1' is appropriate for test-slice
-      sd: "000002" # Assigning a new SD for test-slice
-    sliceName: "test-slice"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
@@ -31,4 +18,4 @@ pcfInfo:
       end: "208930000099999"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
