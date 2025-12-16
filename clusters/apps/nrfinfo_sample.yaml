@@ -19,4 +19,9 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  supportedNssaiList:
+    - sNssai:
+        sst: 4
+        sd: "000401"
+      sliceName: "test-slice"
