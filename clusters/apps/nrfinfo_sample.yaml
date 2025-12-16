@@ -19,10 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1:
-      sNssaiSmfInfo:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          servingSnssai: true
-  servedNefInfo: {}
+    amf-1: {} 
