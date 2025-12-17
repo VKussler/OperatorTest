@@ -19,4 +19,13 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  supportedNssaiList:
+    - sNssai:
+        sst: "1"
+        sd: "000001"
+      nsiId: "nsi-1"
+    - sNssai:
+        sst: "1"
+        sd: "000002"
+      nsiId: "nsi-2"
