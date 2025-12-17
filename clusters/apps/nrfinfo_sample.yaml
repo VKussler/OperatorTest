@@ -25,3 +25,8 @@ nrfInfo:
             sst: 4
             sd: "000401"
           smfServingArea: []
+        - sNssai:
+            sst: 4
+            sd: "000401"
+          sliceName: "test-slice"
+          smfServingArea: []
