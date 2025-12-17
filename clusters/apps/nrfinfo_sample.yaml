@@ -19,4 +19,11 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  sliceInfo:
+    - sNssai:
+        sst: "1"
+        sd: "000001"
+      plmnIdList:
+        - mcc: "208"
+          mnc: "93"
