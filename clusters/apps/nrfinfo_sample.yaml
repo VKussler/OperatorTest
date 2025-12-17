@@ -19,4 +19,15 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1:
+      sNssaiSmfInfoList:
+        - sNssai:
+            sst: 4
+            sd: "000401"
+          sliceInfoForWf:
+            isIwkNeeded: false
+  sliceInfoList:
+    - sNssai:
+        sst: 4
+        sd: "000401"
+      sliceProfileId: "test-slice"
