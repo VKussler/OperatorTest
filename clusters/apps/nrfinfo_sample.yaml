@@ -19,14 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1:
-      sNssaiSmfInfoList:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          smfServingArea: []
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          sliceName: "test-slice"
-          smfServingArea: []
+    amf-1: {} 
