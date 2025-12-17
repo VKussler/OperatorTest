@@ -19,8 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  sliceInfo:
-    test-slice:
-      sST: "4"
-      sD: "000401"
+    amf-1: {} 
