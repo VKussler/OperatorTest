@@ -19,4 +19,13 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1:
+      amfServiceArea:
+        - tacList:
+            - "000001"
+          sliceInfoList:
+            - sNssai:
+                sst: 4
+                sd: "000401"
+              taList:
+                - "000001"
