@@ -1,8 +1,4 @@
-# Network Slice Configuration
-sliceProfileId: "slice-001"
-sliceName: "eMBB Slice"
-description: "Enhanced Mobile Broadband Network Slice"
-priority: 1
+# Sample PCF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
@@ -10,25 +6,16 @@ pLMNInfoList:
     sNSSAI:
       sst: 1
       sd: "000001"
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-    sNSSAI:
-      sst: 1
-      sd: "000002"
-
-# PCF NRM Instance associated with the slice
-pcfProfile:
-  sBIFQDN: "pcf-1.sbi.example.com"
-  managedNFProfile:
-    nfInstanceId: "pcf-instance-001"
-    nfType: "PCF"
-    hostAddr: "192.168.1.11"
-  pcfInfo:
-    dnnList: ["internet", "iot"]
-    supiRanges:
-      - start: "208930000000000"
-        end: "208930000099999"
-  commModelList:
-    - commModelType: "DIRECT_COMMUNICATION"
-      targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+sBIFQDN: "pcf-1.sbi.example.com"
+managedNFProfile:
+  nfInstanceId: "pcf-instance-001"
+  nfType: "PCF"
+  hostAddr: "192.168.1.11"
+pcfInfo:
+  dnnList: ["internet", "iot"]
+  supiRanges:
+    - start: "208930000000000"
+      end: "208930000099999"
+commModelList:
+  - commModelType: "DIRECT_COMMUNICATION"
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
