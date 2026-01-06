@@ -1,21 +1,21 @@
 # Sample PCF NRM Instance
 pLMNInfoList:
   - pLMNId:
-      mcc: "string"
-      mnc: "string"
+      mcc: "208"
+      mnc: "93"
     sNSSAI:
-      sst: integer
-      sd: "string"
-sBIFQDN: "string"
+      sst: 1
+      sd: "000001"
+sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
-  nfInstanceId: "string"
+  nfInstanceId: "pcf-instance-001"
   nfType: "PCF"
-  hostAddr: "string"
+  hostAddr: "192.168.1.11"
 pcfInfo:
-  dnnList: ["string"]
+  dnnList: ["internet", "iot"]
   supiRanges:
-    - start: "string"
-      end: "string"
+    - start: "208930000000000"
+      end: "208930000099999"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["string"]
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
