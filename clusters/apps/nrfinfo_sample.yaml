@@ -15,8 +15,14 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
+    managedNFProfile:
+      allowedNssaiList:
+        - snssai:
+            sst: 4
+            sd: "000401"
+          sliceName: "test-slice"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
