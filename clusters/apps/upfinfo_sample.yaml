@@ -8,6 +8,10 @@ spec:
   - slice-1-cn
   - test-slice
   managedNFProfile:
+    allowedNssaiList:
+    - sNssai:
+        sd: "000401"
+        sst: 4
     capacity: 1000
     hostAddr: oai-upf
     nfType:
