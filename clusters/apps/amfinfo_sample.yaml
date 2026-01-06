@@ -12,22 +12,11 @@ managedNFProfile:
   heartBeatTimer: 60
   hostAddr: "192.168.1.10"
 amfInfo:
-  amfSetId: 1
-  servedGuamiList:
-    - plmnId:
+  aMFRegionId: "1"
+  aMFSetId: 100
+  gUAMIdList:
+    - pLMNId:
         mcc: "208"
         mnc: "93"
-      amfRegionId: "1"
-      amfSetId: "1"
-  serviceSupportInfo:
-    - serviceName: "namf-comm"
-      version: "v1"
-  supportTaiList:
-    - plmnId:
-        mcc: "208"
-        mnc: "93"
-      tac: "000001"
-  supportSnssaiList:
-    - sst: 4
-      sd: "000401"
-aMFSetRef: "/AMFSet/set-1"
+      aMFIdentifier: "amf-1.example.com"
+aMFSetRef: "/AMFSet/set-1" 
