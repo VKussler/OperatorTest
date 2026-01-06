@@ -9,6 +9,11 @@ spec:
   commModelList:
   - commModelType: DIRECT_COMMUNICATION_WO_NRF
   managedNFProfile:
+    allowedNSSAI:
+    - sNssai:
+        sd: "000401"
+        sst: 4
+      sliceName: test-slice
     capacity: 10
     hostAddr: 127.0.0.1
     nfType:
