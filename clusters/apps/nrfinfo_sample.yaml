@@ -1,22 +1,20 @@
 # Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
-      mcc: "208"
-      mnc: "93"
-sBIFQDN: "nrf-1.sbi.example.com"
+      mcc: "001"
+      mnc: "01"
+    sNSSAIList:
+      - sST: 4
+        sD: "000401"
+sBIFQDN: "test-slice.sbi.example.com"
 nFProfileList:
-  - nfInstanceId: "nrf-instance-001"
+  - nfInstanceId: "nrf-test-slice-001"
     nfType: "NRF"
     nfStatus: "REGISTERED"
-    fqdn: "nrf-1.example.com"
-    nfServices:
-      - serviceInstanceId: "service-1"
-        serviceName: "nnrf-nfm"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
+    fqdn: "nrf-test-slice.example.com"
+    nfServices: []
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
