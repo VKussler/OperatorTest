@@ -25,3 +25,11 @@ nssfFunction:
   supportedSnssaiList:
     - sst: 4
       sd: "000401"
+  pLMNInfoList:
+    - pLMNId:
+        mcc: "208"
+        mnc: "93"
+      sNssaiList:
+        - sst: 4
+          sd: "000401"
+  cNSIIdList: ["test-slice"]
