@@ -17,32 +17,6 @@ nFProfileList:
         nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
-    pcf-1:
-      sNssaiSmfInfoList:
-        - sNssai:
-            sst: "1"
-            sd: "010203"
-          dnnSmfInfoList:
-            - dnn: "internet"
+    pcf-1: {}
   servedAmfInfo:
-    amf-1:
-      sNssaiAmfInfoList:
-        - sNssai:
-            sst: "1"
-            sd: "010203"
-          amfRegionId: "Region1"
-          amfSetId: "1"
-  servedSmfInfo:
-    smf-1:
-      sNssaiSmfInfoList:
-        - sNssai:
-            sst: "1"
-            sd: "010203"
-          dnnSmfInfoList:
-            - dnn: "internet"
-  servedUpfInfo:
-    upf-1:
-      sNssaiUpfInfoList:
-        - sNssai:
-            sst: "1"
-            sd: "010203"
+    amf-1: {} 
