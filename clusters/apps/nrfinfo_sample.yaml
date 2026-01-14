@@ -17,35 +17,6 @@ nFProfileList:
         nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
-    pcf-1:
-      sNssaiSmfInfoList:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          dnnSmfInfoList: []
+    pcf-1: {}
   servedAmfInfo:
-    amf-1:
-      sNssaiAmfInfoList:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          amfRegionId: "region1"
-          amfSetId: "set1"
-  servedSmfInfo:
-    smf-1:
-      sNssaiSmfInfoList:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          dnnSmfInfoList: []
-  servedUpfInfo:
-    upf-1:
-      sNssaiUpfInfoList:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          dnnUpfInfoList: []
-supportedSnssaiList:
-  - sNssai:
-      sst: 4
-      sd: "000401"
+    amf-1: {} 
