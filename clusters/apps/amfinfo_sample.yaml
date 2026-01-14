@@ -5,7 +5,7 @@ pLMNInfoList:
       mnc: "93"
 aMFIdentifier: "amf-1.example.com"
 sBIFQDN: "amf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn"]
+cNSIIdList: ["slice-1-cn", "test-slice"]
 managedNFProfile:
   nfInstanceId: "amf-instance-001"
   nfType: "AMF"
@@ -19,4 +19,15 @@ amfInfo:
         mcc: "208"
         mnc: "93"
       aMFIdentifier: "amf-1.example.com"
-aMFSetRef: "/AMFSet/set-1" 
+  snssaiInfo:
+    - sNSSAI:
+        sst: 1 # Example SST for slice-1-cn, adjust as needed
+        sd: "010203" # Example SD for slice-1-cn, adjust as needed
+      nrfInfo:
+        nrfUri: "https://nrf.example.com/slice-1-cn" # Example NRF URI, adjust as needed
+    - sNSSAI:
+        sst: 4
+        sd: "000401"
+      nrfInfo:
+        nrfUri: "https://nrf.example.com/test-slice" # Example NRF URI, adjust as needed
+aMFSetRef: "/AMFSet/set-1"
