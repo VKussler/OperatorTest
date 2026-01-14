@@ -6,16 +6,45 @@ pLMNInfoList:
     sNSSAI:
       sst: 1
       sd: "000001"
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+    sNSSAI:
+      sst: 4
+      sd: "000401"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
   nfType: "PCF"
   hostAddr: "192.168.1.11"
+  sNssais:
+    - sst: 1
+      sd: "000001"
+    - sst: 4
+      sd: "000401"
+  nfServices:
+    - serviceName: "Npcf_AMPolicyControl"
+      versions: ["1.0.0"]
+      scheme: "https"
+      nfServiceStatus: "REGISTERED"
+    - serviceName: "Npcf_SMPolicyControl"
+      versions: ["1.0.0"]
+      scheme: "https"
+      nfServiceStatus: "REGISTERED"
+    - serviceName: "Npcf_UEPolicyControl"
+      versions: ["1.0.0"]
+      scheme: "https"
+      nfServiceStatus: "REGISTERED"
+    - serviceName: "Npcf_PolicyAuthorization"
+      versions: ["1.0.0"]
+      scheme: "https"
+      nfServiceStatus: "REGISTERED"
 pcfInfo:
   dnnList: ["internet", "iot"]
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
+  nrfUri: "https://nrf.example.com:8888" # Example NRF URI.  Replace with actual NRF URI
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
