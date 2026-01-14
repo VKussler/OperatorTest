@@ -19,4 +19,14 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  supportedNFServiceList:
+    - serviceName: "nnrf-nfm"
+      versions: ["1.0.0"]
+      supportedSnssaiList:
+        - sst: 4
+          sd: "000401"
+  supportedSliceInfoList:
+    - sst: 4
+      sd: "000401"
+  networkSlice: "test-slice"
