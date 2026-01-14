@@ -11,4 +11,27 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"] 
+    targetNFServiceList: ["nnrf-nfm"]
+
+networkSliceSubnet:
+  - id: "slice-subnet-4-000401"
+    sliceServiceType: "URLLC" # Example, adjust as needed
+    snssai:
+      sst: 4
+      sd: "000401"
+    pLMNInfoList:
+      - pLMNId:
+          mcc: "208"
+          mnc: "93"
+
+networkSlice:
+  - id: "test-slice"
+    sliceName: "test-slice"
+    snssai:
+      sst: 4
+      sd: "000401"
+    nsiIdList: ["slice-subnet-4-000401"] # Links to the subnet
+    pLMNInfoList:
+      - pLMNId:
+          mcc: "208"
+          mnc: "93"
