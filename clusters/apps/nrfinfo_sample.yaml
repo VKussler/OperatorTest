@@ -19,30 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  supportedNssaiAvailabilityData:
-    - snssai:
-        sst: 4
-        sd: "000401"
-      availabilityInfo:
-        availability: true
-  defaultNssai:
-    - sst: 4
-      sd: "000401"
-  perPlmnSnssaiList:
-    - pLMNId:
-        mcc: "208"
-        mnc: "93"
-      snssaiList:
-        - sst: 4
-          sd: "000401"
-  nfManagementUri: "https://nrf-1.example.com/nnrf-nfm/v1"
-  supportedSnssai:
-    - sst: 4
-      sd: "000401"
-  serviceTypeLists:
-    - snssai:
-        sst: 4
-        sd: "000401"
-      serviceTypes:
-        - "eMBB"
+    amf-1: {} 
