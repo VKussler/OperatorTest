@@ -17,17 +17,6 @@ nFProfileList:
         nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
-    pcf-1:
-      sNssaiSmfInfoList:
-        - sNssai:
-            sst: 4
-            sd: "000401"
+    pcf-1: {}
   servedAmfInfo:
-    amf-1:
-      sNssaiAmfInfoList:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-  supportedSnssaiList:
-    - sst: 4
-      sd: "000401"
+    amf-1: {} 
