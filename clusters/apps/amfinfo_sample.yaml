@@ -5,7 +5,7 @@ pLMNInfoList:
       mnc: "93"
 aMFIdentifier: "amf-1.example.com"
 sBIFQDN: "amf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn"]
+cNSIIdList: ["slice-1-cn", "new-slice-cn"] # Added new slice CNSI ID
 managedNFProfile:
   nfInstanceId: "amf-instance-001"
   nfType: "AMF"
@@ -19,4 +19,17 @@ amfInfo:
         mcc: "208"
         mnc: "93"
       aMFIdentifier: "amf-1.example.com"
-aMFSetRef: "/AMFSet/set-1" 
+  sliceInfoList: # Added slice info list
+    - sNssai:
+        sst: 1 # Example SST for new slice
+        sd: "000001" # Example SD for new slice
+      pLMNIdList:
+        - mcc: "208"
+          mnc: "93"
+    - sNssai:
+        sst: 2 # Example SST for slice-1
+        sd: "000002" # Example SD for slice-1
+      pLMNIdList:
+        - mcc: "208"
+          mnc: "93"
+aMFSetRef: "/AMFSet/set-1"
