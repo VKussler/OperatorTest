@@ -11,17 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
-
-# New Network Slice Configuration
-networkSlice:
-  sNSSAI:
-    sst: "4"
-    sd: "000401"
-  nsi_allocation_needed: "check_existing_or_new" # Options: "new", "modify_existing", "check_existing_or_new"
-  # Further NSSI configuration details can be added here if a new NSSI is required.
-  # Example:
-  # nssi_profile:
-  #   nssi_id: "nssi-new-001"
-  #   nssi_parameters:
-  #     resource_requirements: "high"
+    targetNFServiceList: ["nnrf-nfm"] 
