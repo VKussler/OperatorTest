@@ -7,6 +7,7 @@ spec:
   cNSIIdList:
   - slice-1-cn
   - test-slice
+  - new-slice
   commModelList:
   - commModelType: DIRECT_COMMUNICATION_WO_NRF
   managedNFProfile:
@@ -46,6 +47,9 @@ spec:
   - pLMNId:
       mcc: "999"
       mnc: "99"
+  - pLMNId:
+      mcc: "123"
+      mnc: "45"
   sBIFQDN: smf-1.sbi.example.com
   smfInfo:
     sNssaiSmfInfoList:
