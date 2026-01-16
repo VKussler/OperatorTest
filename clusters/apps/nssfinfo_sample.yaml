@@ -16,6 +16,9 @@ sliceInfoList:
   - sliceDifferentiator: "000401"
     sST: 4
     sliceName: "test-slice"
+  - sliceDifferentiator: "000401"
+    sST: 4
+    sliceName: "test-slice"
 supportedSnssaiList:
   - sst: 4
     sd: "000401"
