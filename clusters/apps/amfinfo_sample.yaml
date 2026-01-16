@@ -6,6 +6,8 @@ pLMNInfoList:
     sNSSAIList:
       - sst: 1
         sd: "000001"
+      - sst: 4
+        sd: "000401"
   - pLMNId:
       mcc: "208"
       mnc: "93"
