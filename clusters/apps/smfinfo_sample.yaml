@@ -83,3 +83,8 @@ spec:
       sNSSAI:
         sd: "000401"
         sst: 4
+    - dnnSmfInfoList:
+      - dnn: oai
+      sNSSAI:
+        sd: "000401"
+        sst: 4
