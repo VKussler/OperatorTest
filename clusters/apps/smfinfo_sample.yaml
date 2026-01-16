@@ -6,6 +6,7 @@ metadata:
 spec:
   cNSIIdList:
   - slice-1-cn
+  - test-slice
   commModelList:
   - commModelType: DIRECT_COMMUNICATION_WO_NRF
   managedNFProfile:
