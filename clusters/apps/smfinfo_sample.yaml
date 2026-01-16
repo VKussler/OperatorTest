@@ -8,6 +8,7 @@ spec:
   - slice-1-cn
   - test-slice
   - new-slice
+  - test-slice
   commModelList:
   - commModelType: DIRECT_COMMUNICATION_WO_NRF
   managedNFProfile:
@@ -66,6 +67,10 @@ spec:
         sst: 1
     - dnnSmfInfoList:
       - dnn: oai
+      sNSSAI:
+        sd: "000401"
+        sst: 4
+    - dnnSmfInfoList: []
       sNSSAI:
         sd: "000401"
         sst: 4
