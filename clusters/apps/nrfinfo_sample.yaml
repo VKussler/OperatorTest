@@ -17,9 +17,6 @@ nFProfileList:
         nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
-    pcf.openair5g.epc.mnc012.mcc345.3gppnetwork.org:
-      address: "10.200.200.101"
-      port: 80
-      scheme: "http"
+    pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
