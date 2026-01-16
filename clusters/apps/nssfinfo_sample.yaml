@@ -12,6 +12,12 @@ pLMNInfoList:
   - sNssaiList:
       - sst: 4
         sd: "000401"
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
 sBIFQDN: "nssf-1.sbi.example.com"
 cNSIIdList: ["slice-1-cn", "test-slice", "new-slice"]
 managedNFProfile:
