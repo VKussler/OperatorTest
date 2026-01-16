@@ -6,8 +6,14 @@ pLMNInfoList:
   - sNssaiList:
       - sst: 4
         sd: "000401"
+  - pLMNId:
+      mcc: "999"
+      mnc: "99"
+  - sNssaiList:
+      - sst: 4
+        sd: "000401"
 sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn", "test-slice"]
+cNSIIdList: ["slice-1-cn", "test-slice", "new-slice"]
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
