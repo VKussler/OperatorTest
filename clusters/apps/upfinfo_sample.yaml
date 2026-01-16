@@ -8,6 +8,7 @@ spec:
   - slice-1-cn
   - test-slice
   - new-slice
+  - test-slice
   managedNFProfile:
     capacity: 1000
     hostAddr: oai-upf
@@ -83,6 +84,16 @@ spec:
         ipv4AddressRanges:
         - iPv4AddrRangeEnd: 16.1.1.255
           iPv4AddrRangeStart: 16.1.1.0
+        pduSessionTypes:
+        - IPv4
+      sNssai:
+        sd: "000401"
+        sst: 4
+    - dnnUpfInfoList:
+      - dnn: test
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 17.1.1.255
+          iPv4AddrRangeStart: 17.1.1.0
         pduSessionTypes:
         - IPv4
       sNssai:
