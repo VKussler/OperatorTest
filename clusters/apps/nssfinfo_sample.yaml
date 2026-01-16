@@ -13,7 +13,9 @@ pLMNInfoList:
       - sst: 4
         sd: "000401"
 sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn", "test-slice"]
+cNSIIdList:
+  - slice-1-cn
+  - test-slice
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
