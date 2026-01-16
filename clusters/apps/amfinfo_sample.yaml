@@ -26,11 +26,5 @@ amfInfo:
       pLMNIdList:
         - mcc: "208"
           mnc: "93"
-    - sliceName: "test-slice"
-      sNSSAIList:
-        - sst: 4
-          sd: "000401"
-      pLMNIdList:
-        - mcc: "208"
-          mnc: "93"
+      sliceName: "test-slice"
 aMFSetRef: "/AMFSet/set-1"
