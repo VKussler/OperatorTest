@@ -7,6 +7,7 @@ spec:
   cNSIIdList:
   - slice-1-cn
   - test-slice
+  - new-slice
   managedNFProfile:
     capacity: 1000
     hostAddr: oai-upf
@@ -25,6 +26,12 @@ spec:
     sNSSAI:
       sd: "000001"
       sst: 1
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+    sNSSAI:
+      sd: "000401"
+      sst: 4
   - pLMNId:
       mcc: "001"
       mnc: "01"
@@ -66,6 +73,16 @@ spec:
         ipv4AddressRanges:
         - iPv4AddrRangeEnd: 15.1.1.255
           iPv4AddrRangeStart: 15.1.1.0
+        pduSessionTypes:
+        - IPv4
+      sNssai:
+        sd: "000401"
+        sst: 4
+    - dnnUpfInfoList:
+      - dnn: internet
+        ipv4AddressRanges:
+        - iPv4AddrRangeEnd: 16.1.1.255
+          iPv4AddrRangeStart: 16.1.1.0
         pduSessionTypes:
         - IPv4
       sNssai:
