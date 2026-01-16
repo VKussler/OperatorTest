@@ -6,6 +6,7 @@ metadata:
 spec:
   cNSIIdList:
   - slice-1-cn
+  - test-slice
   commModelList:
   - commModelType: DIRECT_COMMUNICATION_WO_NRF
   managedNFProfile:
@@ -33,11 +34,21 @@ spec:
         fiveQi: 5
         sessionAmbrDl: 400Mbps
         sessionAmbrUl: 200Mbps
+      4-000401:
+        fiveQi: 5
+        sessionAmbrDl: 400Mbps
+        sessionAmbrUl: 200Mbps
   nRTAClist: "0"
   pLMNInfoList:
   - pLMNId:
       mcc: "001"
       mnc: "01"
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+    sNSSAI:
+      sd: "000401"
+      sst: 4
   pcfSelection:
     pcfSet:
     - address: 10.200.200.101
@@ -56,3 +67,8 @@ spec:
       sNSSAI:
         sd: "000001"
         sst: 1
+    - dnnSmfInfoList:
+      - dnn: oai
+      sNSSAI:
+        sd: "000401"
+        sst: 4
