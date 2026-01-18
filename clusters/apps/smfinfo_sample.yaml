@@ -26,13 +26,21 @@ missingElements:
       fiveQi: 5
       sessionAmbrDl: 400Mbps
       sessionAmbrUl: 200Mbps
+    4-000401:
+      fiveQi: 5
+      sessionAmbrDl: 400Mbps
+      sessionAmbrUl: 200Mbps
 nRTAClist: "0"
 pLMNInfoList:
   - pLMNId:
       mcc: "001"
       mnc: "01"
+    sNssaiList:
+      - sNSSAI:
+          sst: 4
+          sd: "000401"
 sBIFQDN: smf-1.sbi.example.com
-cNSIIdList: ["slice-1-cn"]
+cNSIIdList: ["slice-1-cn", "test-slice"]
 smfInfo:
   sNssaiSmfInfoList:
     - dnnSmfInfoList:
@@ -46,3 +54,9 @@ smfInfo:
       sNSSAI:
         sd: "000001"
         sst: 1
+    - dnnSmfInfoList:
+        - dnn: oai
+          - dnn: ora
+      sNSSAI:
+        sd: "000401"
+        sst: 4
