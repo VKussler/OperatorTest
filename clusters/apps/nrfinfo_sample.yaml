@@ -19,12 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-sliceInfoList:
-  - cNSIIdList:
-      - "test-slice"
-    pLMNInfoList:
-      - sNSSAI:
-          sst: 4
-          sd: "000401"
-    sBIFQDN: "test-slice"
+    amf-1: {} 
