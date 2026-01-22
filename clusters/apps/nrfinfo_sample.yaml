@@ -19,4 +19,12 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  snssaiInfo:
+    test-slice:
+      sNSSAI:
+        sst: 4
+        sd: "000401"
+      plmnList:
+        - mcc: "208"
+          mnc: "93"
