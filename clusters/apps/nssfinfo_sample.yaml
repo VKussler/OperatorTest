@@ -11,14 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
-sliceInfo:
-  test-slice:
-    sNSSAI:
-      sst: 4
-      sd: "000401"
-    cNSIIdList: ["test-slice-cn"]
-    pLMNInfoList:
-      - pLMNId:
-          mcc: "208"
-          mnc: "93"
+    targetNFServiceList: ["nnrf-nfm"] 
