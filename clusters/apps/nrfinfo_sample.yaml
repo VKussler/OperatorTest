@@ -19,4 +19,16 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  supportedNssaiAvailabilityData:
+    - tai:
+        plmnId:
+          mcc: "208"
+          mnc: "93"
+        tac: "000001"
+      nssaiAvailabilityInfo:
+        - availableNssai:
+            - sst: 4
+              sd: "000401"
+          availabilityInfo:
+            isHnssaiAllowed: true
