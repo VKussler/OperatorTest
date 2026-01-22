@@ -19,13 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
----
-pLMNInfoList:
-  - pLMNId:
-      mcc: "310"
-      mnc: "260"
-    sNSSAI:
-      sst: 4
-      sd: "000401"
-sBIFQDN: "test-slice.sbi.example.com"
+    amf-1: {} 
