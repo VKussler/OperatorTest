@@ -3,13 +3,7 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-    sliceInfoList:
-      - sst: 4
-        sd: "000401"
 sBIFQDN: "nrf-1.sbi.example.com"
-sliceInfoList:
-  - sst: 4
-    sd: "000401"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
@@ -25,4 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
