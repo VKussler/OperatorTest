@@ -17,17 +17,6 @@ nFProfileList:
         nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
-    pcf-1:
-      sNssaiList:
-        - sst: 4
-          sd: "000401"
+    pcf-1: {}
   servedAmfInfo:
-    amf-1:
-      sNssaiList:
-        - sst: 4
-          sd: "000401"
-  networkSliceInfoList:
-    - sNssai:
-        sst: 4
-        sd: "000401"
-      sliceName: "test-slice"
+    amf-1: {} 
