@@ -3,28 +3,20 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-  - pLMNId:
-      mcc: "001"
-      mnc: "001"
-    sNSSAI:
-      sst: 4
-      sd: "000401"
-aMFIdentifier: "test-amf-id"
-sBIFQDN: "test-nf.local"
-cNSIIdList: ["slice-1-cn", "test-slice"]
+aMFIdentifier: "amf-1.example.com"
+sBIFQDN: "amf-1.sbi.example.com"
+cNSIIdList: ["slice-1-cn"]
 managedNFProfile:
-  nfInstanceId: "test-nf-instance-id-AMF"
+  nfInstanceId: "amf-instance-001"
   nfType: "AMF"
   heartBeatTimer: 60
-  hostAddr: "127.0.0.1"
+  hostAddr: "192.168.1.10"
 amfInfo:
-  aMFRegionId: "test-amf-region"
-  aMFSetId: 1
+  aMFRegionId: "1"
+  aMFSetId: 100
   gUAMIdList:
     - pLMNId:
-        mcc: "001"
-        mnc: "001"
-      aMFIdentifier: "test-amf-id"
-aMFSetRef: "test-amf-set"
-commModelList:
-  - commModelType: "HTTP"
+        mcc: "208"
+        mnc: "93"
+      aMFIdentifier: "amf-1.example.com"
+aMFSetRef: "/AMFSet/set-1" 
