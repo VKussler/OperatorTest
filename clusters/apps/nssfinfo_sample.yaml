@@ -1,14 +1,20 @@
-# Sample NSSF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn"]
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+    sNSSAIList:
+      - sst: 4
+        sd: "000401"
+sBIFQDN: "nssf.5gc.local"
+cNSIIdList:
+  - "slice-1-cn"
+  - "test-slice"
 managedNFProfile:
-  nfInstanceId: "nssf-instance-001"
+  nfInstanceId: "nssf-instance-1"
   nfType: "NSSF"
-  hostAddr: "192.168.1.12"
+  hostAddr: "10.0.0.10"
 commModelList:
-  - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"] 
+  - commModelType: "someCommModelType"
