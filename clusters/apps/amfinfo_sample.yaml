@@ -1,31 +1,22 @@
+# Sample AMF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-    sNSSAIList:
-      - sst: 4
-        sd: "000401"
-aMFIdentifier: "amf-id-1"
-sBIFQDN: "amf.5gc.local"
-cNSIIdList:
-  - "slice-1-cn"
-  - "test-slice"
+aMFIdentifier: "amf-1.example.com"
+sBIFQDN: "amf-1.sbi.example.com"
+cNSIIdList: ["slice-1-cn"]
 managedNFProfile:
-  nfInstanceId: "amf-instance-1"
+  nfInstanceId: "amf-instance-001"
   nfType: "AMF"
-  hostAddr: "10.0.0.20"
-commModelList:
-  - commModelType: "someCommModelType"
+  heartBeatTimer: 60
+  hostAddr: "192.168.1.10"
 amfInfo:
-  aMFRegionId: "amf-region-1"
-  aMFSetId: 1
+  aMFRegionId: "1"
+  aMFSetId: 100
   gUAMIdList:
-    - aMFIdentifier: "amf-id-1"
-      pLMNId:
-        mcc: "001"
-        mnc: "01"
-aMFSetRef: "amf-set-1"
-nTNPLMNRestrictionsList: []
+    - pLMNId:
+        mcc: "208"
+        mnc: "93"
+      aMFIdentifier: "amf-1.example.com"
+aMFSetRef: "/AMFSet/set-1" 
