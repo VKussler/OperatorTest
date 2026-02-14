@@ -6,16 +6,21 @@ pLMNInfoList:
     sNSSAI:
       sst: 1
       sd: "000001"
-sBIFQDN: "pcf-1.sbi.example.com"
+  - pLMNId:
+      mcc: "001"
+      mnc: "001"
+    sNSSAI:
+      sst: 4
+      sd: "000401"
+sBIFQDN: "test-nf.local"
 managedNFProfile:
-  nfInstanceId: "pcf-instance-001"
+  nfInstanceId: "test-nf-instance-id-PCF"
   nfType: "PCF"
-  hostAddr: "192.168.1.11"
+  hostAddr: "127.0.0.1"
 pcfInfo:
   dnnList: ["internet", "iot"]
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
 commModelList:
-  - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+  - commModelType: "HTTP"
