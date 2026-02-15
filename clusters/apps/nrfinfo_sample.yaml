@@ -19,4 +19,23 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  servedNsiInfo:
+    test-slice:
+      sNssai:
+        sst: 4
+        sd: "000401"
+      plmnIdList:
+        - mcc: "208"
+          mnc: "93"
+      maxNumberOfUEs: 1000000
+      dLLatency: 10
+      uLLatency: 15
+      dLThroughput: 1000
+      uLThroughput: 500
+      maxPDUConnections: 20000
+      coverageArea: [1, 2, 3]
+      dLReliability: "99.999"
+      resourceSharingLevel: "SHARED"
+      availability: "99.99"
+      supportedDataNetworks: ["internet"]
