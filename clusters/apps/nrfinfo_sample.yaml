@@ -19,26 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  servedNfSliceInfo:
-    test-slice:
-      sNSSAI:
-        sst: 4
-        sd: "000401"
-      pLMNIdList:
-        - mcc: "208"
-          mnc: "93"
-      cNSliceSubnetProfileList:
-        - networkSliceSubnetType: "core"
-          priorityLabel: 10
-          maxNumberofUEs: 1000000
-          dLLatency: 10
-          uLLatency: 15
-          dLThptPerSliceSubnet: 1000
-          uLThptPerSliceSubnet: 500
-          maxNumberofPDUSessions: 20000
-          coverageAreaTAList: [1, 2, 3]
-          dLReliability: "99.999"
-          resourceSharingLevel: "SHARED"
-          availability: "99.99"
-          supportedDataNetworks: ["internet"]
+    amf-1: {} 

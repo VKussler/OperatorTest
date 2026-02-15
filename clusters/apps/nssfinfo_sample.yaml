@@ -1,3 +1,4 @@
+# Sample NSSF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
@@ -10,30 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
-networkSliceSubnetList:
-  - id: "test-slice"
-    sNSSAI:
-      sst: 4
-      sd: "000401"
-    sliceProfile:
-      pLMNId:
-        mcc: "208"
-        mnc: "93"
-      cNSSliceSubnetProfile:
-        maxNumberofUEs: 1000000
-        dLLatency: 10
-        uLLatency: 15
-        dLThptPerSliceSubnet: 1000
-        uLThptPerSliceSubnet: 500
-        maxNumberofPDUSessions: 20000
-        coverageAreaTAList: [1, 2, 3]
-        dLReliability: "99.999"
-        resourceSharingLevel: "SHARED"
-        availability: "99.99"
-        supportedDataNetworks: ["internet"]
-    sliceSubnetType: "core"
-    priorityLabel: 10
-    nsInfo:
-      nsInstanceId: "slice-subnet-1-ns-instance-001"
-      nsName: "eMBB Core Slice Subnet Instance"
+    targetNFServiceList: ["nnrf-nfm"] 
