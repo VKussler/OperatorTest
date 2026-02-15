@@ -1,4 +1,3 @@
-# Sample PCF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
@@ -18,4 +17,24 @@ pcfInfo:
       end: "208930000099999"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+NetworkSliceSubnet:
+  - sliceProfileId: "test-slice"
+    sNSSAI:
+      sst: 4
+      sd: "000401"
+    pLMNId:
+      mcc: "208"
+      mnc: "93"
+    cNSliceSubnetProfile:
+      maxNumberofUEs: 1000000
+      dLLatency: 10
+      uLLatency: 15
+      dLThptPerSliceSubnet: 1000
+      uLThptPerSliceSubnet: 500
+      maxNumberofPDUSessions: 20000
+      coverageAreaTAList: [1, 2, 3]
+      dLReliability: "99.999"
+      resourceSharingLevel: "SHARED"
+      availability: "99.99"
+      supportedDataNetworks: ["internet"]
