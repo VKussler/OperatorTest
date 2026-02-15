@@ -19,4 +19,24 @@ amfInfo:
         mcc: "208"
         mnc: "93"
       aMFIdentifier: "amf-1.example.com"
-aMFSetRef: "/AMFSet/set-1" 
+aMFSetRef: "/AMFSet/set-1"
+networkSliceSubnet:
+  sliceProfileList:
+    - sliceProfileId: "test-slice"
+      pLMNId:
+        mcc: "208"
+        mnc: "93"
+      sST: 4
+      sD: "000401"
+      cNSliceSubnetProfile:
+        maxNumberofUEs: 1000000
+        dLLatency: 10
+        uLLatency: 15
+        dLThptPerSliceSubnet: 1000
+        uLThptPerSliceSubnet: 500
+        maxNumberofPDUSessions: 20000
+        coverageAreaTAList: [1, 2, 3]
+        dLReliability: "99.999"
+        resourceSharingLevel: "SHARED"
+        availability: "99.99"
+        supportedDataNetworks: ["internet"]
