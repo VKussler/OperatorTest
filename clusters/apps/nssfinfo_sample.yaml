@@ -11,14 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
-networkSliceList:
-  - sliceProfileId: "test-slice"
-    sst: 4
-    sd: "000401"
-    operationalState: "enabled"
-    administrativeState: "unlocked"
-    nsInstanceId: "slice-subnet-1-ns-instance-001"
-    nsName: "eMBB Core Slice Subnet Instance"
-    priorityLabel: 10
-    networkSliceSubnetType: "core"
+    targetNFServiceList: ["nnrf-nfm"] 
