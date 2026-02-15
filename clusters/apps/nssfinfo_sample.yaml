@@ -11,22 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
-networkSliceProfileList:
-  - nssiId: "test-slice"
-    sST: 4
-    sD: "000401"
-    pLMNIdList:
-      - mcc: "208"
-        mnc: "93"
-    maxNumberOfUEs: 1000000
-    dLDelay: "10ms"
-    uLDelay: "15ms"
-    dLThptPerSlice: "1000Mbps"
-    uLThptPerSlice: "500Mbps"
-    maxPDUSeSessions: 20000
-    coverageAreaList: [1, 2, 3]
-    dLReliability: "99.999"
-    resourceSharingLevel: "SHARED"
-    availability: "99.99"
-    supportedDataNetworkList: ["internet"]
+    targetNFServiceList: ["nnrf-nfm"] 
