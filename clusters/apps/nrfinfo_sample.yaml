@@ -19,4 +19,25 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+networkSliceSubnets:
+  - id: "test-slice-subnet-001" # A placeholder ID for the NetworkSliceSubnet
+    sliceProfiles:
+      - sliceProfileId: "test-slice"
+        sST: 4
+        sD: "000401"
+        pLMNId:
+          mcc: "208"
+          mnc: "93"
+        cNSliceSubnetProfile:
+          maxNumberofUEs: 1000000
+          dLLatency: 10
+          uLLatency: 15
+          dLThptPerSliceSubnet: 1000
+          uLThptPerSliceSubnet: 500
+          maxNumberofPDUSessions: 20000
+          coverageAreaTAList: [1, 2, 3]
+          dLReliability: "99.999"
+          resourceSharingLevel: "SHARED"
+          availability: "99.99"
+          supportedDataNetworks: ["internet"]
