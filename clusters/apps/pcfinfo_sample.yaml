@@ -1,3 +1,4 @@
+# Sample PCF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
@@ -17,9 +18,4 @@ pcfInfo:
       end: "208930000099999"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
-networkSliceProfileList:
-  - sliceProfileId: "test-slice"
-    sNSSAI:
-      sst: 4
-      sd: "000401"
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
