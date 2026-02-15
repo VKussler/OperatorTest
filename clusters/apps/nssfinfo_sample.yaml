@@ -4,11 +4,31 @@ pLMNInfoList:
       mcc: "208"
       mnc: "93"
 sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn"]
+cNSIIdList: ["slice-1-cn", "test-slice-cn"] # Updated: Added the NSI ID for the new slice
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"] 
+    targetNFServiceList: ["nnrf-nfm"]
+nssaiAvailabilityList: # New section: Defines available S-NSSAIs and their associated NSIs
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+    supportedSnssaiList:
+      - sNssai:
+          sst: 4
+          sd: "000401"
+        nsiList: ["test-slice-cn"] # Associates the new S-NSSAI with its NSI
+nssaiSelectionPolicy: # New section: Defines policies for S-NSSAI selection
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+    nssaiSelectionPolicyData:
+      - sNssai:
+          sst: 4
+          sd: "000401"
+        allowedNssai:
+          - sst: 4
+            sd: "000401" # Simple policy: allow the requested S-NSSAI
