@@ -1,8 +1,12 @@
-# Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
+    sNSSAIList:
+      - sst: 4
+        sd: "000401"
+    cNSIIdList:
+      - "test-slice"
 sBIFQDN: "nrf-1.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
@@ -15,8 +19,58 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
+  # AMF Profile reflecting support for 'test-slice' S-NSSAI
+  - nfInstanceId: "amf-instance-001" # Example ID
+    nfType: "AMF"
+    nfStatus: "REGISTERED"
+    fqdn: "amf-1.example.com" # Example FQDN
+    amfInfo:
+      sNSSAIList:
+        - sst: 4
+          sd: "000401"
+      guamiList: # Example GUAMI, typically present for AMF
+        - plmnId:
+            mcc: "208"
+            mnc: "93"
+          amfId: "000001" # Example AMF ID
+  # SMF Profile reflecting support for 'test-slice' S-NSSAI
+  - nfInstanceId: "smf-instance-001" # Example ID
+    nfType: "SMF"
+    nfStatus: "REGISTERED"
+    fqdn: "smf-1.example.com" # Example FQDN
+    smfInfo:
+      sNSSAIList:
+        - sst: 4
+          sd: "000401"
+      pLMNIdList: # Example PLMN ID, typically present for SMF
+        - mcc: "208"
+          mnc: "93"
+  # UPF Profile reflecting support for 'test-slice' S-NSSAI
+  - nfInstanceId: "upf-instance-001" # Example ID
+    nfType: "UPF"
+    nfStatus: "REGISTERED"
+    fqdn: "upf-1.example.com" # Example FQDN
+    upfInfo:
+      sNSSAIList:
+        - sst: 4
+          sd: "000401"
+      pLMNIdList: # Example PLMN ID, typically present for UPF
+        - mcc: "208"
+          mnc: "93"
+  # NSSF Profile reflecting support for 'test-slice' S-NSSAI
+  - nfInstanceId: "nssf-instance-001" # Example ID
+    nfType: "NSSF"
+    nfStatus: "REGISTERED"
+    fqdn: "nssf-1.example.com" # Example FQDN
+    nssfInfo:
+      sNSSAIList:
+        - sst: 4
+          sd: "000401"
+      pLMNIdList: # Example PLMN ID, typically present for NSSF
+        - mcc: "208"
+          mnc: "93"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
