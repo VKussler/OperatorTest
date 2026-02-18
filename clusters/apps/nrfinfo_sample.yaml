@@ -1,16 +1,9 @@
+# Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
 sBIFQDN: "nrf-1.sbi.example.com"
-cNSIIdList:
-  - "test-slice"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
@@ -22,48 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  - nfInstanceId: "amf-test-slice-001"
-    nfType: "AMF"
-    nfStatus: "REGISTERED"
-    fqdn: "amf-test-slice-1.example.com"
-    sBIFQDN: "amf-test-slice-1.sbi.example.com"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "smf-test-slice-001"
-    nfType: "SMF"
-    nfStatus: "REGISTERED"
-    fqdn: "smf-test-slice-1.example.com"
-    sBIFQDN: "smf-test-slice-1.sbi.example.com"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "upf-test-slice-001"
-    nfType: "UPF"
-    nfStatus: "REGISTERED"
-    fqdn: "upf-test-slice-1.example.com"
-    sBIFQDN: "upf-test-slice-1.sbi.example.com"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "nssf-test-slice-001"
-    nfType: "NSSF"
-    nfStatus: "REGISTERED"
-    fqdn: "nssf-test-slice-1.example.com"
-    sBIFQDN: "nssf-test-slice-1.sbi.example.com"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "pcf-test-slice-001"
-    nfType: "PCF"
-    nfStatus: "REGISTERED"
-    fqdn: "pcf-test-slice-1.example.com"
-    sBIFQDN: "pcf-test-slice-1.sbi.example.com"
-    sNssais:
-      - sst: 4
-        sd: "000401"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
