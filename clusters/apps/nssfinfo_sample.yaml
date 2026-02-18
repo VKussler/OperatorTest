@@ -3,6 +3,24 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
+    supportedNssaiAvailabilityData:
+      - plmnId:
+          mcc: "208"
+          mnc: "93"
+        supportedNssaiList:
+          - sNSSAI:
+              sst: 4
+              sd: "000401"
+            nsiList: ["test-slice-nrf"]
+            amfSetList: ["amf-set-test-slice"]
+            amfList: ["amf-test-slice-001"]
+nssaiList:
+  - sNSSAI:
+      sst: 4
+      sd: "000401"
+    nsiList: ["test-slice-nrf"]
+    amfSetList: ["amf-set-test-slice"]
+    amfList: ["amf-test-slice-001"]
 sBIFQDN: "nssf-1.sbi.example.com"
 cNSIIdList: ["slice-1-cn"]
 managedNFProfile:
@@ -11,4 +29,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"] 
+    targetNFServiceList: ["nnrf-nfm"]
