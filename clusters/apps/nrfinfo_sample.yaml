@@ -15,16 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  # Added an example AMF profile to reflect an NF supporting the specified S-NSSAI
-  - nfInstanceId: "amf-instance-001"
-    nfType: "AMF"
-    nfStatus: "REGISTERED"
-    fqdn: "amf-1.example.com"
-    supportedNssaiList:
-      - sst: 4
-        sd: "000401"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
