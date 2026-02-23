@@ -46,6 +46,9 @@ spec:
   - pLMNId:
       mcc: "001"
       mnc: "01"
+    sNssaiList:
+    - sd: "000401"
+      sst: 4
   sBIFQDN: smf-1.sbi.example.com
   smfInfo:
     sNssaiSmfInfoList:
