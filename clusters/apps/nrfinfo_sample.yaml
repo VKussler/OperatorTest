@@ -9,7 +9,9 @@ pLMNInfoList:
     sNssaiList:
       - sst: 4
         sd: "000401"
-sBIFQDN: "nrf-test-slice.sbi.example.com"
+sBIFQDN: "test-slice.sbi.example.com"
+cNSIIdList:
+  - "test-slice"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
