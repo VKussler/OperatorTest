@@ -1,4 +1,3 @@
-# Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
@@ -17,6 +16,71 @@ nFProfileList:
     nfServices:
       - serviceInstanceId: "service-1"
         serviceName: "nnrf-nfm"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "amf-instance-001"
+    nfType: "AMF"
+    nfStatus: "REGISTERED"
+    fqdn: "amf-1.example.com"
+    allowedNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "amf-service-1"
+        serviceName: "namf-comm"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "smf-instance-001"
+    nfType: "SMF"
+    nfStatus: "REGISTERED"
+    fqdn: "smf-1.example.com"
+    allowedNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "smf-service-1"
+        serviceName: "nsmf-pdusession"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "upf-instance-001"
+    nfType: "UPF"
+    nfStatus: "REGISTERED"
+    fqdn: "upf-1.example.com"
+    upfInfo:
+      sNssaiUpfInfoList:
+        - sNssai:
+            sst: 4
+            sd: "000401"
+          dnnUpfInfoList:
+            - dnn: "internet"
+              pduSessionTypes:
+                - pduSessionType: "IPV4"
+    nfServices:
+      - serviceInstanceId: "upf-service-1"
+        serviceName: "nupf-pdu-session" # Placeholder service name
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "nssf-instance-001"
+    nfType: "NSSF"
+    nfStatus: "REGISTERED"
+    fqdn: "nssf-1.example.com"
+    nssfInfo:
+      supportedNssaiAvailabilityData:
+        - tai:
+            plmnId:
+              mcc: "208"
+              mnc: "93"
+            tac: "12345" # Example TAC
+          supportedSnssaiList:
+            - sst: 4
+              sd: "000401"
+    nfServices:
+      - serviceInstanceId: "nssf-service-1"
+        serviceName: "nnssf-nsselection"
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
