@@ -1,9 +1,13 @@
-# Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-sBIFQDN: "nrf-1.sbi.example.com"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+sBIFQDN: "nrf-1.test-slice.sbi.example.com"
+cNSIIdList:
+  - "test-slice"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
@@ -15,8 +19,36 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "amf-instance-001" # Placeholder, will be retrieved during execution
+    nfType: "AMF"
+    nfStatus: "REGISTERED"
+    fqdn: "amf-1.test-slice.example.com" # Placeholder FQDN
+    sNssais:
+      - sst: 4
+        sd: "000401"
+  - nfInstanceId: "smf-instance-001" # Placeholder, will be retrieved during execution
+    nfType: "SMF"
+    nfStatus: "REGISTERED"
+    fqdn: "smf-1.test-slice.example.com" # Placeholder FQDN
+    sNssais:
+      - sst: 4
+        sd: "000401"
+  - nfInstanceId: "upf-instance-001" # Placeholder, will be retrieved during execution
+    nfType: "UPF"
+    nfStatus: "REGISTERED"
+    fqdn: "upf-1.test-slice.example.com" # Placeholder FQDN
+    sNssais:
+      - sst: 4
+        sd: "000401"
+  - nfInstanceId: "pcf-instance-001" # Placeholder, will be retrieved during execution
+    nfType: "PCF"
+    nfStatus: "REGISTERED"
+    fqdn: "pcf-1.test-slice.example.com" # Placeholder FQDN
+    sNssais:
+      - sst: 4
+        sd: "000401"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
