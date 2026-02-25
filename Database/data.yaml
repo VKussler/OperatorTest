@@ -373,6 +373,13 @@ SessionManagementSubscriptionData:
                 uplink: 1000Mbps
             sscModes:
                 defaultSscMode: SSC_MODE_1
+        internet:
+            sNssaiUpfInfoList:
+                - dnnUpfInfoList:
+                    - dnn: internet
+                  singleNssai:
+                    sd: "000401"
+                    sst: 4
         oai:
             5gQosProfile:
                 5qi: 1
