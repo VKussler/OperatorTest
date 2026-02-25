@@ -3,6 +3,12 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
 sBIFQDN: "nrf-1.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
@@ -15,8 +21,80 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
+  # New AMF profile supporting the new S-NSSAI
+  - nfInstanceId: "amf-instance-001"
+    nfType: "AMF"
+    nfStatus: "REGISTERED"
+    fqdn: "amf-1.example.com"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "amf-service-1"
+        serviceName: "namf-comm" # Example service
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  # New SMF profile supporting the new S-NSSAI
+  - nfInstanceId: "smf-instance-001"
+    nfType: "SMF"
+    nfStatus: "REGISTERED"
+    fqdn: "smf-1.example.com"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "smf-service-1"
+        serviceName: "nsmf-pdusession" # Example service
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  # New UPF profile supporting the new S-NSSAI
+  - nfInstanceId: "upf-instance-001"
+    nfType: "UPF"
+    nfStatus: "REGISTERED"
+    fqdn: "upf-1.example.com"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "upf-service-1"
+        serviceName: "nupf-pfdmanagement" # Example service
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  # New PCF profile supporting the new S-NSSAI
+  - nfInstanceId: "pcf-instance-001"
+    nfType: "PCF"
+    nfStatus: "REGISTERED"
+    fqdn: "pcf-1.example.com"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "pcf-service-1"
+        serviceName: "npcf-smpolicycontrol" # Example service
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  # New NSSF profile supporting the new S-NSSAI
+  - nfInstanceId: "nssf-instance-001"
+    nfType: "NSSF"
+    nfStatus: "REGISTERED"
+    fqdn: "nssf-1.example.com"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "nssf-service-1"
+        serviceName: "nnssf-nsselection" # Example service
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+cNSIIdList:
+  - "test-slice"
