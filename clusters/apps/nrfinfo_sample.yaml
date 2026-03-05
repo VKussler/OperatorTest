@@ -3,13 +3,7 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-  - pLMNId:
-      mcc: "123"
-      mnc: "456"
-    sNSSAI:
-      sst: 4
-      sd: "000401"
-sBIFQDN: "test-slice.sbi.example.com"
+sBIFQDN: "nrf-1.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
@@ -21,45 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  - nfInstanceId: "nssf-instance-001" # Placeholder ID for NSSF
-    nfType: "NSSF"
-    nfStatus: "REGISTERED"
-    fqdn: "nssf-1.example.com" # Placeholder FQDN for NSSF
-    sNssais:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "amf-instance-001" # Placeholder ID for AMF
-    nfType: "AMF"
-    nfStatus: "REGISTERED"
-    fqdn: "amf-1.example.com" # Placeholder FQDN for AMF
-    sNssais:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "smf-instance-001" # Placeholder ID for SMF
-    nfType: "SMF"
-    nfStatus: "REGISTERED"
-    fqdn: "smf-1.example.com" # Placeholder FQDN for SMF
-    sNssais:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "upf-instance-001" # Placeholder ID for UPF
-    nfType: "UPF"
-    nfStatus: "REGISTERED"
-    fqdn: "upf-1.example.com" # Placeholder FQDN for UPF
-    sNssais:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "pcf-instance-001" # Placeholder ID for PCF
-    nfType: "PCF"
-    nfStatus: "REGISTERED"
-    fqdn: "pcf-1.example.com" # Placeholder FQDN for PCF
-    sNssais:
-      - sst: 4
-        sd: "000401"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-cNSIIdList:
-  - "test-slice"
+    amf-1: {} 
