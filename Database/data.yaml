@@ -981,3 +981,5 @@ SessionManagementSubscriptionData:
         sd: FFFFFF
         sst: 1
       ueid: "001010000000120"
+    - sd: "000401"
+      sst: 4
