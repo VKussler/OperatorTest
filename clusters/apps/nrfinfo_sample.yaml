@@ -15,8 +15,60 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
+  # NSSF Profile updated to support 'test-slice'
+  - nfInstanceId: "nssf-instance-001"
+    nfType: "NSSF"
+    nfStatus: "REGISTERED"
+    fqdn: "nssf-1.example.com"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "nssf-service-nsselection"
+        serviceName: "nnssf-nsselection"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  # AMF Profile updated to support 'test-slice'
+  - nfInstanceId: "amf-instance-001"
+    nfType: "AMF"
+    nfStatus: "REGISTERED"
+    fqdn: "amf-1.example.com"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "amf-service-comm"
+        serviceName: "namf-comm"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  # SMF Profile updated to support 'test-slice'
+  - nfInstanceId: "smf-instance-001"
+    nfType: "SMF"
+    nfStatus: "REGISTERED"
+    fqdn: "smf-1.example.com"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "smf-service-pdusession"
+        serviceName: "nsmf-pdusession"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  # UPF Profile updated to support 'test-slice'
+  - nfInstanceId: "upf-instance-001"
+    nfType: "UPF"
+    nfStatus: "REGISTERED"
+    fqdn: "upf-1.example.com"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    # UPF typically does not expose SBI services in the same way as other NFs for NRF registration.
+    # Its capabilities are primarily related to data plane and N4 interface.
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
