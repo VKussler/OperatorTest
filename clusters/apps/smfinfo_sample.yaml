@@ -6,7 +6,6 @@ metadata:
 spec:
   cNSIIdList:
   - slice-1-cn
-  - test-slice
   commModelList:
   - commModelType: DIRECT_COMMUNICATION_WO_NRF
   managedNFProfile:
@@ -39,12 +38,6 @@ spec:
   - pLMNId:
       mcc: "001"
       mnc: "01"
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-    sNSSAI:
-      sd: "000401"
-      sst: 4
   sBIFQDN: smf-1.sbi.example.com
   smfInfo:
     sNssaiSmfInfoList:
@@ -59,8 +52,7 @@ spec:
       sNSSAI:
         sd: "000001"
         sst: 1
-    - dnnSmfInfoList:
-      - dnn: default
+    - dnnSmfInfoList: []
       sNSSAI:
         sd: "000401"
         sst: 4
