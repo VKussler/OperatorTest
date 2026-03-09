@@ -15,31 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  # New NSSF profile to make 'test-slice' discoverable
-  - nfInstanceId: "nssf-test-slice-001"
-    nfType: "NSSF"
-    nfStatus: "REGISTERED"
-    nfProfileName: "test-slice-nssf" # Name associated with the slice
-    fqdn: "nssf-test-slice.sbi.example.com" # Example FQDN for the NSSF
-    plmnIdList:
-      - mcc: "208"
-        mnc: "93"
-    nssaiList: # List of S-NSSAIs served by this NSSF
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      - serviceInstanceId: "nssf-nsselection-001"
-        serviceName: "nnssf-nsselection"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-      - serviceInstanceId: "nssf-nssaiavailability-001"
-        serviceName: "nnssf-nssaiavailability"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
