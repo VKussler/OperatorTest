@@ -983,3 +983,18 @@ SessionManagementSubscriptionData:
       ueid: "001010000000120"
     - sd: "000401"
       sst: 4
+    - 3gppChargingCharacteristics: null
+      dnnConfigurations: null
+      expectedUeBehavioursList: null
+      internalGroupIds: null
+      odbPacketServices: null
+      servingPlmnid: "00101"
+      sharedDnnConfigurationsId: null
+      sharedTraceDataId: null
+      sharedVnGroupDataIds: null
+      singleNssai:
+        sd: "000401"
+        sst: 4
+      suggestedPacketNumDlList: null
+      traceData: null
+      ueid: test-slice-ueid
