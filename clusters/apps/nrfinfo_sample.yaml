@@ -1,3 +1,4 @@
+# Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
@@ -14,51 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  # New AMF profile supporting 'test-slice' (SST 4, SD 000401)
-  - nfInstanceId: "amf-instance-001-test-slice"
-    nfType: "AMF"
-    nfStatus: "REGISTERED"
-    fqdn: "amf-1.test-slice.example.com"
-    allowedSnssaiList:
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      - serviceInstanceId: "amf-service-1-test-slice"
-        serviceName: "namf-comm"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-      - serviceInstanceId: "amf-service-2-test-slice"
-        serviceName: "namf-evts"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-    servedGuamiList:
-      - plmnId:
-          mcc: "208"
-          mnc: "93"
-        amfId: "000001"
-  # New SMF profile supporting 'test-slice' (SST 4, SD 000401)
-  - nfInstanceId: "smf-instance-001-test-slice"
-    nfType: "SMF"
-    nfStatus: "REGISTERED"
-    fqdn: "smf-1.test-slice.example.com"
-    allowedSnssaiList:
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      - serviceInstanceId: "smf-service-1-test-slice"
-        serviceName: "nsmf-pdusession"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-    sNssaiSmfInfoList:
-      - sNssai:
-          sst: 4
-          sd: "000401"
-        dcnr: true # Example SMF capability for this S-NSSAI
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
