@@ -981,3 +981,8 @@ SessionManagementSubscriptionData:
         sd: FFFFFF
         sst: 1
       ueid: "001010000000120"
+    - servingPlmnid: "00102"
+      singleNssai:
+        sd: "000401"
+        sst: 4
+      ueid: "001010000000101"
