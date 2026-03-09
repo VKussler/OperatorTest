@@ -6,6 +6,12 @@ pLMNInfoList:
     sNSSAI:
       sst: 1
       sd: "000001"
+  - pLMNId: # Added configuration for the new network slice 'test-slice'
+      mcc: "208"
+      mnc: "93"
+    sNSSAI:
+      sst: 4
+      sd: "000401"
   - pLMNId:
       mcc: "001"
       mnc: "01"
