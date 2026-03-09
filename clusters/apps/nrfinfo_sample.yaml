@@ -15,27 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  - nfInstanceId: "amf-test-slice-001" # New AMF instance to support the 'test-slice'
-    nfType: "AMF"
-    nfStatus: "REGISTERED"
-    fqdn: "amf-test-slice.example.com"
-    sNssais: # Supported Network Slice Selection Assistance Information (NSSAI)
-      - sst: 4
-        sd: "000401" # SD for 'test-slice'
-    nfServices: # Example AMF services
-      - serviceInstanceId: "amf-service-comm"
-        serviceName: "namf-comm"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-      - serviceInstanceId: "amf-service-evts"
-        serviceName: "namf-evts"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-    amf-test-slice-001: {} # Add the new AMF to the served AMF list
+    amf-1: {} 
