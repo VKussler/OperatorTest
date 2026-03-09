@@ -11,9 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
-nssaiList:
-  - sNssai:
-      sst: 4
-      sd: "000401"
-    allowedAmfList: [] # Add AMF IDs here, e.g., ["amf-instance-001", "amf-instance-002"]
+    targetNFServiceList: ["nnrf-nfm"] 
