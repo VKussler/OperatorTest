@@ -3,14 +3,8 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-    sNSSAI:
-      sst: 4
-      sd: "000401"
 sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn", "test-slice"]
+cNSIIdList: ["slice-1-cn"]
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
@@ -18,3 +12,8 @@ managedNFProfile:
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
     targetNFServiceList: ["nnrf-nfm"]
+nssaiList:
+  - sNssai:
+      sst: 4
+      sd: "000401"
+    allowedAmfList: [] # Add AMF IDs here, e.g., ["amf-instance-001", "amf-instance-002"]
