@@ -1,8 +1,10 @@
-# Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
+  - pLMNId:
+      mcc: "310"
+      mnc: "260"
 sBIFQDN: "nrf-1.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
@@ -15,8 +17,125 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "nssf-instance-001"
+    nfType: "NSSF"
+    nfStatus: "REGISTERED"
+    fqdn: "nssf-1.example.com"
+    plmnList:
+      - mcc: "310"
+        mnc: "260"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "nssf-service-001"
+        serviceName: "nnssf-nsselection"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+    nssfInfo:
+      nssaiAvailabilityList:
+        - plmnId:
+            mcc: "310"
+            mnc: "260"
+          supportedSnssaiList:
+            - sst: 4
+              sd: "000401"
+  - nfInstanceId: "amf-instance-001"
+    nfType: "AMF"
+    nfStatus: "REGISTERED"
+    fqdn: "amf-1.example.com"
+    plmnList:
+      - mcc: "310"
+        mnc: "260"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "amf-service-001"
+        serviceName: "namf-comm"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+    amfInfo:
+      guamiList:
+        - plmnId:
+            mcc: "310"
+            mnc: "260"
+          amfId: "amf-id-001"
+      taiList:
+        - plmnId:
+            mcc: "310"
+            mnc: "260"
+          tac: "000001"
+  - nfInstanceId: "smf-instance-001"
+    nfType: "SMF"
+    nfStatus: "REGISTERED"
+    fqdn: "smf-1.example.com"
+    plmnList:
+      - mcc: "310"
+        mnc: "260"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "smf-service-001"
+        serviceName: "nsmf-pdusession"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+    smfInfo:
+      sNssaiSmfInfoList:
+        - sNssai:
+            sst: 4
+            sd: "000401"
+          dnnList:
+            - "internet"
+  - nfInstanceId: "upf-instance-001"
+    nfType: "UPF"
+    nfStatus: "REGISTERED"
+    fqdn: "upf-1.example.com"
+    plmnList:
+      - mcc: "310"
+        mnc: "260"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "upf-service-001"
+        serviceName: "nupf-pdu-session" # Example service name
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+    upfInfo:
+      sNssaiUpfInfoList:
+        - sNssai:
+            sst: 4
+            sd: "000401"
+          dnnList:
+            - "internet"
+  - nfInstanceId: "pcf-instance-001"
+    nfType: "PCF"
+    nfStatus: "REGISTERED"
+    fqdn: "pcf-1.example.com"
+    plmnList:
+      - mcc: "310"
+        mnc: "260"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "pcf-service-001"
+        serviceName: "npcf-policymanagement"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+    pcfInfo:
+      pcfSetId: "pcf-set-001"
+      rxDiamHost: "pcf-rx.example.com"
+      rxDiamRealm: "example.com"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
