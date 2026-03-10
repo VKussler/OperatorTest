@@ -1,16 +1,9 @@
-cNSIIdList:
-  - "test-slice"
+# Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
-sBIFQDN: "test-slice.sbi.example.com"
+sBIFQDN: "nrf-1.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
@@ -22,84 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  - nfInstanceId: "nssf-test-slice-001"
-    nfType: "NSSF"
-    nfStatus: "REGISTERED"
-    fqdn: "nssf-test-slice-001.example.com"
-    nfServices:
-      - serviceInstanceId: "nssf-service-nsselection"
-        serviceName: "nnssf-nsselection"
-        versions: ["1.1.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "amf-test-slice-001"
-    nfType: "AMF"
-    nfStatus: "REGISTERED"
-    fqdn: "amf-test-slice-001.example.com"
-    nfServices:
-      - serviceInstanceId: "amf-service-comm"
-        serviceName: "namf-comm"
-        versions: ["1.1.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-    amfInfo:
-      guamiList:
-        - plmnId:
-            mcc: "001"
-            mnc: "01"
-          amfId: "000001"
-      taiList:
-        - plmnId:
-            mcc: "001"
-            mnc: "01"
-          tac: "000001"
-    sNssaiAmfList:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "smf-test-slice-001"
-    nfType: "SMF"
-    nfStatus: "REGISTERED"
-    fqdn: "smf-test-slice-001.example.com"
-    nfServices:
-      - serviceInstanceId: "smf-service-pdusession"
-        serviceName: "nsmf-pdusession"
-        versions: ["1.1.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-    sNssaiSmfList:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "upf-test-slice-001"
-    nfType: "UPF"
-    nfStatus: "REGISTERED"
-    fqdn: "upf-test-slice-001.example.com"
-    nfServices:
-      - serviceInstanceId: "upf-service-pfdmanagement"
-        serviceName: "nupf-pfdmanagement"
-        versions: ["1.1.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-    sNssaiUpfList:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "pcf-test-slice-001"
-    nfType: "PCF"
-    nfStatus: "REGISTERED"
-    fqdn: "pcf-test-slice-001.example.com"
-    nfServices:
-      - serviceInstanceId: "pcf-service-policymanagement"
-        serviceName: "npcf-policymanagement"
-        versions: ["1.1.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-    sNssaiPcfList:
-      - sst: 4
-        sd: "000401"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
