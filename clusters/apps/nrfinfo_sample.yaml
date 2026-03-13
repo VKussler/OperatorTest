@@ -15,8 +15,78 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
+  # AMF profile updated with new network slice information
+  - nfInstanceId: "amf-instance-001"
+    nfType: "AMF"
+    nfStatus: "REGISTERED"
+    fqdn: "amf-1.example.com"
+    snssaiList:
+      - sst: 4
+        sd: "000401"
+    nsiList:
+      - "test-slice-nsi"
+    nfServices:
+      - serviceInstanceId: "amf-service-1"
+        serviceName: "namf-comm"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  # SMF profile updated with new network slice information
+  - nfInstanceId: "smf-instance-001"
+    nfType: "SMF"
+    nfStatus: "REGISTERED"
+    fqdn: "smf-1.example.com"
+    snssaiList:
+      - sst: 4
+        sd: "000401"
+    nsiList:
+      - "test-slice-nsi"
+    nfServices:
+      - serviceInstanceId: "smf-service-1"
+        serviceName: "nsmf-pdusession"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  # UPF profile updated with new network slice information
+  - nfInstanceId: "upf-instance-001"
+    nfType: "UPF"
+    nfStatus: "REGISTERED"
+    fqdn: "upf-1.example.com"
+    snssaiList:
+      - sst: 4
+        sd: "000401"
+    nsiList:
+      - "test-slice-nsi"
+    upfInfo: # Specific UPF information including S-NSSAI support
+      sNssaiUpfInfoList:
+        - sNssai:
+            sst: 4
+            sd: "000401"
+          # Additional UPF capabilities can be added here, e.g., dnnList, pduSessionAnchorSmfList
+    nfServices:
+      - serviceInstanceId: "upf-service-1"
+        serviceName: "nupf-pdu-session"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  # NSSF profile updated with new network slice information
+  - nfInstanceId: "nssf-instance-001"
+    nfType: "NSSF"
+    nfStatus: "REGISTERED"
+    fqdn: "nssf-1.example.com"
+    snssaiList:
+      - sst: 4
+        sd: "000401"
+    nsiList:
+      - "test-slice-nsi"
+    nfServices:
+      - serviceInstanceId: "nssf-service-1"
+        serviceName: "nnssf-nssaiavailability"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
