@@ -15,23 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  # New AMF profile to make 'test-slice' discoverable
-  - nfInstanceId: "amf-test-slice-001" # Unique ID for this AMF instance
-    nfType: "AMF"
-    nfStatus: "REGISTERED"
-    fqdn: "amf-test-slice.example.com" # FQDN for this AMF
-    nfServices:
-      - serviceInstanceId: "amf-service-comm-001" # Unique ID for an AMF service
-        serviceName: "namf-comm" # Common AMF service
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-    # This AMF serves the 'test-slice' S-NSSAI, making it discoverable
-    servedS_NssaiList:
-      - sst: 4
-        sd: "000401"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
