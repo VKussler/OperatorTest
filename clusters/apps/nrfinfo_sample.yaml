@@ -1,10 +1,9 @@
-# Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
 sBIFQDN: "nrf-1.sbi.example.com"
-nFProfileList:
+nfProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
     nfStatus: "REGISTERED"
@@ -15,8 +14,111 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
+  # NSSF for 'test-slice' (sst=4, sd=000401)
+  - nfInstanceId: "nssf-test-slice-001"
+    nfType: "NSSF"
+    nfStatus: "REGISTERED"
+    fqdn: "nssf-test-slice.example.com"
+    allowedPlmns:
+      - mcc: "208"
+        mnc: "93"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+    nssfInfo:
+      nssaiAvailability:
+        - plmnId:
+            mcc: "208"
+            mnc: "93"
+          supportedSnssaiList:
+            - sst: 4
+              sd: "000401"
+  # AMF for 'test-slice' (sst=4, sd=000401)
+  - nfInstanceId: "amf-test-slice-001"
+    nfType: "AMF"
+    nfStatus: "REGISTERED"
+    fqdn: "amf-test-slice.example.com"
+    allowedPlmns:
+      - mcc: "208"
+        mnc: "93"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+    amfInfo:
+      amfRegionId: "region-01"
+      amfSetId: "set-01"
+      guamiList:
+        - plmnId:
+            mcc: "208"
+            mnc: "93"
+          amfId: "000001" # Example 3-byte AMF ID
+      taiList:
+        - plmnId:
+            mcc: "208"
+            mnc: "93"
+          tac: "000001" # Example 3-byte TAC
+  # SMF for 'test-slice' (sst=4, sd=000401)
+  - nfInstanceId: "smf-test-slice-001"
+    nfType: "SMF"
+    nfStatus: "REGISTERED"
+    fqdn: "smf-test-slice.example.com"
+    allowedPlmns:
+      - mcc: "208"
+        mnc: "93"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+    smfInfo:
+      pduSessionTypes: ["IPV4", "IPV6"]
+      taiList:
+        - plmnId:
+            mcc: "208"
+            mnc: "93"
+          tac: "000001"
+      sNssaiSmfInfoList:
+        - sNssai:
+            sst: 4
+            sd: "000401"
+          dnnList: ["internet"]
+  # UPF for 'test-slice' (sst=4, sd=000401)
+  - nfInstanceId: "upf-test-slice-001"
+    nfType: "UPF"
+    nfStatus: "REGISTERED"
+    fqdn: "upf-test-slice.example.com"
+    allowedPlmns:
+      - mcc: "208"
+        mnc: "93"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+    upfInfo:
+      upfCapability:
+        pduSessionType: ["IPV4", "IPV6"]
+      sNssaiUpfInfoList:
+        - sNssai:
+            sst: 4
+            sd: "000401"
+          dnnList: ["internet"]
+      interfaceUpfInfoList:
+        - interfaceType: "N3"
+          endpoints: ["192.168.1.10"]
+        - interfaceType: "N6"
+          endpoints: ["10.0.0.10"]
+  # PCF for 'test-slice' (sst=4, sd=000401)
+  - nfInstanceId: "pcf-test-slice-001"
+    nfType: "PCF"
+    nfStatus: "REGISTERED"
+    fqdn: "pcf-test-slice.example.com"
+    allowedPlmns:
+      - mcc: "208"
+        mnc: "93"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+    pcfInfo:
+      pcfType: "AM_POLICY" # Example PCF type
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
