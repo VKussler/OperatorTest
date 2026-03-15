@@ -363,6 +363,15 @@ AuthenticationSubscription:
       supi: "001010000000120"
       ueid: "001010000000120"
       vectorGenerationInHss: null
+SdmSubscriptions:
+    - plmnId:
+        mcc: "001"
+        mnc: "01"
+      singleNssai:
+        sd: "000401"
+        sst: 4
+      subsId: 1
+      ueid: placeholderUeid
 SessionManagementSubscriptionData:
     - dnnConfigurations:
         ims:
