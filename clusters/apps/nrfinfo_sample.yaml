@@ -1,4 +1,3 @@
-# Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
@@ -9,6 +8,12 @@ nFProfileList:
     nfType: "NRF"
     nfStatus: "REGISTERED"
     fqdn: "nrf-1.example.com"
+    snssaiList: # Added to indicate supported S-NSSAIs for discovery
+      - sst: 4
+        sd: "000401"
+        plmnId:
+          mcc: "208" # Dynamically extracted from pLMNInfoList
+          mnc: "93"  # Dynamically extracted from pLMNInfoList
     nfServices:
       - serviceInstanceId: "service-1"
         serviceName: "nnrf-nfm"
@@ -19,4 +24,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
