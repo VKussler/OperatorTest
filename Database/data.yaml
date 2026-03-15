@@ -5,6 +5,12 @@ AccessAndMobilitySubscriptionData:
       singleNssai:
         sd: "000401"
         sst: 4
+    - pLMNId:
+        mcc: "001"
+        mnc: "01"
+      sNSSAI:
+        sd: "000401"
+        sst: 4
 AuthenticationSubscription:
     - algorithmId: milenage
       authenticationManagementField: "8000"
