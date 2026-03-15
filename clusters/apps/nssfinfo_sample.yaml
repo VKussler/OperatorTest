@@ -1,3 +1,4 @@
+# Sample NSSF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
@@ -10,16 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
-supportedNssaiAvailabilityData:
-  - plmnId:
-      mcc: "208"
-      mnc: "93"
-    nssaiAvailabilityList:
-      - supportedSnssaiList:
-          - sst: 4
-            sd: "000401"
-        # This list specifies the AMF Set IDs that support the above S-NSSAI.
-        # A placeholder "amf-set-001" is used as no specific AMF information was provided.
-        amfSetIdList:
-          - "amf-set-001"
+    targetNFServiceList: ["nnrf-nfm"] 
