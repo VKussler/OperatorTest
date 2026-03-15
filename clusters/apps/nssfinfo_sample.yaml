@@ -1,3 +1,4 @@
+# Sample NSSF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
@@ -10,25 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
-nssaiAvailabilityList:
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-    supportedSnssaiList:
-      - snssai:
-          sst: 4
-          sd: "000401"
-        amfSetList: ["amf-set-test-slice"] # Placeholder AMF Set ID for 'test-slice'
-        smfSetList: ["smf-set-test-slice"] # Placeholder SMF Set ID for 'test-slice'
-nssaiSelectionPolicyList:
-  - pLMNId:
-      mcc: "208"
-      mnc: "93"
-    nssaiSelectionPolicy:
-      - snssai:
-          sst: 4
-          sd: "000401"
-        amfSetId: "amf-set-test-slice" # Explicitly link for selection policy
-        smfSetId: "smf-set-test-slice" # Explicitly link for selection policy
-        # Additional policy parameters like 'priority' or 'defaultSnssai' can be added here if needed.
+    targetNFServiceList: ["nnrf-nfm"] 
