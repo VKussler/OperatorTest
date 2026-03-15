@@ -995,3 +995,6 @@ SmfSelectionSubscriptionData:
       singleNssai:
         sd: "000401"
         sst: 4
+    - plmnId:
+        mcc: "001"
+        mnc: "01"
