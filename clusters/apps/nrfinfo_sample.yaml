@@ -1,9 +1,10 @@
+# Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
 sBIFQDN: "nrf-1.sbi.example.com"
-nfProfileList:
+nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
     nfStatus: "REGISTERED"
@@ -14,100 +15,8 @@ nfProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  # AMF supporting the new S-NSSAI for test-slice
-  - nfInstanceId: "amf-instance-001-test-slice"
-    nfType: "AMF"
-    nfStatus: "REGISTERED"
-    fqdn: "amf-1.test-slice.example.com"
-    pLMNIdList:
-      - mcc: "208"
-        mnc: "93"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      - serviceInstanceId: "amf-service-comm-test-slice"
-        serviceName: "namf-comm"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-      - serviceInstanceId: "amf-service-evnt-test-slice"
-        serviceName: "namf-evnt"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-  # SMF supporting the new S-NSSAI for test-slice
-  - nfInstanceId: "smf-instance-001-test-slice"
-    nfType: "SMF"
-    nfStatus: "REGISTERED"
-    fqdn: "smf-1.test-slice.example.com"
-    pLMNIdList:
-      - mcc: "208"
-        mnc: "93"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      - serviceInstanceId: "smf-service-pdusession-test-slice"
-        serviceName: "nsmf-pdusession"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-  # UPF supporting the new S-NSSAI for test-slice
-  - nfInstanceId: "upf-instance-001-test-slice"
-    nfType: "UPF"
-    nfStatus: "REGISTERED"
-    fqdn: "upf-1.test-slice.example.com"
-    pLMNIdList:
-      - mcc: "208"
-        mnc: "93"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      # UPF typically doesn't expose SBI services for NRF discovery in the same way as control plane NFs,
-      # but for completeness, a placeholder service is added.
-      - serviceInstanceId: "upf-service-pdu-test-slice"
-        serviceName: "nupf-pdu-session" # Placeholder service name
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-  # PCF supporting the new S-NSSAI for test-slice
-  - nfInstanceId: "pcf-instance-001-test-slice"
-    nfType: "PCF"
-    nfStatus: "REGISTERED"
-    fqdn: "pcf-1.test-slice.example.com"
-    pLMNIdList:
-      - mcc: "208"
-        mnc: "93"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      - serviceInstanceId: "pcf-service-policymanagement-test-slice"
-        serviceName: "npcf-policymanagement"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-  # NSSF supporting the new S-NSSAI for test-slice
-  - nfInstanceId: "nssf-instance-001-test-slice"
-    nfType: "NSSF"
-    nfStatus: "REGISTERED"
-    fqdn: "nssf-1.test-slice.example.com"
-    pLMNIdList:
-      - mcc: "208"
-        mnc: "93"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      - serviceInstanceId: "nssf-service-nsselection-test-slice"
-        serviceName: "nnssf-nsselection"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 

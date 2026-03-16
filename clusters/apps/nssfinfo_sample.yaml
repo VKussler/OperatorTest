@@ -11,22 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
-nssaiConfig:
-  - plmnId:
-      mcc: "208"
-      mnc: "93"
-    sNssaiInfoList:
-      - sNssai:
-          sst: 4
-          sd: "000401"
-        amfSetList:
-          - "amf-set-region-a" # Example AMF Set ID for a specific region
-          - "amf-set-region-b"
-        nrfIdList:
-          - "nrf-instance-001" # Example NRF Instance ID
-        dnnList:
-          - "internet"
-          - "enterprise.test-slice" # Example DNNs relevant to the test-slice
-        nsiList:
-          - "test-slice" # Network Slice Instance ID for the new S-NSSAI
+    targetNFServiceList: ["nnrf-nfm"] 

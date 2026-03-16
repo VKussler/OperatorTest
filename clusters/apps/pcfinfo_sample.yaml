@@ -3,52 +3,19 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-    sNSSAIList: # Changed from 'sNSSAI' to 'sNSSAIList' to accommodate multiple S-NSSAIs per PLMN
-      - sst: 1
-        sd: "000001"
-      - sst: 4
-        sd: "000401" # New S-NSSAI for test-slice
+    sNSSAI:
+      sst: 1
+      sd: "000001"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
   nfType: "PCF"
   hostAddr: "192.168.1.11"
 pcfInfo:
-  dnnList: ["internet", "iot", "test-dnn-slice4"] # Added new DNN for the slice
+  dnnList: ["internet", "iot"]
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
-# New section for slice-specific policy data
-slicePolicyData:
-  - sNSSAI:
-      sst: 4
-      sd: "000401"
-    plmnId:
-      mcc: "208"
-      mnc: "93"
-    sliceName: "test-slice" # User-friendly name for reference
-    policyRules:
-      qosPolicy:
-        # Example QoS parameters for test-slice
-        5qi: 9 # Conversational Voice
-        arp:
-          priorityLevel: 1 # Highest priority
-          preemptionCapability: "ENABLED"
-          preemptionVulnerability: "DISABLED"
-        gbr: "10Mbps" # Guaranteed Bit Rate
-        mbr: "20Mbps" # Maximum Bit Rate
-      chargingPolicy:
-        # Example Charging parameters for test-slice
-        chargingMethod: "ONLINE" # or OFFLINE
-        ratingGroup: 100 # Identifier for charging rules
-        serviceIdentifier: 1001 # Identifier for service
-        # Further details like tariff, usage thresholds, etc. would go here
-      accessControlPolicy:
-        # Example Access Control parameters for test-slice
-        allowedAccessTypes: ["3GPP_ACCESS", "NON_3GPP_ACCESS"]
-        roamingAllowed: true
-        allowedDnnList: ["test-dnn-slice4"] # UEs using this slice can access this DNN
-        # Further details like specific UE groups, time-of-day restrictions, etc.
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
