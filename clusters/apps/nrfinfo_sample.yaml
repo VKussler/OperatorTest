@@ -15,74 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  # New NSSF for test-slice
-  - nfInstanceId: "nssf-instance-001"
-    nfType: "NSSF"
-    nfStatus: "REGISTERED"
-    fqdn: "nssf-1.example.com"
-    nfServices:
-      - serviceInstanceId: "nssf-service-nsselection"
-        serviceName: "nnssf-nsselection"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-      - serviceInstanceId: "nssf-service-nslmf"
-        serviceName: "nnssf-nslmf"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-    nssai: # NSSF serves this S-NSSAI
-      - sst: 4
-        sd: "000401"
-        plmnId:
-          mcc: "208"
-          mnc: "93"
-  # New AMF for test-slice
-  - nfInstanceId: "amf-instance-002" # Using a new instance ID for the AMF
-    nfType: "AMF"
-    nfStatus: "REGISTERED"
-    fqdn: "amf-2.example.com"
-    nfServices:
-      - serviceInstanceId: "amf-service-comm"
-        serviceName: "namf-comm"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-      - serviceInstanceId: "amf-service-evts"
-        serviceName: "namf-evts"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-    allowedNssai: # AMF supports this S-NSSAI
-      - sst: 4
-        sd: "000401"
-        plmnId:
-          mcc: "208"
-          mnc: "93"
-  # New SMF for test-slice
-  - nfInstanceId: "smf-instance-001"
-    nfType: "SMF"
-    nfStatus: "REGISTERED"
-    fqdn: "smf-1.example.com"
-    nfServices:
-      - serviceInstanceId: "smf-service-pdu-session"
-        serviceName: "nsmf-pdu-session"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-      - serviceInstanceId: "smf-service-event-exposure"
-        serviceName: "nsmf-event-exposure"
-        versions: ["1.0.0"]
-        schema: "oas3"
-        nfServiceStatus: "REGISTERED"
-    nssai: # SMF serves this S-NSSAI
-      - sst: 4
-        sd: "000401"
-        plmnId:
-          mcc: "208"
-          mnc: "93"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
