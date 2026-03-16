@@ -19,4 +19,16 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  servedSnssaiList:
+    - sNssai:
+        sst: 4
+        sd: "000401"
+      nsiList:
+        - "test-slice"
+      nfInfoList:
+        - nfType: "NSSF"
+        - nfType: "AMF"
+        - nfType: "SMF"
+        - nfType: "UPF"
+        - nfType: "PCF"
