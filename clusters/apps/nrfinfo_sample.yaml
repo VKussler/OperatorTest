@@ -15,8 +15,34 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "amf-test-slice-001"
+    nfType: "AMF"
+    nfStatus: "REGISTERED"
+    fqdn: "amf-test-slice-1.example.com"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "amf-service-test-slice-1"
+        serviceName: "namf-comm"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "smf-test-slice-001"
+    nfType: "SMF"
+    nfStatus: "REGISTERED"
+    fqdn: "smf-test-slice-1.example.com"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "smf-service-test-slice-1"
+        serviceName: "nsmf-pdusession"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
