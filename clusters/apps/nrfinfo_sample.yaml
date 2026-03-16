@@ -1,3 +1,4 @@
+# Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
@@ -14,25 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  - nfInstanceId: "amf-instance-001" # New AMF profile
-    nfType: "AMF"
-    nfStatus: "REGISTERED"
-    fqdn: "amf-1.example.com" # Example FQDN for AMF
-    supportedSnssaiList:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "pcf-instance-001" # New PCF profile
-    nfType: "PCF"
-    nfStatus: "REGISTERED"
-    fqdn: "pcf-1.example.com" # Example FQDN for PCF
-    supportedSnssaiList:
-      - sst: 4
-        sd: "000401"
 nrfInfo:
-  supportedSnssaiList: # NRF's knowledge of supported S-NSSAIs in the network
-    - sst: 4
-      sd: "000401"
   servedPcfInfo:
-    pcf-instance-001: {} # Updated to reference the new PCF instance
+    pcf-1: {}
   servedAmfInfo:
-    amf-instance-001: {} # Updated to reference the new AMF instance
+    amf-1: {} 

@@ -11,21 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
-# New section for network slice definitions
-networkSliceDefinitions:
-  - sliceName: "test-slice"
-    sNssai:
-      sst: 4
-      sd: "000401"
-    # Associated routing or selection policies for this slice
-    selectionPolicy:
-      # Example: Define allowed NF types that can serve this slice
-      allowedNfTypes:
-        - "AMF"
-        - "SMF"
-        - "UPF"
-      # Example: Define specific NRF selection criteria for this slice (optional)
-      nrfSelectionCriteria:
-        nfType: "NRF"
-        # Additional criteria could be added here, e.g., location, capacity, specific NRF instance IDs
+    targetNFServiceList: ["nnrf-nfm"] 
