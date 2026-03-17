@@ -993,3 +993,8 @@ SmfSelectionSubscriptionData:
       sNSSAI:
         sd: "000401"
         sst: 4
+    - dnnUpfInfoList:
+        - dnn: internet
+      sNSSAI:
+        sd: "000401"
+        sst: 4
