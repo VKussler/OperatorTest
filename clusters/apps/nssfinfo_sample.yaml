@@ -11,18 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
-nssfSliceInfoList: # New section for slice configuration
-  - sNSSAI:
-      sst: 4
-      sd: "000401"
-    # Defining availability for this slice.
-    # As specific MCC and MNC values will be provided during execution,
-    # the existing PLMN of the NSSF is used as a placeholder/default for initial configuration.
-    pLMNInfoList:
-      - pLMNId:
-          mcc: "208"
-          mnc: "93"
-        # Additional slice-specific configuration for this PLMN can be added here,
-        # e.g., allowedNssaiList, nrfId, candidateNfInfoList, etc., as part of selection criteria.
-        # For this request, basic availability and S-NSSAI definition are provided.
+    targetNFServiceList: ["nnrf-nfm"] 
