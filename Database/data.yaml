@@ -987,3 +987,8 @@ SessionManagementSubscriptionData:
         sd: FFFFFF
         sst: 1
       ueid: "001010000000120"
+UpfConfiguration:
+    - defaultDnn: internet
+      sNssai:
+        sd: "000401"
+        sst: 4
