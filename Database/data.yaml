@@ -369,6 +369,13 @@ NssfConfiguration:
       sNSSAI:
         sd: "000401"
         sst: 4
+PcfConfiguration:
+    - pLMNId:
+        mcc: "208"
+        mnc: "93"
+      sNSSAI:
+        sd: "000401"
+        sst: 4
 SessionManagementSubscriptionData:
     - dnnConfigurations:
         ims:
