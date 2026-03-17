@@ -994,3 +994,10 @@ SessionManagementSubscriptionData:
         sd: FFFFFF
         sst: 1
       ueid: "001010000000120"
+SmfConfiguration:
+    - pLMNId:
+        mcc: "208"
+        mnc: "93"
+      sNSSAI:
+        sd: "000401"
+        sst: 4
