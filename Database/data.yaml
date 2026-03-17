@@ -356,6 +356,13 @@ AuthenticationSubscription:
       supi: "001010000000120"
       ueid: "001010000000120"
       vectorGenerationInHss: null
+NrfConfiguration:
+    - pLMNId:
+        mcc: "208"
+        mnc: "93"
+      sNSSAI:
+        sd: "000401"
+        sst: 4
 NssfConfiguration:
     - pLMNId:
         mcc: "208"
