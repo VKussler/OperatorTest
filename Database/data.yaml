@@ -1,6 +1,8 @@
 AccessAndMobilitySubscriptionData:
     - sd: "000401"
       sst: 4
+    - sd: "000401"
+      sst: 4
 AuthenticationSubscription:
     - algorithmId: milenage
       authenticationManagementField: "8000"
