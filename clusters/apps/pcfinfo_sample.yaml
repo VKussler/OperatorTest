@@ -6,16 +6,85 @@ pLMNInfoList:
     sNSSAI:
       sst: 1
       sd: "000001"
+  - pLMNId: # Assuming the same PLMN for the new slice
+      mcc: "208"
+      mnc: "93"
+    sNSSAI:
+      sst: 4
+      sd: "000401"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
   nfType: "PCF"
   hostAddr: "192.168.1.11"
 pcfInfo:
-  dnnList: ["internet", "iot"]
+  dnnList: ["internet", "iot", "test-dnn"] # Added the new DNN for the slice
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
+  # New section for slice-specific policies
+  sliceDnnPolicies:
+    - sNSSAI:
+        sst: 4
+        sd: "000401"
+      dnn: "test-dnn" # Assumed DNN for the new slice
+      policyRules:
+        - policyRuleId: "rule-test-slice-voice"
+          precedence: 10
+          flowInfo:
+            - ipFlowDescription:
+                direction: "BI_DIRECTIONAL"
+                srcIpAddr: "0.0.0.0/0"
+                destIpAddr: "10.0.0.10/32" # Example IP for a voice server
+                protocol: "UDP"
+                sourcePort: "5060" # SIP signaling
+                destPort: "5060"
+            - ipFlowDescription:
+                direction: "BI_DIRECTIONAL"
+                srcIpAddr: "0.0.0.0/0"
+                destIpAddr: "10.0.0.10/32" # Example IP for a voice server
+                protocol: "UDP"
+                sourcePort: "10000-20000" # RTP media
+                destPort: "10000-20000"
+          qosCharacteristics: # QoS parameters for voice traffic
+            5QI: 5 # Conversational Voice
+            arp:
+              priorityLevel: 5
+              preemptionCapability: "PREEMPT"
+              preemptionVulnerability: "NOT_PREEMPTABLE"
+            gbr:
+              uplink: "64Kbps"
+              downlink: "64Kbps"
+            mbr:
+              uplink: "128Kbps"
+              downlink: "128Kbps"
+        - policyRuleId: "rule-test-slice-data"
+          precedence: 20
+          flowInfo:
+            - ipFlowDescription:
+                direction: "BI_DIRECTIONAL"
+                srcIpAddr: "0.0.0.0/0"
+                destIpAddr: "0.0.0.0/0" # All other traffic
+                protocol: "ANY"
+          qosCharacteristics: # QoS parameters for general data traffic
+            5QI: 8 # Standard GBR
+            arp:
+              priorityLevel: 10
+              preemptionCapability: "NOT_PREEMPT"
+              preemptionVulnerability: "PREEMPTABLE"
+            gbr:
+              uplink: "1Mbps"
+              downlink: "2Mbps"
+            mbr:
+              uplink: "10Mbps"
+              downlink: "20Mbps"
+      sessionManagementPolicy:
+        sessionAmbr:
+          uplink: "50Mbps"
+          downlink: "100Mbps"
+        pduSessionType: "IPV4"
+        chargingCharacteristics: "EVENT_BASED" # Or "VOLUME_BASED"
+        # Other session management attributes like slicing/routing info can be added here
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
