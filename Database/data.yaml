@@ -1002,6 +1002,13 @@ SmfConfiguration:
       sNSSAI:
         sd: "000401"
         sst: 4
+SmfSelectionSubscriptionData:
+    - pLMNId:
+        mcc: "001"
+        mnc: "01"
+      sNSSAI:
+        sd: "000401"
+        sst: 4
 UpfConfiguration:
     - pLMNId:
         mcc: "001"
