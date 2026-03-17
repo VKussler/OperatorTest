@@ -1006,3 +1006,9 @@ SmfSelectionSubscriptionData:
       snssai:
         sd: "000401"
         sst: 4
+    - plmnId:
+        mcc: "208"
+        mnc: "93"
+      snssai:
+        sd: "000401"
+        sst: 4
