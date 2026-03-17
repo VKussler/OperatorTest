@@ -1001,3 +1001,10 @@ SmfConfiguration:
       sNSSAI:
         sd: "000401"
         sst: 4
+UpfConfiguration:
+    - pLMNId:
+        mcc: "208"
+        mnc: "93"
+      sNSSAI:
+        sd: "000401"
+        sst: 4
