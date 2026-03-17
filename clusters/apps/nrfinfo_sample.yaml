@@ -15,8 +15,130 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
+  # New AMF for 'test-slice'
+  - nfInstanceId: "amf-test-slice-001"
+    nfType: "AMF"
+    nfStatus: "REGISTERED"
+    fqdn: "amf-test-slice-001.example.com"
+    plmnId:
+      mcc: "208"
+      mnc: "93"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "amf-service-comm-001"
+        serviceName: "namf-comm"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+      - serviceInstanceId: "amf-service-evts-001"
+        serviceName: "namf-evts"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+    amfRegionId: "01" # Example AMF specific identifier
+    amfSetId: "01"    # Example AMF specific identifier
+    amfPointer: "01"  # Example AMF specific identifier
+  # New SMF for 'test-slice'
+  - nfInstanceId: "smf-test-slice-001"
+    nfType: "SMF"
+    nfStatus: "REGISTERED"
+    fqdn: "smf-test-slice-001.example.com"
+    plmnId:
+      mcc: "208"
+      mnc: "93"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "smf-service-pdusession-001"
+        serviceName: "nsmf-pdusession"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+      - serviceInstanceId: "smf-service-eventexposure-001"
+        serviceName: "nsmf-eventexposure"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  # New NSSF for 'test-slice'
+  - nfInstanceId: "nssf-test-slice-001"
+    nfType: "NSSF"
+    nfStatus: "REGISTERED"
+    fqdn: "nssf-test-slice-001.example.com"
+    plmnId:
+      mcc: "208"
+      mnc: "93"
+    sNssaiList: # NSSF typically supports a list of S-NSSAIs for selection
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "nssf-service-nsselection-001"
+        serviceName: "nnssf-nsselection"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+      - serviceInstanceId: "nssf-service-nssaiavailability-001"
+        serviceName: "nnssf-nssaiavailability"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  # New UPF for 'test-slice'
+  - nfInstanceId: "upf-test-slice-001"
+    nfType: "UPF"
+    nfStatus: "REGISTERED"
+    fqdn: "upf-test-slice-001.example.com"
+    plmnId:
+      mcc: "208"
+      mnc: "93"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "upf-service-pfdmanagement-001"
+        serviceName: "nupf-pfdmanagement"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+    upfInfo: # Example UPF specific information
+      pduSessionAnchorInfo:
+        - dnn: "internet"
+          sNssai:
+            sst: 4
+            sd: "000401"
+  # New PCF for 'test-slice'
+  - nfInstanceId: "pcf-test-slice-001"
+    nfType: "PCF"
+    nfStatus: "REGISTERED"
+    fqdn: "pcf-test-slice-001.example.com"
+    plmnId:
+      mcc: "208"
+      mnc: "93"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "pcf-service-ampolicy-001"
+        serviceName: "npcf-ampolicycontrol"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+      - serviceInstanceId: "pcf-service-smpolicy-001"
+        serviceName: "npcf-smpolicycontrol"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+# NRF's NSSAIAvailability information for the new slice
+nssaiAvailabilityList:
+  - plmnId:
+      mcc: "208"
+      mnc: "93"
+    supportedSnssaiList:
+      - sst: 4
+        sd: "000401"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
