@@ -981,6 +981,9 @@ SessionManagementSubscriptionData:
         sd: FFFFFF
         sst: 1
       ueid: "001010000000120"
+SmfRegistrations:
+    - sd: "000401"
+      sst: 4
 SmfSelectionSubscriptionData:
     - sd: "000401"
       sst: 4
