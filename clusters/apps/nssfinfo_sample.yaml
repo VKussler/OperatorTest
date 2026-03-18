@@ -3,15 +3,6 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-    nssai_list:
-      - sst: 4
-        sd: "000401"
-    nsi_list:
-      - nssai:
-          sst: 4
-          sd: "000401"
-        amf_set_id: "amf_set_01"
-        nrf_id: "nrf_01"
 sBIFQDN: "nssf-1.sbi.example.com"
 cNSIIdList: ["slice-1-cn"]
 managedNFProfile:
@@ -20,4 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
+    targetNFServiceList: ["nnrf-nfm"] 
