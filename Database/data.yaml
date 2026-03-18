@@ -359,6 +359,8 @@ AuthenticationSubscription:
 PlmnConfiguration:
     - sd: "000401"
       sst: 4
+    - sd: "000401"
+      sst: 4
 SessionManagementSubscriptionData:
     - dnnConfigurations:
         ims:
