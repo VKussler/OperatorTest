@@ -15,8 +15,26 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "amf_set_01"
+    nfType: "AMF"
+    nfStatus: "REGISTERED"
+    allowedNssaiList:
+      - sst: 4
+        sd: "000401"
+  - nfInstanceId: "smf_01"
+    nfType: "SMF"
+    nfStatus: "REGISTERED"
+    allowedNssaiList:
+      - sst: 4
+        sd: "000401"
+  - nfInstanceId: "upf_01"
+    nfType: "UPF"
+    nfStatus: "REGISTERED"
+    allowedNssaiList:
+      - sst: 4
+        sd: "000401"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
