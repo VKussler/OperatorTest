@@ -11,13 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
-nsiList:
-  - nsiId: "test-slice-sst4-sd000401"
-    allowedNssaiList:
-      - sst: 4
-        sd: "000401"
-amfRegionList:
-  - amfRegionId: "default-amf-region" # A default AMF Region ID is used as none was specified
-    nsiIdList:
-      - "test-slice-sst4-sd000401"
+    targetNFServiceList: ["nnrf-nfm"] 
