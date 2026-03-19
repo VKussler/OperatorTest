@@ -3,12 +3,37 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
+    # Update allowed NSSAI configurations for this PLMN
+    allowedNssaiList:
+      # Assuming existing slices might be here, adding the new one
+      # - sNssai:
+      #     sst: 1
+      #     sd: "000001"
+      - sNssai:
+          sst: 4
+          sd: "000401" # New network slice 'test-slice'
+    # Update NSSAI availability and related slice selection policies for this PLMN
+    nssaiAvailabilityList:
+      - taiList: # Example Tracking Area Identity list (can be more specific or omitted for global availability within PLMN)
+          - "208930001" # Example TA, replace with actual TAI if known
+        supportedSnssaiList:
+          # Assuming existing slices might be here, adding the new one
+          # - sNssai:
+          #     sst: 1
+          #     sd: "000001"
+          #   nsiList: ["slice-1-cn"]
+          - sNssai:
+              sst: 4
+              sd: "000401" # New network slice 'test-slice'
+            # Related slice selection policy: Link to a Network Slice Instance (NSI)
+            nsiList: ["test-slice-cn"] # Assuming 'test-slice-cn' is the CNSI for 'test-slice'
 sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn"]
+# Update cNSIIdList to include the CNSI for the new slice
+cNSIIdList: ["slice-1-cn", "test-slice-cn"]
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"] 
+    targetNFServiceList: ["nnrf-nfm"]
