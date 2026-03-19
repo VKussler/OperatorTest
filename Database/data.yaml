@@ -987,3 +987,10 @@ SmfSelectionSubscriptionData:
       singleNssai:
         sd: "000401"
         sst: 4
+UpfConfiguration:
+    - pLMNId:
+        mcc: "208"
+        mnc: "93"
+      sNSSAIs:
+        - sd: "000401"
+          sst: 4
