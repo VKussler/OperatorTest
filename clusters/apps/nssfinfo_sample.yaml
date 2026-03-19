@@ -1,16 +1,8 @@
+# Sample NSSF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-    supportedNssaiList: # List of supported S-NSSAIs for this PLMN
-      - snssai:
-          sst: 4
-          sd: "000401"
-        # To ensure proper routing and selection policies, NSSF needs to know
-        # which Network Slice Instances (NSIs) are available for this S-NSSAI.
-        # This list would typically contain identifiers of specific NSI deployments.
-        nsiList:
-          - "test-slice-nsi-001" # Placeholder NSI ID for 'test-slice'
 sBIFQDN: "nssf-1.sbi.example.com"
 cNSIIdList: ["slice-1-cn"]
 managedNFProfile:
@@ -19,4 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
+    targetNFServiceList: ["nnrf-nfm"] 
