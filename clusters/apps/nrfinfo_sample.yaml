@@ -1,13 +1,8 @@
+# Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-    sNSSAI:
-      - sst: 4
-        sd: "000401"
 sBIFQDN: "nrf-1.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
@@ -20,73 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  - nfInstanceId: "nssf-instance-001"
-    nfType: "NSSF"
-    nfStatus: "REGISTERED"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      - serviceInstanceId: "nssf-service-001"
-        serviceName: "nnssf-nsselection"
-        nfServiceStatus: "REGISTERED"
-        allowedNSSAIs:
-          - sst: 4
-            sd: "000401"
-  - nfInstanceId: "amf-instance-001"
-    nfType: "AMF"
-    nfStatus: "REGISTERED"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      - serviceInstanceId: "amf-service-001"
-        serviceName: "namf-comm"
-        nfServiceStatus: "REGISTERED"
-        allowedNSSAIs:
-          - sst: 4
-            sd: "000401"
-  - nfInstanceId: "smf-instance-001"
-    nfType: "SMF"
-    nfStatus: "REGISTERED"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      - serviceInstanceId: "smf-service-001"
-        serviceName: "nsmf-pdusession"
-        nfServiceStatus: "REGISTERED"
-        allowedNSSAIs:
-          - sst: 4
-            sd: "000401"
-  - nfInstanceId: "upf-instance-001"
-    nfType: "UPF"
-    nfStatus: "REGISTERED"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      - serviceInstanceId: "upf-service-001"
-        serviceName: "nupf-pdu-session" # Placeholder service name for UPF
-        nfServiceStatus: "REGISTERED"
-        allowedNSSAIs:
-          - sst: 4
-            sd: "000401"
-  - nfInstanceId: "pcf-instance-001"
-    nfType: "PCF"
-    nfStatus: "REGISTERED"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      - serviceInstanceId: "pcf-service-001"
-        serviceName: "npcf-policyauthorization"
-        nfServiceStatus: "REGISTERED"
-        allowedNSSAIs:
-          - sst: 4
-            sd: "000401"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
