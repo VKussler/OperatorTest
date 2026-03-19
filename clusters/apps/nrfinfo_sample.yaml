@@ -1,9 +1,14 @@
 # Sample NRF NRM Instance
+cNSIIdList:
+  - "test-slice"
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-sBIFQDN: "nrf-1.sbi.example.com"
+    supportedSnssaiList:
+      - sst: 4
+        sd: "000401"
+sBIFQDN: "test-slice.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
@@ -17,6 +22,22 @@ nFProfileList:
         nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
-    pcf-1: {}
+    pcf-1:
+      supportedNssaiAvailabilityData:
+        - sst: 4
+          sd: "000401"
   servedAmfInfo:
-    amf-1: {} 
+    amf-1:
+      supportedNssaiAvailabilityData:
+        - sst: 4
+          sd: "000401"
+  servedSmfInfo:
+    smf-1:
+      supportedNssaiAvailabilityData:
+        - sst: 4
+          sd: "000401"
+  servedUpfInfo:
+    upf-1:
+      supportedNssaiAvailabilityData:
+        - sst: 4
+          sd: "000401"
