@@ -1002,3 +1002,6 @@ SmfSelectionSubscriptionData:
                 sst: 4
     - sd: "000401"
       sst: 4
+    - servingPlmnid: "00101"
+      subscribedSnssaiInfos: '[{"sst": 4, "sd": "000401"}]'
+      ueid: test-slice-default-ue
