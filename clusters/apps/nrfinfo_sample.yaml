@@ -3,6 +3,9 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
 sBIFQDN: "nrf-1.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
@@ -15,8 +18,21 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "amf-test-slice-001" # New AMF profile for 'test-slice'
+    nfType: "AMF"
+    nfStatus: "REGISTERED"
+    fqdn: "amf-test-slice.example.com"
+    sBIFQDN: "test-slice.sbi.example.com" # sBIFQDN for this NF, associated with the slice
+    plmnList:
+      - mcc: "001"
+        mnc: "01"
+    managedNFProfile: # As requested, containing allowed NSSAIs for this NF
+      allowedNSSAIs:
+        - sst: 4
+          sd: "000401"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+    amf-test-slice-001: {} # Add the new AMF to the list of served AMFs
