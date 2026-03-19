@@ -19,11 +19,4 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
-  # New section to register network slice profiles with the NRF
-  networkSliceProfiles:
-    - sliceName: "test-slice"
-      sNssai:
-        sst: 4
-        sd: "000401"
-      description: "A new test slice for specific services, registered with NRF for discovery."
+    amf-1: {} 
