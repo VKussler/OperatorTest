@@ -6,9 +6,13 @@ metadata:
 spec:
   cNSIIdList:
   - slice-1-cn
+  - test-slice
   commModelList:
   - commModelType: DIRECT_COMMUNICATION_WO_NRF
   managedNFProfile:
+    allowedNSSAIs:
+    - sd: "000401"
+      sst: 4
     capacity: 10
     hostAddr: 127.0.0.1
     nfType:
@@ -39,7 +43,11 @@ spec:
         sessionAmbrUl: 50Mbps
   nRTAClist: "0"
   pLMNInfoList:
-  - pLMNId:
+  - allowedNssaiList:
+    - sNSSAI:
+        sd: "000401"
+        sst: 4
+    pLMNId:
       mcc: "001"
       mnc: "01"
   sBIFQDN: smf-1.sbi.example.com
@@ -56,8 +64,7 @@ spec:
       sNSSAI:
         sd: "000001"
         sst: 1
-    - dnnSmfInfoList:
-      - dnn: ims
+    - dnnSmfInfoList: []
       sNSSAI:
         sd: "000401"
         sst: 4
