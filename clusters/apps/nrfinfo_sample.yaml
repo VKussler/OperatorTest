@@ -4,7 +4,7 @@ pLMNInfoList:
       mcc: "208"
       mnc: "93"
 sBIFQDN: "nrf-1.sbi.example.com"
-nfProfileList:
+nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
     nfStatus: "REGISTERED"
@@ -15,64 +15,8 @@ nfProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  # NSSF supporting the new S-NSSAI
-  - nfInstanceId: "nssf-instance-001"
-    nfType: "NSSF"
-    nfStatus: "REGISTERED"
-    fqdn: "nssf-1.example.com"
-    supportedNssaiAvailabilityData:
-      - taiList:
-          - plmnId: { mcc: "208", mnc: "93" }
-            tac: "12345" # Example Tracking Area Code
-        supportedSnssaiList:
-          - sst: 4
-            sd: "000401"
-  # AMF supporting the new S-NSSAI
-  - nfInstanceId: "amf-instance-001"
-    nfType: "AMF"
-    nfStatus: "REGISTERED"
-    fqdn: "amf-1.example.com"
-    guamiList:
-      - plmnId: { mcc: "208", mnc: "93" }
-        amfId: "amf-id-001" # Example AMF ID
-    supportedNssaiList:
-      - sst: 4
-        sd: "000401"
-  # SMF supporting the new S-NSSAI
-  - nfInstanceId: "smf-instance-001"
-    nfType: "SMF"
-    nfStatus: "REGISTERED"
-    fqdn: "smf-1.example.com"
-    sNssaiSmfInfoList:
-      - sNssai:
-          sst: 4
-          sd: "000401"
-        # dnnList: # Optional: List of Data Network Names supported by this SMF for this S-NSSAI
-        #   - dnn: "internet"
-  # UPF supporting the new S-NSSAI
-  - nfInstanceId: "upf-instance-001"
-    nfType: "UPF"
-    nfStatus: "REGISTERED"
-    fqdn: "upf-1.example.com"
-    sNssaiUpfInfoList:
-      - sNssai:
-          sst: 4
-          sd: "000401"
-        # pduSessionType: ["IPV4", "IPV6"] # Optional: PDU Session Types supported by this UPF for this S-NSSAI
-        # dnnList: # Optional: List of Data Network Names supported by this UPF for this S-NSSAI
-        #   - dnn: "internet"
-  # PCF supporting the new S-NSSAI
-  - nfInstanceId: "pcf-instance-001"
-    nfType: "PCF"
-    nfStatus: "REGISTERED"
-    fqdn: "pcf-1.example.com"
-    servedSnssaiList:
-      - sst: 4
-        sd: "000401"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
-    pcf-instance-001: {} # New PCF instance added
   servedAmfInfo:
-    amf-1: {}
-    amf-instance-001: {} # New AMF instance added
+    amf-1: {} 
