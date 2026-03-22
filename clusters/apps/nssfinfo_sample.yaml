@@ -1,16 +1,9 @@
-# Sample NSSF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
 sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn", "test-slice"]
+cNSIIdList: ["slice-1-cn", "test-slice-nsi-001"] # Added the new NSI ID
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
@@ -18,3 +11,14 @@ managedNFProfile:
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
     targetNFServiceList: ["nnrf-nfm"]
+supportedSnssaiList: # New section for supported S-NSSAIs
+  - sNssai:
+      sst: 4
+      sd: "000401"
+    nsiList: ["test-slice-nsi-001"] # Network Slice Instance ID for this S-NSSAI
+    taiList: # Tracking Area Identifiers where this S-NSSAI is available
+      - tac: "000001" # Example Tracking Area Code
+        plmnId:
+          mcc: "208"
+          mnc: "93"
+    # Additional properties like amfSetList, amfRegionList can be added here if required for slice selection
