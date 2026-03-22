@@ -17,9 +17,6 @@ managedNFProfile:
   nfInstanceId: "pcf-instance-001"
   nfType: "PCF"
   hostAddr: "192.168.1.11"
-  allowedNSSAIs:
-    - sst: 4
-      sd: "000401"
 pcfInfo:
   dnnList: ["internet", "iot"]
   supiRanges:
