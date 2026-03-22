@@ -6,6 +6,12 @@ pLMNInfoList:
     sNSSAI:
       sst: 1
       sd: "000001"
+  - pLMNId: # Added to support the new network slice (SST 4, SD 000401) for this PLMN
+      mcc: "208"
+      mnc: "93"
+    sNSSAI:
+      sst: 4
+      sd: "000401"
   - pLMNId:
       mcc: "001"
       mnc: "01"
