@@ -3,6 +3,9 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
+    sNSSAI:
+      sst: 4
+      sd: "000401"
   - pLMNId:
       mcc: "001"
       mnc: "01"
