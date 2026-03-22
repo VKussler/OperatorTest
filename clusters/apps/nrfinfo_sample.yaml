@@ -15,8 +15,18 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
+  # Profile for an AMF supporting the new 'test-slice'
+  - nfInstanceId: "amf-instance-001" # Example AMF instance ID
+    nfType: "AMF"
+    nfStatus: "REGISTERED"
+    fqdn: "amf-1.example.com"
+    # List of S-NSSAIs supported by this AMF, including the new 'test-slice'
+    snssaiList:
+      - sst: 4
+        sd: "000401" # Slice Differentiator for 'test-slice'
+    # Other AMF specific information could be present here, e.g., guamiList, taiList, etc.
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
