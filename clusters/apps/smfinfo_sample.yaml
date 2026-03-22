@@ -6,7 +6,6 @@ metadata:
 spec:
   cNSIIdList:
   - slice-1-cn
-  - test-slice
   commModelList:
   - commModelType: DIRECT_COMMUNICATION_WO_NRF
   managedNFProfile:
@@ -53,8 +52,7 @@ spec:
       sNSSAI:
         sd: "000001"
         sst: 1
-    - dnnSmfInfoList:
-      - dnn: internet
+    - dnnSmfInfoList: []
       sNSSAI:
         sd: "000401"
         sst: 4
