@@ -409,10 +409,8 @@ SessionManagementSubscriptionData:
                 - ipv4Addr: 12.1.1.100
       servingPlmnid: "00101"
       singleNssai:
-        - sd: FFFFFF
-          sst: 1
-        - sd: "000401"
-          sst: 4
+        sd: FFFFFF
+        sst: 1
       ueid: "001010000000100"
     - dnnConfigurations:
         ims:
@@ -983,3 +981,24 @@ SessionManagementSubscriptionData:
         sd: FFFFFF
         sst: 1
       ueid: "001010000000120"
+    - dnnConfigurations:
+        test-slice:
+            5gQosProfile:
+                5qi: 1
+                arp:
+                    preemptCap: NOT_PREEMPT
+                    preemptVuln: PREEMPTABLE
+                    priorityLevel: 15
+                priorityLevel: 1
+            pduSessionTypes:
+                defaultSessionType: IPV4
+            sessionAmbr:
+                downlink: 1000Mbps
+                uplink: 1000Mbps
+            sscModes:
+                defaultSscMode: SSC_MODE_1
+      servingPlmnid: "00101"
+      singleNssai:
+        sd: "000401"
+        sst: 4
+      ueid: new-slice-ue-1
