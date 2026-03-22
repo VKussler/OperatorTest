@@ -6,7 +6,11 @@ metadata:
 spec:
   cNSIIdList:
   - slice-1-cn
+  - test-slice
   managedNFProfile:
+    allowedNSSAIs:
+    - sd: "000401"
+      sst: 4
     capacity: 1000
     hostAddr: oai-upf
     nfType:
@@ -60,13 +64,7 @@ spec:
       sNssai:
         sd: "000001"
         sst: 1
-    - dnnUpfInfoList:
-      - dnn: test-dnn
-        ipv4AddressRanges:
-        - iPv4AddrRangeEnd: 15.1.1.255
-          iPv4AddrRangeStart: 15.1.1.0
-        pduSessionTypes:
-        - IPv4
+    - dnnUpfInfoList: []
       sNssai:
         sd: "000401"
         sst: 4
