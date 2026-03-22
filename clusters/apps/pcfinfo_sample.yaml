@@ -24,3 +24,37 @@ pcfInfo:
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
     targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+sliceConfigurations: # New section for slice-specific policies
+  - sliceName: "test-slice"
+    sNSSAI:
+      sst: 4
+      sd: "000401"
+    qosPolicies:
+      - qosProfileId: "test-slice-default-qos"
+        5qi: 9 # Example 5QI for default internet access
+        arp:
+          priorityLevel: 8
+          preemptionCapability: "NOT_PREEMPT"
+          preemptionVulnerability: "PREEMPTABLE"
+        gbr:
+          downlink: "10Mbps"
+          uplink: "5Mbps"
+        mbr:
+          downlink: "20Mbps"
+          uplink: "10Mbps"
+        # Additional QoS parameters can be added here, e.g., AveragingWindow, MaxDataBurstVolume
+    accessPolicies:
+      - accessPolicyId: "test-slice-default-access"
+        allowRoaming: true
+        allowedPlmns:
+          - mcc: "208"
+            mnc: "93"
+          - mcc: "001"
+            mnc: "01" # Assuming this PLMN is also allowed for this slice
+        # Additional access parameters can be added here, e.g., restrictedAreas, deniedPlmns
+    controlPlanePolicies:
+      - cpPolicyId: "test-slice-default-cp"
+        sessionRetentionTime: "1h" # Example: How long to retain session context after UE disconnects
+        maxNumberOfUes: 1000 # Example: Max UEs allowed in this slice
+        allowedPduSessionTypes: ["IPV4", "IPV6", "IPV4V6"] # Example: Restrict PDU session types
+        # Additional control plane parameters can be added here
