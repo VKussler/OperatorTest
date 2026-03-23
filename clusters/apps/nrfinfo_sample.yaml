@@ -1,4 +1,4 @@
-# Sample NRF NRM Instance
+# NRM NRF baseline for multi-vendor test
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
