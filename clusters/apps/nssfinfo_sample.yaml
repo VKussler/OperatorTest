@@ -3,12 +3,6 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-    nssaiList: # List of S-NSSAI configurations for this PLMN
-      - snssai: # Defines the S-NSSAI for the new slice
-          sst: 4
-          sd: "000401"
-        # The name 'test-slice' is a descriptive label for the slice,
-        # not a direct field within the S-NSSAI object itself (which consists of SST and SD).
 sBIFQDN: "nssf-1.sbi.example.com"
 cNSIIdList: ["slice-1-cn"]
 managedNFProfile:
@@ -17,4 +11,4 @@ managedNFProfile:
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"]
+    targetNFServiceList: ["nnrf-nfm"] 
