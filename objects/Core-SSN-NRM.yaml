@@ -1,5 +1,5 @@
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create a new slice with name test-slice, sst 4, and sd 000401
+# Intent: Create a new slice with name test-slice, sst 4, and sd 000401. Multi-vendor assignment (strict): AMF=open5gs, SMF=open5gs, UPF=oai, NSSF=oai, NRF=nrm, PCF=nrm.
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
@@ -29,7 +29,7 @@ attributes:
         dLReliability: "99.999"
         resourceSharingLevel: "SHARED"
         availability: "99.99"
-        supportedDataNetworks: ["internet"]
+        supportedDataNetworks: []
       RANSliceSubnetProfile: {}
       TopSliceSubnetProfile: {}
   priorityLabel: 10
