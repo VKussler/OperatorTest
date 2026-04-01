@@ -1,2 +1,39 @@
-# OAI NSSF baseline for multi-vendor test
-slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
+# This content represents the updated nssf_slice_config.yaml file
+# referenced by the NSSF's main configuration.
+
+supported_nssai_list:
+  # Example existing S-NSSAI (if any were present in your original config)
+  - sst: 1
+    sd: 010203
+  # New S-NSSAI for SST 4, SD 000401 as per user intent
+  - sst: 4
+    sd: 000401
+
+amf_regions:
+  - region_id: 1 # Example AMF Region ID
+    amf_set_list:
+      - amf_set_id: 1 # Example AMF Set ID within Region 1
+        supported_nssai_list:
+          # Example existing S-NSSAI supported by this AMF Set
+          - sst: 1
+            sd: 010203
+          # New S-NSSAI supported by this AMF Set
+          - sst: 4
+            sd: 000401
+      # You can add more amf_set_list entries or amf_regions as needed
+      # For example, another AMF Set in the same region:
+      # - amf_set_id: 2
+      #   supported_nssai_list:
+      #     - sst: 1
+      #       sd: 010203
+      #     - sst: 4
+      #       sd: 000401
+  # You can add more amf_regions if your deployment has multiple regions
+  # - region_id: 2
+  #   amf_set_list:
+  #     - amf_set_id: 3
+  #       supported_nssai_list:
+  #         - sst: 1
+  #           sd: 010203
+  #         - sst: 4
+  #           sd: 000401
