@@ -1,6 +1,2 @@
-plmn_list:
-  - mcc: '208'
-    mnc: '93'
-    s_nssai_list:
-      - sst: 4
-        sd: '000401'
+# OAI NSSF baseline for multi-vendor test
+slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
