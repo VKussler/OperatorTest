@@ -1,2 +1,16 @@
 # OAI NSSF baseline for multi-vendor test
-slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
+# slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml # Commented out as slice configuration is now embedded
+nssf_config:
+  nssf_slice_config:
+    pLMNInfoList:
+      - pLMNId:
+          mcc: "001"
+          mnc: "01"
+        sNSSAIInfoList:
+          - sNSSAI:
+              sst: 4
+              sd: "000401"
+            nssfSACInfo:
+              cNSIIdList:
+                - "test-slice"
+              sBIFQDN: "test-slice.nssf.oai.com"
