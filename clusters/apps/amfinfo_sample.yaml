@@ -10,6 +10,7 @@ amf:
     server:
       - address: 127.0.0.5
         port: 7777
+    advertise: amf.open5gs.org
     client:
       nrf:
         - uri: http://127.0.0.10:7777
