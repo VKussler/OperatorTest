@@ -19,4 +19,8 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  # Add the new S-NSSAI to the NRF's configuration to indicate it supports managing NFs for this slice
+  supportedSNssais:
+    - sst: 4
+      sd: "000401"
