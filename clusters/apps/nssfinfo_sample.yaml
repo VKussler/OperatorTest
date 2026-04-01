@@ -1,2 +1,11 @@
-# OAI NSSF baseline for multi-vendor test
-slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
+# Content for /openair-nssf/etc/nssf_slice_config.yaml
+network_slices:
+  - sst: 4
+    sd: "000401"
+    nf_profiles:
+      - nf_type: AMF
+        nf_id: "a1b2c3d4-e5f6-7890-1234-567890abcdef" # Example UUID for open5gs AMF
+      - nf_type: SMF
+        nf_id: "b2c3d4e5-f6a7-8901-2345-67890abcdef0" # Example UUID for open5gs SMF
+      - nf_type: UPF
+        nf_id: "c3d4e5f6-a7b8-9012-3456-7890abcdef01" # Example UUID for OAI UPF
