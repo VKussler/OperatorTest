@@ -363,6 +363,13 @@ NrfConfiguration:
       sNSSAI:
         sd: "000401"
         sst: 4
+PCF:
+    - pLMNId:
+        mcc: "001"
+        mnc: "01"
+      sNSSAI:
+        sd: "000401"
+        sst: 4
 SessionManagementSubscriptionData:
     - dnnConfigurations:
         ims:
