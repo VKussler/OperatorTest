@@ -1,2 +1,46 @@
-# OAI NSSF baseline for multi-vendor test
-slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
+slices:
+  # Example existing slices (can be customized or removed if not needed)
+  - sst: 1
+    sd: "000001"
+    name: "internet"
+    nf_profile:
+      amf_set_id: "amf_set_01"
+      smf_set_id: "smf_set_01"
+  - sst: 1
+    sd: "000002"
+    name: "ims"
+    nf_profile:
+      amf_set_id: "amf_set_01"
+      smf_set_id: "smf_set_02"
+  # New slice as per user intent
+  - sst: 4
+    sd: "000401"
+    name: "test-slice"
+    nf_profile:
+      amf_set_id: "amf_set_test" # Mapping to a new AMF set for this slice
+      smf_set_id: "smf_set_test" # Mapping to a new SMF set for this slice
+
+# Definition of AMF Sets
+amf_sets:
+  amf_set_01:
+    amf_ids:
+      - "amf_id_01"
+      - "amf_id_02"
+  amf_set_test: # New AMF set for 'test-slice'
+    amf_ids:
+      - "amf_id_test_01"
+      - "amf_id_test_02"
+
+# Definition of SMF Sets
+smf_sets:
+  smf_set_01:
+    smf_ids:
+      - "smf_id_01"
+      - "smf_id_02"
+  smf_set_02:
+    smf_ids:
+      - "smf_id_03"
+  smf_set_test: # New SMF set for 'test-slice'
+    smf_ids:
+      - "smf_id_test_01"
+      - "smf_id_test_02"
