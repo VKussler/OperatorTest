@@ -1,2 +1,31 @@
-# OAI NSSF baseline for multi-vendor test
-slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
+slices:
+  - s_nssai:
+      sst: 1
+      sd: "000001"
+    amf_nfs:
+      - amf_name: "oai-amf-1"
+        amf_ip_address: "10.0.0.1"
+        amf_port: 38412
+    smf_nfs:
+      - smf_name: "oai-smf-1"
+        smf_ip_address: "10.0.0.2"
+        smf_port: 8080
+    upf_nfs:
+      - upf_name: "oai-upf-1"
+        upf_ip_address: "10.0.0.3"
+        upf_port: 8080
+  - s_nssai:
+      sst: 4
+      sd: "000401"
+    amf_nfs:
+      - amf_name: "oai-amf-test"
+        amf_ip_address: "10.0.0.10" # Example IP for the new AMF
+        amf_port: 38412
+    smf_nfs:
+      - smf_name: "oai-smf-test"
+        smf_ip_address: "10.0.0.11" # Example IP for the new SMF
+        smf_port: 8080
+    upf_nfs:
+      - upf_name: "oai-upf-test"
+        upf_ip_address: "10.0.0.12" # Example IP for the new UPF
+        upf_port: 8080
