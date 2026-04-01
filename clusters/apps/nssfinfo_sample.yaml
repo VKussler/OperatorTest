@@ -1,2 +1,15 @@
-# OAI NSSF baseline for multi-vendor test
-slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
+slices:
+  - s_nssai:
+      sst: 4
+      sd: "000401"
+    name: "test-slice"
+    plmn_id:
+      mcc: "208"
+      mnc: "93"
+    # NSSF specific parameters for slice selection (examples)
+    # These parameters can be customized based on deployment requirements.
+    allowed_amf_profiles: [] # List of AMF profile IDs or names allowed for this slice
+    allowed_smf_profiles: [] # List of SMF profile IDs or names allowed for this slice
+    load_balancing_weight: 100 # Integer, higher value indicates higher preference for load balancing
+    max_number_of_ues: 0 # Integer, 0 means no limit on the number of UEs for this slice
+    # nrf_uri: "http://nrf.example.com:8000" # Optional: NRF URI specific to this slice if different from global
