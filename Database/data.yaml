@@ -988,3 +988,7 @@ SessionManagementSubscriptionData:
         sd: FFFFFF
         sst: 1
       ueid: "001010000000120"
+SmfSelectionSubscriptionData:
+    - servingPlmnid: "00101"
+      subscribedSnssaiInfos: '[{"sst": 4, "sd": "000401"}]'
+      ueid: defaultSmfConfigUeid
