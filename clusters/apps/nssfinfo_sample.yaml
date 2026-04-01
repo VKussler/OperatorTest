@@ -1,18 +1,2 @@
-slices:
-  - name: "test-slice"
-    sst: 4
-    sd: "000401"
-    plmn_id: "20893" # Assuming a common test PLMN ID for OAI
-    nssai_id:
-      sst: 4
-      sd: "000401"
-    allowed_nssai:
-      - sst: 4
-        sd: "000401"
-    # Placeholder AMF selection policy for proper registration
-    amf_selection_policy:
-      - amf_id: "amf_id_1" # Replace with actual AMF ID
-        priority: 1
-    # Placeholder NRF details, adjust as per your deployment
-    nrf_uri: "http://nrf:8000"
-    nrf_port: 8000
+# OAI NSSF baseline for multi-vendor test
+slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
