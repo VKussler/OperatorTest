@@ -987,3 +987,5 @@ SmfSelectionSubscriptionData:
         mnc: "93"
       sd: "000401"
       sst: 4
+    - sd: "000401"
+      sst: 4
