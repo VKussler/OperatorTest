@@ -1,9 +1,14 @@
-# OAI UPF baseline for multi-vendor test
-upf_info:
-  sNssaiUpfInfoList:
-    - sNssai:
-        sst: 4
+apiVersion: cm-5gc.com/v1alpha1
+kind: UpfInfo
+metadata:
+  name: upfinfo-sample
+  namespace: default
+spec:
+  upf_info:
+    sNssaiUpfInfoList:
+    - dnnUpfInfoList:
+      - dnn: oai
+      - dnn: default
+      sNssai:
         sd: "000401"
-      dnnUpfInfoList:
-        - dnn: oai
-        - dnn: default
+        sst: 4
