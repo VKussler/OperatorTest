@@ -1,2 +1,82 @@
 # OAI NSSF baseline for multi-vendor test
 slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
+```
+---
+```yaml
+# nssf_slice_config.yaml content
+nssf_config:
+  network_slices:
+    - sst: 1
+      sd: "000001"
+      nssi: "nssi-1"
+      allowed_nssai_list:
+        - sst: 1
+          sd: "000001"
+      amf_set_list:
+        - amf_set_id: "amf_set_01"
+          amf_list:
+            - amf_id: "amf_01"
+              amf_name: "amf_01"
+              amf_ip_address: "127.0.0.1"
+              amf_port: 8000
+              amf_region_id: "region_01"
+              amf_nf_type: "AMF"
+              amf_nf_status: "REGISTERED"
+              amf_nf_profile_id: "profile_01"
+              amf_nf_service_list:
+                - service_name: "Namf_Comm"
+                  service_version: "1.0.0"
+                  service_api_root: "http://127.0.0.1:8000"
+                  service_scheme: "http"
+                  service_port: 8000
+                  service_fqdn: "amf_01.openair5g.org"
+                  service_nf_type: "AMF"
+                  service_nf_status: "REGISTERED"
+                  service_nf_profile_id: "profile_01"
+                  service_nf_service_status: "AVAILABLE"
+                  service_nf_service_priority: 1
+                  service_nf_service_heartbeat_timer: 10
+                  service_nf_service_supported_features: "feature_01"
+                  service_nf_service_supported_plmn_list:
+                    - mcc: "208"
+                      mnc: "93"
+                  service_nf_service_supported_snssai_list:
+                    - sst: 1
+                      sd: "000001"
+    - sst: 4
+      sd: "000401"
+      nssi: "nssi-4" # Assuming a default NSSI for the new slice
+      allowed_nssai_list:
+        - sst: 4
+          sd: "000401"
+      amf_set_list:
+        - amf_set_id: "amf_set_01" # Assuming it uses the same AMF set as the default slice
+          amf_list:
+            - amf_id: "amf_01"
+              amf_name: "amf_01"
+              amf_ip_address: "127.0.0.1"
+              amf_port: 8000
+              amf_region_id: "region_01"
+              amf_nf_type: "AMF"
+              amf_nf_status: "REGISTERED"
+              amf_nf_profile_id: "profile_01"
+              amf_nf_service_list:
+                - service_name: "Namf_Comm"
+                  service_version: "1.0.0"
+                  service_api_root: "http://127.0.0.1:8000"
+                  service_scheme: "http"
+                  service_port: 8000
+                  service_fqdn: "amf_01.openair5g.org"
+                  service_nf_type: "AMF"
+                  service_nf_status: "REGISTERED"
+                  service_nf_profile_id: "profile_01"
+                  service_nf_service_status: "AVAILABLE"
+                  service_nf_service_priority: 1
+                  service_nf_service_heartbeat_timer: 10
+                  service_nf_service_supported_features: "feature_01"
+                  service_nf_service_supported_plmn_list:
+                    - mcc: "208"
+                      mnc: "93"
+                  service_nf_service_supported_snssai_list:
+                    - sst: 4
+                      sd: "000401"
