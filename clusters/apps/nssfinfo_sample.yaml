@@ -1,9 +1,2 @@
-slices:
-  - name: test-slice
-    s_nssai:
-      sst: 4
-      sd: 000401
-    amf_nf_ids:
-      - open5gs-amf-1 # Assuming 'open5gs-amf-1' is the identifier for the open5gs AMF instance
-    smf_nf_ids:
-      - open5gs-smf-1 # Assuming 'open5gs-smf-1' is the identifier for the open5gs SMF instance
+# OAI NSSF baseline for multi-vendor test
+slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
