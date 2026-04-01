@@ -1,2 +1,9 @@
-# OAI NSSF baseline for multi-vendor test
-slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
+slice_list:
+  - s_nssai:
+      sst: 4
+      sd: 000401
+    dnn_list:
+      - test-slice
+    # Optional fields, can be added if specific AMF selection policies are required
+    # amf_region_list: []
+    # amf_set_list: []
