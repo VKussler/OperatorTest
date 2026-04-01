@@ -1,7 +1,2 @@
-nssf_config:
-  plmn_support_list:
-    - mcc: "208" # Placeholder MCC, the actual PLMN ID will be provided during NSSF execution/configuration
-      mnc: "93"  # Placeholder MNC, the actual PLMN ID will be provided during NSSF execution/configuration
-      s_nssai_list:
-        - sst: 4
-          sd: "000401"
+# OAI NSSF baseline for multi-vendor test
+slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
