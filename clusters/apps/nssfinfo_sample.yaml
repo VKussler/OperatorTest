@@ -1,14 +1,2 @@
-plmn_support_list:
-  - plmn_id:
-      mcc: "001"
-      mnc: "01"
-    s_nssai_list:
-      - sst: 4
-        sd: "000401"
-        # NSI list is required for a functional slice.
-        # Placeholder values are used for nsi_id, amf_set_id, and nrf_id
-        # as specific details were not provided in the user intent.
-        nsi_list:
-          - nsi_id: "test-slice-nsi-000401"
-            amf_set_id: "amf-set-default"
-            nrf_id: "nrf-default"
+# OAI NSSF baseline for multi-vendor test
+slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
