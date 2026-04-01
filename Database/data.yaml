@@ -993,3 +993,6 @@ SmfSelectionSubscriptionData:
       sst: 4
     - sd: "000401"
       sst: 4
+    - servingPlmnid: "20893"
+      subscribedSnssaiInfos: '[{"sst": 4, "sd": "000401"}]'
+      ueid: GLOBAL_SLICE_CONFIG
