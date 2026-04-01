@@ -1,2 +1,18 @@
-# OAI NSSF baseline for multi-vendor test
-slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
+# OAI NSSF slice configuration
+slices:
+  - name: "default-slice"
+    s_nssai:
+      sst: 1
+      sd: "010203"
+    nrf_fqdn: "nrf.openair5g.eur"
+    amf_fqdn: "amf.openair5g.eur"
+    smf_fqdn: "smf.openair5g.eur"
+    upf_fqdn: "upf.openair5g.eur"
+  - name: "test-slice"
+    s_nssai:
+      sst: 4
+      sd: "000401"
+    nrf_fqdn: "nrf.openair5g.eur" # Placeholder, adjust as needed
+    amf_fqdn: "amf.openair5g.eur" # Placeholder, adjust as needed
+    smf_fqdn: "smf.openair5g.eur" # Placeholder, adjust as needed
+    upf_fqdn: "upf.openair5g.eur" # Placeholder, adjust as needed
