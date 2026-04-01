@@ -1,8 +1,2 @@
-slices:
-  - sst: 4
-    sd: 000401
-    # Default PLMN ID and NRF URI are often required for a complete slice definition in OAI NSSF
-    plmn_id:
-      mcc: 001
-      mnc: 01
-    nrf_uri: http://nrf:8000
+# OAI NSSF baseline for multi-vendor test
+slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
