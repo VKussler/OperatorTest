@@ -18,10 +18,4 @@ pcfInfo:
       end: "208930000099999"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
-slice_specific_policies:
-  - sst: 4
-    sd: "000401"
-    policy_name: "test-slice-policy"
-    qos_profile: "guaranteed_bitrate_profile"
-    access_rules: ["internet_access", "vpn_access"]
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
