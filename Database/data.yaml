@@ -1003,3 +1003,9 @@ SmfSelectionSubscriptionData:
       singleNssai:
         sd: "000401"
         sst: 4
+Upf:
+    - dnnUpfInfoList:
+        - dnn: internet
+      sNssai:
+        sd: "000401"
+        sst: 4
