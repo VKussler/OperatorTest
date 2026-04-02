@@ -1,21 +1,2 @@
-s_nssais:
-  - sst: 1
-    sd: 010101
-    plmn_support_list:
-      - plmn_id:
-          mcc: '001'
-          mnc: '01'
-        nrf_nf_instances:
-          - nrf_id: 'nrf.openair5g.eur'
-            amf_nf_instances:
-              - amf_id: 'amf.openair5g.eur'
-  - sst: 4
-    sd: 000401
-    plmn_support_list:
-      - plmn_id:
-          mcc: '001'
-          mnc: '01'
-        nrf_nf_instances:
-          - nrf_id: 'nrf.openair5g.eur'
-            amf_nf_instances:
-              - amf_id: 'amf.openair5g.eur'
+# OAI NSSF baseline for multi-vendor test
+slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
