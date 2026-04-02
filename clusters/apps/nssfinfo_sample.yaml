@@ -1,2 +1,37 @@
-# OAI NSSF baseline for multi-vendor test
-slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
+plmn_id:
+  mcc: '208'
+  mnc: '93'
+
+nssai_config:
+  - sst: 1
+    sd: '000001'
+    slice_name: 'internet'
+    amf_region_id: 1
+    amf_set_id: 1
+  - sst: 2
+    sd: '000002'
+    slice_name: 'ims'
+    amf_region_id: 1
+    amf_set_id: 1
+  - sst: 4
+    sd: '000401'
+    slice_name: 'test-slice'
+    amf_region_id: 1
+    amf_set_id: 1
+
+slice_selection_config:
+  - slice_name: 'internet'
+    amf_region_id: 1
+    amf_set_id: 1
+    nrf_fqdn: 'nrf.openair5g.eur'
+    nrf_port: 8000
+  - slice_name: 'ims'
+    amf_region_id: 1
+    amf_set_id: 1
+    nrf_fqdn: 'nrf.openair5g.eur'
+    nrf_port: 8000
+  - slice_name: 'test-slice'
+    amf_region_id: 1
+    amf_set_id: 1
+    nrf_fqdn: 'nrf.openair5g.eur'
+    nrf_port: 8000
