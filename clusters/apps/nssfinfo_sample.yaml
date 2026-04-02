@@ -1,11 +1,2 @@
-nssf_config:
-  s_nssais:
-    - sst: 4
-      sd: "000401"
-      plmn_id:
-        mcc: "208"
-        mnc: "93"
-      nsi_list:
-        - nsi_id: "test-slice-nsi-1"
-          amf_set_id: "test-slice-amf-set-1"
-          nrf_id: "nrf-1"
+# OAI NSSF baseline for multi-vendor test
+slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
