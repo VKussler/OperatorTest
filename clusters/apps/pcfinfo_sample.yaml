@@ -18,34 +18,4 @@ pcfInfo:
       end: "208930000099999"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
-# New section for slice-specific policy rules
-slicePolicyRules:
-  - sNSSAI:
-      sst: 4
-      sd: "000401"
-    policyRuleId: "test-slice-policy-001"
-    description: "Policy rules for test-slice (SST=4, SD=000401)"
-    # QoS Policy parameters
-    qosPolicy:
-      default5QI: 9 # Example: Conversational Voice
-      arp:
-        priorityLevel: 8
-        preemptionCapability: "NOT_PREEMPT"
-        preemptionVulnerability: "PREEMPTABLE"
-      # gbr: "10Mbps" # Optional: Guaranteed Bit Rate
-      # mbr: "20Mbps" # Optional: Maximum Bit Rate
-    # Session Management Policy parameters
-    sessionPolicy:
-      pduSessionType: "IPV4V6" # Example: Dual stack
-      maxPduSessionsPerUE: 2 # Example: Limit to 2 PDU sessions per UE
-      chargingCharacteristics: "DEFERRED" # Example: Charging characteristics
-    # Other Control Plane parameters
-    controlPlanePolicy:
-      idleModeTimer: "300s" # Example: 5 minutes idle timer
-      ueUsageType: "ENTERPRISE_IOT" # Example: UE usage type
-      # accessTypeSpecificPolicies: # Optional: Policies specific to access types
-      #   - accessType: "3GPP_ACCESS"
-      #     maxDataRate:
-      #       uplink: "100Mbps"
-      #       downlink: "200Mbps"
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
