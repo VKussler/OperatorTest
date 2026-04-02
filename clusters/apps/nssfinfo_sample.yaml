@@ -1,2 +1,11 @@
-# OAI NSSF baseline for multi-vendor test
-slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
+slices:
+  - name: test-slice
+    snssai:
+      sst: 4
+      sd: "000401"
+    plmn_id:
+      mcc: "208"
+      mnc: "93"
+    # Assuming 'open5gs-amf-set' is the AMF Set ID configured in NSSF
+    # that includes the Open5GS AMF.
+    amf_set_id: "open5gs-amf-set"
