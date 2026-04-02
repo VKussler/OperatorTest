@@ -1,11 +1,2 @@
-nssais:
-  - s_nssai:
-      sst: 4
-      sd: "000401"
-    plmn_id:
-      mcc: "208"
-      mnc: "93"
-    # Optional: List of allowed NFs for this slice
-    allowed_nfs: []
-    # Optional: Selection policies for this slice
-    selection_policies: []
+# OAI NSSF baseline for multi-vendor test
+slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
