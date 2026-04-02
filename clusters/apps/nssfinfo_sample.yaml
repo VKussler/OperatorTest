@@ -1,26 +1,2 @@
-network_slices:
-  - s_nssai:
-      sst: 4
-      sd: "000401"
-    supported_nfs:
-      amf:
-        - nf_id: "open5gs_amf_instance_1"
-          nf_type: "AMF"
-          vendor: "open5gs"
-          fqdn: "open5gs-amf.local"
-          ipv4_address: "127.0.0.10" # Placeholder IP
-          port: 8000
-      smf:
-        - nf_id: "open5gs_smf_instance_1"
-          nf_type: "SMF"
-          vendor: "open5gs"
-          fqdn: "open5gs-smf.local"
-          ipv4_address: "127.0.0.11" # Placeholder IP
-          port: 8000
-      upf:
-        - nf_id: "oai_upf_instance_1"
-          nf_type: "UPF"
-          vendor: "oai"
-          fqdn: "oai-upf.local"
-          ipv4_address: "127.0.0.12" # Placeholder IP
-          port: 8000
+# OAI NSSF baseline for multi-vendor test
+slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
