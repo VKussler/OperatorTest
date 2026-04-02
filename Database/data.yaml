@@ -987,3 +987,10 @@ SmfSelectionSubscriptionData:
           dnn: test-slice
       sd: "000401"
       sst: 4
+UPF:
+    - plmnId:
+        mcc: "001"
+        mnc: "01"
+      sNssai:
+        sd: "000401"
+        sst: 4
