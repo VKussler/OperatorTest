@@ -1,14 +1,2 @@
-slices:
-  - name: "test-slice"
-    s_nssai:
-      sst: 4
-      sd: "000401"
-    allowed_nssais:
-      - sst: 4
-        sd: "000401"
-    nrf_fqdn: "oai-nrf" # Placeholder, adjust as per deployment
-    nrf_port: 80 # Placeholder
-    amf_fqdn: "oai-amf" # Placeholder
-    amf_port: 80 # Placeholder
-    smf_fqdn: "oai-smf" # Placeholder
-    smf_port: 80 # Placeholder
+# OAI NSSF baseline for multi-vendor test
+slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
