@@ -49,13 +49,3 @@ amf:
   time:
     t3512:
       value: 540
-  pLMNInfoList:
-    - pLMNId:
-        mcc: "208"
-        mnc: "93"
-      sNSSAI:
-        sst: 4
-        sd: "000401"
-  cNSIIdList:
-    - "test-slice"
-  sBIFQDN: "test-slice.sbi.example.com"
