@@ -1,51 +1,58 @@
-# Open5GS SMF baseline for multi-vendor test
-logger:
-  file:
-    path: /var/log/open5gs/smf.log
-global:
-  max:
-    ue: 1024
-smf:
-  sbi:
-    server:
-      - address: 127.0.0.4
-        port: 7777
-    client:
-      nrf:
-        - uri: http://127.0.0.10:7777
-  pfcp:
-    server:
-      - address: 127.0.0.4
-    client:
-      upf:
-        - address: 127.0.0.7
-  gtpc:
-    server:
-      - address: 127.0.0.4
-  gtpu:
-    server:
-      - address: 127.0.0.4
-  metrics:
-    server:
-      - address: 127.0.0.4
-    port: 9090
-  session:
-    - subnet: 10.45.0.0/16
-      gateway: 10.45.0.1
-      dnn: internet
-  dns:
+apiVersion: cm-5gc.com/v1alpha1
+kind: SmfInfo
+metadata:
+  name: smfinfo-sample
+  namespace: default
+spec:
+  global:
+    max:
+      ue: 1024
+  logger:
+    file:
+      path: /var/log/open5gs/smf.log
+  smf:
+    dns:
     - 8.8.8.8
     - 8.8.4.4
-  mtu: 1400
-  info:
-    - s_nssai:
-        - sst: 1
-          sd: "000001"
-      dnn:
-        - internet
+    freeDiameter: /etc/freeDiameter/smf.conf
+    gtpc:
+      server:
+      - address: 127.0.0.4
+    gtpu:
+      server:
+      - address: 127.0.0.4
+    info:
+    - dnn:
+      - internet
+      s_nssai_list:
+      - sd: "000001"
+        sst: 1
+      - sd: "000401"
+        sst: 4
       tai:
-        - plmn_id:
-            mcc: "001"
-            mnc: "01"
-          tac: 1
-  freeDiameter: /etc/freeDiameter/smf.conf
+      - plmn_id:
+          mcc: "001"
+          mnc: "01"
+        tac: 1
+    metrics:
+      port: 9090
+      server:
+      - address: 127.0.0.4
+    mtu: 1400
+    pfcp:
+      client:
+        upf:
+        - address: 127.0.0.7
+      server:
+      - address: 127.0.0.4
+    sbi:
+      client:
+        nrf:
+        - uri: http://127.0.0.10:7777
+      server:
+      - address: 127.0.0.4
+        port: 7777
+    session:
+    - dnn: internet
+      gateway: 10.45.0.1
+      subnet: 10.45.0.0/16
