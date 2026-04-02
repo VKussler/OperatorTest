@@ -995,6 +995,13 @@ SessionManagementSubscriptionData:
         sd: FFFFFF
         sst: 1
       ueid: "001010000000120"
+SmfConfiguration:
+    - plmn_id:
+        mcc: "001"
+        mnc: "01"
+      s_nssai_list:
+        - sd: "000401"
+          sst: 4
 SmfSelectionSubscriptionData:
     - dnnInfo:
         - defaultDnnInd: true
