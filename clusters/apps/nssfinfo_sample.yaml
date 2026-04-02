@@ -1,11 +1,2 @@
-s_nssai_list:
-  - sst: 4
-    sd: 000401
-    nsi_list:
-      - nsi_id: "test-slice-nsi-1"
-        amf_list:
-          - "amf-test.openair5g.eur"
-        smf_list:
-          - "smf-test.openair5g.eur"
-        upf_list:
-          - "upf-test.openair5g.eur"
+# OAI NSSF baseline for multi-vendor test
+slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
