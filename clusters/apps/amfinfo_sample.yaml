@@ -39,13 +39,15 @@ amf:
       s_nssai:
         - sst: 1
           sd: "000001"
+        - sst: 4
+          sd: "000401" # Added test-slice S-NSSAI
   security:
     integrity_order: [NIA2, NIA1, NIA0]
     ciphering_order: [NEA0, NEA1, NEA2]
   network_name:
-    full: Open5GS
-    short: O5GS
-  amf_name: open5gs-amf0
+    full: test-slice # Updated network name
+    short: TS # Updated network name abbreviation
+  amf_name: test-slice-amf0 # Updated AMF name
   time:
     t3512:
       value: 540
