@@ -1,14 +1,2 @@
-nssai_config:
-  - sst: 4
-    sd: "000401"
-    plmn_support_list:
-      - plmn_id:
-          mcc: "313"
-          mnc: "340"
-        snssai_info:
-          amf_set_list:
-            - amf_set_id: "amf_set_01" # Example AMF Set ID
-          smf_list:
-            - smf_id: "smf_01"       # Example SMF ID
-          upf_list:
-            - upf_id: "upf_01"       # Example UPF ID
+# OAI NSSF baseline for multi-vendor test
+slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
