@@ -1,8 +1,2 @@
-slices:
-  - name: "test-slice"
-    s_nssai:
-      sst: 4
-      sd: "000401"
-    supported_amfs: [] # Add the IDs of AMFs that support this slice, e.g., ["amf_id_1", "amf_id_2"]
-    supported_smfs: [] # Add the IDs of SMFs that support this slice, e.g., ["smf_id_1"]
-    supported_upfs: [] # Add the IDs of UPFs that support this slice, e.g., ["upf_id_1"]
+# OAI NSSF baseline for multi-vendor test
+slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
