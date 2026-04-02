@@ -1,14 +1,2 @@
-slices:
-  - sst: 1
-    sd: "000001"
-    allowed_nssf_instances:
-      - nssf_instance_id_1
-  - sst: 1
-    sd: "000002"
-    allowed_nssf_instances:
-      - nssf_instance_id_1
-      - nssf_instance_id_2
-  - sst: 4
-    sd: "000401"
-    allowed_nssf_instances:
-      - nssf_instance_id_1 # Example NSSF instance, adjust as needed
+# OAI NSSF baseline for multi-vendor test
+slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
