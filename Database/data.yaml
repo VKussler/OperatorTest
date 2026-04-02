@@ -981,3 +981,23 @@ SessionManagementSubscriptionData:
         sd: FFFFFF
         sst: 1
       ueid: "001010000000120"
+    - 3gppChargingCharacteristics: null
+      dnnConfigurations: null
+      expectedUeBehavioursList: null
+      internalGroupIds: null
+      odbPacketServices: null
+      servingPlmnid: test-plmn
+      sharedDnnConfigurationsId: null
+      sharedTraceDataId: null
+      sharedVnGroupDataIds: null
+      singleNssai:
+        allowedAmfRegions:
+            - region1
+        allowedSmfPools:
+            - smf_pool1
+        name: test-slice
+        sd: "000401"
+        sst: 4
+      suggestedPacketNumDlList: null
+      traceData: null
+      ueid: test-slice-ue-4-000401
