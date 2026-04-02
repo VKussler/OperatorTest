@@ -1023,3 +1023,10 @@ SessionManagementSubscriptionData:
         sd: "000401"
         sst: 4
       ueid: test-slice
+SmfSelectionSubscriptionData:
+    - servingPlmnid: XXXYYY
+      sharedSnssaiInfosId: null
+      subscribedSnssaiInfos: '[{"snssai": {"sst": 4, "sd": "000401"}}]'
+      supportedFeatures: null
+      traceData: null
+      ueid: "001010000000100"
