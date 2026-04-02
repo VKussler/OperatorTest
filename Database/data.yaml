@@ -1,3 +1,10 @@
+Amf3GppAccessRegistration:
+    - plmnId:
+        mcc: "001"
+        mnc: "01"
+      sNssaiList:
+        - sd: "000401"
+          sst: 4
 AuthenticationSubscription:
     - algorithmId: milenage
       authenticationManagementField: "8000"
