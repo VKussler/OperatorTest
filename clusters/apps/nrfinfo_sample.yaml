@@ -19,4 +19,9 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+network_slices:
+  - sst: 4
+    sd: "000401"
+    name: "test-slice"
+    description: "Test slice for specific services"
