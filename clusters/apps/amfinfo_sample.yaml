@@ -13,8 +13,6 @@ amf:
     client:
       nrf:
         - uri: http://127.0.0.10:7777
-      nssf: # Added to explicitly enable interaction with NSSF for slice discovery
-        - uri: http://127.0.0.11:7777 # Placeholder: NSSF's SBI endpoint. AMF will use NRF for discovery if not explicitly configured here.
   ngap:
     server:
       - address: 127.0.0.5
