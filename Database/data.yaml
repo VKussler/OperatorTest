@@ -984,3 +984,8 @@ SessionManagementSubscriptionData:
 SmfSelectionSubscriptionData:
     - sd: "000401"
       sst: 4
+    - dnnUpfInfoList:
+        - dnn: internet
+      sNssai:
+        sd: "000401"
+        sst: 4
