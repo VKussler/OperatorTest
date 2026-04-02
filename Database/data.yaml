@@ -1003,6 +1003,12 @@ SmfSelectionSubscriptionData:
       singleNssai:
         sd: "000401"
         sst: 4
+    - plmnId:
+        mcc: "208"
+        mnc: "93"
+      sNSSAI:
+        sd: "000401"
+        sst: 4
 Upf:
     - dnnUpfInfoList:
         - dnn: internet
