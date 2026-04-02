@@ -1,2 +1,15 @@
-# OAI NSSF baseline for multi-vendor test
-slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
+nssai_config:
+  - plmn_id:
+      mcc: "208"
+      mnc: "93"
+    s_nssai:
+      - sst: 1
+        sd: "000001"
+        nssf_fqdn: "nssf.openair5g.org"
+        nssf_ipv4_addr: "127.0.0.1"
+        nssf_ipv6_addr: "::1"
+      - sst: 4
+        sd: "000401"
+        nssf_fqdn: "nssf.openair5g.org"
+        nssf_ipv4_addr: "127.0.0.1"
+        nssf_ipv6_addr: "::1"
