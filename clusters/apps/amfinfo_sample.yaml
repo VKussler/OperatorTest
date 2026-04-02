@@ -13,15 +13,9 @@ amf:
     client:
       nrf:
         - uri: http://127.0.0.10:7777
-    slicelist: # Added based on user request
-      - sst: 4
-        sd: "000401"
   ngap:
     server:
       - address: 127.0.0.5
-    slicelist: # Added based on user request
-      - sst: 4
-        sd: "000401"
   metrics:
     server:
       - address: 127.0.0.5
@@ -45,8 +39,6 @@ amf:
       s_nssai:
         - sst: 1
           sd: "000001"
-        - sst: 4 # Added based on user request
-          sd: "000401"
   security:
     integrity_order: [NIA2, NIA1, NIA0]
     ciphering_order: [NEA0, NEA1, NEA2]
