@@ -15,70 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  # AMF Profile with updated capabilities for 'test-slice' (SST 4, SD 000401)
-  - nfInstanceId: "amf-instance-001"
-    nfType: "AMF"
-    nfStatus: "REGISTERED"
-    fqdn: "amf-1.example.com"
-    amfInfo:
-      guamiList:
-        - plmnId:
-            mcc: "208"
-            mnc: "93"
-          amfId: "000001" # Example AMF ID
-      taiList:
-        - plmnId:
-            mcc: "208"
-            mnc: "93"
-          tac: "000001" # Example Tracking Area Code
-      nssaiAvailabilityList:
-        - taiList:
-            - plmnId:
-                mcc: "208"
-                mnc: "93"
-              tac: "000001"
-          supportedNssaiList:
-            - sst: 4
-              sd: "000401"
-  # SMF Profile with updated capabilities for 'test-slice' (SST 4, SD 000401)
-  - nfInstanceId: "smf-instance-001"
-    nfType: "SMF"
-    nfStatus: "REGISTERED"
-    fqdn: "smf-1.example.com"
-    smfInfo:
-      sNssaiList:
-        - sst: 4
-          sd: "000401"
-      pduSessionTypes: ["IPV4", "IPV6"] # Example PDU Session Types
-      dnnList: ["internet", "test-slice-dnn"] # Example DNNs
-  # UPF Profile with updated capabilities for 'test-slice' (SST 4, SD 000401)
-  - nfInstanceId: "upf-instance-001"
-    nfType: "UPF"
-    nfStatus: "REGISTERED"
-    fqdn: "upf-1.example.com"
-    upfInfo:
-      sNssaiList:
-        - sst: 4
-          sd: "000401"
-      upfCapability:
-        pduSessionAnchor: true
-        # Add other UPF capabilities as needed
-      dnnList: ["internet", "test-slice-dnn"] # Example DNNs
-  # NSSF Profile with updated capabilities for 'test-slice' (SST 4, SD 000401)
-  - nfInstanceId: "nssf-instance-001"
-    nfType: "NSSF"
-    nfStatus: "REGISTERED"
-    fqdn: "nssf-1.example.com"
-    nssfInfo:
-      nssaiAvailabilityList:
-        - plmnId:
-            mcc: "208"
-            mnc: "93"
-          supportedNssaiList:
-            - sst: 4
-              sd: "000401"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
