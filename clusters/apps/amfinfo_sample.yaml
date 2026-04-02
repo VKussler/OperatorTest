@@ -39,6 +39,8 @@ amf:
       s_nssai:
         - sst: 1
           sd: "000001"
+        - sst: 4 # Added for 'test-slice'
+          sd: "000401" # Added for 'test-slice'
   security:
     integrity_order: [NIA2, NIA1, NIA0]
     ciphering_order: [NEA0, NEA1, NEA2]
