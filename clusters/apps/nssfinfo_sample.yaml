@@ -1,2 +1,66 @@
 # OAI NSSF baseline for multi-vendor test
 slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
+#
+# Content of the nssf_slice_config.yaml file:
+#
+nssf_config:
+  nssai_config:
+    supported_nssai:
+      # Existing S-NSSAIs (example)
+      - sst: 1
+        sd: "000001"
+      - sst: 1
+        sd: "000002"
+      # New S-NSSAI for the new network slice
+      - sst: 4
+        sd: "000401"
+    allowed_nssai:
+      - plmn_id:
+          mcc: "208"
+          mnc: "93"
+        amf_set_id: "001" # Assuming AMF Set ID 001 for this PLMN
+        allowed_snssai_list:
+          # Existing S-NSSAIs allowed for this AMF Set
+          - sst: 1
+            sd: "000001"
+          - sst: 1
+            sd: "000002"
+          # New S-NSSAI allowed for this AMF Set
+          - sst: 4
+            sd: "000401"
+    nrf_nssai_mapping:
+      # Existing NRF mappings (example)
+      - plmn_id:
+          mcc: "208"
+          mnc: "93"
+        snssai:
+          sst: 1
+          sd: "000001"
+        amf_set_id: "001"
+        smf_id_list:
+          - "smf_id_001"
+        upf_id_list:
+          - "upf_id_001"
+      - plmn_id:
+          mcc: "208"
+          mnc: "93"
+        snssai:
+          sst: 1
+          sd: "000002"
+        amf_set_id: "001"
+        smf_id_list:
+          - "smf_id_002"
+        upf_id_list:
+          - "upf_id_002"
+      # New NRF mapping for the new network slice
+      - plmn_id:
+          mcc: "208"
+          mnc: "93"
+        snssai:
+          sst: 4
+          sd: "000401"
+        amf_set_id: "001" # Associate with the same AMF Set
+        smf_id_list:
+          - "smf_id_003" # New SMF instance for this slice
+        upf_id_list:
+          - "upf_id_003" # New UPF instance for this slice
