@@ -1,14 +1,42 @@
-# Sample NSSF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
 sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn"]
+cNSIIdList: ["slice-1-cn", "test-slice-cn"] # Added a new CNSI for 'test-slice'
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"] 
+    targetNFServiceList: ["nnrf-nfm"]
+# NSSF's configuration for Network Slice Selection Assistance Information (NSSAI)
+nssaiConfigList:
+  - sNssai:
+      sst: 4
+      sd: "000401"
+    sliceName: "test-slice"
+    # List of AMF Region IDs that are allowed to serve this S-NSSAI
+    allowedAmfRegions:
+      - "amf-region-001"
+      - "amf-region-002"
+    # List of AMF Set IDs that are allowed to serve this S-NSSAI
+    allowedAmfSets:
+      - "amf-set-001"
+      - "amf-set-002"
+    # Capabilities of NFs that support this S-NSSAI
+    supportedNfTypes:
+      - nfType: "AMF"
+        # Specific capabilities or features of AMFs supporting this slice
+        capabilities:
+          - "AMF_CAP_TEST_SLICE_VOICE"
+          - "AMF_CAP_TEST_SLICE_DATA"
+      - nfType: "SMF"
+        capabilities:
+          - "SMF_CAP_TEST_SLICE_MBB"
+          - "SMF_CAP_TEST_SLICE_URLLC"
+      - nfType: "UPF"
+        capabilities:
+          - "UPF_CAP_TEST_SLICE_ULCL"
+          - "UPF_CAP_TEST_SLICE_MULTI_ACCESS"
