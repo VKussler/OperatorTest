@@ -1,8 +1,10 @@
-# Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
 sBIFQDN: "nrf-1.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
@@ -15,8 +17,77 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "amf-instance-001"
+    nfType: "AMF"
+    nfStatus: "REGISTERED"
+    plmnList:
+      - mcc: "208"
+        mnc: "93"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+  - nfInstanceId: "smf-instance-001"
+    nfType: "SMF"
+    nfStatus: "REGISTERED"
+    plmnList:
+      - mcc: "208"
+        mnc: "93"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+  - nfInstanceId: "upf-instance-001"
+    nfType: "UPF"
+    nfStatus: "REGISTERED"
+    plmnList:
+      - mcc: "208"
+        mnc: "93"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+  - nfInstanceId: "nssf-instance-001"
+    nfType: "NSSF"
+    nfStatus: "REGISTERED"
+    plmnList:
+      - mcc: "208"
+        mnc: "93"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+  - nfInstanceId: "pcf-instance-001"
+    nfType: "PCF"
+    nfStatus: "REGISTERED"
+    plmnList:
+      - mcc: "208"
+        mnc: "93"
+    sNssais:
+      - sst: 4
+        sd: "000401"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
+    pcf-instance-001:
+      sNssaiPcfInfoList:
+        - sNssai: {sst: 4, sd: "000401"}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+    amf-instance-001:
+      sNssaiAmfInfoList:
+        - sNssai: {sst: 4, sd: "000401"}
+  servedSmfInfo:
+    smf-instance-001:
+      sNssaiSmfInfoList:
+        - sNssai: {sst: 4, sd: "000401"}
+          dnnInfoList:
+            - dnn: "internet"
+  servedUpfInfo:
+    upf-instance-001:
+      sNssaiUpfInfoList:
+        - sNssai: {sst: 4, sd: "000401"}
+          dnnUpfInfoList:
+            - dnn: "internet"
+  servedNssfInfo:
+    nssf-instance-001:
+      supportedNssaiAvailabilityData:
+        - plmnId: {mcc: "208", mnc: "93"}
+          supportedSnssaiList:
+            - sNssai: {sst: 4, sd: "000401"}
