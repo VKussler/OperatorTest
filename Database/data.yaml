@@ -364,6 +364,9 @@ NrfConfiguration:
     - sNSSAI:
         sd: "000401"
         sst: 4
+PcfConfiguration:
+    - sd: "000401"
+      sst: 4
 SessionManagementSubscriptionData:
     - dnnConfigurations:
         ims:
