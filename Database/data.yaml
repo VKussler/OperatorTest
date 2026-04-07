@@ -993,3 +993,6 @@ SmfSelectionSubscriptionData:
     - sNSSAI:
         sd: "000401"
         sst: 4
+UPFConfiguration:
+    - sd: "000401"
+      sst: 4
