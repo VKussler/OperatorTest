@@ -1,3 +1,4 @@
+# Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
@@ -14,51 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  - nfInstanceId: "nssf-instance-001"
-    nfType: "NSSF"
-    nfStatus: "REGISTERED"
-    fqdn: "nssf-1.example.com"
-    nssaiAvailabilityList:
-      - plmnId:
-          mcc: "208"
-          mnc: "93"
-        supportedSnssaiList:
-          - sst: 4
-            sd: "000401"
-  - nfInstanceId: "amf-instance-001"
-    nfType: "AMF"
-    nfStatus: "REGISTERED"
-    fqdn: "amf-1.example.com"
-    amfInfo:
-      nssaiAvailability:
-        - plmnId:
-            mcc: "208"
-            mnc: "93"
-          supportedSnssaiList:
-            - sst: 4
-              sd: "000401"
-  - nfInstanceId: "smf-instance-001"
-    nfType: "SMF"
-    nfStatus: "REGISTERED"
-    fqdn: "smf-1.example.com"
-    smfInfo:
-      sNssaiSmfInfoList:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-          dcnr: false # Assuming DCNR is not specifically requested, default to false
-  - nfInstanceId: "upf-instance-001"
-    nfType: "UPF"
-    nfStatus: "REGISTERED"
-    fqdn: "upf-1.example.com"
-    upfInfo:
-      sNssaiUpfInfoList:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-      # dnnUpfInfoList can be added here if specific DNNs are associated with this S-NSSAI
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
