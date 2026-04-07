@@ -1,8 +1,9 @@
+# Sample NRF NRM Instance
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-sBIFQDN: "test-slice.sbi.example.com"
+sBIFQDN: "nrf-1.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
@@ -14,93 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  - nfInstanceId: "nssf-instance-id-001"
-    nfType: "NSSF"
-    fqdn: "nssf.sbi.example.com"
-    nfStatus: "REGISTERED"
-    plmnList:
-      - mcc: "001"
-        mnc: "01"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      - serviceName: "nnssf-disc"
-        schema: "v1"
-        sNssais:
-          - sst: 4
-            sd: "000401"
-        nfServiceStatus: "AVAILABLE"
-  - nfInstanceId: "amf-instance-id-001"
-    nfType: "AMF"
-    fqdn: "amf.sbi.example.com"
-    nfStatus: "REGISTERED"
-    plmnList:
-      - mcc: "001"
-        mnc: "01"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      - serviceName: "namf-comm"
-        schema: "v1"
-        sNssais:
-          - sst: 4
-            sd: "000401"
-        nfServiceStatus: "AVAILABLE"
-  - nfInstanceId: "smf-instance-id-001"
-    nfType: "SMF"
-    fqdn: "smf.sbi.example.com"
-    nfStatus: "REGISTERED"
-    plmnList:
-      - mcc: "001"
-        mnc: "01"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      - serviceName: "nsmf-pdusession"
-        schema: "v1"
-        sNssais:
-          - sst: 4
-            sd: "000401"
-        nfServiceStatus: "AVAILABLE"
-  - nfInstanceId: "pcf-instance-id-001"
-    nfType: "PCF"
-    fqdn: "pcf.sbi.example.com"
-    nfStatus: "REGISTERED"
-    plmnList:
-      - mcc: "001"
-        mnc: "01"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      - serviceName: "npcf-policymgmt"
-        schema: "v1"
-        sNssais:
-          - sst: 4
-            sd: "000401"
-        nfServiceStatus: "AVAILABLE"
-  - nfInstanceId: "upf-instance-id-001"
-    nfType: "UPF"
-    fqdn: "upf.sbi.example.com"
-    nfStatus: "REGISTERED"
-    plmnList:
-      - mcc: "001"
-        mnc: "01"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-    nfServices:
-      - serviceName: "nupf-pdu-session"
-        schema: "v1"
-        sNssais:
-          - sst: 4
-            sd: "000401"
-        nfServiceStatus: "AVAILABLE"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
