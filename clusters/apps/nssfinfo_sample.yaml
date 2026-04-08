@@ -3,12 +3,35 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
+    supportedNssaiList: # Add this section to define supported S-NSSAIs
+      - sNssai:
+          sst: 4
+          sd: "000401"
+        # This S-NSSAI is supported by the following Network Slice Instances
+        nsiList:
+          - "test-slice-nsi-001" # Reference to the NSI defined below
 sBIFQDN: "nssf-1.sbi.example.com"
-cNSIIdList: ["slice-1-cn"]
+cNSIIdList: ["slice-1-cn", "test-slice-nsi-001"] # Add the new NSI ID to the list of known CNSI IDs
 managedNFProfile:
   nfInstanceId: "nssf-instance-001"
   nfType: "NSSF"
   hostAddr: "192.168.1.12"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["nnrf-nfm"] 
+    targetNFServiceList: ["nnrf-nfm"]
+# Define the Network Slice Instance details for the new slice
+networkSliceInstanceList: # Add this new top-level section
+  - nsiId: "test-slice-nsi-001"
+    sNssai: # The S-NSSAI this Network Slice Instance serves
+      sst: 4
+      sd: "000401"
+    # List of NF instances associated with this Network Slice Instance
+    amfList:
+      - "amf-instance-001" # Placeholder AMF Instance ID
+      - "amf-instance-002" # Another placeholder AMF Instance ID
+    smfList:
+      - "smf-instance-001" # Placeholder SMF Instance ID
+    upfList:
+      - "upf-instance-001" # Placeholder UPF Instance ID
+    nrfList: # Placeholder NRF Instance ID (NSSF might query this NRF for NFs within this slice)
+      - "nrf-instance-001"
