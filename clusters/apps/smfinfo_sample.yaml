@@ -1,48 +1,51 @@
-# Sample SMF NRM Instance
-commModelList:
-  - commModelType: DIRECT_COMMUNICATION_WO_NRF
-managedNFProfile:
-  capacity: 10
-  hostAddr: 127.0.0.1
-  nfType:
-    - SMF
-missingElements:
-  dnnConfigs:
-    ims:
-      ipv4Subnet: 14.1.1.0/24
-      pduSessionType: IPV4V6
-    oai:
-      ipv4Subnet: 12.1.1.0/24
-      pduSessionType: IPV4
-    ora:
-      ipv4Subnet: 13.1.1.0/24
-      pduSessionType: IPV4
-  snssaiConfigs:
-    1-000001:
-      fiveQi: 2
-      sessionAmbrDl: 200Mbps
-      sessionAmbrUl: 100Mbps
-    1-FFFFFF:
-      fiveQi: 5
-      sessionAmbrDl: 400Mbps
-      sessionAmbrUl: 200Mbps
-nRTAClist: "0"
-pLMNInfoList:
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-sBIFQDN: smf-1.sbi.example.com
-cNSIIdList: ["slice-1-cn"]
-smfInfo:
-  sNssaiSmfInfoList:
-    - dnnSmfInfoList:
-        - dnn: oai
-        - dnn: ora
-      sNSSAI:
-        sd: FFFFFF
-        sst: 1
-    - dnnSmfInfoList:
-        - dnn: ims
-      sNSSAI:
-        sd: "000001"
-        sst: 1
+# Open5GS SMF baseline for multi-vendor test
+logger:
+  file:
+    path: /var/log/open5gs/smf.log
+global:
+  max:
+    ue: 1024
+smf:
+  sbi:
+    server:
+      - address: 127.0.0.4
+        port: 7777
+    client:
+      nrf:
+        - uri: http://127.0.0.10:7777
+  pfcp:
+    server:
+      - address: 127.0.0.4
+    client:
+      upf:
+        - address: 127.0.0.7
+  gtpc:
+    server:
+      - address: 127.0.0.4
+  gtpu:
+    server:
+      - address: 127.0.0.4
+  metrics:
+    server:
+      - address: 127.0.0.4
+    port: 9090
+  session:
+    - subnet: 10.45.0.0/16
+      gateway: 10.45.0.1
+      dnn: internet
+  dns:
+    - 8.8.8.8
+    - 8.8.4.4
+  mtu: 1400
+  info:
+    - s_nssai:
+        - sst: 1
+          sd: "000001"
+      dnn:
+        - internet
+      tai:
+        - plmn_id:
+            mcc: "001"
+            mnc: "01"
+          tac: 1
+  freeDiameter: /etc/freeDiameter/smf.conf

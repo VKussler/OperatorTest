@@ -1,4 +1,4 @@
-# Sample PCF NRM Instance
+# NRM PCF baseline for multi-vendor test
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
