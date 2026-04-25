@@ -1,2 +1,3 @@
 # OAI NSSF baseline for multi-vendor test
+# User intent: S-NSSAI (sst=4, sd=000401) would be defined in the referenced file.
 slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
