@@ -1,5 +1,5 @@
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create a new slice with name test-slice, sst 4, and sd 000401. Multi-vendor assignment (strict): AMF=open5gs, SMF=open5gs, UPF=oai, NSSF=oai, NRF=nrm, PCF=nrm. Multi-agent architecture (All NF specialists use OAI-NRM model): nfSpecialist1 -> oai-nrm for AMF+SMF; nfSpecialist2 -> oai-nrm for UPF+NSSF; nfSpecialist3 -> oai-nrm for NRF+PCF.
+# Intent: Create a new slice with name test-slice, sst 4, and sd 000401. Multi-vendor assignment (strict): AMF=nrm, SMF=nrm, UPF=oai, NSSF=oai, NRF=nrm, PCF=nrm. Multi-agent architecture (All NF specialists use OAI-NRM model): nfSpecialist1 -> oai-nrm for AMF+SMF; nfSpecialist2 -> oai-nrm for UPF+NSSF; nfSpecialist3 -> oai-nrm for NRF+PCF.
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
