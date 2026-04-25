@@ -6,12 +6,12 @@ pLMNInfoList:
   - pLMNId:
       mcc: "001"
       mnc: "01"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
+    sNSSAI:
+      sst: 4
+      sd: "000401"
+sBIFQDN: "test-slice"
 cNSIIdList:
   - "test-slice"
-sBIFQDN: "test-slice"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
