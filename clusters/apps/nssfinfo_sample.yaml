@@ -1,2 +1,31 @@
-# OAI NSSF baseline for multi-vendor test
-slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
+pLMNInfoList:
+  # Assuming the network's PLMN is {"mcc": "208", "mnc": "93"}.
+  # A new PLMNInfo entry is created for this PLMNId,
+  # as no matching entry was assumed to exist initially based on the provided minimal config.
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+    sNSSAI:
+      - sst: 4
+        sd: "000401"
+  # Example of another PLMNInfo entry that would exist but is not affected
+  # by the current intent as its PLMNId does not match the network's PLMN.
+  - pLMNId:
+      mcc: "208"
+      mnc: "95"
+    sNSSAI:
+      - sst: 1
+        sd: "000003"
+managedNFProfile:
+  allowedNSSAIs:
+    # Example of an existing S-NSSAI
+    - sst: 1
+      sd: "000001"
+    # The S-NSSAI {"sst": 4, "sd": "000401"} is added to the allowedNSSAIs list.
+    - sst: 4
+      sd: "000401"
+cNSIIdList:
+  # Example of an existing CNSI ID
+  - "some-other-id"
+  # The string "test-slice" is added to the cNSIIdList.
+  - "test-slice"
