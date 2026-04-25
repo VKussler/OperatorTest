@@ -49,12 +49,3 @@ amf:
   time:
     t3512:
       value: 540
-  cNSIIdList:
-    - test-slice
-  pLMNInfoList:
-    - plmn_id:
-        mcc: "001"
-        mnc: "001"
-      s_nssai:
-        - sst: 4
-          sd: "000401"
