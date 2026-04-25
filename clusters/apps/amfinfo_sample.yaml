@@ -39,6 +39,16 @@ amf:
       s_nssai:
         - sst: 1
           sd: "000001"
+  cNSIIdList: # Added based on user intent
+    - sst: 4
+      sd: "000401"
+  pLMNInfoList: # Added based on user intent
+    - pLMNId:
+        mcc: "001"
+        mnc: "01"
+      sNSSAI:
+        - sst: 4
+          sd: "000401"
   security:
     integrity_order: [NIA2, NIA1, NIA0]
     ciphering_order: [NEA0, NEA1, NEA2]
