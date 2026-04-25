@@ -6,11 +6,24 @@ pLMNInfoList:
     sNSSAI:
       sst: 1
       sd: "000001"
-sBIFQDN: "pcf-1.sbi.example.com"
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+    sNSSAI:
+      sst: 4
+      sd: "000401"
+    configurable5QISetRef: "test-slice-qos-profile"
+    predefinedPccRuleSetRefs: ["test-slice-pcc-rules"]
+sBIFQDN: "test-slice.pcf.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
   nfType: "PCF"
   hostAddr: "192.168.1.11"
+  allowedNSSAIs:
+    - sst: 1
+      sd: "000001"
+    - sst: 4
+      sd: "000401"
 pcfInfo:
   dnnList: ["internet", "iot"]
   supiRanges:
@@ -18,4 +31,19 @@ pcfInfo:
       end: "208930000099999"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+configurable5QISets:
+  - id: "test-slice-qos-profile"
+    qosCharacteristics:
+      - 5qi: 9
+        arp:
+          priorityLevel: 8
+          preemptionCapability: "NOT_PREEMPT"
+          preemptionVulnerability: "PREEMPTABLE"
+predefinedPccRuleSets:
+  - id: "test-slice-pcc-rules"
+    pccRules:
+      - ruleId: "default-test-slice-rule"
+        precedence: 100
+        qosInformation:
+          5qiRef: "test-slice-qos-profile"
