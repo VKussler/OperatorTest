@@ -1,3 +1,9 @@
+# Sample NRF NRM Instance
+pLMNInfoList:
+  - pLMNId:
+      mcc: "208"
+      mnc: "93"
+sBIFQDN: "nrf-1.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
@@ -9,22 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-    # Updated to include pLMNInfoList within the NRF's profile
-    pLMNInfoList:
-      - pLMNId:
-          mcc: "208"
-          mnc: "93"
-    # Updated to include sBIFQDN within the NRF's profile
-    sBIFQDN: "nrf-1.sbi.example.com"
-    # Added sNssais to advertise the new slice
-    sNssais:
-      - sst: 4
-        sd: "000401"
-    # Added cNSIIdList for the new slice
-    cNSIIdList:
-      - "test-slice-cnsi-id-001" # Example CNSI ID for 'test-slice'
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
