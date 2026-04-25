@@ -37,11 +37,6 @@ spec:
       s_nssai:
       - sd: "000401"
         sst: 4
-      tai:
-      - plmn_id:
-          mcc: "001"
-          mnc: "01"
-        tac: 1
     metrics:
       port: 9090
       server:
