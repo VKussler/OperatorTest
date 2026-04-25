@@ -37,6 +37,11 @@ spec:
       s_nssai:
       - sd: "000401"
         sst: 4
+    - dnn:
+      - internet
+      s_nssai:
+      - sd: "000401"
+        sst: 4
     metrics:
       port: 9090
       server:
