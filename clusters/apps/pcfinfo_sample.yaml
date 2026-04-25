@@ -1,16 +1,20 @@
-# NRM PCF baseline for multi-vendor test
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
     sNSSAI:
-      sst: 1
-      sd: "000001"
+      - sst: 1
+        sd: "000001"
+      - sst: 4
+        sd: "000401"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
   nfType: "PCF"
   hostAddr: "192.168.1.11"
+  allowedNSSAIs:
+    - sst: 4
+      sd: "000401"
 pcfInfo:
   dnnList: ["internet", "iot"]
   supiRanges:
@@ -18,4 +22,33 @@ pcfInfo:
       end: "208930000099999"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+predefinedPccRuleSets:
+  - pccRuleSetId: "pccRuleSet_4_000401_data"
+    pccRules:
+      - pccRuleId: "data_rule_1"
+        precedence: 10
+        flowDescriptions:
+          - "permit out ip from any to any"
+        qosInformation:
+          qosClassIdentifier: 9
+          arp:
+            priorityLevel: 8
+            preemptionCapability: "NOT_PREEMPT"
+            preemptionVulnerability: "PREEMPTABLE"
+  - pccRuleSetId: "pccRuleSet_4_000401_voice"
+    pccRules:
+      - pccRuleId: "voice_rule_1"
+        precedence: 5
+        flowDescriptions:
+          - "permit out udp from any to any port 5060" # SIP
+          - "permit out udp from any to any port 10000-20000" # RTP
+        qosInformation:
+          qosClassIdentifier: 5
+          arp:
+            priorityLevel: 5
+            preemptionCapability: "MAY_PREEMPT"
+            preemptionVulnerability: "NOT_PREEMPTABLE"
+predefinedPccRuleSetRefs:
+  - "pccRuleSet_4_000401_data"
+  - "pccRuleSet_4_000401_voice"
