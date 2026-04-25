@@ -20,28 +20,38 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  - nfInstanceId: "amf-instance-001" # Placeholder for AMF
+  - nfInstanceId: "amf-instance-001"
     nfType: "AMF"
+    nfStatus: "REGISTERED"
+    fqdn: "amf-1.example.com"
     sNssais:
       - sst: 4
         sd: "000401"
-  - nfInstanceId: "smf-instance-001" # Placeholder for SMF
+  - nfInstanceId: "smf-instance-001"
     nfType: "SMF"
+    nfStatus: "REGISTERED"
+    fqdn: "smf-1.example.com"
     sNssais:
       - sst: 4
         sd: "000401"
-  - nfInstanceId: "upf-instance-001" # Placeholder for UPF
+  - nfInstanceId: "upf-instance-001"
     nfType: "UPF"
+    nfStatus: "REGISTERED"
+    fqdn: "upf-1.example.com"
     sNssais:
       - sst: 4
         sd: "000401"
-  - nfInstanceId: "nssf-instance-001" # Placeholder for NSSF
+  - nfInstanceId: "nssf-instance-001"
     nfType: "NSSF"
+    nfStatus: "REGISTERED"
+    fqdn: "nssf-1.example.com"
     sNssais:
       - sst: 4
         sd: "000401"
-  - nfInstanceId: "pcf-instance-001" # Placeholder for PCF
+  - nfInstanceId: "pcf-instance-001"
     nfType: "PCF"
+    nfStatus: "REGISTERED"
+    fqdn: "pcf-1.example.com"
     sNssais:
       - sst: 4
         sd: "000401"
