@@ -1,15 +1,2 @@
-slice_config_path:
-  slices:
-    - s_nssai:
-        sst: 4
-        sd: "000401"
-      allowed_nfs:
-        amf:
-          - nrf_id: "open5gs_nrf"
-            nf_instance_id: "open5gs_amf_instance_1"
-        smf:
-          - nrf_id: "open5gs_nrf"
-            nf_instance_id: "open5gs_smf_instance_1"
-        upf:
-          - nrf_id: "oai_nrf"
-            nf_instance_id: "oai_upf_instance_1"
+# OAI NSSF baseline for multi-vendor test
+slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
