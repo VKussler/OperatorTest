@@ -3,19 +3,71 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-    sNSSAI:
-      sst: 1
-      sd: "000001"
+    sNSSAIs: # Changed to sNSSAIs (plural) to support multiple slices
+      - sst: 1
+        sd: "000001"
+      - sst: 4
+        sd: "000401"
 sBIFQDN: "pcf-1.sbi.example.com"
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
   nfType: "PCF"
   hostAddr: "192.168.1.11"
+  allowedNSSAIs: # Added to specify supported S-NSSAIs for this NF instance
+    - sst: 1
+      sd: "000001"
+    - sst: 4
+      sd: "000401"
 pcfInfo:
   dnnList: ["internet", "iot"]
   supiRanges:
     - start: "208930000000000"
       end: "208930000099999"
+  # Added predefinedPccRuleSetRefs to link S-NSSAIs to policy rule sets
+  # This structure assumes a mapping within pcfInfo or similar policy-related section.
+  # The actual definition of the PCC rules would be in a separate 'predefinedPccRuleSets' section
+  # or referenced from an external policy repository.
+  slicePolicyTemplates: # A common way to associate policies with slices
+    - sNSSAI:
+        sst: 1
+        sd: "000001"
+      predefinedPccRuleSetRef: "default-slice-1-rules" # Reference to a predefined rule set
+    - sNSSAI:
+        sst: 4
+        sd: "000401"
+      predefinedPccRuleSetRef: "test-slice-pcc-rules" # Reference for the new slice
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+# Example of how predefined PCC Rule Sets might be defined (not explicitly requested to define rules, but good for context)
+predefinedPccRuleSets:
+  - pccRuleSetId: "default-slice-1-rules"
+    # ... actual PCC rules for slice 1 ...
+    # Example:
+    # pccRules:
+    #   - pccRuleId: "default-rule-1"
+    #     precedence: 10
+    #     flowInfos:
+    #       - flowDescription: "permit out ip from any to assigned"
+    #     qosData:
+    #       5qi: 9
+    #       arp:
+    #         priorityLevel: 8
+    #         preemptionCapability: "NOT_PREEMPT"
+    #         preemptionVulnerability: "PREEMPTABLE"
+    #     gateStatus: "OPEN"
+  - pccRuleSetId: "test-slice-pcc-rules"
+    # Placeholder for actual PCC rules for test-slice (sst=4, sd=000401)
+    # Example:
+    # pccRules:
+    #   - pccRuleId: "test-slice-rule-1"
+    #     precedence: 5
+    #     flowInfos:
+    #       - flowDescription: "permit out ip from any to 10.0.0.0/8"
+    #     qosData:
+    #       5qi: 5
+    #       arp:
+    #         priorityLevel: 5
+    #         preemptionCapability: "PREEMPT"
+    #         preemptionVulnerability: "NOT_PREEMPTABLE"
+    #     gateStatus: "OPEN"
