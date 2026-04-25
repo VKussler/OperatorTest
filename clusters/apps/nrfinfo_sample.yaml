@@ -3,7 +3,15 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-sBIFQDN: "nrf-1.sbi.example.com"
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+    sNssaiList:
+      - sst: 4
+        sd: "000401"
+cNSIIdList:
+  - "test-slice"
+sBIFQDN: "test-slice.nrf-1.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
@@ -15,8 +23,88 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "open5gs-amf-001"
+    nfType: "AMF"
+    nfStatus: "REGISTERED"
+    fqdn: "open5gs-amf-001.example.com"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+    plmnList:
+      - mcc: "001"
+        mnc: "01"
+    nfServices:
+      - serviceInstanceId: "amf-service-1"
+        serviceName: "namf-comm"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "open5gs-smf-001"
+    nfType: "SMF"
+    nfStatus: "REGISTERED"
+    fqdn: "open5gs-smf-001.example.com"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+    plmnList:
+      - mcc: "001"
+        mnc: "01"
+    nfServices:
+      - serviceInstanceId: "smf-service-1"
+        serviceName: "nsmf-pdusession"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "oai-upf-001"
+    nfType: "UPF"
+    nfStatus: "REGISTERED"
+    fqdn: "oai-upf-001.example.com"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+    plmnList:
+      - mcc: "001"
+        mnc: "01"
+    nfServices:
+      - serviceInstanceId: "upf-service-1"
+        serviceName: "nupf-pdu-session"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "oai-nssf-001"
+    nfType: "NSSF"
+    nfStatus: "REGISTERED"
+    fqdn: "oai-nssf-001.example.com"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+    plmnList:
+      - mcc: "001"
+        mnc: "01"
+    nfServices:
+      - serviceInstanceId: "nssf-service-1"
+        serviceName: "nnssf-nsselection"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "nrm-pcf-001"
+    nfType: "PCF"
+    nfStatus: "REGISTERED"
+    fqdn: "nrm-pcf-001.example.com"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+    plmnList:
+      - mcc: "001"
+        mnc: "01"
+    nfServices:
+      - serviceInstanceId: "pcf-service-1"
+        serviceName: "npcf-am-policy-control"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
