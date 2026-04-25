@@ -1,12 +1,2 @@
-The user's intent describes modifying the content of the slice configuration file located at the path specified by `slice_config_path`. However, the provided configuration is the NSSF's main configuration, which only contains the `slice_config_path` pointer.
-
-The output constraints explicitly state:
-- "Output only raw OAI NSSF pointer YAML with root key `slice_config_path`."
-- "DO NOT replace the document with a `slices:` root object."
-- "Forbidden root keys: `apiVersion`, `kind`, `metadata`, `spec`, `slices`."
-
-Since the user's intent is to modify the *content of the file pointed to* by `slice_config_path`, and not to change the `slice_config_path` value itself in the main NSSF configuration, the provided NSSF configuration (the pointer) remains unchanged. The actual slice configuration file (e.g., `/openair-nssf/etc/nssf_slice_config.yaml`) would be updated separately.
-
-```yaml
 # OAI NSSF baseline for multi-vendor test
 slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
