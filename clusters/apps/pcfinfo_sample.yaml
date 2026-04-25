@@ -18,4 +18,8 @@ pcfInfo:
       end: "208930000099999"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+local_policy:
+  pcc_rules_path: "/opt/openair-pcf/etc/pcc_rules.yaml"
+  policy_decisions_path: "/opt/openair-pcf/etc/policy_decisions.yaml"
+  traffic_rules_path: "/opt/openair-pcf/etc/traffic_rules.yaml"
