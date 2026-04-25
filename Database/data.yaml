@@ -407,6 +407,20 @@ SessionManagementSubscriptionData:
                 defaultSscMode: SSC_MODE_1
             staticIpAddress:
                 - ipv4Addr: 12.1.1.100
+        test-slice-dnn:
+            5gQosProfile:
+                5qi: 9
+                arp:
+                    preemptCap: NOT_PREEMPT
+                    preemptVuln: PREEMPTABLE
+                    priorityLevel: 8
+            pduSessionTypes:
+                defaultSessionType: IPV4
+            sessionAmbr:
+                downlink: 1000Mbps
+                uplink: 1000Mbps
+            sscModes:
+                defaultSscMode: SSC_MODE_1
       servingPlmnid: "00101"
       singleNssai:
         - sd: FFFFFF
