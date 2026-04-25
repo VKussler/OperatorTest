@@ -1,13 +1,2 @@
-The user's intent describes an update to the *content* of the external slice configuration file referenced by `slice_config_path`, not an update to the `slice_config_path` itself within the main NSSF configuration.
-
-Given the strict constraints:
-1.  "Keep `slice_config_path` as the root field."
-2.  "DO NOT replace the document with a `slices:` root object."
-3.  "Output only raw OAI NSSF pointer YAML with root key `slice_config_path`."
-
-The provided NSSF configuration (which contains only the `slice_config_path` field) does not change, as the path itself is not being modified. The update described in the intent applies to the file located at `/openair-nssf/etc/nssf_slice_config.yaml`, not the NSSF's main configuration.
-
-Therefore, the updated OAI NSSF pointer configuration remains:
-
-```yaml
+# OAI NSSF baseline for multi-vendor test
 slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
