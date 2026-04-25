@@ -3,17 +3,6 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
-cNSIIdList:
-  - nsiId: "test-slice-nsi-001" # A generic NSI ID for "test-slice"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
-    pLMNIdList:
-      - mcc: "208"
-        mnc: "93"
 sBIFQDN: "nrf-1.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
@@ -26,55 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  - nfInstanceId: "open5gs-amf-001"
-    nfType: "AMF"
-    nfStatus: "REGISTERED"
-    fqdn: "amf.open5gs.example.com"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
-    servedGuamiList:
-      - plmnId:
-          mcc: "208"
-          mnc: "93"
-        amfId: "000001" # Example AMF ID
-  - nfInstanceId: "open5gs-smf-001"
-    nfType: "SMF"
-    nfStatus: "REGISTERED"
-    fqdn: "smf.open5gs.example.com"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
-    pLMNId:
-      mcc: "208"
-      mnc: "93"
-  - nfInstanceId: "oai-upf-001"
-    nfType: "UPF"
-    nfStatus: "REGISTERED"
-    fqdn: "upf.oai.example.com"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
-    pLMNId:
-      mcc: "208"
-      mnc: "93"
-    upfInfo:
-      sNssaiUpfInfoList:
-        - sNssai:
-            sst: 4
-            sd: "000401"
-  - nfInstanceId: "oai-nssf-001"
-    nfType: "NSSF"
-    nfStatus: "REGISTERED"
-    fqdn: "nssf.oai.example.com"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
-    pLMNId:
-      mcc: "208"
-      mnc: "93"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
