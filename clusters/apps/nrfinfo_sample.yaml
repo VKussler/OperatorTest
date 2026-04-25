@@ -1,17 +1,9 @@
 # NRM NRF baseline for multi-vendor test
-cNSIIdList:
-  - "test-slice"
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-  - pLMNId:
-      mcc: "001"
-      mnc: "01"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
-sBIFQDN: "test-slice.sbi.example.com"
+sBIFQDN: "nrf-1.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
@@ -23,36 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  - nfInstanceId: "open5gs-amf-001"
-    nfType: "AMF"
-    nfStatus: "REGISTERED"
-    fqdn: "open5gs-amf-1.example.com"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "open5gs-smf-001"
-    nfType: "SMF"
-    nfStatus: "REGISTERED"
-    fqdn: "open5gs-smf-1.example.com"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "oai-upf-001"
-    nfType: "UPF"
-    nfStatus: "REGISTERED"
-    fqdn: "oai-upf-1.example.com"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "oai-nssf-001"
-    nfType: "NSSF"
-    nfStatus: "REGISTERED"
-    fqdn: "oai-nssf-1.example.com"
-    sNssaiList:
-      - sst: 4
-        sd: "000401"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
