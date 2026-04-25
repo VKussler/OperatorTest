@@ -19,4 +19,14 @@ nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
+  servedSnssaiList: # Registering the new slice (S-NSSAI)
+    - sNssai:
+        sst: 4
+        sd: "000401"
+      cNSIIdList: ["test-slice-instance-001"] # A placeholder CNSI ID for the new slice
+      pLMNInfoList: # PLMNs associated with this specific slice
+        - pLMNId:
+            mcc: "208"
+            mnc: "93"
+      sBIFQDN: "nrf-slice-4-000401.sbi.example.com" # SBI FQDN specific to this slice, reflecting the NFs supporting it
