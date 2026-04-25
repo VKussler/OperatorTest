@@ -1,18 +1,22 @@
 # NRM NRF baseline for multi-vendor test
+networkSliceList:
+  - cNSIId: "test-slice"
+    sNSSAI:
+      sst: 4
+      sd: "000401"
+cNSIIdList:
+  - "test-slice"
 pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
   - pLMNId:
-      mcc: "001" # Placeholder for MCC, to be provided during execution
-      mnc: "01"  # Placeholder for MNC, to be provided during execution
-    sNSSAI:
+      mcc: "123" # Placeholder for MCC, to be provided during execution
+      mnc: "45"  # Placeholder for MNC, to be provided during execution
+    sNSSAIList:
       - sst: 4
         sd: "000401"
 sBIFQDN: "test-slice.sbi.example.com"
-cNSIIdList:
-  - sst: 4
-    sd: "000401"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
