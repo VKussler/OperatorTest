@@ -1,2 +1,5 @@
 # OAI NSSF baseline for multi-vendor test
+# The actual S-NSSAI configuration (sst=4, sd=000401) would be added
+# to the external file pointed to by slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
+# This file itself, being a pointer, does not require modification for this intent.
 slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
