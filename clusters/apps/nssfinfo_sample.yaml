@@ -1,2 +1,15 @@
+The provided configuration is a pointer-style NSSF config, meaning it only specifies the path to the actual slice configuration file. The user's intent is to add a new network slice to the list of managed slices. This list resides in the file specified by `slice_config_path`, not in the current document itself.
+
+Given the strict constraints:
+- Keep `slice_config_path` as the root field.
+- DO NOT replace the document with a `slices:` root object.
+- Forbidden root keys: `apiVersion`, `kind`, `metadata`, `spec`, `slices`.
+- Output only raw OAI NSSF pointer YAML with root key `slice_config_path`.
+
+These constraints mean that the output YAML document *cannot* contain a `slices` block or any other root key besides `slice_config_path`. Therefore, the provided configuration (the pointer itself) does not change to reflect the addition of a slice. The update would occur in the file located at `/openair-nssf/etc/nssf_slice_config.yaml`.
+
+The updated configuration remains identical to the current configuration, as the pointer itself is not modified.
+
+```yaml
 # OAI NSSF baseline for multi-vendor test
 slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
