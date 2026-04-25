@@ -1,2 +1,9 @@
-# OAI NSSF baseline for multi-vendor test
+# OAI NSSF configuration updated for 'test-slice'
+nssf_config:
+  allowed_nssai:
+    - sst: 4
+      sd: "000401"
+  nrf_config:
+    nrf_uri: "http://oai-nrf:8000"
+    nrf_api_version: "v1"
 slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
