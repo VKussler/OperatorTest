@@ -6,11 +6,22 @@ pLMNInfoList:
     sNSSAI:
       sst: 1
       sd: "000001"
-sBIFQDN: "pcf-1.sbi.example.com"
+  - pLMNId: # Added for new slice support
+      mcc: "208"
+      mnc: "93"
+    sNSSAI:
+      sst: 1
+      sd: "000002" # New slice S-NSSAI
+sBIFQDN: "pcf-slice-002.sbi.example.com" # Updated FQDN to reflect new slice context
 managedNFProfile:
   nfInstanceId: "pcf-instance-001"
   nfType: "PCF"
   hostAddr: "192.168.1.11"
+  allowedNSSAIs: # Added to specify S-NSSAIs supported by this PCF
+    - sst: 1
+      sd: "000001"
+    - sst: 1
+      sd: "000002" # Include the new slice S-NSSAI
 pcfInfo:
   dnnList: ["internet", "iot"]
   supiRanges:
@@ -18,4 +29,6 @@ pcfInfo:
       end: "208930000099999"
 commModelList:
   - commModelType: "DIRECT_COMMUNICATION"
-    targetNFServiceList: ["namf-comm", "nsmf-pdusession"] 
+    targetNFServiceList: ["namf-comm", "nsmf-pdusession"]
+  - commModelType: "REQUEST_RESPONSE" # Added a new communication model for the new slice
+    targetNFServiceList: ["npcf-smpolicycontrol", "npcf-amfpolicycontrol"] # Example services for the new slice
