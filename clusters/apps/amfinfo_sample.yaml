@@ -39,8 +39,6 @@ amf:
       s_nssai:
         - sst: 1
           sd: "000001"
-        - sst: 4 # Added S-NSSAI based on user intent
-          sd: "000401" # Added S-NSSAI based on user intent
   security:
     integrity_order: [NIA2, NIA1, NIA0]
     ciphering_order: [NEA0, NEA1, NEA2]
@@ -51,9 +49,3 @@ amf:
   time:
     t3512:
       value: 540
-  cNSIIdList: # Added based on user intent
-    - test-slice
-  managedNFProfile: # Added based on user intent
-    allowedNSSAIs:
-      - sst: 4
-        sd: "000401"
