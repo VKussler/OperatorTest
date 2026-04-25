@@ -1,17 +1,2 @@
 # OAI NSSF baseline for multi-vendor test
 slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
-slice_definitions: # Using a non-forbidden root key to embed slice definitions
-  - sst: 4
-    sd: "000401"
-    plmn_support_list:
-      - mcc: "001"
-        mnc: "01"
-        nssai_list:
-          - sst: 4
-            sd: "000401"
-            amf_set_id: "open5gs_amf_set_01" # Associated with Open5GS AMF
-            amf_region_id: "open5gs_amf_region_01" # Associated with Open5GS AMF
-            tai_list: # Slice selection assistance information
-              - mcc: "001"
-                mnc: "01"
-                tac: "000001" # Example Tracking Area Code
