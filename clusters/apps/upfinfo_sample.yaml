@@ -15,6 +15,7 @@ spec:
     - dnnUpfInfoList:
       - dnn: oai
       - dnn: default
+      - dnn: test-slice
       sNssai:
         sd: "000401"
         sst: 4
