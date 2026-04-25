@@ -1,11 +1,2 @@
-The provided OAI NSSF YAML configuration is a pointer-style configuration, meaning it only specifies the path to the actual slice catalog (`slice_config_path`). The user's intent describes modifications to fields (`cNSIIdList`, `managedNFProfile`, `pLMNInfoList`, `allowedNfTypes`) that are part of the *slice catalog itself*, not the pointer configuration.
-
-According to the instructions:
-- "Keep `slice_config_path` as the root field."
-- "DO NOT replace the document with a `slices:` root object."
-- "Output only raw OAI NSSF pointer YAML with root key `slice_config_path`."
-
-These constraints mean that the output must *only* contain the `slice_config_path` key and its value. Since the user's intent cannot be applied to the provided pointer configuration (as the relevant fields are not present in it), and there is no instruction to change the `slice_config_path` value itself, the configuration remains unchanged.
-
-```yaml
+# OAI NSSF baseline for multi-vendor test
 slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml

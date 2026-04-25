@@ -3,11 +3,6 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-    cNSIIdList:
-      - "test-slice"
-    sNssais:
-      - sst: 4
-        sd: "000401"
 sBIFQDN: "nrf-1.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
@@ -20,38 +15,8 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
-  - nfInstanceId: "open5gs-amf-1"
-    nfType: "AMF"
-    fqdn: "amf.open5gs.local"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "open5gs-smf-1"
-    nfType: "SMF"
-    fqdn: "smf.open5gs.local"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "oai-upf-1"
-    nfType: "UPF"
-    fqdn: "upf.oai.local"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "oai-nssf-1"
-    nfType: "NSSF"
-    fqdn: "nssf.oai.local"
-    sNssais:
-      - sst: 4
-        sd: "000401"
-  - nfInstanceId: "nrm-pcf-1"
-    nfType: "PCF"
-    fqdn: "pcf.nrm.local"
-    sNssais:
-      - sst: 4
-        sd: "000401"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {}
+    amf-1: {} 
