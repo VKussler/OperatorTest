@@ -1,13 +1,2 @@
 # OAI NSSF baseline for multi-vendor test
 slice_config_path: /openair-nssf/etc/nssf_slice_config.yaml
-nssf_plmn_support:
-  - mcc: '208'
-    mnc: '93'
-    s_nssai_list:
-      - sst: 4
-        sd: '000401'
-nssf_amf_region:
-  - region_id: 1 # Assuming a default AMF region ID, as none was specified
-    supported_nssai_list:
-      - sst: 4
-        sd: '000401'
