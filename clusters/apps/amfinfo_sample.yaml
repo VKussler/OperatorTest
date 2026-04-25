@@ -49,3 +49,10 @@ amf:
   time:
     t3512:
       value: 540
+  AmfFunction:
+    cNSIIdList:
+      - 'test-slice'
+    managedNFProfile:
+      allowedNSSAIs:
+        - sst: 4
+          sd: "000401"
