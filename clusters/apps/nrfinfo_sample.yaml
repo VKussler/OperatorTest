@@ -3,7 +3,12 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-sBIFQDN: "nrf-1.sbi.example.com"
+    sNSSAI:
+      - sst: 4
+        sd: "000401"
+cNSIIdList:
+  - "test-slice"
+sBIFQDN: "test-slice.sbi.nrf.nrm.local"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
@@ -15,8 +20,38 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "open5gs-amf-instance-001" # Placeholder for Open5GS AMF
+    nfType: "AMF"
+    fqdn: "open5gs-amf.test-slice.local" # Placeholder for Open5GS AMF FQDN
+    sNssais:
+      - sst: 4
+        sd: "000401"
+  - nfInstanceId: "open5gs-smf-instance-001" # Placeholder for Open5GS SMF
+    nfType: "SMF"
+    fqdn: "open5gs-smf.test-slice.local" # Placeholder for Open5GS SMF FQDN
+    sNssais:
+      - sst: 4
+        sd: "000401"
+  - nfInstanceId: "oai-upf-instance-001" # Placeholder for OAI UPF
+    nfType: "UPF"
+    fqdn: "oai-upf.test-slice.local" # Placeholder for OAI UPF FQDN
+    sNssais:
+      - sst: 4
+        sd: "000401"
+  - nfInstanceId: "oai-nssf-instance-001" # Placeholder for OAI NSSF
+    nfType: "NSSF"
+    fqdn: "oai-nssf.test-slice.local" # Placeholder for OAI NSSF FQDN
+    sNssais:
+      - sst: 4
+        sd: "000401"
+  - nfInstanceId: "nrm-pcf-instance-001" # Placeholder for NRM PCF
+    nfType: "PCF"
+    fqdn: "test-slice.pcf.nrm.local"
+    sNssais:
+      - sst: 4
+        sd: "000401"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
