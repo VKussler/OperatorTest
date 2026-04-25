@@ -1,66 +1,48 @@
-apiVersion: cm-5gc.com/v1alpha1
-kind: SmfInfo
-metadata:
-  name: smfinfo-sample
-  namespace: default
-spec:
-  global:
-    max:
-      ue: 1024
-  logger:
-    file:
-      path: /var/log/open5gs/smf.log
-  smf:
-    dns:
-    - 8.8.8.8
-    - 8.8.4.4
-    freeDiameter: /etc/freeDiameter/smf.conf
-    gtpc:
-      server:
-      - address: 127.0.0.4
-    gtpu:
-      server:
-      - address: 127.0.0.4
-    info:
-    - dnn:
-      - internet
-      s_nssai:
-      - sd: "000001"
+# Sample SMF NRM Instance
+commModelList:
+  - commModelType: DIRECT_COMMUNICATION_WO_NRF
+managedNFProfile:
+  capacity: 10
+  hostAddr: 127.0.0.1
+  nfType:
+    - SMF
+missingElements:
+  dnnConfigs:
+    ims:
+      ipv4Subnet: 14.1.1.0/24
+      pduSessionType: IPV4V6
+    oai:
+      ipv4Subnet: 12.1.1.0/24
+      pduSessionType: IPV4
+    ora:
+      ipv4Subnet: 13.1.1.0/24
+      pduSessionType: IPV4
+  snssaiConfigs:
+    1-000001:
+      fiveQi: 2
+      sessionAmbrDl: 200Mbps
+      sessionAmbrUl: 100Mbps
+    1-FFFFFF:
+      fiveQi: 5
+      sessionAmbrDl: 400Mbps
+      sessionAmbrUl: 200Mbps
+nRTAClist: "0"
+pLMNInfoList:
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+sBIFQDN: smf-1.sbi.example.com
+cNSIIdList: ["slice-1-cn"]
+smfInfo:
+  sNssaiSmfInfoList:
+    - dnnSmfInfoList:
+        - dnn: oai
+        - dnn: ora
+      sNSSAI:
+        sd: FFFFFF
         sst: 1
-      tai:
-      - plmn_id:
-          mcc: "001"
-          mnc: "01"
-        tac: 1
-    - dnn:
-      - internet
-      s_nssai:
-      - sd: "000401"
-        sst: 4
-      tai:
-      - plmn_id:
-          mcc: "208"
-          mnc: "93"
-        tac: 1
-    metrics:
-      port: 9090
-      server:
-      - address: 127.0.0.4
-    mtu: 1400
-    pfcp:
-      client:
-        upf:
-        - address: 127.0.0.7
-      server:
-      - address: 127.0.0.4
-    sbi:
-      client:
-        nrf:
-        - uri: http://127.0.0.10:7777
-      server:
-      - address: 127.0.0.4
-        port: 7777
-    session:
-    - dnn: internet
-      gateway: 10.45.0.1
-      subnet: 10.45.0.0/16
+    - dnnSmfInfoList:
+        - dnn: ims
+      sNSSAI:
+        sd: "000001"
+        sst: 1
