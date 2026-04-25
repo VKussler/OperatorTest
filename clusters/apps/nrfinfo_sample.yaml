@@ -3,7 +3,12 @@ pLMNInfoList:
   - pLMNId:
       mcc: "208"
       mnc: "93"
-sBIFQDN: "nrf-1.sbi.example.com"
+    supportedSnssaiList:
+      - sst: 4
+        sd: "000401"
+cNSIIdList:
+  - "test-slice"
+sBIFQDN: "test-slice.sbi.example.com"
 nFProfileList:
   - nfInstanceId: "nrf-instance-001"
     nfType: "NRF"
@@ -15,8 +20,96 @@ nFProfileList:
         versions: ["1.0.0"]
         schema: "oas3"
         nfServiceStatus: "REGISTERED"
+  - nfInstanceId: "amf-instance-test-slice"
+    nfType: "AMF"
+    nfStatus: "REGISTERED"
+    fqdn: "amf-test-slice.example.com"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "amf-comm-service-test-slice"
+        serviceName: "namf-comm"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+        sNssais:
+          - sst: 4
+            sd: "000401"
+      - serviceInstanceId: "amf-evnt-service-test-slice"
+        serviceName: "namf-evnt"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+        sNssais:
+          - sst: 4
+            sd: "000401"
+  - nfInstanceId: "smf-instance-test-slice"
+    nfType: "SMF"
+    nfStatus: "REGISTERED"
+    fqdn: "smf-test-slice.example.com"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "smf-pdusession-service-test-slice"
+        serviceName: "nsmf-pdusession"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+        sNssais:
+          - sst: 4
+            sd: "000401"
+  - nfInstanceId: "upf-instance-test-slice"
+    nfType: "UPF"
+    nfStatus: "REGISTERED"
+    fqdn: "upf-test-slice.example.com"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "upf-pfdm-service-test-slice"
+        serviceName: "nupf-pfdm" # Placeholder service for UPF
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+        sNssais:
+          - sst: 4
+            sd: "000401"
+  - nfInstanceId: "nssf-instance-test-slice"
+    nfType: "NSSF"
+    nfStatus: "REGISTERED"
+    fqdn: "nssf-test-slice.example.com"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "nssf-nsselection-service-test-slice"
+        serviceName: "nnssf-nsselection"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+        sNssais:
+          - sst: 4
+            sd: "000401"
+  - nfInstanceId: "pcf-instance-test-slice"
+    nfType: "PCF"
+    nfStatus: "REGISTERED"
+    fqdn: "pcf-test-slice.example.com"
+    sNssais:
+      - sst: 4
+        sd: "000401"
+    nfServices:
+      - serviceInstanceId: "pcf-policymgmt-service-test-slice"
+        serviceName: "npcf-policymgmt"
+        versions: ["1.0.0"]
+        schema: "oas3"
+        nfServiceStatus: "REGISTERED"
+        sNssais:
+          - sst: 4
+            sd: "000401"
 nrfInfo:
   servedPcfInfo:
     pcf-1: {}
   servedAmfInfo:
-    amf-1: {} 
+    amf-1: {}
