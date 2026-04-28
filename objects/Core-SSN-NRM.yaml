@@ -1,5 +1,5 @@
 # 3GPP NRM-based Core Network Slice Subnet
-# Intent: Create a new slice with name test-slice, sst 4, and sd 000401. Multi-vendor assignment (strict): AMF=nrm, SMF=nrm, UPF=nrm, NSSF=nrm, NRF=nrm, PCF=nrm. Multi-agent architecture (All NF specialists use NRM model): nfSpecialist1 -> nrm for AMF+SMF; nfSpecialist2 -> nrm for UPF+NSSF; nfSpecialist3 -> nrm for NRF+PCF.
+# Intent: Create a new slice with name test-slice, sst 4, and sd 000401
 attributes:
   operationalState: "enabled"
   administrativeState: "unlocked"
