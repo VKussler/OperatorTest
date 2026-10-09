@@ -3,26 +3,18 @@ kind: SmfInfo
 metadata:
   name: smfinfo-sample
   namespace: oai
-  labels:
-    app.kubernetes.io/name: op-smf
-    aicom.cm-5gc.com/e2e: multilice
 spec:
-  pLMNInfoList:
-    - pLMNId:
-        mcc: "001"
-        mnc: "01"
-  nRTAClist: "0"
-  sBIFQDN: oai-smf.oai.svc.cluster.local
-  cNSIIdList: ["slice-embb-ffffff", "slice-embb-000001"]
-  managedNFProfile:
-    nfType:
-      - SMF
-    hostAddr: oai-smf
-    capacity: 10
+  cNSIIdList:
+  - slice-embb-ffffff
+  - slice-embb-000001
   commModelList:
-    - commModelType: DIRECT_COMMUNICATION_WO_NRF
+  - commModelType: DIRECT_COMMUNICATION_WO_NRF
+  managedNFProfile:
+    capacity: 10
+    hostAddr: oai-smf
+    nfType:
+    - SMF
   missingElements:
-    useLocalSubscriptionInfo: true
     dnnConfigs:
       ims:
         ipv4Subnet: 14.1.1.0/24
@@ -42,16 +34,23 @@ spec:
         fiveQi: 5
         sessionAmbrDl: 400Mbps
         sessionAmbrUl: 200Mbps
+    useLocalSubscriptionInfo: true
+  nRTAClist: "0"
+  pLMNInfoList:
+  - pLMNId:
+      mcc: "001"
+      mnc: "01"
+  sBIFQDN: oai-smf.oai.svc.cluster.local
   smfInfo:
     sNssaiSmfInfoList:
-      - dnnSmfInfoList:
-          - dnn: oai
-          - dnn: ora
-        sNSSAI:
-          sd: FFFFFF
-          sst: 1
-      - dnnSmfInfoList:
-          - dnn: ims
-        sNSSAI:
-          sd: "000001"
-          sst: 1
+    - dnnSmfInfoList:
+      - dnn: oai
+      - dnn: ora
+      sNSSAI:
+        sd: FFFFFF
+        sst: 1
+    - dnnSmfInfoList:
+      - dnn: ims
+      sNSSAI:
+        sd: "000001"
+        sst: 1
