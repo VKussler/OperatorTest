@@ -8,51 +8,53 @@ metadata:
     aicom.cm-5gc.com/e2e: multilice
 spec:
   pLMNInfoList:
-    - pLMNId:
-        mcc: "001"
-        mnc: "01"
-      sNSSAI:
-        sd: FFFFFF
-        sst: 1
-    - pLMNId:
-        mcc: "001"
-        mnc: "01"
-      sNSSAI:
-        sd: "000001"
-        sst: 1
+  - pLMNId:
+      mcc: '001'
+      mnc: '01'
+    sNSSAI:
+      sd: FFFFFF
+      sst: 1
+  - pLMNId:
+      mcc: '001'
+      mnc: '01'
+    sNSSAI:
+      sd: '000001'
+      sst: 1
   managedNFProfile:
     nfType:
-      - UPF
+    - UPF
     hostAddr: oai-upf
     capacity: 1000
-  cNSIIdList: ["slice-embb-ffffff", "slice-embb-000001"]
+  cNSIIdList:
+  - slice-embb-ffffff
+  - slice-embb-000001
   supportedBMOList:
-    - BMO1
+  - BMO1
   upfInfo:
     sNssaiUpfInfoList:
-      - sNssai:
-          sd: FFFFFF
-          sst: 1
-        dnnUpfInfoList:
-          - dnn: oai
-            ipv4AddressRanges:
-              - iPv4AddrRangeStart: 12.1.1.0
-                iPv4AddrRangeEnd: 12.1.1.255
-            pduSessionTypes:
-              - IPv4
-          - dnn: ora
-            ipv4AddressRanges:
-              - iPv4AddrRangeStart: 13.1.1.0
-                iPv4AddrRangeEnd: 13.1.1.255
-            pduSessionTypes:
-              - IPv4
-      - sNssai:
-          sd: "000001"
-          sst: 1
-        dnnUpfInfoList:
-          - dnn: ims
-            ipv4AddressRanges:
-              - iPv4AddrRangeStart: 14.1.1.0
-                iPv4AddrRangeEnd: 14.1.1.255
-            pduSessionTypes:
-              - IPv4v6
+    - sNssai:
+        sd: FFFFFF
+        sst: 1
+      dnnUpfInfoList:
+      - dnn: oai
+        ipv4AddressRanges:
+        - iPv4AddrRangeStart: 12.1.1.0
+          iPv4AddrRangeEnd: 12.1.1.255
+        pduSessionTypes:
+        - IPv4
+      - dnn: ora
+        ipv4AddressRanges:
+        - iPv4AddrRangeStart: 13.1.1.0
+          iPv4AddrRangeEnd: 13.1.1.255
+        pduSessionTypes:
+        - IPv4
+    - sNssai:
+        sd: '000001'
+        sst: 1
+      dnnUpfInfoList:
+      - dnn: ims
+        ipv4AddressRanges:
+        - iPv4AddrRangeStart: 14.1.1.0
+          iPv4AddrRangeEnd: 14.1.1.255
+        pduSessionTypes:
+        - IPv4v6
