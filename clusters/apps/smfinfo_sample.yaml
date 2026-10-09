@@ -32,7 +32,7 @@ spec:
         sessionAmbrUl: 100Mbps
       1-0xffffff:
         fiveQi: 9
-        sessionAmbrDl: 400Mbps
+        sessionAmbrDl: 10Mbps
         sessionAmbrUl: 200Mbps
       1-FFFFFF:
         fiveQi: 5
