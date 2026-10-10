@@ -32,8 +32,8 @@ spec:
         sessionAmbrUl: 100Mbps
       1-FFFFFF:
         fiveQi: 5
-        sessionAmbrDl: 10 Mbps
-        sessionAmbrUl: 100 Mbps
+        sessionAmbrDl: 400Mbps
+        sessionAmbrUl: 200Mbps
     useLocalSubscriptionInfo: true
   nRTAClist: "0"
   pLMNInfoList:
